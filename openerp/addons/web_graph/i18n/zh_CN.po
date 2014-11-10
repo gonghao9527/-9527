@@ -1,21 +1,22 @@
 # Chinese (Simplified) translation for openerp-web
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the openerp-web package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: openerp-web\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-08-20 02:35+0000\n"
-"Last-Translator: Wei \"oldrev\" Li <oldrev@gmail.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-23 16:28+0000\n"
+"PO-Revision-Date: 2014-09-28 08:20+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-21 06:54+0000\n"
-"X-Generator: Launchpad (build 17163)\n"
+"X-Launchpad-Export-Date: 2013-03-08 06:07+0000\n"
+"X-Generator: Poedit 1.6.9\n"
 
 #. module: web_graph
 #. openerp-web
@@ -29,7 +30,7 @@ msgstr "柱状图"
 #: code:addons/web_graph/static/src/xml/web_graph.xml:70
 #, python-format
 msgid "Day"
-msgstr "日"
+msgstr "天"
 
 #. module: web_graph
 #. openerp-web
@@ -57,35 +58,35 @@ msgstr "图表"
 #: code:addons/web_graph/static/src/xml/web_graph.xml:23
 #, python-format
 msgid "Heat Map"
-msgstr "热力图"
+msgstr "热图"
 
 #. module: web_graph
 #. openerp-web
 #: code:addons/web_graph/static/src/xml/web_graph.xml:29
 #, python-format
 msgid "Heat Map (columns)"
-msgstr "热力图（按列）"
+msgstr "热图（纵栏）"
 
 #. module: web_graph
 #. openerp-web
 #: code:addons/web_graph/static/src/xml/web_graph.xml:26
 #, python-format
 msgid "Heat Map (rows)"
-msgstr "热力图（按行）"
+msgstr "热图（横栏）"
 
 #. module: web_graph
 #. openerp-web
 #: code:addons/web_graph/static/src/xml/web_graph.xml:14
 #, python-format
 msgid "Line Chart"
-msgstr "线状图"
+msgstr "曲线图"
 
 #. module: web_graph
 #. openerp-web
 #: code:addons/web_graph/static/src/xml/web_graph.xml:49
 #, python-format
 msgid "Measures"
-msgstr "测量"
+msgstr "衡量"
 
 #. module: web_graph
 #. openerp-web
@@ -102,21 +103,23 @@ msgid ""
 "No data available for this graph.  Try to add some records, or make sure\n"
 "                    that there is at least one measure and no active filter "
 "in the search bar."
-msgstr "此图表无数据可供显示。请试着添加一些记录或者确保至少有一个计量值并且搜索栏里没有激活的过滤器。"
+msgstr ""
+"图表无可用数据，请尝试添加一些记录或确保\n"
+"                     至少选择了一项测量且搜索框没有活动的过滤项。"
 
 #. module: web_graph
 #. openerp-web
 #: code:addons/web_graph/static/src/xml/web_graph.xml:92
 #, python-format
 msgid "No data to display."
-msgstr "无数据可供显示"
+msgstr "无可显示数据"
 
 #. module: web_graph
 #. openerp-web
 #: code:addons/web_graph/static/src/xml/web_graph.xml:17
 #, python-format
 msgid "Pie Chart"
-msgstr "饼图"
+msgstr "饼状图"
 
 #. module: web_graph
 #. openerp-web
@@ -131,51 +134,51 @@ msgstr "数量"
 #: code:addons/web_graph/static/src/xml/web_graph.xml:73
 #, python-format
 msgid "Quarter"
-msgstr "季"
+msgstr "刻钟"
 
 #. module: web_graph
 #. openerp-web
 #: code:addons/web_graph/static/src/xml/web_graph.xml:41
 #, python-format
 msgid "Reload Data"
-msgstr "重载数据"
+msgstr "刷新数据"
 
 #. module: web_graph
 #. openerp-web
 #: code:addons/web_graph/static/src/xml/web_graph.xml:35
 #, python-format
 msgid "Swap Axis"
-msgstr "交换轴线"
+msgstr "轴线互换"
 
 #. module: web_graph
 #. openerp-web
 #: code:addons/web_graph/static/src/xml/web_graph.xml:8
 #, python-format
 msgid "Table Mode"
-msgstr "表格模式"
+msgstr "图表模式"
 
 #. module: web_graph
 #. openerp-web
-#: code:addons/web_graph/static/src/js/graph_widget.js:463
-#: code:addons/web_graph/static/src/js/graph_widget.js:686
-#: code:addons/web_graph/static/src/js/graph_widget.js:687
-#: code:addons/web_graph/static/src/js/pivot_table.js:331
+#: code:addons/web_graph/static/src/js/graph_widget.js:474
+#: code:addons/web_graph/static/src/js/graph_widget.js:707
+#: code:addons/web_graph/static/src/js/graph_widget.js:708
+#: code:addons/web_graph/static/src/js/pivot_table.js:335
 #, python-format
 msgid "Total"
-msgstr "总计"
+msgstr "合计"
 
 #. module: web_graph
 #. openerp-web
-#: code:addons/web_graph/static/src/js/graph_widget.js:601
-#: code:addons/web_graph/static/src/js/graph_widget.js:702
-#: code:addons/web_graph/static/src/js/graph_widget.js:711
-#: code:addons/web_graph/static/src/js/graph_widget.js:715
-#: code:addons/web_graph/static/src/js/graph_widget.js:720
-#: code:addons/web_graph/static/src/js/graph_widget.js:725
-#: code:addons/web_graph/static/src/js/graph_widget.js:728
-#: code:addons/web_graph/static/src/js/graph_widget.js:773
-#: code:addons/web_graph/static/src/js/graph_widget.js:802
-#: code:addons/web_graph/static/src/js/pivot_table.js:429
+#: code:addons/web_graph/static/src/js/graph_widget.js:615
+#: code:addons/web_graph/static/src/js/graph_widget.js:723
+#: code:addons/web_graph/static/src/js/graph_widget.js:732
+#: code:addons/web_graph/static/src/js/graph_widget.js:736
+#: code:addons/web_graph/static/src/js/graph_widget.js:741
+#: code:addons/web_graph/static/src/js/graph_widget.js:746
+#: code:addons/web_graph/static/src/js/graph_widget.js:749
+#: code:addons/web_graph/static/src/js/graph_widget.js:794
+#: code:addons/web_graph/static/src/js/graph_widget.js:823
+#: code:addons/web_graph/static/src/js/pivot_table.js:433
 #, python-format
 msgid "Undefined"
 msgstr "未定义"
@@ -185,7 +188,7 @@ msgstr "未定义"
 #: code:addons/web_graph/static/src/xml/web_graph.xml:71
 #, python-format
 msgid "Week"
-msgstr "周"
+msgstr "星期"
 
 #. module: web_graph
 #. openerp-web
@@ -193,3 +196,42 @@ msgstr "周"
 #, python-format
 msgid "Year"
 msgstr "年"
+
+#~ msgid "Bars"
+#~ msgstr "柱状图"
+
+#~ msgid "Inside"
+#~ msgstr "内部"
+
+#~ msgid "&iacute;"
+#~ msgstr "&iacute;"
+
+#~ msgid "Pie"
+#~ msgstr "饼状图"
+
+#~ msgid "Actions"
+#~ msgstr "操作"
+
+#~ msgid "Radar"
+#~ msgstr "雷达图"
+
+#~ msgid "Download as PNG"
+#~ msgstr "下载为 PNG"
+
+#~ msgid "Top"
+#~ msgstr "顶部"
+
+#~ msgid "Hidden"
+#~ msgstr "隐藏"
+
+#~ msgid "Graph Options"
+#~ msgstr "图表选项"
+
+#~ msgid "Lines"
+#~ msgstr "曲线图"
+
+#~ msgid "Legend"
+#~ msgstr "图例"
+
+#~ msgid "Areas"
+#~ msgstr "区域"

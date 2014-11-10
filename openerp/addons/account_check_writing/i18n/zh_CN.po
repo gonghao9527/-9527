@@ -1,21 +1,22 @@
 # Chinese (Simplified) translation for openobject-addons
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the openobject-addons package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-08-14 16:10+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-09-22 07:03+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-15 06:50+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:32+0000\n"
+"X-Generator: Poedit 1.6.9\n"
 
 #. module: account_check_writing
 #: model:ir.actions.act_window,help:account_check_writing.action_write_check
@@ -33,6 +34,14 @@ msgid ""
 "              </p>\n"
 "            "
 msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                单击创建一个新的支票。\n"
+"              </p><p>\n"
+"                支票支付表单允许跟踪用支票支付给供应商的过程。当你选择了一个"
+"供应商，Odoo将自动提供支付方法和支付金额，用于核销待支付的供应商发票和单"
+"据。\n"
+"              </p>\n"
+"            "
 
 #. module: account_check_writing
 #: model:ir.model,name:account_check_writing.model_account_voucher
@@ -42,12 +51,12 @@ msgstr "手工凭证"
 #. module: account_check_writing
 #: field:account.voucher,allow_check:0
 msgid "Allow Check Writing"
-msgstr "允许写支票"
+msgstr "允许打印支票"
 
 #. module: account_check_writing
 #: field:account.journal,allow_check_writing:0
 msgid "Allow Check writing"
-msgstr "允许写支票"
+msgstr "允许打印支票"
 
 #. module: account_check_writing
 #: field:account.voucher,amount_in_word:0
@@ -63,7 +72,7 @@ msgstr "取消"
 #: view:account.check.write:account_check_writing.view_account_check_write
 #: model:ir.actions.report.xml,name:account_check_writing.action_report_check
 msgid "Check"
-msgstr "核对"
+msgstr "支票"
 
 #. module: account_check_writing
 #: field:res.company,check_layout:0
@@ -73,22 +82,22 @@ msgstr "支票布局"
 #. module: account_check_writing
 #: help:account.journal,use_preprint_check:0
 msgid "Check if you use a preformated sheet for check"
-msgstr ""
+msgstr "检查你是否使用一个已定义好的支票表格"
 
 #. module: account_check_writing
 #: selection:res.company,check_layout:0
 msgid "Check in middle"
-msgstr "中间的支票"
+msgstr "支票正文"
 
 #. module: account_check_writing
 #: selection:res.company,check_layout:0
 msgid "Check on Top"
-msgstr "顶部的支票"
+msgstr "支票页眉"
 
 #. module: account_check_writing
 #: selection:res.company,check_layout:0
 msgid "Check on bottom"
-msgstr "底部的支票"
+msgstr "支票页脚"
 
 #. module: account_check_writing
 #: help:res.company,check_layout:0
@@ -97,8 +106,9 @@ msgid ""
 "Check in middle is compatible with Peachtree, ACCPAC and DacEasy. Check on "
 "bottom is compatible with Peachtree, ACCPAC and DacEasy only"
 msgstr ""
-"顶部的支票与Quicken, QuickBooks 和 Microsoft Money兼容。中间的支票与Peachtree, ACCPAC 和 "
-"DacEasy兼容。底部的支票只与Peachtree, ACCPAC 和 DacEasy兼容。"
+"支票页眉支持Quicken,QuickBooks和Microsoft Money等软件，可从这些软件中获取数据"
+"并填入支票抬头页眉。支票正文的数据支持Peachtree,ACCPAC和DacEasy等软件。支票页"
+"脚部分仅支持Peachtree,ACCPAC和DacEasy。生成支票时请留意相应的兼容性问题。"
 
 #. module: account_check_writing
 #: help:account.journal,allow_check_writing:0
@@ -113,12 +123,12 @@ msgstr "公司"
 #. module: account_check_writing
 #: field:account.check.write,create_uid:0
 msgid "Created by"
-msgstr ""
+msgstr "创建人"
 
 #. module: account_check_writing
 #: field:account.check.write,create_date:0
 msgid "Created on"
-msgstr ""
+msgstr "创建在"
 
 #. module: account_check_writing
 #: view:website:account_check_writing.report_check
@@ -145,7 +155,7 @@ msgstr "错误！"
 #: field:account.check.write,id:0
 #: field:report.account_check_writing.report_check,id:0
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_check_writing
 #: model:ir.model,name:account_check_writing.model_account_journal
@@ -155,29 +165,29 @@ msgstr "凭证簿"
 #. module: account_check_writing
 #: field:account.check.write,write_uid:0
 msgid "Last Updated by"
-msgstr ""
+msgstr "最后更新被"
 
 #. module: account_check_writing
 #: field:account.check.write,write_date:0
 msgid "Last Updated on"
-msgstr ""
+msgstr "最后更新在"
 
 #. module: account_check_writing
 #: field:account.check.write,check_number:0
 msgid "Next Check Number"
-msgstr "下一个支票号"
+msgstr "下一个支票编号"
 
 #. module: account_check_writing
 #: code:addons/account_check_writing/account_voucher.py:77
 #, python-format
 msgid "No check selected "
-msgstr ""
+msgstr "没有选择的支票"
 
 #. module: account_check_writing
 #: code:addons/account_check_writing/wizard/account_check_batch_printing.py:59
 #, python-format
 msgid "One of the printed check already got a number."
-msgstr "打印的支票已经获得一个号码"
+msgstr "其中一个打印的支票已有编号。"
 
 #. module: account_check_writing
 #: view:website:account_check_writing.report_check
@@ -214,12 +224,12 @@ msgstr "批量打印支票"
 #: code:addons/account_check_writing/account_voucher.py:77
 #, python-format
 msgid "Printing error"
-msgstr ""
+msgstr "打印错误"
 
 #. module: account_check_writing
 #: help:account.check.write,check_number:0
 msgid "The number of the next check number to be printed."
-msgstr "下个要被打印的支票号码"
+msgstr "将要打印的下一张支票的编号。"
 
 #. module: account_check_writing
 #: field:account.journal,use_preprint_check:0
@@ -230,4 +240,22 @@ msgstr "用预先打印的支票"
 #: model:ir.actions.act_window,name:account_check_writing.action_write_check
 #: model:ir.ui.menu,name:account_check_writing.menu_action_write_check
 msgid "Write Checks"
-msgstr "写支票"
+msgstr "开具支票"
+
+#~ msgid "Print Check (Bottom)"
+#~ msgstr "打印支票（底部）"
+
+#~ msgid "Print Check (Middle)"
+#~ msgstr "打印支票（中间）"
+
+#~ msgid "Balance Due"
+#~ msgstr "截止余额"
+
+#~ msgid "Print Check (Top)"
+#~ msgstr "打印支票（顶部）"
+
+#~ msgid "Check Amount"
+#~ msgstr "支票金额"
+
+#~ msgid "or"
+#~ msgstr "或"

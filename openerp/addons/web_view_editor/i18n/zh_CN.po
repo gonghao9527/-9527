@@ -1,21 +1,22 @@
 # Chinese (Simplified) translation for openerp-web
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the openerp-web package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: openerp-web\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-08-14 16:14+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-08-21 07:16+0800\n"
+"Last-Translator: ccdos <ccdos@163.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-15 08:25+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2013-03-29 05:11+0000\n"
+"X-Generator: Poedit 1.6.7\n"
 
 #. module: web_view_editor
 #. openerp-web
@@ -53,7 +54,7 @@ msgstr "找不到当期视图声明"
 #: code:addons/web_view_editor/static/src/js/view_editor.js:62
 #, python-format
 msgid "Create"
-msgstr "创建"
+msgstr "新建"
 
 #. module: web_view_editor
 #. openerp-web
@@ -166,7 +167,7 @@ msgstr "选择一个元素"
 #: code:addons/web_view_editor/static/src/js/view_editor.js:161
 #, python-format
 msgid "The following fields are invalid :"
-msgstr "下列字段无效："
+msgstr "下面是无效的字段："
 
 #. module: web_view_editor
 #. openerp-web

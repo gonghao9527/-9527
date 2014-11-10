@@ -1,26 +1,27 @@
 # Chinese (Simplified) translation for openobject-addons
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the openobject-addons package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-08-14 16:10+0000\n"
+"PO-Revision-Date: 2014-08-17 17:56+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-15 06:58+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:37+0000\n"
+"X-Generator: Poedit 1.6.7\n"
 
 #. module: base_setup
 #: view:base.config.settings:base_setup.view_general_configuration
 msgid "(reload fonts)"
-msgstr ""
+msgstr "(重载字体)"
 
 #. module: base_setup
 #: field:base.config.settings,module_portal:0
@@ -30,12 +31,12 @@ msgstr "激活客户门户"
 #. module: base_setup
 #: field:base.config.settings,module_share:0
 msgid "Allow documents sharing"
-msgstr "允许分享单据"
+msgstr "允许共享单据"
 
 #. module: base_setup
 #: field:base.config.settings,module_google_calendar:0
 msgid "Allow the users to synchronize their calendar  with Google Calendar"
-msgstr ""
+msgstr "允许用户将他们的日历与谷歌日历同步"
 
 #. module: base_setup
 #: field:base.config.settings,module_base_import:0
@@ -51,7 +52,7 @@ msgstr "应用"
 #. module: base_setup
 #: field:base.config.settings,module_google_drive:0
 msgid "Attach Google documents to any record"
-msgstr ""
+msgstr "为任何记录添加Google文档"
 
 #. module: base_setup
 #: view:base.config.settings:base_setup.view_general_configuration
@@ -100,14 +101,14 @@ msgstr "联系人"
 #: field:base.setup.terminology,create_uid:0
 #: field:sale.config.settings,create_uid:0
 msgid "Created by"
-msgstr ""
+msgstr "创建人"
 
 #. module: base_setup
 #: field:base.config.settings,create_date:0
 #: field:base.setup.terminology,create_date:0
 #: field:sale.config.settings,create_date:0
 msgid "Created on"
-msgstr ""
+msgstr "创建在"
 
 #. module: base_setup
 #: selection:base.setup.terminology,partner:0
@@ -144,7 +145,7 @@ msgstr "常规设置"
 #. module: base_setup
 #: help:sale.config.settings,module_mass_mailing:0
 msgid "Get access to statistics with your mass mailing, manage campaigns."
-msgstr ""
+msgstr "能够获得你的批量邮件分析，管理营销活动。"
 
 #. module: base_setup
 #: field:sale.config.settings,module_web_linkedin:0
@@ -159,12 +160,12 @@ msgstr "让你的客户访问他们的单据"
 #. module: base_setup
 #: view:base.config.settings:base_setup.view_general_configuration
 msgid "Google Calendar"
-msgstr ""
+msgstr "谷歌日历"
 
 #. module: base_setup
 #: view:base.config.settings:base_setup.view_general_configuration
 msgid "Google Drive"
-msgstr ""
+msgstr "谷歌云存储"
 
 #. module: base_setup
 #: selection:base.setup.terminology,partner:0
@@ -177,11 +178,10 @@ msgid "How do you call a Customer"
 msgstr "你如何称呼您的客户"
 
 #. module: base_setup
-#: field:base.config.settings,id:0
-#: field:base.setup.terminology,id:0
+#: field:base.config.settings,id:0 field:base.setup.terminology,id:0
 #: field:sale.config.settings,id:0
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: base_setup
 #: view:base.config.settings:base_setup.view_general_configuration
@@ -193,19 +193,19 @@ msgstr "导入/导出"
 #: field:base.setup.terminology,write_uid:0
 #: field:sale.config.settings,write_uid:0
 msgid "Last Updated by"
-msgstr ""
+msgstr "最后更新被"
 
 #. module: base_setup
 #: field:base.config.settings,write_date:0
 #: field:base.setup.terminology,write_date:0
 #: field:sale.config.settings,write_date:0
 msgid "Last Updated on"
-msgstr ""
+msgstr "最后更新在"
 
 #. module: base_setup
 #: field:sale.config.settings,module_mass_mailing:0
 msgid "Manage mass mailing campaigns"
-msgstr ""
+msgstr "管理批量邮件营销"
 
 #. module: base_setup
 #: field:base.config.settings,module_multi_company:0
@@ -229,13 +229,18 @@ msgid ""
 "Odoo using specific\n"
 "                            plugins for your preferred email application."
 msgstr ""
+"Odoo可以根据收到的邮件来自动创建线索（或其它单据）。\n"
+"    你可通过常规的POP/IMAP账户或在邮件服务器端直接用邮件集成脚本来自动\n"
+"    同步邮件，\n"
+"    也可通过以下特定的插件来使用您喜爱的邮件客户端\n"
+"    向Odoo推送邮件。"
 
 #. module: base_setup
 #: view:base.config.settings:base_setup.view_general_configuration
 msgid ""
-"Once installed, you can configure your API credentials for \"Google "
-"calendar\""
-msgstr ""
+"Once installed, you can configure your API credentials for \"Google calendar"
+"\""
+msgstr "一旦安装，你能够为谷歌日历配置你的API凭据"
 
 #. module: base_setup
 #: view:base.config.settings:base_setup.view_general_configuration
@@ -265,7 +270,7 @@ msgstr "报价和销售订单"
 #. module: base_setup
 #: field:base.config.settings,font:0
 msgid "Report Font"
-msgstr ""
+msgstr "报表字体"
 
 #. module: base_setup
 #: field:sale.config.settings,module_sale:0
@@ -282,12 +287,12 @@ msgstr "销售特性"
 msgid ""
 "Set the font into the report header, it will be used as default font in the "
 "RML reports of the user company"
-msgstr ""
+msgstr "将字体设置到报表头，它将被用作用户公司RML报表的默认字体"
 
 #. module: base_setup
 #: help:base.config.settings,module_share:0
 msgid "Share or embbed any screen of openerp."
-msgstr "分享或者嵌入任意Openerp屏幕"
+msgstr "共享或者嵌入任意Openerp屏幕"
 
 #. module: base_setup
 #: view:sale.config.settings:base_setup.view_sale_config_settings
@@ -307,12 +312,12 @@ msgstr "承租人"
 #. module: base_setup
 #: help:base.config.settings,module_google_calendar:0
 msgid "This installs the module google_calendar."
-msgstr ""
+msgstr "选中将会安装google_calendar模块。"
 
 #. module: base_setup
 #: help:base.config.settings,module_google_drive:0
 msgid "This installs the module google_docs."
-msgstr ""
+msgstr "选中将会安装google_docs模块。"
 
 #. module: base_setup
 #: model:ir.actions.act_window,name:base_setup.action_partner_terminology_config_form
@@ -323,7 +328,7 @@ msgstr "称呼客户的另一种方式"
 #: field:base.config.settings,module_auth_oauth:0
 msgid ""
 "Use external authentication providers, sign in with google, facebook, ..."
-msgstr "使用OpenID登陆(Google, Facebook...)"
+msgstr "使用OpenID登录(Google, Facebook...)"
 
 #. module: base_setup
 #: help:sale.config.settings,module_web_linkedin:0
@@ -343,7 +348,9 @@ msgid ""
 "                                    read your company news, check his "
 "projects,\n"
 "                                    etc."
-msgstr "当你发送单据给客户（报价单，发票），你的可能能登录，获取他单据，阅读你的公司新闻，检查他的项目等。"
+msgstr ""
+"当你发送单据给客户（报价单，发票），你的可能能登录，获取他单据，阅读你的公司"
+"新闻，检查他的项目等。"
 
 #. module: base_setup
 #: help:base.config.settings,module_multi_company:0
@@ -352,13 +359,15 @@ msgid ""
 "companies.\n"
 "-This installs the module multi_company."
 msgstr ""
+"工作在多公司环境，公司之间有适当地安全访问权限\n"
+"               为此安装模块multi_company。"
 
 #. module: base_setup
 #: view:base.setup.terminology:base_setup.base_setup_terminology_form
 msgid ""
 "You can use this wizard to change the terminologies for customers in the "
 "whole application."
-msgstr "你用这个向导能在整个系统中用其他称谓来标识客户"
+msgstr "你用这个向导能在整个系统中用其它称谓来标识客户"
 
 #. module: base_setup
 #: view:base.config.settings:base_setup.view_general_configuration
@@ -371,3 +380,75 @@ msgstr "你能在你的公司明细里找到多个选项：用于页首和页脚
 #: view:base.setup.terminology:base_setup.base_setup_terminology_form
 msgid "res_config_contents"
 msgstr "res_config_contents"
+
+#~ msgid "base.config.settings"
+#~ msgstr "base.config.settings"
+
+#~ msgid "base.setup.terminology"
+#~ msgstr "base.setup.terminology"
+
+#~ msgid "or"
+#~ msgstr "或"
+
+#~ msgid "sale.config.settings"
+#~ msgstr "sale.config.settings"
+
+#~ msgid "Enable Outlook plug-in"
+#~ msgstr "使用 Outlook 插件"
+
+#~ msgid "Enable Thunderbird plug-in"
+#~ msgstr "使用 Thunderbird 插件"
+
+#~ msgid "On Mail Client"
+#~ msgstr "邮件客户端"
+
+#~ msgid ""
+#~ "The Outlook plugin allows you to select an object that you would like to "
+#~ "add to your email and its attachments from MS Outlook. You can select a "
+#~ "partner, or a lead object and archive a selected email into an Odoo "
+#~ "mail message with attachments.\n"
+#~ "-This installs the module plugin_outlook."
+#~ msgstr ""
+#~ "Outlook 插件允许你选择想要添加来自MS Outlook的邮件和附件的对象。 你能选择"
+#~ "一个业务伙伴或者线索对象，并且把选择的邮件存档到一个带附件的 Openerp 邮件"
+#~ "消息中。\n"
+#~ "为此要安装模块plugin_outlook."
+
+#~ msgid ""
+#~ "The plugin allows you archive email and its attachments to the selected "
+#~ "Odoo objects. You can select a partner, or a lead and attach the "
+#~ "selected mail as a .eml file in the attachment of a selected record. You "
+#~ "can create documents for CRM Lead, Partner from the selected emails.\n"
+#~ "-This installs the module plugin_thunderbird."
+#~ msgstr ""
+#~ "这个插件允许你把email和附件存档到选定的Openerp对象。你能选择一个业务伙伴、"
+#~ "或者线索，并将选择的邮件以.eml 文件的形式添加到所选中记录的附件中。\n"
+#~ "\n"
+#~ "为此要安装模块 plugin_thunderbird."
+
+#~ msgid "--db-filter=YOUR_DATABAE"
+#~ msgstr "--db-filter=YOUR_DATABAE"
+
+#~ msgid ""
+#~ "The public portal is accessible only if you are in a single database "
+#~ "mode. You can\n"
+#~ "                                    launch the Odoo Server with the "
+#~ "option"
+#~ msgstr ""
+#~ "只用当你在 单数据库 模式时，公共门户才是可以访问的。你能用此选项运行 "
+#~ "Odoo服务器。"
+
+#~ msgid "Enable the public part of openerp, openerp becomes a public website."
+#~ msgstr "启用Openerp的公共部分，Openerp成为一个公共的web站点"
+
+#~ msgid ""
+#~ "to do so.\n"
+#~ "                                    Once activated, the login page will "
+#~ "be replaced by the public website."
+#~ msgstr "这样做了，一旦激活，登录页面将被公共web站点替换。"
+
+#~ msgid "(company news, jobs, contact form, etc.)"
+#~ msgstr "（公司新闻，工作，联系人表单 等）"
+
+#~ msgid "Activate the public portal"
+#~ msgstr "启用公共门户"

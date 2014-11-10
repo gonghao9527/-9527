@@ -1,21 +1,22 @@
 # Chinese (Simplified) translation for openobject-addons
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the openobject-addons package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-08-14 16:10+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-23 16:27+0000\n"
+"PO-Revision-Date: 2014-09-28 08:24+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-15 07:03+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2013-03-28 05:36+0000\n"
+"X-Generator: Poedit 1.6.9\n"
 
 #. module: crm_helpdesk
 #: field:crm.helpdesk.report,email:0
@@ -24,8 +25,8 @@ msgstr "电子邮件"
 
 #. module: crm_helpdesk
 #: field:crm.helpdesk.report,nbr:0
-msgid "# of Cases"
-msgstr "# 业务"
+msgid "# of Requests"
+msgstr "# 要求"
 
 #. module: crm_helpdesk
 #: model:ir.actions.act_window,help:crm_helpdesk.crm_case_helpdesk_act111
@@ -44,6 +45,17 @@ msgid ""
 "              </p>\n"
 "            "
 msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                单击以创建新请求。\n"
+"              </p><p>\n"
+"              服务和支持平台允许追踪参与情况。\n"
+"              </p><p>\n"
+"                使用Odoo问题系统管理支持活动。\n"
+"                问题系统可以连接至邮件网关，\n"
+"                新邮件会产生问题，\n"
+"                每封新邮件可以自动获取与客户会话的历史记录。\n"
+"              </p>\n"
+"              "
 
 #. module: crm_helpdesk
 #: field:crm.helpdesk,active:0
@@ -61,8 +73,7 @@ msgid "Assigned to Me or My Sales Team(s)"
 msgstr "指派给我或者我的销售团队"
 
 #. module: crm_helpdesk
-#: selection:crm.helpdesk,state:0
-#: selection:crm.helpdesk.report,state:0
+#: selection:crm.helpdesk,state:0 selection:crm.helpdesk.report,state:0
 msgid "Cancelled"
 msgstr "已取消"
 
@@ -77,17 +88,14 @@ msgid "Categorization"
 msgstr "分类"
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,categ_id:0
-#: field:crm.helpdesk.report,categ_id:0
+#: field:crm.helpdesk,categ_id:0 field:crm.helpdesk.report,categ_id:0
 msgid "Category"
 msgstr "分类"
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,channel_id:0
-#: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
-#: field:crm.helpdesk.report,channel_id:0
+#: field:crm.helpdesk,channel_id:0 field:crm.helpdesk.report,channel_id:0
 msgid "Channel"
-msgstr "途径"
+msgstr "沟通方式"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
@@ -96,8 +104,7 @@ msgid "Close Date"
 msgstr "结束日期"
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,date_closed:0
-#: selection:crm.helpdesk,state:0
+#: field:crm.helpdesk,date_closed:0 selection:crm.helpdesk,state:0
 #: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
 #: selection:crm.helpdesk.report,state:0
 msgid "Closed"
@@ -130,26 +137,23 @@ msgstr "创建和管理服务台类型去更好管理和分类你的支持的请
 #. module: crm_helpdesk
 #: field:crm.helpdesk,create_uid:0
 msgid "Created by"
-msgstr ""
+msgstr "创建人"
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,create_date:0
-#: field:crm.helpdesk.report,create_date:0
+#: field:crm.helpdesk,create_date:0 field:crm.helpdesk.report,create_date:0
 msgid "Creation Date"
 msgstr "创建日期"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.crm_case_tree_view_helpdesk
-#: field:crm.helpdesk,date:0
-#: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
-#: field:crm.helpdesk.report,date:0
+#: field:crm.helpdesk,date:0 field:crm.helpdesk.report,date:0
 msgid "Date"
 msgstr "日期"
 
 #. module: crm_helpdesk
 #: help:crm.helpdesk,message_last_post:0
 msgid "Date of the last message posted on the record."
-msgstr ""
+msgstr "在记录上最后发布信息的日期"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.crm_case_form_view_helpdesk
@@ -176,7 +180,7 @@ msgstr "说明"
 #. module: crm_helpdesk
 #: help:crm.helpdesk,email_from:0
 msgid "Destination email for email gateway"
-msgstr "目的邮件地址"
+msgstr "邮件网关的目标邮件"
 
 #. module: crm_helpdesk
 #: selection:crm.helpdesk.report,state:0
@@ -197,7 +201,7 @@ msgstr "电子邮件"
 #: code:addons/crm_helpdesk/crm_helpdesk.py:117
 #, python-format
 msgid "Error!"
-msgstr ""
+msgstr "错误！"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.crm_case_form_view_helpdesk
@@ -233,7 +237,7 @@ msgstr "一般"
 #: view:crm.helpdesk:crm_helpdesk.view_crm_case_helpdesk_filter
 #: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
 msgid "Group By"
-msgstr ""
+msgstr "分组按"
 
 #. module: crm_helpdesk
 #: model:ir.actions.act_window,help:crm_helpdesk.action_report_crm_helpdesk
@@ -241,7 +245,9 @@ msgid ""
 "Have a general overview of all support requests by sorting them with "
 "specific criteria such as the processing time, number of requests answered, "
 "emails sent and costs."
-msgstr "为所有的支持请求排序指定具体标准如：处理时间，请求回复的次数，发送的邮件，成本."
+msgstr ""
+"为所有的支持请求排序指定具体标准如：处理时间，请求回复的次数，发送的邮件，成"
+"本."
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_graph
@@ -264,7 +270,7 @@ msgstr "服务台分类"
 #. module: crm_helpdesk
 #: model:ir.actions.act_window,name:crm_helpdesk.crm_case_helpdesk_act111
 msgid "Helpdesk Requests"
-msgstr "服务台请求"
+msgstr "服务请求"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.crm_case_form_view_helpdesk
@@ -284,7 +290,7 @@ msgstr "服务台支持"
 #. module: crm_helpdesk
 #: model:ir.ui.menu,name:crm_helpdesk.menu_help_support_main
 msgid "Helpdesk and Support"
-msgstr "服务台和支持"
+msgstr "服务和支持"
 
 #. module: crm_helpdesk
 #: model:ir.model,name:crm_helpdesk.model_crm_helpdesk_report
@@ -296,11 +302,10 @@ msgstr "售后服务服务台报表"
 msgid ""
 "Helpdesk requests that are assigned to me or to one of the sale teams I "
 "manage"
-msgstr "帮助台请求被指派给我或者我管理的销售团队中的一个"
+msgstr "服务台需要分配给我或我所管理销售团队的业务"
 
 #. module: crm_helpdesk
-#: selection:crm.helpdesk,priority:0
-#: selection:crm.helpdesk.report,priority:0
+#: selection:crm.helpdesk,priority:0 selection:crm.helpdesk.report,priority:0
 msgid "High"
 msgstr "高"
 
@@ -314,11 +319,11 @@ msgstr "最高"
 msgid ""
 "Holds the Chatter summary (number of messages, ...). This summary is "
 "directly in html format in order to be inserted in kanban views."
-msgstr "保存复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
+msgstr ""
+"保存复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,id:0
-#: field:crm.helpdesk.report,id:0
+#: field:crm.helpdesk,id:0 field:crm.helpdesk.report,id:0
 msgid "ID"
 msgstr "ID"
 
@@ -345,16 +350,15 @@ msgstr "最近动作"
 #. module: crm_helpdesk
 #: field:crm.helpdesk,message_last_post:0
 msgid "Last Message Date"
-msgstr ""
+msgstr "最后信息日期"
 
 #. module: crm_helpdesk
 #: field:crm.helpdesk,write_uid:0
 msgid "Last Updated by"
-msgstr ""
+msgstr "最后更新被"
 
 #. module: crm_helpdesk
-#: selection:crm.helpdesk,priority:0
-#: selection:crm.helpdesk.report,priority:0
+#: selection:crm.helpdesk,priority:0 selection:crm.helpdesk.report,priority:0
 msgid "Low"
 msgstr "低"
 
@@ -380,6 +384,11 @@ msgstr "杂项"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
+msgid "Month"
+msgstr "月"
+
+#. module: crm_helpdesk
+#: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
 msgid "Month of helpdesk requests"
 msgstr "服务请求月份"
 
@@ -397,11 +406,6 @@ msgstr "我的公司"
 #: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
 msgid "My Sales Team(s)"
 msgstr "我的销售团队"
-
-#. module: crm_helpdesk
-#: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
-msgid "My company"
-msgstr "我的公司"
 
 #. module: crm_helpdesk
 #: field:crm.helpdesk,name:0
@@ -423,7 +427,7 @@ msgstr "新建服务请求"
 #. module: crm_helpdesk
 #: field:crm.helpdesk,date_action_next:0
 msgid "Next Action"
-msgstr "下一动作"
+msgstr "下一行动"
 
 #. module: crm_helpdesk
 #: code:addons/crm_helpdesk/crm_helpdesk.py:134
@@ -432,8 +436,7 @@ msgid "No Subject"
 msgstr "无主题"
 
 #. module: crm_helpdesk
-#: selection:crm.helpdesk,priority:0
-#: selection:crm.helpdesk.report,priority:0
+#: selection:crm.helpdesk,priority:0 selection:crm.helpdesk.report,priority:0
 msgid "Normal"
 msgstr "普通"
 
@@ -470,14 +473,12 @@ msgstr "业务伙伴"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.view_crm_case_helpdesk_filter
-#: selection:crm.helpdesk,state:0
-#: selection:crm.helpdesk.report,state:0
+#: selection:crm.helpdesk,state:0 selection:crm.helpdesk.report,state:0
 msgid "Pending"
 msgstr "待处理"
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,planned_cost:0
-#: field:crm.helpdesk.report,planned_cost:0
+#: field:crm.helpdesk,planned_cost:0 field:crm.helpdesk.report,planned_cost:0
 msgid "Planned Costs"
 msgstr "计划成本"
 
@@ -504,7 +505,7 @@ msgstr "概率(%)"
 #: view:crm.helpdesk:crm_helpdesk.crm_case_tree_view_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.view_crm_case_helpdesk_filter
 msgid "Query"
-msgstr "查询"
+msgstr "问题"
 
 #. module: crm_helpdesk
 #: field:crm.helpdesk,ref:0
@@ -524,12 +525,12 @@ msgstr "关联"
 #. module: crm_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.view_crm_case_helpdesk_filter
 msgid "Request Date by Month"
-msgstr ""
+msgstr "按月的请求日期"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.view_crm_case_helpdesk_filter
 msgid "Request Month"
-msgstr ""
+msgstr "请求的月份"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.view_crm_case_helpdesk_filter
@@ -547,7 +548,7 @@ msgstr "负责用户"
 msgid ""
 "Responsible sales team. Define Responsible user and Email account for mail "
 "gateway."
-msgstr "负责的销售团队。定义一个负责的用户和Email 账户"
+msgstr "负责销售团队。为邮件网关指定负责用户和电子邮件账户。"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.view_crm_case_helpdesk_filter
@@ -592,20 +593,18 @@ msgstr "概要"
 #. module: crm_helpdesk
 #: help:crm.helpdesk,state:0
 msgid ""
-"The status is set to 'Draft', when a case is created.                        "
-"          \n"
-"If the case is in progress the status is set to 'Open'.                      "
-"            \n"
-"When the case is over, the status is set to 'Done'.                          "
-"        \n"
+"The status is set to 'Draft', when a case is "
+"created.                                  \n"
+"If the case is in progress the status is set to "
+"'Open'.                                  \n"
+"When the case is over, the status is set to "
+"'Done'.                                  \n"
 "If the case needs to be reviewed then the status is set to 'Pending'."
 msgstr ""
-"当一个“case(事件)\"被新创建后，这个“case(事件)\"的状态为“草稿”状态。                                 "
-" \n"
-"若这个“case(事件)\"正在处理中，这个“case(事件)\"的状态为“开启”状态。\n"
-"若这个“case(事件)\"已处理完结，这个“case(事件)\"的状态为“结单”状态。                                 "
-" \n"
-"若这个“case(事件)\"需暂停再议，这个“case(事件)\"的状态为“挂起”状态。"
+"业务创建后，其初始状态为“草稿”。                                  \n"
+"业务进行中，其状态为“开启”。                                  \n"
+"业务结束后，其状态为“完成 ”。                                 \n"
+"如果需要回顾业务情况，可将其状态设置为“待处理”"
 
 #. module: crm_helpdesk
 #: help:crm.helpdesk,email_cc:0
@@ -613,7 +612,9 @@ msgid ""
 "These email addresses will be added to the CC field of all inbound and "
 "outbound emails for this record before being sent. Separate multiple email "
 "addresses with a comma"
-msgstr "这些邮件地址将添加到之前发送记录的发送和接收邮件的抄送字段，分隔多个邮件地址有逗号。"
+msgstr ""
+"这些邮件地址将添加到之前发送记录的发送和接收邮件的抄送字段，分隔多个邮件地址"
+"有逗号。"
 
 #. module: crm_helpdesk
 #: field:crm.helpdesk,message_unread:0
@@ -638,12 +639,12 @@ msgstr "关注者的电子邮件"
 #. module: crm_helpdesk
 #: field:crm.helpdesk,website_message_ids:0
 msgid "Website Messages"
-msgstr ""
+msgstr "网站信息"
 
 #. module: crm_helpdesk
 #: help:crm.helpdesk,website_message_ids:0
 msgid "Website communication history"
-msgstr ""
+msgstr "网站沟通历史"
 
 #. module: crm_helpdesk
 #: code:addons/crm_helpdesk/crm_helpdesk.py:117
@@ -651,4 +652,76 @@ msgstr ""
 msgid ""
 "You can not escalate, you are already at the top level regarding your sales-"
 "team category."
-msgstr ""
+msgstr "你不能在向上，在你的销售团队分类中你已经到达了顶级。"
+
+#~ msgid "My company"
+#~ msgstr "我的公司"
+
+#~ msgid "April"
+#~ msgstr "4月"
+
+#~ msgid "August"
+#~ msgstr "8月"
+
+#~ msgid "Date of helpdesk requests"
+#~ msgstr "服务请求日期"
+
+#~ msgid "Day"
+#~ msgstr "日"
+
+#~ msgid "December"
+#~ msgstr "12月"
+
+#~ msgid "February"
+#~ msgstr "2月"
+
+#~ msgid "January"
+#~ msgstr "1月"
+
+#~ msgid "July"
+#~ msgstr "7月"
+
+#~ msgid "June"
+#~ msgstr "6月"
+
+#~ msgid "March"
+#~ msgstr "3月"
+
+#~ msgid "May"
+#~ msgstr "5月"
+
+#~ msgid "November"
+#~ msgstr "11月"
+
+#~ msgid "October"
+#~ msgstr "10月"
+
+#~ msgid "September"
+#~ msgstr "9月"
+
+#~ msgid "Year"
+#~ msgstr "年"
+
+#~ msgid "Year of helpdesk requests"
+#~ msgstr "服务请求的年份"
+
+#~ msgid "# Mails"
+#~ msgstr "邮件"
+
+#~ msgid "Reset to Draft"
+#~ msgstr "重置为草稿"
+
+#~ msgid "Cancel Case"
+#~ msgstr "取消业务"
+
+#~ msgid "#Helpdesk"
+#~ msgstr "服务台"
+
+#~ msgid "Close Case"
+#~ msgstr "关闭业务"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
+
+#~ msgid "Close"
+#~ msgstr "结束"
