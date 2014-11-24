@@ -1,21 +1,22 @@
 # Chinese (Simplified) translation for openobject-addons
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the openobject-addons package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-08-14 16:10+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-15 22:27+0000\n"
+"PO-Revision-Date: 2014-09-16 06:32+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-15 07:23+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2013-03-28 05:47+0000\n"
+"X-Generator: Poedit 1.6.9\n"
 
 #. module: lunch
 #: model:ir.actions.act_window,help:lunch.action_lunch_alert
@@ -39,17 +40,17 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                点击创建午餐提醒。 \n"
+"                单击来新建一个午餐提示。\n"
 "            </p>\n"
 "              <p>\n"
-"                提醒用于与午餐单相关的可能事项。\n"
-"                必须定义午餐提醒的频度，时间间隔以及要显示的信息。\n"
+"                提示被用来提醒员工有关午餐订单的可能会产生的问题。\n"
+"               一个午餐提示包括其循环频次、执行间隔和显示的信息。\n"
 "            </p>\n"
 "            <p>\n"
 "                例如： <br/>\n"
-"                - 频度：每天<br/>\n"
-"                - 时间间隔：从 00h00 am 到 11h59 pm<br/>\n"
-"                -信息：\"你必须在 10h30 am　前下单。\"\n"
+"                - 循环频次：每天<br/>\n"
+"                - 时间间隔: 从 00：00 上午 到 11：59 下午<br/>\n"
+"                - 信息： \"你必须在上午10：30以前订餐\"\n"
 "              </p>\n"
 "            "
 
@@ -65,10 +66,10 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                点击创建午餐分类。 \n"
-"            </p>\n"
+"单击创建一个午餐分类。\n"
+"           </p>\n"
 "              <p>\n"
-"                此处可以找到每个午餐的菜品分类。\n"
+"在这里你可以找到餐品的每一个分类。\n"
 "              </p>\n"
 "            "
 
@@ -88,12 +89,12 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                点击创建午餐单。 \n"
+"                单击来新建一个午餐订单。\n"
 "            </p>\n"
 "            <p>\n"
-"                午餐单由使用者定义日期和内容。\n"
-"                每个午餐单内容对应一个产品，一个附加信息和一个价格。\n"
-"                决定内容前，记得阅读浅红色区域显示的警告。\n"
+"                一个午餐订单包括订购者、日期和订单行。\n"
+"                每一个订单行包括产品、附加说明和价格。\n"
+"                在选择订单行之前，请阅读显示在红色区域的提示信息。\n"
 "            </p>\n"
 "            "
 
@@ -105,20 +106,20 @@ msgid ""
 "            </p>\n"
 "              <p>\n"
 "                A cashmove can either be an expense or a payment.<br/>\n"
-"                An expense is automatically created at the order "
-"receipt.<br/>\n"
+"                An expense is automatically created at the order receipt.<br/"
+">\n"
 "                A payment represents the employee reimbursement to the "
 "company.\n"
 "              </p>\n"
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                创建一个付款。\n"
+"                单击来新建一次付款 \n"
 "            </p>\n"
 "              <p>\n"
-"                每次现金转移都可以是费用或者付款。<br/>\n"
-"                开具午餐单收据时自动创建费用。<br/>\n"
-"                付款意味着员工向公司缴款。\n"
+"                一次现金移动可能是一次花费或一次付款。<br/>\n"
+"                当订单被接收时一次花费被自动创建。<br/>\n"
+"                一次付款代表员工给公司的偿付。\n"
 "              </p>\n"
 "            "
 
@@ -135,10 +136,10 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                创建一个付款。 \n"
+"               单击创建一次付款。\n"
 "            </p>\n"
 "              <p>\n"
-"                此处显示员工的付款。付款为从员工到公司的现金转移。\n"
+"               在这里你可以看到员工的付款。付款是从员工到公司的现金移动。\n"
 "              </p>\n"
 "            "
 
@@ -155,10 +156,10 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                单击以创建一个午餐产品。\n"
+"                单击来新建一个午餐产品。 \n"
 "            </p>\n"
 "              <p>\n"
-"                一个产品定义了它的 名称、类别、价格、和供应商。\n"
+"                一个产品的定义包括它的名称、分类、价格和供应商。\n"
 "              </p>\n"
 "            "
 
@@ -170,28 +171,25 @@ msgid ""
 "date.\n"
 "              </p>\n"
 "              <p>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/terp-call-start.png\"/> to announce "
-"that the order is ordered <br/>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/gtk-apply.png\"/> to announce that "
-"the order is received <br/>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/gtk-cancel.png\"/> red X to announce "
-"that the order isn't available\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"terp-call-start.png\"/> to announce that the order is ordered <br/>\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"gtk-apply.png\"/> to announce that the order is received <br/>\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"gtk-cancel.png\"/> red X to announce that the order isn't available\n"
 "              </p>\n"
 "            "
 msgstr ""
 "<p>\n"
-"                此处显示按照供应商或日期分组的每个午餐单。\n"
+"                这里你可以看到每一个按供应商和日期分组的订餐。\n"
 "              </p>\n"
 "              <p>\n"
-"                - 点击 <img src=\"../../../web/static/src/img/icons/terp-call-"
-"start.png\"/> 来通知午餐单已下 <br/>\n"
-"                - 点击 <img src=\"../../../web/static/src/img/icons/gtk-"
-"apply.png\"/> 来通知午餐单已收 <br/>\n"
-"                - 点击 <img src=\"../../../web/static/src/img/icons/gtk-"
-"cancel.png\"/> red X 来通知午餐单无效\n"
+"                - 单击 <img src=\"../../../web/static/src/img/icons/terp-"
+"call-start.png\"/> 来表明这个订餐已被订下 <br/>\n"
+"                - 单击 <img src=\"../../../web/static/src/img/icons/gtk-"
+"apply.png\"/> 来表明已收到订餐<br/>\n"
+"                - 单击 <img src=\"../../../web/static/src/img/icons/gtk-"
+"cancel.png\"/> 里的红色“ X”来表明这个订餐无效。\n"
 "              </p>\n"
 "            "
 
@@ -202,28 +200,25 @@ msgid ""
 "                Here you can see today's orders grouped by suppliers.\n"
 "              </p>\n"
 "              <p>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/terp-call-start.png\"/> to announce "
-"that the order is ordered <br/>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/gtk-apply.png\"/> to announce that "
-"the order is received <br/>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/gtk-cancel.png\"/> to announce that "
-"the order isn't available\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"terp-call-start.png\"/> to announce that the order is ordered <br/>\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"gtk-apply.png\"/> to announce that the order is received <br/>\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"gtk-cancel.png\"/> to announce that the order isn't available\n"
 "              </p>\n"
 "            "
 msgstr ""
 "<p>\n"
-"                此处显示今天按照供应商分组的午餐单。\n"
+"                这里你可以看到按供应商分组的订单。\n"
 "              </p>\n"
 "              <p>\n"
-"                - 点击 <img src=\"../../../web/static/src/img/icons/terp-call-"
-"start.png\"/> 来通知午餐单已下 <br/>\n"
-"                - 点击 <img src=\"../../../web/static/src/img/icons/gtk-"
-"apply.png\"/> 来通知午餐单已收 <br/>\n"
-"                - 点击 <img src=\"../../../web/static/src/img/icons/gtk-"
-"cancel.png\"/> 来通知午餐单无效\n"
+"                - 单击 <img src=\"../../../web/static/src/img/icons/terp-"
+"call-start.png\"/> 来表明订单已被订下 <br/>\n"
+"                - 单击 <img src=\"../../../web/static/src/img/icons/gtk-"
+"apply.png\"/> 来表明订单已收到 <br/>\n"
+"                - 单击 <img src=\"../../../web/static/src/img/icons/gtk-"
+"cancel.png\"/>来表明订单无效\n"
 "              </p>\n"
 "            "
 
@@ -240,15 +235,17 @@ msgid ""
 "            "
 msgstr ""
 "<p>\n"
-"                此处可以显示现金的转移。<br/>A 现金转移可以为费用或付款。\n"
-"                当收到一个午餐单时，会自动创建费用。而付款则为经理定义的向公司的缴款。\n"
+"                这里你可以看到你的现金的移动情况<br/>一次现金移动可以是一次花"
+"费或一次付款。\n"
+"                当收到一个订单时，一次花费被自动创建，一次付款被支付给经理确"
+"认的公司。\n"
 "              </p>\n"
 "            "
 
 #. module: lunch
 #: view:lunch.cancel:lunch.cancel_order_lines_view
 msgid "A cancelled meal should not be paid by employees."
-msgstr "已经取消的食品不会被员工支付。"
+msgstr "已经取消的食品不会再扣员工的钱款了。"
 
 #. module: lunch
 #: code:addons/lunch/lunch.py:267
@@ -264,14 +261,13 @@ msgstr "管理现金凭证"
 #. module: lunch
 #: model:ir.ui.menu,name:lunch.menu_lunch_admin
 msgid "Administrate Orders"
-msgstr "订单管理"
+msgstr "订餐管理"
 
 #. module: lunch
 #: model:ir.actions.act_window,name:lunch.action_lunch_alert
-#: model:ir.ui.menu,name:lunch.menu_lunch_alert
-#: field:lunch.order,alerts:0
+#: model:ir.ui.menu,name:lunch.menu_lunch_alert field:lunch.order,alerts:0
 msgid "Alerts"
-msgstr "警告"
+msgstr "提醒"
 
 #. module: lunch
 #: field:lunch.cashmove,amount:0
@@ -281,7 +277,7 @@ msgstr "金额"
 #. module: lunch
 #: field:lunch.alert,active_to:0
 msgid "And"
-msgstr "And"
+msgstr "和"
 
 #. module: lunch
 #: selection:report.lunch.order.line,month:0
@@ -291,7 +287,7 @@ msgstr "4月"
 #. module: lunch
 #: view:lunch.cancel:lunch.cancel_order_lines_view
 msgid "Are you sure you want to cancel these meals?"
-msgstr "你确信要取消这些食品？"
+msgstr "你确信不想要这些食物了吗？"
 
 #. module: lunch
 #: view:lunch.order.order:lunch.order_order_lines_view
@@ -316,12 +312,12 @@ msgstr "按员工"
 #. module: lunch
 #: view:lunch.order.line:lunch.lunch_order_line_search_view
 msgid "By Supplier"
-msgstr "按供餐单位"
+msgstr "按供应商"
 
 #. module: lunch
 #: view:lunch.cashmove:lunch.view_lunch_employee_payment_filter
 msgid "By User"
-msgstr "根据用户"
+msgstr "被用户"
 
 #. module: lunch
 #: view:lunch.cancel:lunch.cancel_order_lines_view
@@ -334,12 +330,12 @@ msgstr "取消"
 #. module: lunch
 #: view:lunch.cancel:lunch.cancel_order_lines_view
 msgid "Cancel Orders"
-msgstr "取消订单"
+msgstr "取消订餐"
 
 #. module: lunch
 #: view:lunch.cancel:lunch.cancel_order_lines_view
 msgid "Cancel a meal means that we didn't receive it from the supplier."
-msgstr "取消我们不能从供应商出接收的食物。"
+msgstr "此操作执行后将不能从供应商处收到食物。"
 
 #. module: lunch
 #: model:ir.actions.act_window,name:lunch.cancel_order_lines
@@ -359,8 +355,7 @@ msgid "Cash Move"
 msgstr "现金划拨"
 
 #. module: lunch
-#: field:lunch.product,category_id:0
-#: field:lunch.product.category,name:0
+#: field:lunch.product,category_id:0 field:lunch.product.category,name:0
 msgid "Category"
 msgstr "分类"
 
@@ -383,42 +378,34 @@ msgstr "已确认"
 #: model:ir.actions.act_window,name:lunch.action_lunch_control_accounts
 #: model:ir.ui.menu,name:lunch.menu_lunch_control_accounts
 msgid "Control Accounts"
-msgstr "控制账户"
+msgstr "帐户管理"
 
 #. module: lunch
 #: model:ir.actions.act_window,name:lunch.action_lunch_control_suppliers
 msgid "Control Suppliers"
-msgstr "控制供应商"
+msgstr "供应商管理"
 
 #. module: lunch
-#: field:lunch.alert,create_uid:0
-#: field:lunch.cancel,create_uid:0
-#: field:lunch.cashmove,create_uid:0
-#: field:lunch.order,create_uid:0
-#: field:lunch.order.line,create_uid:0
-#: field:lunch.order.order,create_uid:0
-#: field:lunch.product,create_uid:0
-#: field:lunch.product.category,create_uid:0
+#: field:lunch.alert,create_uid:0 field:lunch.cancel,create_uid:0
+#: field:lunch.cashmove,create_uid:0 field:lunch.order,create_uid:0
+#: field:lunch.order.line,create_uid:0 field:lunch.order.order,create_uid:0
+#: field:lunch.product,create_uid:0 field:lunch.product.category,create_uid:0
 #: field:lunch.validation,create_uid:0
 msgid "Created by"
-msgstr ""
+msgstr "创建人"
 
 #. module: lunch
-#: field:lunch.alert,create_date:0
-#: field:lunch.cancel,create_date:0
-#: field:lunch.cashmove,create_date:0
-#: field:lunch.order,create_date:0
-#: field:lunch.order.line,create_date:0
-#: field:lunch.order.order,create_date:0
+#: field:lunch.alert,create_date:0 field:lunch.cancel,create_date:0
+#: field:lunch.cashmove,create_date:0 field:lunch.order,create_date:0
+#: field:lunch.order.line,create_date:0 field:lunch.order.order,create_date:0
 #: field:lunch.product,create_date:0
 #: field:lunch.product.category,create_date:0
 #: field:lunch.validation,create_date:0
 msgid "Created on"
-msgstr ""
+msgstr "创建在"
 
 #. module: lunch
-#: field:lunch.cashmove,date:0
-#: field:lunch.order,date:0
+#: field:lunch.cashmove,date:0 field:lunch.order,date:0
 #: field:lunch.order.line,date:0
 msgid "Date"
 msgstr "日期"
@@ -426,11 +413,10 @@ msgstr "日期"
 #. module: lunch
 #: field:report.lunch.order.line,date:0
 msgid "Date Order"
-msgstr "订单日期"
+msgstr "订餐日期"
 
 #. module: lunch
-#: field:lunch.alert,specific_day:0
-#: field:report.lunch.order.line,day:0
+#: field:lunch.alert,specific_day:0 field:report.lunch.order.line,day:0
 msgid "Day"
 msgstr "日"
 
@@ -440,8 +426,7 @@ msgid "December"
 msgstr "12月"
 
 #. module: lunch
-#: field:lunch.cashmove,description:0
-#: field:lunch.product,description:0
+#: field:lunch.cashmove,description:0 field:lunch.product,description:0
 #: view:website:lunch.report_lunchorder
 msgid "Description"
 msgstr "说明"
@@ -486,29 +471,26 @@ msgstr "星期五"
 #: view:lunch.cashmove:lunch.view_lunch_cashmove_filter
 #: view:lunch.order.line:lunch.lunch_order_line_search_view
 msgid "Group By"
-msgstr ""
+msgstr "分组按"
 
 #. module: lunch
 #: model:ir.module.category,description:lunch.module_lunch_category
 msgid ""
 "Helps you handle your lunch needs, if you are a manager you will be able to "
 "create new products, cashmoves and to confirm or cancel orders."
-msgstr "帮你处理午餐需要的事务，如果是一个管理者，你能创建产品、现金凭证并确认或者取消餐单。"
+msgstr ""
+"帮你处理午餐需要的事务，如果是一个管理者，你能创建产品、现金凭证并确认或者取"
+"消餐单。"
 
 #. module: lunch
-#: field:lunch.alert,id:0
-#: field:lunch.cancel,id:0
-#: field:lunch.cashmove,id:0
-#: field:lunch.order,id:0
-#: field:lunch.order.line,id:0
-#: field:lunch.order.order,id:0
-#: field:lunch.product,id:0
-#: field:lunch.product.category,id:0
-#: field:lunch.validation,id:0
+#: field:lunch.alert,id:0 field:lunch.cancel,id:0 field:lunch.cashmove,id:0
+#: field:lunch.order,id:0 field:lunch.order.line,id:0
+#: field:lunch.order.order,id:0 field:lunch.product,id:0
+#: field:lunch.product.category,id:0 field:lunch.validation,id:0
 #: field:report.lunch.order.line,id:0
 #: field:report.lunch.report_lunchorder,id:0
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: lunch
 #: field:lunch.cashmove,state:0
@@ -531,30 +513,22 @@ msgid "June"
 msgstr "6月"
 
 #. module: lunch
-#: field:lunch.alert,write_uid:0
-#: field:lunch.cancel,write_uid:0
-#: field:lunch.cashmove,write_uid:0
-#: field:lunch.order,write_uid:0
-#: field:lunch.order.line,write_uid:0
-#: field:lunch.order.order,write_uid:0
-#: field:lunch.product,write_uid:0
-#: field:lunch.product.category,write_uid:0
+#: field:lunch.alert,write_uid:0 field:lunch.cancel,write_uid:0
+#: field:lunch.cashmove,write_uid:0 field:lunch.order,write_uid:0
+#: field:lunch.order.line,write_uid:0 field:lunch.order.order,write_uid:0
+#: field:lunch.product,write_uid:0 field:lunch.product.category,write_uid:0
 #: field:lunch.validation,write_uid:0
 msgid "Last Updated by"
-msgstr ""
+msgstr "最后更新被"
 
 #. module: lunch
-#: field:lunch.alert,write_date:0
-#: field:lunch.cancel,write_date:0
-#: field:lunch.cashmove,write_date:0
-#: field:lunch.order,write_date:0
-#: field:lunch.order.line,write_date:0
-#: field:lunch.order.order,write_date:0
-#: field:lunch.product,write_date:0
-#: field:lunch.product.category,write_date:0
+#: field:lunch.alert,write_date:0 field:lunch.cancel,write_date:0
+#: field:lunch.cashmove,write_date:0 field:lunch.order,write_date:0
+#: field:lunch.order.line,write_date:0 field:lunch.order.order,write_date:0
+#: field:lunch.product,write_date:0 field:lunch.product.category,write_date:0
 #: field:lunch.validation,write_date:0
 msgid "Last Updated on"
-msgstr ""
+msgstr "最后更新在"
 
 #. module: lunch
 #: view:lunch.order:lunch.orders_form_view
@@ -603,8 +577,7 @@ msgid "May"
 msgstr "5月"
 
 #. module: lunch
-#: view:lunch.alert:lunch.alert_form_view
-#: field:lunch.alert,message:0
+#: view:lunch.alert:lunch.alert_form_view field:lunch.alert,message:0
 msgid "Message"
 msgstr "消息"
 
@@ -621,12 +594,12 @@ msgstr "月"
 #. module: lunch
 #: view:lunch.cashmove:lunch.view_lunch_employee_payment_filter
 msgid "My Account grouped"
-msgstr "我的账户组"
+msgstr "我的分组账户"
 
 #. module: lunch
 #: view:lunch.order:lunch.view_search_my_order
 msgid "My Orders"
-msgstr "我的订餐单"
+msgstr "我的订餐"
 
 #. module: lunch
 #: view:website:lunch.report_lunchorder
@@ -634,8 +607,7 @@ msgid "Name/Date"
 msgstr "单号/日期"
 
 #. module: lunch
-#: selection:lunch.order,state:0
-#: selection:lunch.order.line,state:0
+#: selection:lunch.order,state:0 selection:lunch.order.line,state:0
 msgid "New"
 msgstr "新建"
 
@@ -643,7 +615,7 @@ msgstr "新建"
 #: model:ir.actions.act_window,name:lunch.action_lunch_order_form
 #: model:ir.ui.menu,name:lunch.menu_lunch_order_form
 msgid "New Order"
-msgstr "新的订单"
+msgstr "新的订餐"
 
 #. module: lunch
 #: view:lunch.order.line:lunch.lunch_order_line_search_view
@@ -651,8 +623,7 @@ msgid "Not Received"
 msgstr "未收到"
 
 #. module: lunch
-#: field:lunch.order.line,note:0
-#: field:report.lunch.order.line,note:0
+#: field:lunch.order.line,note:0 field:report.lunch.order.line,note:0
 msgid "Note"
 msgstr "说明"
 
@@ -669,26 +640,24 @@ msgstr "10月"
 #. module: lunch
 #: view:lunch.validation:lunch.validate_order_lines_view
 msgid "Once a meal is received a new cash move is created for the employee."
-msgstr "一旦食物被收取，这个员工的新的现金凭证被创建"
+msgstr "食品一旦签收，将为该员工创建对应的凭证。"
 
 #. module: lunch
-#: field:lunch.cashmove,order_id:0
-#: selection:lunch.cashmove,state:0
+#: field:lunch.cashmove,order_id:0 selection:lunch.cashmove,state:0
 #: view:lunch.order.line:lunch.orders_order_lines_tree_view
-#: field:lunch.order.line,order_id:0
-#: view:website:lunch.report_lunchorder
+#: field:lunch.order.line,order_id:0 view:website:lunch.report_lunchorder
 msgid "Order"
-msgstr "订单"
+msgstr "订餐"
 
 #. module: lunch
 #: view:lunch.order.order:lunch.order_order_lines_view
 msgid "Order Meals"
-msgstr "订购食品"
+msgstr "订餐"
 
 #. module: lunch
 #: view:lunch.order.line:lunch.lunch_order_line_search_view
 msgid "Order Month"
-msgstr ""
+msgstr "订单月份"
 
 #. module: lunch
 #: view:lunch.order.order:lunch.order_order_lines_view
@@ -696,8 +665,8 @@ msgid ""
 "Order a meal doesn't mean that we have to pay it.\n"
 "                        A meal should be paid when it is received."
 msgstr ""
-"订购食品并不意味着我们必须支付。\n"
-"        食品将在收到后支付。"
+"订购的食品无需事先支付钱款，\n"
+"        你可在收到货后支付。"
 
 #. module: lunch
 #: view:lunch.order.line:lunch.orders_order_lines_tree_view
@@ -722,7 +691,7 @@ msgstr "已订购"
 #. module: lunch
 #: view:lunch.order:lunch.orders_form_view
 msgid "Orders Form"
-msgstr "订单表单"
+msgstr "订餐表单"
 
 #. module: lunch
 #: view:lunch.order:lunch.orders_tree_view
@@ -733,7 +702,7 @@ msgstr "订单树"
 #: model:ir.actions.act_window,name:lunch.action_lunch_order_by_supplier_form
 #: model:ir.ui.menu,name:lunch.menu_lunch_control_suppliers
 msgid "Orders by Supplier"
-msgstr "订餐单（按供餐单位分）"
+msgstr "订餐"
 
 #. module: lunch
 #: selection:lunch.order,state:0
@@ -749,37 +718,35 @@ msgstr "付款"
 #. module: lunch
 #: model:ir.ui.menu,name:lunch.menu_lunch_order_tree
 msgid "Previous Orders"
-msgstr "之前的订单"
+msgstr "订餐记录"
 
 #. module: lunch
-#: field:lunch.order.line,price:0
-#: field:lunch.product,price:0
+#: field:lunch.order.line,price:0 field:lunch.product,price:0
 msgid "Price"
 msgstr "价格"
 
 #. module: lunch
-#: field:lunch.order.line,product_id:0
-#: field:lunch.product,name:0
+#: field:lunch.order.line,product_id:0 field:lunch.product,name:0
 msgid "Product"
-msgstr "品种"
+msgstr "产品"
 
 #. module: lunch
 #: model:ir.actions.act_window,name:lunch.action_lunch_product_categories
 #: model:ir.ui.menu,name:lunch.menu_lunch_product_categories
 msgid "Product Categories"
-msgstr "品种分类"
+msgstr "产品分类"
 
 #. module: lunch
 #: view:lunch.product.category:lunch.product_category_form_view
 msgid "Product Category:"
-msgstr ""
+msgstr "产品分类: "
 
 #. module: lunch
 #: model:ir.actions.act_window,name:lunch.action_lunch_products
 #: model:ir.ui.menu,name:lunch.menu_lunch_products
 #: field:lunch.order,order_line_ids:0
 msgid "Products"
-msgstr "品种列表"
+msgstr "产品列表"
 
 #. module: lunch
 #: view:lunch.product:lunch.products_form_view
@@ -843,7 +810,7 @@ msgstr "查找"
 #: code:addons/lunch/lunch.py:193
 #, python-format
 msgid "Select a product and put your order comments on the note."
-msgstr "选择一个产品并且把订单注释写在备注中"
+msgstr "选择一个餐品并把你对订餐的备注写在说明里。"
 
 #. module: lunch
 #: view:lunch.order:lunch.orders_form_view
@@ -861,8 +828,7 @@ msgid "Specific Day"
 msgstr "指定日"
 
 #. module: lunch
-#: field:lunch.order,state:0
-#: field:lunch.order.line,state:0
+#: field:lunch.order,state:0 field:lunch.order.line,state:0
 msgid "Status"
 msgstr "状态"
 
@@ -872,15 +838,14 @@ msgid "Sunday"
 msgstr "星期日"
 
 #. module: lunch
-#: field:lunch.order.line,supplier:0
-#: field:lunch.product,supplier:0
+#: field:lunch.order.line,supplier:0 field:lunch.product,supplier:0
 msgid "Supplier"
-msgstr "供餐单位"
+msgstr "供应商"
 
 #. module: lunch
 #: view:lunch.order.line:lunch.lunch_order_line_search_view
 msgid "Supplier Order by Month"
-msgstr ""
+msgstr "按月的供应商订单"
 
 #. module: lunch
 #: code:addons/lunch/lunch.py:190
@@ -896,18 +861,17 @@ msgstr "星期四"
 #. module: lunch
 #: view:lunch.order.line:lunch.lunch_order_line_search_view
 msgid "Today"
-msgstr "今日"
+msgstr "今天"
 
 #. module: lunch
 #: model:ir.ui.menu,name:lunch.menu_lunch_order_by_supplier_form
 msgid "Today's Orders by Supplier"
-msgstr "今天的餐单（按供餐单位分类）"
+msgstr "今天的餐单"
 
 #. module: lunch
 #: view:lunch.cashmove:lunch.casmove_tree
 #: view:lunch.cashmove:lunch.casmove_tree_view
-#: view:lunch.order:lunch.orders_tree_view
-#: field:lunch.order,total:0
+#: view:lunch.order:lunch.orders_tree_view field:lunch.order,total:0
 #: view:lunch.order.line:lunch.orders_order_lines_tree_view
 #: view:website:lunch.report_lunchorder
 msgid "Total"
@@ -935,8 +899,7 @@ msgid "User"
 msgstr "用户"
 
 #. module: lunch
-#: field:lunch.cashmove,user_id:0
-#: field:lunch.order,user_id:0
+#: field:lunch.cashmove,user_id:0 field:lunch.order,user_id:0
 #: field:report.lunch.order.line,user_id:0
 msgid "User Name"
 msgstr "用户名"
@@ -944,7 +907,7 @@ msgstr "用户名"
 #. module: lunch
 #: view:lunch.order:lunch.view_search_my_order
 msgid "Users"
-msgstr ""
+msgstr "用户"
 
 #. module: lunch
 #: field:lunch.alert,wednesday:0
@@ -959,7 +922,7 @@ msgstr "订购食品的向导"
 #. module: lunch
 #: view:lunch.alert:lunch.alert_form_view
 msgid "Write the message you want to display during the defined period..."
-msgstr "写入你要在定义期间时显示的信息。"
+msgstr "写下在给定的期间你要显示的信息。"
 
 #. module: lunch
 #: field:report.lunch.order.line,year:0
@@ -974,12 +937,12 @@ msgstr "您的帐号"
 #. module: lunch
 #: model:ir.ui.menu,name:lunch.menu_lunch_cashmove_form
 msgid "Your Lunch Account"
-msgstr "你的午餐账户"
+msgstr "你的午餐帐户"
 
 #. module: lunch
 #: model:ir.actions.act_window,name:lunch.action_lunch_order_tree
 msgid "Your Orders"
-msgstr "你的订单"
+msgstr "你的订餐"
 
 #. module: lunch
 #: code:addons/lunch/lunch.py:196
@@ -1006,24 +969,24 @@ msgstr "取消订单行"
 #. module: lunch
 #: view:lunch.cashmove:lunch.casmove_form_view
 msgid "cashmove form"
-msgstr "现金凭证表单"
+msgstr "现金移动表格"
 
 #. module: lunch
 #: view:lunch.cashmove:lunch.casmove_tree
 #: view:lunch.cashmove:lunch.casmove_tree_view
 msgid "cashmove tree"
-msgstr "现金凭证树"
+msgstr "现金移动树状图"
 
 #. module: lunch
 #: model:ir.model,name:lunch.model_lunch_cashmove
 #: view:lunch.cashmove:lunch.view_lunch_cashmove_filter
 msgid "lunch cashmove"
-msgstr "午餐现金凭证"
+msgstr "午餐现金移动"
 
 #. module: lunch
 #: view:lunch.cashmove:lunch.view_lunch_employee_payment_filter
 msgid "lunch employee payment"
-msgstr "午餐员工付款"
+msgstr "员工午餐付款"
 
 #. module: lunch
 #: model:ir.model,name:lunch.model_lunch_order_line
@@ -1059,3 +1022,18 @@ msgstr "未知"
 #: view:lunch.validation:lunch.validate_order_lines_view
 msgid "validate order lines"
 msgstr "核对餐单明细"
+
+#~ msgid "or"
+#~ msgstr "or"
+
+#~ msgid "report.lunch.report_lunchorder"
+#~ msgstr "report.lunch.report_lunchorder"
+
+#~ msgid "Total :"
+#~ msgstr "总计："
+
+#~ msgid "By Date"
+#~ msgstr "按日期"
+
+#~ msgid "My Account"
+#~ msgstr "我的账户"

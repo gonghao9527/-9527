@@ -1,21 +1,22 @@
 # Chinese (Simplified) translation for openobject-addons
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the openobject-addons package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-08-14 16:10+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-09-05 19:21+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-15 07:42+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:58+0000\n"
+"X-Generator: Poedit 1.6.9\n"
 
 #. module: project_timesheet
 #: model:ir.actions.act_window,help:project_timesheet.action_account_analytic_overdue
@@ -41,7 +42,8 @@ msgstr ""
 msgid ""
 "<p class=\"oe_view_nocontent_create\">Record your timesheets for the project "
 "'%s'.</p>"
-msgstr "<p class=\"oe_view_nocontent_create\">记录你为项目所做的计工单 '%s'.</p>"
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">记录你为项目所做的计工单 '%s'.</p>"
 
 #. module: project_timesheet
 #: model:ir.actions.act_window,help:project_timesheet.action_project_timesheet_bill_task
@@ -55,8 +57,9 @@ msgid ""
 "            "
 msgstr ""
 "<p>\n"
-"                你可以在这里找到为了合同而产生的计工单和采购，并可以由此重开发票给客人。\n"
-"                如果你要记录新的任务到发票，你必须使用计工单菜单替代。\n"
+"                你可以在这里找到与合同相关的计工单和采购，它们可以重新开发票"
+"给客户。\n"
+"        如果你要记录需要开票的新工作，你应该使用计工单菜单。\n"
 "              </p>\n"
 "            "
 
@@ -101,7 +104,7 @@ msgstr "八月"
 #: code:addons/project_timesheet/project_timesheet.py:97
 #, python-format
 msgid "Bad Configuration!"
-msgstr ""
+msgstr "配置错误!"
 
 #. module: project_timesheet
 #: view:project.project:project_timesheet.project_invoice_search
@@ -111,7 +114,7 @@ msgstr "应记账"
 #. module: project_timesheet
 #: model:ir.ui.menu,name:project_timesheet.menu_invoicing_contracts
 msgid "Contracts to Renew"
-msgstr "要续签的合同"
+msgstr "续签合同"
 
 #. module: project_timesheet
 #: model:ir.actions.act_window,name:project_timesheet.action_account_analytic_overdue
@@ -137,7 +140,7 @@ msgstr "二月"
 #. module: project_timesheet
 #: view:report.timesheet.task.user:project_timesheet.view_report_timesheet_task_user_search
 msgid "Group By"
-msgstr ""
+msgstr "分组按"
 
 #. module: project_timesheet
 #: view:report.timesheet.task.user:project_timesheet.view_report_timesheet_task_user_search
@@ -157,7 +160,7 @@ msgstr "小时"
 #. module: project_timesheet
 #: field:report.timesheet.task.user,id:0
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: project_timesheet
 #: code:addons/project_timesheet/project_timesheet.py:264
@@ -169,18 +172,18 @@ msgstr "非法的动作"
 #: code:addons/project_timesheet/project_timesheet.py:291
 #, python-format
 msgid "Invalid Analytic Account!"
-msgstr ""
+msgstr "无效的辅助核算项1"
 
 #. module: project_timesheet
 #: model:ir.actions.act_window,name:project_timesheet.action_project_timesheet_bill_task
 #: model:ir.ui.menu,name:project_timesheet.menu_project_billing_line
 msgid "Invoice Tasks"
-msgstr "开票任务"
+msgstr "按任务开票"
 
 #. module: project_timesheet
 #: model:ir.ui.menu,name:project_timesheet.menu_project_billing
 msgid "Invoicing"
-msgstr "开发票"
+msgstr "开票"
 
 #. module: project_timesheet
 #: selection:report.timesheet.task.user,month:0
@@ -211,7 +214,7 @@ msgstr "五月"
 #: view:report.timesheet.task.user:project_timesheet.view_report_timesheet_task_user_search
 #: field:report.timesheet.task.user,month:0
 msgid "Month"
-msgstr "月份"
+msgstr "月"
 
 #. module: project_timesheet
 #: selection:report.timesheet.task.user,month:0
@@ -240,7 +243,7 @@ msgstr "请为用户 \"%s\"定义员工。你必须创建一个。"
 msgid ""
 "Please define journal on the related employee.\n"
 "Fill in the timesheet tab of the employee form."
-msgstr "请在相关的员工上定义账簿。填在员工表单的计工单标签。"
+msgstr "请在相关的员工上定义分录。填在员工表单的计工单标签。"
 
 #. module: project_timesheet
 #: code:addons/project_timesheet/project_timesheet.py:87
@@ -287,7 +290,7 @@ msgstr "九月"
 #. module: project_timesheet
 #: model:ir.ui.menu,name:project_timesheet.menu_hr_timesheet_sign_in
 msgid "Sign in / Sign out by Project"
-msgstr ""
+msgstr "项目用时记录"
 
 #. module: project_timesheet
 #: model:ir.model,name:project_timesheet.model_project_task
@@ -341,7 +344,7 @@ msgstr "年"
 msgid ""
 "You cannot delete a partner which is assigned to project, but you can "
 "uncheck the active box."
-msgstr "你不能删除被指派给项目的合作伙伴，但你能不选中“可用”。"
+msgstr "你不能删除被指派给项目的业务伙伴，但你能不选中“可用”。"
 
 #. module: project_timesheet
 #: code:addons/project_timesheet/project_timesheet.py:291
@@ -349,3 +352,48 @@ msgstr "你不能删除被指派给项目的合作伙伴，但你能不选中“
 msgid ""
 "You cannot select a Analytic Account which is in Close or Cancelled state."
 msgstr "你不能选择关闭或者取消状态的辅助核算项"
+
+#~ msgid "Task invoice"
+#~ msgstr "任务结算"
+
+#~ msgid "Task Work"
+#~ msgstr "任务进展"
+
+#~ msgid "Billable Project"
+#~ msgstr "应记账的项目"
+
+#~ msgid "Complete Your Timesheet."
+#~ msgstr "完成任务"
+
+#~ msgid "Timesheet task"
+#~ msgstr "计工单和任务"
+
+#~ msgid "Task encoding"
+#~ msgstr "输入任务"
+
+#~ msgid "Task summary is comes into the timesheet line"
+#~ msgstr "任务工时合计已进入计工单"
+
+#~ msgid "Trigger Invoice"
+#~ msgstr "触发发票"
+
+#~ msgid "report.timesheet.task.user"
+#~ msgstr "report.timesheet.task.user"
+
+#~ msgid "Encode how much time u spent on your task"
+#~ msgstr "输入你在此任务上花费的工时"
+
+#~ msgid "Timesheet/Task hours Report Per Month"
+#~ msgstr "按月输出计工单和任务工时"
+
+#~ msgid "Trigger invoices from sales order lines"
+#~ msgstr "从销售订单行触发开票"
+
+#~ msgid "Work on task"
+#~ msgstr "任务进展"
+
+#~ msgid "After task is completed, Create its invoice."
+#~ msgstr "当任务完成时创建相关发票"
+
+#~ msgid "Fill Timesheet"
+#~ msgstr "输入计工单"

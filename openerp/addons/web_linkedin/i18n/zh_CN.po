@@ -1,28 +1,29 @@
 # Chinese (Simplified) translation for openobject-addons
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the openobject-addons package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-08-14 16:10+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-11 10:49+0000\n"
+"PO-Revision-Date: 2014-09-11 18:49+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-15 07:58+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2013-03-08 06:05+0000\n"
+"X-Generator: Poedit 1.6.9\n"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/xml/linkedin.xml:40
+#: code:addons\web_linkedin\static\src\xml\linkedin.xml:40
 #, python-format
 msgid "\" is not your account,"
-msgstr ""
+msgstr "\" 不是你的账户。"
 
 #. module: web_linkedin
 #: field:sale.config.settings,api_key:0
@@ -41,7 +42,7 @@ msgstr "增加一个新的应用，并填在这个表单："
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/xml/linkedin.xml:16
+#: code:addons\web_linkedin\static\src\xml\linkedin.xml:16
 #, python-format
 msgid "Companies"
 msgstr "公司"
@@ -58,63 +59,62 @@ msgstr "浏览这个URL:"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/xml/linkedin.xml:40
+#: code:addons\web_linkedin\static\src\xml\linkedin.xml:40
 #, python-format
 msgid "If \""
-msgstr ""
+msgstr "如果 \""
 
 #. module: web_linkedin
 #: field:res.partner,linkedin_id:0
 msgid "LinkedIn ID"
-msgstr ""
+msgstr "LinkedIn ID"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/xml/linkedin.xml:34
+#: code:addons\web_linkedin\static\src\xml\linkedin.xml:34
 #, python-format
 msgid "LinkedIn access was not enabled on this server."
-msgstr "LinkedIn 访问未在这个服务器 启用"
+msgstr "LinkedIn的读取在这个服务器不可用。"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/js/linkedin.js:435
+#: code:addons\web_linkedin\static\src\js\linkedin.js:435
 #, python-format
 msgid "LinkedIn error"
-msgstr ""
+msgstr "LinkedIn错误"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/js/linkedin.js:60
+#: code:addons\web_linkedin\static\src\js\linkedin.js:60
 #, python-format
 msgid "LinkedIn is not enabled"
 msgstr "LinkedIn 没启用。"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/js/linkedin.js:435
+#: code:addons\web_linkedin\static\src\js\linkedin.js:435
 #, python-format
 msgid "LinkedIn is temporary down for the searches by url."
-msgstr ""
+msgstr "为了搜索，通过网址LinkedIn被临时下载。"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/js/linkedin.js:360
+#: code:addons\web_linkedin\static\src\js\linkedin.js:360
 #, python-format
 msgid "LinkedIn search"
 msgstr "LinkedIn 搜索"
 
 #. module: web_linkedin
-#: field:res.partner,linkedin_public_url:0
-#: field:res.partner,linkedin_url:0
+#: field:res.partner,linkedin_public_url:0 field:res.partner,linkedin_url:0
 msgid "LinkedIn url"
-msgstr ""
+msgstr "LinkedIn网址"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/xml/linkedin.xml:36
+#: code:addons\web_linkedin\static\src\xml\linkedin.xml:36
 #, python-format
 msgid "LinkedIn:"
-msgstr "LinkedIn:"
+msgstr "LinkedIn："
 
 #. module: web_linkedin
 #: view:sale.config.settings:web_linkedin.view_linkedin_config_settings
@@ -123,14 +123,14 @@ msgstr "记录到 LinkedIn。"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/js/linkedin.js:499
+#: code:addons\web_linkedin\static\src\js\linkedin.js:499
 #, python-format
 msgid "No results found"
 msgstr "找不到任何结果"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/js/linkedin.js:62
+#: code:addons\web_linkedin\static\src\js\linkedin.js:62
 #, python-format
 msgid "Ok"
 msgstr "确定"
@@ -138,37 +138,37 @@ msgstr "确定"
 #. module: web_linkedin
 #: model:ir.model,name:web_linkedin.model_res_partner
 msgid "Partner"
-msgstr ""
+msgstr "业务伙伴"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/xml/linkedin.xml:14
+#: code:addons\web_linkedin\static\src\xml\linkedin.xml:14
 #, python-format
 msgid "People"
 msgstr "用户"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/xml/linkedin.xml:35
+#: code:addons\web_linkedin\static\src\xml\linkedin.xml:35
 #, python-format
 msgid ""
 "Please ask your administrator to configure it in Settings > Configuration > "
 "Sales > Social Network Integration."
-msgstr "请要求你的管理员进行一下配置：设置 > 设置 > 销售 > 集成社交网络"
+msgstr "请要求你的管理员配置它，通过菜单 设置->设置->销售-社交网络集成。"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/xml/linkedin.xml:45
+#: code:addons\web_linkedin\static\src\xml\linkedin.xml:45
 #, python-format
 msgid "Search"
-msgstr ""
+msgstr "搜索"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/xml/linkedin.xml:44
+#: code:addons\web_linkedin\static\src\xml\linkedin.xml:44
 #, python-format
 msgid "Search by url or keywords :"
-msgstr ""
+msgstr "通过网址或关键词搜索："
 
 #. module: web_linkedin
 #: view:sale.config.settings:web_linkedin.view_linkedin_config_settings
@@ -180,7 +180,7 @@ msgstr "这个编程工具是 JavaScript"
 msgid ""
 "This url is set automatically when you join the partner with a LinkedIn "
 "account."
-msgstr ""
+msgstr "当你使用一个 LinkedIn账号加入一个业务伙伴时这个网址被自动设置"
 
 #. module: web_linkedin
 #: view:sale.config.settings:web_linkedin.view_linkedin_config_settings
@@ -192,12 +192,12 @@ msgstr "要在这个数据库使用LinkedIn 模块，要求有一个API Key。�
 #. module: web_linkedin
 #: view:sale.config.settings:web_linkedin.view_linkedin_config_settings
 msgid "Website URL inside \"JavaScript API Domains\" field"
-msgstr ""
+msgstr "网址在 \"JavaScript API Domains\" 字段中"
 
 #. module: web_linkedin
 #: view:sale.config.settings:web_linkedin.view_linkedin_config_settings
 msgid "Website URL:"
-msgstr ""
+msgstr "网站网址："
 
 #. module: web_linkedin
 #: view:sale.config.settings:web_linkedin.view_linkedin_config_settings
@@ -211,12 +211,18 @@ msgstr "https://www.linkedin.com/secure/developer"
 
 #. module: web_linkedin
 #. openerp-web
-#: code:addons/web_linkedin/static/src/xml/linkedin.xml:40
+#: code:addons\web_linkedin\static\src\xml\linkedin.xml:40
 #, python-format
 msgid "please click here to logout"
-msgstr ""
+msgstr "请点击这里来注销"
 
 #. module: web_linkedin
 #: field:sale.config.settings,server_domain:0
 msgid "unknown"
 msgstr "未知"
+
+#~ msgid "sale.config.settings"
+#~ msgstr "sale.config.settings"
+
+#~ msgid "JavaScript API Domain:"
+#~ msgstr "JavaScript"

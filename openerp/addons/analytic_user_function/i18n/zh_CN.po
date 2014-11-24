@@ -1,21 +1,22 @@
 # Chinese (Simplified) translation for openobject-addons
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the openobject-addons package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-08-14 16:10+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-08-16 23:13+0800\n"
+"Last-Translator: \n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-15 06:54+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:34+0000\n"
+"X-Generator: Poedit 1.6.7\n"
 
 #. module: analytic_user_function
 #: field:analytic.user.funct.grid,account_id:0
@@ -31,12 +32,12 @@ msgstr "辅助核算明细"
 #. module: analytic_user_function
 #: field:analytic.user.funct.grid,create_uid:0
 msgid "Created by"
-msgstr ""
+msgstr "创建人"
 
 #. module: analytic_user_function
 #: field:analytic.user.funct.grid,create_date:0
 msgid "Created on"
-msgstr ""
+msgstr "创建在"
 
 #. module: analytic_user_function
 #: view:account.analytic.account:analytic_user_function.view_account_analytic_account_form_inherit
@@ -47,8 +48,9 @@ msgid ""
 "                            of the default values when invoicing the "
 "customer."
 msgstr ""
-"定义为特定用户指定的服务（例如：高级咨询师）\n"
-"                            以及价格，在为顾客开票时用来取代默认值。"
+" 定义一个特定的服务(例如高级顾问)\n"
+"开票给客户时，某些用户使用这些数据，\n"
+"不使用默认值。"
 
 #. module: analytic_user_function
 #: code:addons/analytic_user_function/analytic_user_function.py:108
@@ -60,7 +62,7 @@ msgstr "错误!"
 #. module: analytic_user_function
 #: field:analytic.user.funct.grid,id:0
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: analytic_user_function
 #: view:account.analytic.account:analytic_user_function.view_account_analytic_account_form_inherit
@@ -76,12 +78,12 @@ msgstr "发票数据"
 #. module: analytic_user_function
 #: field:analytic.user.funct.grid,write_uid:0
 msgid "Last Updated by"
-msgstr ""
+msgstr "最后更新被"
 
 #. module: analytic_user_function
 #: field:analytic.user.funct.grid,write_date:0
 msgid "Last Updated on"
-msgstr ""
+msgstr "最后更新在"
 
 #. module: analytic_user_function
 #: view:account.analytic.account:analytic_user_function.view_account_analytic_account_form_inherit
@@ -92,6 +94,8 @@ msgid ""
 "                            specific user. This allows to set invoicing\n"
 "                            conditions for a group of contracts."
 msgstr ""
+"Odoo会递归搜索父级科目，检查某个用户是否已经定义了特定条件.\n"
+"这可以给一组合同设置开票条件。"
 
 #. module: analytic_user_function
 #: field:analytic.user.funct.grid,price:0
@@ -118,7 +122,7 @@ msgstr "服务"
 #: code:addons/analytic_user_function/analytic_user_function.py:138
 #, python-format
 msgid "There is no expense account defined for this product: \"%s\" (id:%d)"
-msgstr ""
+msgstr "此产品 \"%s\" （id：%d）没有定义费用科目"
 
 #. module: analytic_user_function
 #: model:ir.model,name:analytic_user_function.model_hr_analytic_timesheet

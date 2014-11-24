@@ -1,21 +1,22 @@
 # Chinese (Simplified) translation for openobject-addons
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the openobject-addons package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-08-14 16:10+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-08-16 23:14+0800\n"
+"Last-Translator: \n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-15 06:54+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2013-03-08 05:35+0000\n"
+"X-Generator: Poedit 1.6.7\n"
 
 #. module: anonymization
 #: model:ir.actions.act_window,name:anonymization.action_ir_model_fields_anonymization_history_tree
@@ -58,7 +59,7 @@ msgstr "隐藏的字段"
 #: code:addons/anonymization/anonymization.py:448
 #, python-format
 msgid "Anonymized value is None. This cannot happens."
-msgstr "待匿名的值是none，这不可以"
+msgstr "匿名的值是None。这不会出现。"
 
 #. module: anonymization
 #: code:addons/anonymization/anonymization.py:300
@@ -66,7 +67,7 @@ msgstr "待匿名的值是none，这不可以"
 msgid ""
 "Before executing the anonymization process, you should make a backup of your "
 "database."
-msgstr "在进行匿名化处理前，你需要给你的数据库做一个备份"
+msgstr "执行匿名处理之前，您需要备份数据库。"
 
 #. module: anonymization
 #: code:addons/anonymization/anonymization.py:444
@@ -74,7 +75,7 @@ msgstr "在进行匿名化处理前，你需要给你的数据库做一个备份
 msgid ""
 "Cannot anonymize fields of these types: binary, many2many, many2one, "
 "one2many, reference."
-msgstr "不能匿名化这些字段类型： binary, many2many, many2one, one2many, reference."
+msgstr "这些类型的字段不能匿名:二进制, 多对多, 多对一, 一对多, 引用。"
 
 #. module: anonymization
 #: selection:ir.model.fields.anonymization,state:0
@@ -88,7 +89,7 @@ msgstr "无隐藏"
 #: field:ir.model.fields.anonymization.migration.fix,create_uid:0
 #: field:ir.model.fields.anonymize.wizard,create_uid:0
 msgid "Created by"
-msgstr ""
+msgstr "创建人"
 
 #. module: anonymization
 #: field:ir.model.fields.anonymization,create_date:0
@@ -96,7 +97,7 @@ msgstr ""
 #: field:ir.model.fields.anonymization.migration.fix,create_date:0
 #: field:ir.model.fields.anonymize.wizard,create_date:0
 msgid "Created on"
-msgstr ""
+msgstr "创建在"
 
 #. module: anonymization
 #: view:ir.model.fields.anonymize.wizard:anonymization.view_ir_model_fields_anonymize_wizard_form
@@ -173,7 +174,7 @@ msgstr "文件路径"
 #: field:ir.model.fields.anonymization.migration.fix,id:0
 #: field:ir.model.fields.anonymize.wizard,id:0
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: anonymization
 #: field:ir.model.fields.anonymize.wizard,file_import:0
@@ -186,7 +187,7 @@ msgstr "导入"
 msgid ""
 "It is not possible to reverse the anonymization process without supplying "
 "the anonymization export file."
-msgstr "在没有提供匿名化导出文件前，不可能反转匿名化的进程。"
+msgstr "没有提供匿名引出文件，就不能保留匿名处理。"
 
 #. module: anonymization
 #: field:ir.model.fields.anonymization,write_uid:0
@@ -194,7 +195,7 @@ msgstr "在没有提供匿名化导出文件前，不可能反转匿名化的进
 #: field:ir.model.fields.anonymization.migration.fix,write_uid:0
 #: field:ir.model.fields.anonymize.wizard,write_uid:0
 msgid "Last Updated by"
-msgstr ""
+msgstr "最后更新被"
 
 #. module: anonymization
 #: field:ir.model.fields.anonymization,write_date:0
@@ -202,7 +203,7 @@ msgstr ""
 #: field:ir.model.fields.anonymization.migration.fix,write_date:0
 #: field:ir.model.fields.anonymize.wizard,write_date:0
 msgid "Last Updated on"
-msgstr ""
+msgstr "最后更新在"
 
 #. module: anonymization
 #: view:ir.model.fields.anonymization.history:anonymization.view_ir_model_fields_anonymization_history_form
@@ -219,7 +220,7 @@ msgstr "模型"
 #. module: anonymization
 #: selection:ir.model.fields.anonymization,state:0
 msgid "New"
-msgstr "新建"
+msgstr "新的"
 
 #. module: anonymization
 #: selection:ir.model.fields.anonymization,state:0
@@ -266,7 +267,7 @@ msgstr "状态"
 #. module: anonymization
 #: field:ir.model.fields.anonymize.wizard,summary:0
 msgid "Summary"
-msgstr "概要"
+msgstr "摘要"
 
 #. module: anonymization
 #: field:ir.model.fields.anonymization.migration.fix,target_version:0
@@ -280,7 +281,9 @@ msgid ""
 "The database anonymization is currently in an unstable state. Some fields "
 "are anonymized, while some fields are not anonymized. You should try to "
 "solve this problem before trying to create, write or delete fields."
-msgstr "此数据库匿名化处于不稳定状态，有些字段已经匿名，有些没有。你在尝试进行创建、写入或者删除这些字段前，要解决这个问题。"
+msgstr ""
+"数据库匿名现在还不稳定。有些字段可以匿名，有些字段不能匿名。要生成、填写、删"
+"除字段时，您需要尝试解决这个问题。"
 
 #. module: anonymization
 #: code:addons/anonymization/anonymization.py:358
@@ -289,7 +292,9 @@ msgid ""
 "The database anonymization is currently in an unstable state. Some fields "
 "are anonymized, while some fields are not anonymized. You should try to "
 "solve this problem before trying to do anything else."
-msgstr "此数据库匿名化处于不稳定状态，有些字段已经匿名，有些没有。你在尝试进行其它任何操作前字段前，要解决这个问题。"
+msgstr ""
+"数据库匿名现在不稳定。一些字段可以匿名，另一些字段不能匿名。您需要做详细的测"
+"试。"
 
 #. module: anonymization
 #: code:addons/anonymization/anonymization.py:391
@@ -299,19 +304,21 @@ msgid ""
 "The database anonymization is currently in an unstable state. Some fields "
 "are anonymized, while some fields are not anonymized. You should try to "
 "solve this problem before trying to do anything."
-msgstr "数据库匿名化当时在不稳定的状态。 有些字段匿名了，有些没有。你在做任何操作前要解决这个问题。"
+msgstr ""
+"数据库匿名还不稳定。一些字段可以匿名，另一些字段不能匿名。您需要需要做详细的"
+"测试。"
 
 #. module: anonymization
 #: code:addons/anonymization/anonymization.py:389
 #, python-format
 msgid "The database is currently anonymized, you cannot anonymize it again."
-msgstr "此数据库已经匿名化，你不能再次使其匿名。"
+msgstr "数据库已经匿名了，您不能重新进行匿名处理。"
 
 #. module: anonymization
 #: help:ir.model.fields.anonymize.wizard,file_import:0
 msgid ""
-"This is the file created by the anonymization process. It should have the "
-"'.pickle' extention."
+"This is the file created by the anonymization process. It should have the '."
+"pickle' extention."
 msgstr "这个文件有匿名进程创建，他没有 '.pickle' 扩展名"
 
 #. module: anonymization
@@ -350,3 +357,15 @@ msgstr "sql"
 #: field:ir.model.fields.anonymization,state:0
 msgid "unknown"
 msgstr "状态"
+
+#~ msgid "ir.model.fields.anonymize.wizard"
+#~ msgstr "ir.model.fields.anonymize.wizard"
+
+#~ msgid "ir.model.fields.anonymization.migration.fix"
+#~ msgstr "ir.model.fields.anonymization.migration.fix"
+
+#~ msgid "ir.model.fields.anonymization"
+#~ msgstr "ir.model.fields.anonymization"
+
+#~ msgid "ir.model.fields.anonymization.history"
+#~ msgstr "ir.model.fields.anonymization.history"
