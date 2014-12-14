@@ -33,14 +33,11 @@ class account_move(osv.osv):
         'journal_id': lambda self, cr, uid, context:self.pool.get('account.journal').search(cr, uid, [('type', '=', 'general')], limit=1)[0],
     }
 
-
 class account_account(osv.osv):
     _inherit = 'account.account'
     """
     Replace metheod accoun.account.name_get(), show full name of account on many2one field
     Sample “100902 其他货币资金/银行本票”
-    """
-
 
     def name_get(self, cr, uid, ids, context={}):
         if not ids:
@@ -64,7 +61,7 @@ class account_account(osv.osv):
             name = record['code'] + ' '+name
             res.append((record['id'], name))
         return res
-
+    """
     def get_balance(self, cr, uid, ids, date_start=False, date_stop=False, product=False, partner=False ):
         '''
         Get the balance from date_start to date_stop,fielter by product or partner
