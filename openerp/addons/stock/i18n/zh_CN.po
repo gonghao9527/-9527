@@ -1054,7 +1054,7 @@ msgstr "内容"
 #. module: stock
 #: field:stock.location,posx:0
 msgid "Corridor (X)"
-msgstr "通道(X)"
+msgstr "架号(X)"
 
 #. module: stock
 #: field:stock.pack.operation,cost:0
@@ -1845,7 +1845,7 @@ msgstr "是否已经处理？"
 #. module: stock
 #: field:stock.location,posz:0
 msgid "Height (Z)"
-msgstr "高(Z)"
+msgstr "层号(Z)"
 
 #. module: stock
 #: help:stock.picking,message_summary:0
@@ -2657,7 +2657,7 @@ msgstr "手动操作"
 #. module: stock
 #: view:stock.picking:stock.view_picking_form
 msgid "Mark as Todo"
-msgstr "标记为待办事项"
+msgstr "确认"
 
 #. module: stock
 #: field:stock.picking,max_date:0
@@ -4467,7 +4467,7 @@ msgstr "货架 2"
 #. module: stock
 #: field:stock.location,posy:0
 msgid "Shelves (Y)"
-msgstr "货架(Y)"
+msgstr "列号(Y)"
 
 #. module: stock
 #: code:addons/stock/stock.py:3320
