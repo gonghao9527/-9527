@@ -3777,7 +3777,7 @@ msgstr "储存"
 #. module: stock
 #: field:stock.warehouse.orderpoint,qty_multiple:0
 msgid "Qty Multiple"
-msgstr "数量倍增"
+msgstr "数量倍数"
 
 #. module: stock
 #: sql_constraint:stock.warehouse.orderpoint:0
@@ -3839,7 +3839,7 @@ msgstr "可用数量"
 #. module: stock
 #: view:stock.warehouse.orderpoint:stock.view_warehouse_orderpoint_form
 msgid "Quantity Multiple"
-msgstr "数量"
+msgstr "数量倍数"
 
 #. module: stock
 #: field:product.product,qty_available:0
