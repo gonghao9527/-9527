@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-23 16:27+0000\n"
-"PO-Revision-Date: 2014-09-28 08:38+0800\n"
-"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"POT-Creation-Date: 2014-11-07 23:44+0000\n"
+"PO-Revision-Date: 2014-11-08 07:47+0800\n"
+"Last-Translator: \n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-03-08 05:57+0000\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #. module: project
 #: field:res.partner,task_count:0
@@ -26,13 +26,13 @@ msgstr "#任务"
 #. module: project
 #: field:report.project.task.user,no_of_days:0
 msgid "# of Days"
-msgstr "天数"
+msgstr "#天数"
 
 #. module: project
 #: field:project.task.history.cumulative,nbr_tasks:0
 #: field:report.project.task.user,nbr:0
 msgid "# of Tasks"
-msgstr "#属于任务"
+msgstr "#任务"
 
 #. module: project
 #: code:addons/project/project.py:360 code:addons/project/project.py:380
@@ -77,7 +77,10 @@ msgid ""
 "                Click to add a new tag.\n"
 "              </p>\n"
 "            "
-msgstr "               单击以添加新分类。"
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"               单击以添加新分类。\n"
+"              </p>"
 
 #. module: project
 #: model:ir.actions.act_window,help:project.open_task_type_form
@@ -131,11 +134,8 @@ msgid ""
 "stage"
 msgstr ""
 "任务的看板状态表明影响它的特殊状态：\n"
-"\n"
 " * 正常：是默认状态\n"
-"\n"
 " * 阻塞：表明有某些事件影响了该任务的进展\n"
-"\n"
 " * 满足下一阶段：表明任务已经符合转到下一状态的条件"
 
 #. module: project
@@ -434,9 +434,14 @@ msgid "Cumulative Flow"
 msgstr "渐进过程"
 
 #. module: project
-#: field:project.task,partner_id:0
+#: view:project.project:project.edit_project field:project.task,partner_id:0
 msgid "Customer"
 msgstr "客户"
+
+#. module: project
+#: model:account.analytic.account,name:project.project_project_5_account_analytic_account
+msgid "Data Import/Export Plugin"
+msgstr "数据导入/导出插件"
 
 #. module: project
 #: field:project.task.history,date:0
@@ -555,6 +560,11 @@ msgstr "完成"
 #: field:project.task.work,user_id:0
 msgid "Done by"
 msgstr "完成者"
+
+#. module: project
+#: model:account.analytic.account,name:project.project_project_3_account_analytic_account
+msgid "E-Learning Integration"
+msgstr "电子学习整合"
 
 #. module: project
 #: view:project.task:project.view_task_kanban
@@ -819,6 +829,12 @@ msgid ""
 msgstr ""
 "与此项目相关的内部电子邮件。传入的电子邮件会自动的同步任务（或选择性的问题，"
 "如果问题跟踪模块安装）。"
+
+#. module: project
+#: code:addons/project/project.py:201
+#, python-format
+msgid "Internal project: all employees can access"
+msgstr "内部项目：所有员工可以存取"
 
 #. module: project
 #: code:addons/project/project.py:171
@@ -1139,6 +1155,12 @@ msgid "Privacy / Visibility"
 msgstr "可见性"
 
 #. module: project
+#: code:addons/project/project.py:202
+#, python-format
+msgid "Private project: followers Only"
+msgstr "隐私项目：只关注者可以存取"
+
+#. module: project
 #: field:project.project,progress_rate:0
 #: field:report.project.task.user,progress:0
 msgid "Progress"
@@ -1234,6 +1256,7 @@ msgid "Project's tasks"
 msgstr "项目任务"
 
 #. module: project
+#: model:account.analytic.account,name:project.all_projects_account
 #: code:addons/project/project.py:401
 #: model:ir.actions.act_window,name:project.open_view_project_all
 #: model:ir.ui.menu,name:project.menu_projects
@@ -1261,6 +1284,12 @@ msgid ""
 msgstr ""
 "提供对问题/错误管理的项目时间表的支持 \n"
 "-这将安装项目问题表模块。"
+
+#. module: project
+#: code:addons/project/project.py:200
+#, python-format
+msgid "Public project"
+msgstr "公共项目"
 
 #. module: project
 #: view:project.project:project.edit_project
@@ -1308,6 +1337,11 @@ msgstr "剩余时数"
 #: field:project.task.history.cumulative,remaining_hours:0
 msgid "Remaining Time"
 msgstr "剩余时间"
+
+#. module: project
+#: model:account.analytic.account,name:project.project_project_2_account_analytic_account
+msgid "Research & Development"
+msgstr "研究与开发"
 
 #. module: project
 #: view:project.project:project.edit_project
@@ -1387,6 +1421,11 @@ msgstr "阶段"
 #: view:project.task.type:project.task_type_search
 msgid "Stages common to all projects"
 msgstr "适用于所有项目的公共阶段"
+
+#. module: project
+#: view:project.project:project.edit_project
+msgid "Start Date"
+msgstr "开始日期"
 
 #. module: project
 #: field:project.task,date_start:0
@@ -1610,6 +1649,11 @@ msgid "Testing"
 msgstr "测试"
 
 #. module: project
+#: model:account.analytic.account,name:project.project_project_1_account_analytic_account
+msgid "The Jackson Group's Project"
+msgstr "杰克逊集团的项目"
+
+#. module: project
 #: help:project.project,alias_model:0
 msgid ""
 "The kind of document created when an email is received on this project's "
@@ -1760,6 +1804,11 @@ msgid "Usability"
 msgstr "可用性"
 
 #. module: project
+#: view:project.project:project.edit_project
+msgid "Use Tasks"
+msgstr "使用任务"
+
+#. module: project
 #: field:project.config.settings,module_pad:0
 msgid "Use integrated collaborative note pads on task"
 msgstr "使用集成的协作记事簿任务"
@@ -1801,6 +1850,11 @@ msgstr "验证任务标题"
 #, python-format
 msgid "Warning!"
 msgstr "警告!"
+
+#. module: project
+#: model:account.analytic.account,name:project.project_project_4_account_analytic_account
+msgid "Website Design Templates"
+msgstr "网页设计模板"
 
 #. module: project
 #: field:project.task,work_ids:0
@@ -1896,23 +1950,8 @@ msgstr "未知"
 #~ msgid "Assignation date (year)"
 #~ msgstr "分配日期（年）"
 
-#~ msgid "Data Import/Export Plugin"
-#~ msgstr "数据导入/导出插件"
-
 #~ msgid "Draft"
 #~ msgstr "草稿"
-
-#~ msgid "E-Learning Integration"
-#~ msgstr "电子学习整合"
-
-#~ msgid "Research & Development"
-#~ msgstr "研究与开发"
-
-#~ msgid "The Jackson Group's Project"
-#~ msgstr "杰克逊集团的项目"
-
-#~ msgid "Website Design Templates"
-#~ msgstr "网页设计模板"
 
 #~ msgid "or"
 #~ msgstr "或"
@@ -2134,9 +2173,6 @@ msgstr "未知"
 
 #~ msgid "_Evaluate"
 #~ msgstr "_估算"
-
-#~ msgid "New Tasks"
-#~ msgstr "新任务"
 
 #~ msgid "New tasks"
 #~ msgstr "新任务"

@@ -612,7 +612,7 @@ msgstr ""
 #. module: gamification
 #: field:gamification.badge.user,create_date:0
 msgid "Created"
-msgstr "创建"
+msgstr "新建"
 
 #. module: gamification
 #: field:gamification.badge,create_uid:0

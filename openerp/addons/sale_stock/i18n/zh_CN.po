@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-23 16:28+0000\n"
-"PO-Revision-Date: 2014-09-28 08:27+0800\n"
+"PO-Revision-Date: 2014-10-25 20:05+0800\n"
 "Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "Language: zh_CN\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-03-08 06:02+0000\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #. module: sale_stock
 #: code:addons/sale_stock/sale_stock.py:266
@@ -246,7 +246,7 @@ msgstr "产品模板"
 #. module: sale_stock
 #: field:sale.config.settings,group_mrp_properties:0
 msgid "Product properties on order lines"
-msgstr "订单行上的BOM属性"
+msgstr "订单行上的产品属性"
 
 #. module: sale_stock
 #: field:sale.config.settings,module_project_timesheet:0

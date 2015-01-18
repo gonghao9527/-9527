@@ -6,23 +6,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0dev-20131212-000101\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-23 16:27+0000\n"
-"PO-Revision-Date: 2014-09-28 08:26+0800\n"
-"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"POT-Creation-Date: 2015-01-03 09:52+0000\n"
+"PO-Revision-Date: 2015-01-03 18:28+0800\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.7.1\n"
 
 #. module: sale
 #: model:email.template,body_html:sale.email_template_edi_sale
 msgid ""
 "\n"
-"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-"
-"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; "
+"font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
 "\n"
 "    <p>Hello ${object.partner_id.name},</p>\n"
 "    \n"
@@ -46,16 +46,6 @@ msgid ""
 "''}?subject=Order%20${object.name}\">${object.user_id.name}</a>\n"
 "       % endif\n"
 "    </p>\n"
-"    <p>\n"
-"        You can view your quotation online:\n"
-"    </p>\n"
-"    <a style=\"display:block; width: 150px; height:20px; margin-left: 120px; "
-"color: #DDD; font-family: 'Lucida Grande', Helvetica, Arial, sans-serif; "
-"font-size: 13px; font-weight: bold; text-align: center; text-decoration: "
-"none !important; line-height: 1; padding: 5px 0px 0px 0px; background-color: "
-"#8E0000; border-radius: 5px 5px; background-repeat: repeat no-repeat;\"\n"
-"        href=\"/quote/${object.id}/${object.access_token}\">View ${object."
-"state in ('draft', 'sent') and 'Quotation' or 'Order'}</a>\n"
 "\n"
 "    % if object.paypal_url:\n"
 "    <br/>\n"
@@ -115,59 +105,49 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-"
-"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; "
+"font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
 "\n"
 "    <p>你好 ${object.partner_id.name},</p>\n"
 "    \n"
-"    <p>这是您 ${object.state in ('draft', 'sent') 和 'quotation' or 'order "
-"confirmation'} 来自 ${object.company_id.name}: </p>\n"
+"    <p>这是你的 ${object.state in ('draft', 'sent') and 'quotation' or 'order "
+"confirmation'} 来自于 ${object.company_id.name}: </p>\n"
 "\n"
 "    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
-"         <strong>参考</strong><br>\n"
-"         订单号： <strong>${object.name}</strong><br>\n"
-"         订单总额：<strong>${object.amount_total} ${object.pricelist_id."
-"currency_id.name}</strong><br>\n"
-"         订购日期： ${object.date_order}<br>\n"
+"       &nbsp;&nbsp;<strong>偏好</strong><br />\n"
+"       &nbsp;&nbsp;订单号r: <strong>${object.name}</strong><br />\n"
+"       &nbsp;&nbsp;订单总额: <strong>${object.amount_total} ${object."
+"pricelist_id.currency_id.name}</strong><br />\n"
+"       &nbsp;&nbsp;订单日期: ${object.date_order}<br />\n"
 "       % if object.origin:\n"
-"         订购参考：${object.origin}<br>\n"
+"       &nbsp;&nbsp;订单偏向: ${object.origin}<br />\n"
 "       % endif\n"
 "       % if object.client_order_ref:\n"
-"         供您参考： ${object.client_order_ref}<br>\n"
+"       &nbsp;&nbsp;你的偏好: ${object.client_order_ref}<br />\n"
 "       % endif\n"
 "       % if object.user_id:\n"
-"         您的联系方式：<a href=\"mailto:${object.user_id.email or ''}?"
-"subject=Order ${object.name}\">${object.user_id.name}</a>\n"
+"       &nbsp;&nbsp;你的联系方式: <a href=\"mailto:${object.user_id.email or "
+"''}?subject=Order%20${object.name}\">${object.user_id.name}</a>\n"
 "       % endif\n"
 "    </p>\n"
-"    <p>\n"
-"        您可以在线查看您的报价：\n"
-"    </p>\n"
-"    <a style=\"display:block; width: 150px; height:20px; margin-left: 120px; "
-"color: #DDD; font-family: 'Lucida Grande', Helvetica, Arial, sans-serif; "
-"font-size: 13px; font-weight: bold; text-align: center; text-decoration: "
-"none !important; line-height: 1; padding: 5px 0px 0px 0px; background-color: "
-"#8E0000; border-radius: 5px 5px; background-repeat: repeat no-repeat;\"\n"
-"        href=\"/quote/${object.id}/${object.access_token}\">View ${object."
-"state in ('draft', 'sent') and 'Quotation' or 'Order'}</a>\n"
 "\n"
 "    % if object.paypal_url:\n"
 "    <br/>\n"
-"    <p>它也可以直接用Paypal支付：</p>\n"
+"    <p>也可能直接通过Paypal支付:</p>\n"
 "        <a style=\"margin-left: 120px;\" href=\"${object.paypal_url}\">\n"
 "            <img class=\"oe_edi_paypal_button\" src=\"https://www.paypal.com/"
-"zh_CN/i/btn/btn_paynowCC_LG.gif\">\n"
+"en_US/i/btn/btn_paynowCC_LG.gif\"/>\n"
 "        </a>\n"
 "    % endif\n"
 "\n"
 "    <br/>\n"
-"    <p>如果您有任何问题，请不要犹豫，立刻与我们联系。</p>\n"
-"    <p>感谢您选择 ${object.company_id.name or 'us'}!</p>\n"
+"    <p>如果你有任何问题的话，请直接联系我们！</p>\n"
+"    <p>感谢您选择${object.company_id.name or 'us'}!</p>\n"
 "    <br/>\n"
 "    <br/>\n"
-"    <br><div style=\"width: 375px; margin: 0px; padding: 0px; background-"
-"color: #8E0000; border-top-left-radius: 5px 5px; border-top-right-radius: "
-"5px 5px; background-repeat: repeat no-repeat;\">\n"
+"    <div style=\"width: 375px; margin: 0px; padding: 0px; background-color: "
+"#8E0000; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; "
+"background-repeat: repeat no-repeat;\">\n"
 "        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: "
 "#DDD;\">\n"
 "            <strong style=\"text-transform:uppercase;\">${object.company_id."
@@ -177,29 +157,29 @@ msgstr ""
 "16px; background-color: #F2F2F2;\">\n"
 "        <span style=\"color: #222; margin-bottom: 5px; display: block; \">\n"
 "        % if object.company_id.street:\n"
-"            ${object.company_id.street}<br>\n"
+"            ${object.company_id.street}<br/>\n"
 "        % endif\n"
 "        % if object.company_id.street2:\n"
-"            ${object.company_id.street2}<br>\n"
+"            ${object.company_id.street2}<br/>\n"
 "        % endif\n"
 "        % if object.company_id.city or object.company_id.zip:\n"
-"            ${object.company_id.zip} ${object.company_id.city}<br>\n"
+"            ${object.company_id.zip} ${object.company_id.city}<br/>\n"
 "        % endif\n"
 "        % if object.company_id.country_id:\n"
 "            ${object.company_id.state_id and ('%s, ' % object.company_id."
-"state_id.name) or ''} ${object.company_id.country_id.name or ''}<br>\n"
+"state_id.name) or ''} ${object.company_id.country_id.name or ''}<br/>\n"
 "        % endif\n"
 "        </span>\n"
 "        % if object.company_id.phone:\n"
 "            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: "
 "0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: "
 "0px; padding-left: 0px; \">\n"
-"                Phone:  ${object.company_id.phone}\n"
+"                电话:&nbsp; ${object.company_id.phone}\n"
 "            </div>\n"
 "        % endif\n"
 "        % if object.company_id.website:\n"
 "            <div>\n"
-"                网址 : <a href=\"${object.company_id.website}\">${object."
+"                网址 :&nbsp;<a href=\"${object.company_id.website}\">${object."
 "company_id.website}</a>\n"
 "            </div>\n"
 "        %endif\n"
@@ -231,11 +211,11 @@ msgstr " # 销售订单"
 #. module: sale
 #: model:email.template,report_name:sale.email_template_edi_sale
 msgid ""
-"${(object.name or '').replace('/','_')}_${object.state == 'draft' and "
-"'draft' or ''}"
+"${(object.name or '').replace('/','_')}_${object.state == 'draft' and 'draft' "
+"or ''}"
 msgstr ""
-"${(object.name or '').replace('/','_')}_${object.state == 'draft' and "
-"'draft' or ''}"
+"${(object.name or '').replace('/','_')}_${object.state == 'draft' and 'draft' "
+"or ''}"
 
 #. module: sale
 #: model:email.template,subject:sale.email_template_edi_sale
@@ -280,8 +260,7 @@ msgid ""
 "                </p><p>\n"
 "                    Odoo will help you efficiently handle the complete sales "
 "flow:\n"
-"                    quotation, sales order, delivery, invoicing and "
-"payment.\n"
+"                    quotation, sales order, delivery, invoicing and payment.\n"
 "                </p>\n"
 "            "
 msgstr ""
@@ -297,18 +276,15 @@ msgstr ""
 #: model:ir.actions.act_window,help:sale.act_res_partner_2_sale_order
 msgid ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                Click to create a quotation or sales order for this "
-"customer.\n"
+"                Click to create a quotation or sales order for this customer.\n"
 "              </p><p>\n"
-"                Odoo will help you efficiently handle the complete sale "
-"flow:\n"
+"                Odoo will help you efficiently handle the complete sale flow:\n"
 "                quotation, sales order, delivery, invoicing and\n"
 "                payment.\n"
 "              </p><p>\n"
 "                The social feature helps you organize discussions on each "
 "sales\n"
-"                order, and allow your customer to keep track of the "
-"evolution\n"
+"                order, and allow your customer to keep track of the evolution\n"
 "                of the sales order.\n"
 "              </p>\n"
 "            "
@@ -319,8 +295,8 @@ msgstr ""
 "                Odoo可以高效的为你完成销售流程:\n"
 "                包括询价单，销售订单，发货，开具发票和支付。\n"
 "              </p><p>\n"
-"                 社交功能可以帮助你组织关于每一个销售订单的讨论，还允许你的客"
-"户持续跟踪销售订单的变化。\n"
+"                 社交功能可以帮助你组织关于每一个销售订单的讨论，还允许你的客户"
+"持续跟踪销售订单的变化。\n"
 "              </p>\n"
 "            "
 
@@ -353,8 +329,7 @@ msgid ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                Click to create a quotation, the first step of a new sale.\n"
 "              </p><p>\n"
-"                Odoo will help you handle efficiently the complete sale "
-"flow:\n"
+"                Odoo will help you handle efficiently the complete sale flow:\n"
 "                from the quotation to the sales order, the\n"
 "                delivery, the invoicing and the payment collection.\n"
 "              </p><p>\n"
@@ -372,8 +347,8 @@ msgstr ""
 "                Odoo将会高效的帮你完成整个销售流程：\n"
 "                从报价单到销售订单，然后到发货，直至开具发票和支付。\n"
 "              </p><p>\n"
-"                社交功能可以帮助你组织关于每一个销售订单的讨论，还允许你的客"
-"户持续跟踪销售订单的变化。\n"
+"                社交功能可以帮助你组织关于每一个销售订单的讨论，还允许你的客户"
+"持续跟踪销售订单的变化。\n"
 "              </p>\n"
 "            "
 
@@ -385,15 +360,14 @@ msgid ""
 "can\n"
 "                invoice sales orders partially, by lines of sales order. You "
 "do\n"
-"                not need this list if you invoice from the delivery orders "
-"or\n"
+"                not need this list if you invoice from the delivery orders or\n"
 "                if you invoice sales totally.\n"
 "              </p>\n"
 "            "
 msgstr ""
 "<p>\n"
-"             这是一个等待开发票的销售订单行列表，你可以按行一个一个的开具发"
-"票。如果在发货或者销售时已经开具了发票，那么这个列表就不需要了。  </p>\n"
+"             这是一个等待开发票的销售订单行列表，你可以按行一个一个的开具发票。"
+"如果在发货或者销售时已经开具了发票，那么这个列表就不需要了。  </p>\n"
 "            "
 
 #. module: sale
@@ -407,20 +381,15 @@ msgid "Addresses in Sales Orders"
 msgstr "在销售订单中的地址"
 
 #. module: sale
-#: model:product.template,name:sale.advance_product_0_product_template
-msgid "Advance"
-msgstr "高级"
-
-#. module: sale
 #: field:sale.advance.payment.inv,amount:0
 msgid "Advance Amount"
 msgstr "预付款总额"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:203
+#: code:addons\sale\wizard\sale_make_invoice_advance.py:206
 #, python-format
 msgid "Advance Invoice"
-msgstr "提前发票"
+msgstr "预付款发票"
 
 #. module: sale
 #: field:sale.advance.payment.inv,product_id:0
@@ -428,14 +397,13 @@ msgid "Advance Product"
 msgstr "预付款产品"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:107
+#: code:addons\sale\wizard\sale_make_invoice_advance.py:62
 #, python-format
 msgid "Advance of %s %%"
 msgstr "预付款总额  %s %%"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:114
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:116
+#: code:addons\sale\wizard\sale_make_invoice_advance.py:62
 #, python-format
 msgid "Advance of %s %s"
 msgstr "预付款 %s %s"
@@ -443,8 +411,8 @@ msgstr "预付款 %s %s"
 #. module: sale
 #: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
 msgid ""
-"After clicking 'Show Lines to Invoice', select lines to invoice and create "
-"the invoice from the 'More' dropdown menu."
+"After clicking 'Show Lines to Invoice', select lines to invoice and create the "
+"invoice from the 'More' dropdown menu."
 msgstr "单击“显示要开票的行”"
 
 #. module: sale
@@ -455,8 +423,8 @@ msgid ""
 "                    or a fixed price (for advances) directly from the sales "
 "order form if you prefer."
 msgstr ""
-"订单行中的所有项都要开具发票。你也可以按销售订单的百分比来开具发票，或者按销"
-"售订单的固定价格（预付款的）来开具发票，如果你想的话。"
+"订单行中的所有项都要开具发票。你也可以按销售订单的百分比来开具发票，或者按销售"
+"订单的固定价格（预付款的）来开具发票，如果你想的话。"
 
 #. module: sale
 #: field:sale.order.line,address_allotment_id:0
@@ -491,13 +459,13 @@ msgstr "允许逐行设置折扣"
 #. module: sale
 #: help:sale.config.settings,module_warning:0
 msgid ""
-"Allow to configure notification on products and trigger them when a user "
-"wants to sell a given product or a given customer.\n"
+"Allow to configure notification on products and trigger them when a user wants "
+"to sell a given product or a given customer.\n"
 "Example: Product: this product is deprecated, do not purchase more than 5.\n"
 "Supplier: don't forget to ask for an express delivery."
 msgstr ""
-"允许在产品配置通知并触发他们当用户想卖一个给定的产品或特定客户。 n例如：产"
-"品：此产品已过时，购买数量不要超过5件。\n"
+"允许在产品配置通知并触发他们当用户想卖一个给定的产品或特定客户。 n例如：产品："
+"此产品已过时，购买数量不要超过5件。\n"
 "供应商：不要忘了找快递。"
 
 #. module: sale
@@ -551,8 +519,8 @@ msgid ""
 "different journals, and perform batch operations on journals.\n"
 "-This installs the module sale_journal."
 msgstr ""
-"允许你对销售和发运（分拣单）在不同的分类账之间进行分类, 并且在分类账上进行批"
-"量操作。\n"
+"允许你对销售和发运（分拣单）在不同的分类账之间进行分类, 并且在分类账上进行批量"
+"操作。\n"
 " - 安装sale_journal模块。"
 
 #. module: sale
@@ -561,13 +529,13 @@ msgid ""
 "Allows you to define what is the default function of a specific user on a "
 "given account.\n"
 "This is mostly used when a user encodes his timesheet. The values are "
-"retrieved and the fields are auto-filled. But the possibility to change "
-"these values is still available.\n"
+"retrieved and the fields are auto-filled. But the possibility to change these "
+"values is still available.\n"
 "-This installs the module analytic_user_function."
 msgstr ""
 "对一个给定帐户的特定用户，允许你定义默认功能。\n"
-"这一功能主要用于用户编制时间表。检索值和字段是自动填充的。但是仍然可以改变这"
-"些值。\n"
+"这一功能主要用于用户编制时间表。检索值和字段是自动填充的。但是仍然可以改变这些"
+"值。\n"
 " - 安装analytic_user_function模块。"
 
 #. module: sale
@@ -586,7 +554,7 @@ msgstr "允许你在销售订单指定一个辅助核算项"
 msgid ""
 "Allows you to specify different delivery and invoice addresses on a sales "
 "order."
-msgstr "允许你在销售订单指定不同收货与发票地址。"
+msgstr "允许你在销售订单指定不同收货与发票寄送地址。"
 
 #. module: sale
 #: field:sale.report,analytic_account_id:0
@@ -609,7 +577,7 @@ msgid "Before Delivery"
 msgstr "发运前"
 
 #. module: sale
-#: code:addons/sale/sale.py:1041
+#: code:addons\sale\sale.py:1048
 #, python-format
 msgid ""
 "Before choosing a product,\n"
@@ -660,19 +628,19 @@ msgid "Cancelled"
 msgstr "已取消"
 
 #. module: sale
-#: code:addons/sale/sale.py:588
+#: code:addons\sale\sale.py:588
 #, python-format
 msgid "Cannot cancel this sales order!"
 msgstr "不能取消这个订单！"
 
 #. module: sale
-#: code:addons/sale/sale.py:1164
+#: code:addons\sale\sale.py:1171
 #, python-format
 msgid "Cannot delete a sales order line which is in state '%s'."
 msgstr "'%s'此状态不能删除这个订单明细。"
 
 #. module: sale
-#: code:addons/sale/sale.py:1133
+#: code:addons\sale\sale.py:1140
 #, python-format
 msgid ""
 "Cannot find a pricelist line matching this product and quantity.\n"
@@ -682,8 +650,7 @@ msgstr ""
 "请更改产品，数量或价格表。"
 
 #. module: sale
-#: view:sale.report:sale.view_order_product_search
-#: field:sale.report,categ_id:0
+#: view:sale.report:sale.view_order_product_search field:sale.report,categ_id:0
 msgid "Category of Product"
 msgstr "产品分类"
 
@@ -730,9 +697,9 @@ msgid "Company"
 msgstr "公司"
 
 #. module: sale
-#: code:addons/sale/sale.py:1141
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:92
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:96
+#: code:addons\sale\sale.py:1148
+#: code:addons\sale\wizard\sale_make_invoice_advance.py:95
+#: code:addons\sale\wizard\sale_make_invoice_advance.py:99
 #, python-format
 msgid "Configuration Error!"
 msgstr "错误配置！"
@@ -835,7 +802,7 @@ msgid "Customer"
 msgstr "客户"
 
 #. module: sale
-#: code:addons/sale/sale.py:464
+#: code:addons\sale\sale.py:464
 #, python-format
 msgid "Customer Invoices"
 msgstr "客户发票"
@@ -966,7 +933,7 @@ msgid "Draft Quotation"
 msgstr "报价单草稿"
 
 #. module: sale
-#: code:addons/sale/edi/sale_order.py:140
+#: code:addons\sale\edi\sale_order.py:140
 #, python-format
 msgid "EDI Pricelist (%s)"
 msgstr "EDI价格表 (%s)"
@@ -987,9 +954,9 @@ msgid "Enable Invoicing Sales order lines"
 msgstr "允许逐行开票"
 
 #. module: sale
-#: code:addons/sale/sale.py:154 code:addons/sale/sale.py:390
-#: code:addons/sale/sale.py:522 code:addons/sale/sale.py:605
-#: code:addons/sale/sale.py:927 code:addons/sale/sale.py:944
+#: code:addons\sale\sale.py:154 code:addons\sale\sale.py:390
+#: code:addons\sale\sale.py:522 code:addons\sale\sale.py:605
+#: code:addons\sale\sale.py:934 code:addons\sale\sale.py:951
 #, python-format
 msgid "Error!"
 msgstr "错误!"
@@ -1010,7 +977,7 @@ msgid "False"
 msgstr "逻辑假"
 
 #. module: sale
-#: code:addons/sale/sale.py:589
+#: code:addons\sale\sale.py:589
 #, python-format
 msgid "First cancel all invoices attached to this sales order."
 msgstr "请先取消与此订单关联的所有发票。"
@@ -1033,13 +1000,13 @@ msgstr "关注者"
 #. module: sale
 #: help:sale.config.settings,timesheet:0
 msgid ""
-"For modifying account analytic view to show important data to project "
-"manager of services companies.You can also view the report of account "
-"analytic summary user-wise as well as month wise.\n"
+"For modifying account analytic view to show important data to project manager "
+"of services companies.You can also view the report of account analytic summary "
+"user-wise as well as month wise.\n"
 "-This installs the module account_analytic_analysis."
 msgstr ""
-"修改会计分析视图为服务公司的项目经理显示重要数据。你也可以查看每月用户的会计"
-"总结分析报告。\n"
+"修改会计分析视图为服务公司的项目经理显示重要数据。你也可以查看每月用户的会计总"
+"结分析报告。\n"
 " - 安装account_analytic_analysis模块。"
 
 #. module: sale
@@ -1050,10 +1017,9 @@ msgstr "预测"
 #. module: sale
 #: help:crm.case.section,invoiced_forecast:0
 msgid ""
-"Forecast of the invoice revenue for the current month. This is the amount "
-"the sales \n"
-"team should invoice this month. It is used to compute the progression "
-"ratio \n"
+"Forecast of the invoice revenue for the current month. This is the amount the "
+"sales \n"
+"team should invoice this month. It is used to compute the progression ratio \n"
 " of the current and forecast revenue on the kanban view."
 msgstr ""
 "当月发票的收入预测。这是本月销售团队应该开出的发票金额。 \n"
@@ -1066,8 +1032,8 @@ msgid ""
 "customer. The tool search can also be used to personalise your Invoices "
 "reports and so, match this analysis to your needs."
 msgstr ""
-"从这份报告中，你可以看到发票中客户的金额的概述。该工具通过搜索也可以用来个性"
-"化您的发票报表等，这种分析符合您的需求。"
+"从这份报告中，你可以看到发票中客户的金额的概述。该工具通过搜索也可以用来个性化"
+"您的发票报表等，这种分析符合您的需求。"
 
 #. module: sale
 #: field:sale.config.settings,group_invoice_so_lines:0
@@ -1087,8 +1053,7 @@ msgid ""
 "occurs               in the invoice validation (Invoice Exception) or in the "
 "picking list process (Shipping Exception).\n"
 "The 'Waiting Schedule' status is set when the invoice is "
-"confirmed               but waiting for the scheduler to run on the order "
-"date."
+"confirmed               but waiting for the scheduler to run on the order date."
 msgstr ""
 "提供报价单或销售订单的状态。 \n"
 "当与销售订单相关的文件在处理过程中被取消时，将自动设置为异常状态\n"
@@ -1110,13 +1075,13 @@ msgstr "对发票分组"
 #. module: sale
 #: help:sale.order,message_summary:0
 msgid ""
-"Holds the Chatter summary (number of messages, ...). This summary is "
-"directly in html format in order to be inserted in kanban views."
+"Holds the Chatter summary (number of messages, ...). This summary is directly "
+"in html format in order to be inserted in kanban views."
 msgstr ""
 "保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
 
 #. module: sale
-#: code:addons/sale/res_config.py:100
+#: code:addons\sale\res_config.py:100
 #, python-format
 msgid "Hour"
 msgstr "小时"
@@ -1134,7 +1099,7 @@ msgid "If checked new messages require your attention."
 msgstr "如果要求你关注新消息，勾选此项"
 
 #. module: sale
-#: code:addons/sale/sale.py:305
+#: code:addons\sale\sale.py:305
 #, python-format
 msgid ""
 "If you change the pricelist of this order (and eventually the currency), "
@@ -1152,26 +1117,26 @@ msgid "In Progress"
 msgstr "处理中"
 
 #. module: sale
-#: code:addons/sale/sale.py:274
+#: code:addons\sale\sale.py:274
 #, python-format
 msgid "In order to delete a confirmed sales order, you must cancel it before!"
 msgstr "删除订单前必须先取消订单。"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:102
+#: code:addons\sale\wizard\sale_make_invoice_advance.py:105
 #, python-format
 msgid "Incorrect Data"
 msgstr "不正确的数据"
 
 #. module: sale
-#: code:addons/sale/sale.py:274 code:addons/sale/sale.py:983
-#: code:addons/sale/sale.py:1164
+#: code:addons\sale\sale.py:274 code:addons\sale\sale.py:990
+#: code:addons\sale\sale.py:1171
 #, python-format
 msgid "Invalid Action!"
 msgstr "无效的动作"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_line_invoice.py:121
+#: code:addons\sale\wizard\sale_line_invoice.py:122
 #: model:ir.model,name:sale.model_account_invoice
 #: view:sale.order:sale.view_order_form
 #, python-format
@@ -1181,7 +1146,7 @@ msgstr "发票"
 #. module: sale
 #: field:sale.order,partner_invoice_id:0
 msgid "Invoice Address"
-msgstr "发票地址"
+msgstr "发票寄送地址"
 
 #. module: sale
 #: field:sale.make.invoice,invoice_date:0
@@ -1221,20 +1186,20 @@ msgstr "发票目标"
 #. module: sale
 #: help:sale.order,partner_invoice_id:0
 msgid "Invoice address for current sales order."
-msgstr "当前销售订单的发票地址。"
+msgstr "当前销售订单的发票寄送地址。"
 
 #. module: sale
 #: view:website:sale.report_saleorder_document
 msgid "Invoice address:"
-msgstr "发票地址:"
+msgstr "发票寄送地址:"
 
 #. module: sale
 #: view:website:sale.report_saleorder_document
 msgid "Invoice and shipping address:"
-msgstr "发票发运地址:"
+msgstr "发票和收货地址:"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_line_invoice.py:107
+#: code:addons\sale\wizard\sale_line_invoice.py:108
 #, python-format
 msgid ""
 "Invoice cannot be created for this Sales Order Line due to one of the "
@@ -1246,13 +1211,13 @@ msgstr ""
 "2、此订单已开具发票!"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_line_invoice.py:97
+#: code:addons\sale\wizard\sale_line_invoice.py:97
 #, python-format
 msgid "Invoice created"
 msgstr "开票日期。"
 
 #. module: sale
-#: code:addons/sale/sale.py:1217
+#: code:addons\sale\sale.py:1224
 #, python-format
 msgid "Invoice paid"
 msgstr "支付发票"
@@ -1373,19 +1338,19 @@ msgid "New Mail"
 msgstr "新邮件"
 
 #. module: sale
-#: code:addons/sale/sale.py:1041
+#: code:addons\sale\sale.py:1048
 #, python-format
 msgid "No Customer Defined!"
 msgstr "没有定义客户！"
 
 #. module: sale
-#: code:addons/sale/sale.py:1125
+#: code:addons\sale\sale.py:1132
 #, python-format
 msgid "No Pricelist ! : "
 msgstr "没有价格表"
 
 #. module: sale
-#: code:addons/sale/sale.py:1136
+#: code:addons\sale\sale.py:1143
 #, python-format
 msgid "No valid pricelist line found ! :"
 msgstr "没有有效的价格列表！"
@@ -1393,8 +1358,8 @@ msgstr "没有有效的价格列表！"
 #. module: sale
 #: help:sale.order.line,delay:0
 msgid ""
-"Number of days between the order confirmation and the shipping of the "
-"products to the customer"
+"Number of days between the order confirmation and the shipping of the products "
+"to the customer"
 msgstr "订单的确认和运输产品给客户之间的天数"
 
 #. module: sale
@@ -1415,10 +1380,9 @@ msgstr "人工开具"
 #. module: sale
 #: help:sale.order,order_policy:0
 msgid ""
-"On demand: A draft invoice can be created from the sales order when "
-"needed. \n"
-"On delivery order: A draft invoice can be created from the delivery order "
-"when the products have been delivered. \n"
+"On demand: A draft invoice can be created from the sales order when needed. \n"
+"On delivery order: A draft invoice can be created from the delivery order when "
+"the products have been delivered. \n"
 "Before delivery: A draft invoice is created from the sales order and must be "
 "paid before the products can be delivered."
 msgstr ""
@@ -1529,13 +1493,13 @@ msgid "Percentage"
 msgstr "百分比"
 
 #. module: sale
-#: code:addons/sale/sale.py:928
+#: code:addons\sale\sale.py:935
 #, python-format
 msgid "Please define income account for this product: \"%s\" (id:%d)."
 msgstr "请宣言该产品的收入帐户: \"%s\" (id:%d)."
 
 #. module: sale
-#: code:addons/sale/sale.py:391
+#: code:addons\sale\sale.py:391
 #, python-format
 msgid "Please define sales journal for this company: \"%s\" (id:%d)."
 msgstr "请定义此公司的销售日记帐: \"%s\" (id:%d)."
@@ -1551,12 +1515,17 @@ msgid "Price"
 msgstr "价格"
 
 #. module: sale
+#: field:sale.order.line,price_reduce:0
+msgid "Price Reduce"
+msgstr "降价"
+
+#. module: sale
 #: field:sale.order,pricelist_id:0 field:sale.report,pricelist_id:0
 msgid "Pricelist"
 msgstr "价格表"
 
 #. module: sale
-#: code:addons/sale/sale.py:304
+#: code:addons\sale\sale.py:304
 #, python-format
 msgid "Pricelist Warning!"
 msgstr "价格表警告！"
@@ -1587,8 +1556,7 @@ msgid "Procurements"
 msgstr "补货"
 
 #. module: sale
-#: model:ir.model,name:sale.model_product_product
-#: field:sale.order,product_id:0
+#: model:ir.model,name:sale.model_product_product field:sale.order,product_id:0
 #: view:sale.order.line:sale.view_sales_order_line_filter
 #: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
 #: field:sale.order.line,product_id:0 field:sale.report,product_id:0
@@ -1626,8 +1594,7 @@ msgid "Qty"
 msgstr "数量"
 
 #. module: sale
-#: field:sale.advance.payment.inv,qtty:0
-#: field:sale.order.line,product_uom_qty:0
+#: field:sale.advance.payment.inv,qtty:0 field:sale.order.line,product_uom_qty:0
 #: view:website:sale.report_saleorder_document
 msgid "Quantity"
 msgstr "数量"
@@ -1638,8 +1605,8 @@ msgid "Quantity (UoS)"
 msgstr "数量(开票单位)"
 
 #. module: sale
-#: view:sale.order:sale.view_order_form
-#: view:sale.order:sale.view_quotation_tree selection:sale.report,state:0
+#: view:sale.order:sale.view_order_form view:sale.order:sale.view_quotation_tree
+#: selection:sale.report,state:0
 msgid "Quotation"
 msgstr "报价单"
 
@@ -1679,7 +1646,7 @@ msgid "Quotation confirmed"
 msgstr "报价已经确认"
 
 #. module: sale
-#: code:addons/sale/sale.py:362
+#: code:addons\sale\sale.py:362
 #, python-format
 msgid "Quotation created"
 msgstr "建立报价"
@@ -1806,7 +1773,7 @@ msgid "Sales Make Invoice"
 msgstr "销售订单生成发票"
 
 #. module: sale
-#: code:addons/sale/sale.py:284 model:ir.model,name:sale.model_sale_order
+#: code:addons\sale\sale.py:284 model:ir.model,name:sale.model_sale_order
 #: field:res.partner,sale_order_ids:0
 #: model:res.request.link,name:sale.req_link_sale_order
 #: view:sale.order:sale.view_order_form
@@ -1896,6 +1863,7 @@ msgstr "销售订单统计"
 #: view:account.invoice:sale.account_invoice_groupby_inherit
 #: view:account.invoice:sale.account_invoice_tree
 #: field:account.invoice,section_id:0
+#: view:account.invoice.report:sale.view_account_invoice_report_search_inherit
 #: field:account.invoice.report,section_id:0
 #: view:sale.order:sale.view_sales_order_filter field:sale.order,section_id:0
 #: view:sale.report:sale.view_order_product_search
@@ -1982,8 +1950,8 @@ msgstr "送货异常"
 
 #. module: sale
 #: view:website:sale.report_saleorder_document
-msgid "Shipping address :"
-msgstr "运货地址:"
+msgid "Shipping address:"
+msgstr "收货地址:"
 
 #. module: sale
 #: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
@@ -2004,8 +1972,7 @@ msgstr "关联单据"
 #: field:sale.order,state:0
 #: view:sale.order.line:sale.view_sales_order_line_filter
 #: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
-#: field:sale.order.line,state:0
-#: view:sale.report:sale.view_order_product_search
+#: field:sale.order.line,state:0 view:sale.report:sale.view_order_product_search
 msgid "Status"
 msgstr "状态"
 
@@ -2051,7 +2018,7 @@ msgstr "预付款发票金额"
 #. module: sale
 #: help:sale.order,amount_untaxed:0
 msgid "The amount without tax."
-msgstr "除税后总额。"
+msgstr "无税金额。"
 
 #. module: sale
 #: help:sale.order,project_id:0
@@ -2074,13 +2041,13 @@ msgid "The total amount."
 msgstr "总金额。"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:103
+#: code:addons\sale\wizard\sale_make_invoice_advance.py:106
 #, python-format
 msgid "The value of Advance Amount must be positive."
 msgstr "提前量的值必须为正数。"
 
 #. module: sale
-#: code:addons/sale/sale.py:945
+#: code:addons\sale\sale.py:952
 #, python-format
 msgid ""
 "There is no Fiscal Position defined or Income category account defined for "
@@ -2088,19 +2055,19 @@ msgid ""
 msgstr "对产品类别的默认属性定义中没有定义的财务收入类账户。"
 
 #. module: sale
-#: code:addons/sale/sale.py:154
+#: code:addons\sale\sale.py:154
 #, python-format
 msgid "There is no default company for the current user!"
 msgstr "当前用户没有设置默认的公司！"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:93
+#: code:addons\sale\wizard\sale_make_invoice_advance.py:96
 #, python-format
 msgid "There is no income account defined as global property."
 msgstr "没有定义全局的收入帐户。"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice_advance.py:97
+#: code:addons\sale\wizard\sale_make_invoice_advance.py:100
 #, python-format
 msgid "There is no income account defined for this product: \"%s\" (id:%d)."
 msgstr "这个产品没有定义收入帐户: \"%s\" (id:%d)."
@@ -2139,8 +2106,7 @@ msgid ""
 "The same sales order may have been invoiced in several times (by line for "
 "example)."
 msgstr ""
-"这是为此销售订单生成的发票列表。同一销售订单可能会多次开票（比如按销售明"
-"细）。"
+"这是为此销售订单生成的发票列表。同一销售订单可能会多次开票（比如按销售明细）。"
 
 #. module: sale
 #: model:ir.actions.act_window,help:sale.action_order_report_all
@@ -2148,38 +2114,38 @@ msgid ""
 "This report performs analysis on your quotations and sales orders. Analysis "
 "check your sales revenues and sort it by different group criteria (salesman, "
 "partner, product, etc.) Use this report to perform analysis on sales not "
-"having invoiced yet. If you want to analyse your turnover, you should use "
-"the Invoice Analysis report in the Accounting application."
+"having invoiced yet. If you want to analyse your turnover, you should use the "
+"Invoice Analysis report in the Accounting application."
 msgstr ""
-"这个报表会对你的报价单和销售订单进行分析。分析检查你的销售收入，并且按照不同"
-"的标准分组（业务员，业务伙伴，产品等）。用这个报表对还没有开票的销售订单进行"
-"分析。 如果你想分析你的营业额，你应该用会计模块里的发票分析报表。"
+"这个报表会对你的报价单和销售订单进行分析。分析检查你的销售收入，并且按照不同的"
+"标准分组（业务员，业务伙伴，产品等）。用这个报表对还没有开票的销售订单进行分"
+"析。 如果你想分析你的营业额，你应该用会计模块里的发票分析报表。"
 
 #. module: sale
 #: model:ir.actions.act_window,help:sale.action_order_report_quotation_salesteam
 msgid ""
 "This report performs analysis on your quotations. Analysis check your sales "
-"revenues and sort it by different group criteria (salesman, partner, "
-"product, etc.) Use this report to perform analysis on sales not having "
-"invoiced yet. If you want to analyse your turnover, you should use the "
-"Invoice Analysis report in the Accounting application."
+"revenues and sort it by different group criteria (salesman, partner, product, "
+"etc.) Use this report to perform analysis on sales not having invoiced yet. If "
+"you want to analyse your turnover, you should use the Invoice Analysis report "
+"in the Accounting application."
 msgstr ""
-"这个报表会对你的报价单和销售订单进行分析。检查你的销售收入，并且按照不同的标"
-"准排序（业务员，业务伙伴，产品等）。用这个报表对还没有开票的销售订单进行分"
-"析。 如果你想分析你的营业额，你应该用会计模块里的发票分析报表功能。"
+"这个报表会对你的报价单和销售订单进行分析。检查你的销售收入，并且按照不同的标准"
+"排序（业务员，业务伙伴，产品等）。用这个报表对还没有开票的销售订单进行分析。 如"
+"果你想分析你的营业额，你应该用会计模块里的发票分析报表功能。"
 
 #. module: sale
 #: model:ir.actions.act_window,help:sale.action_order_report_so_salesteam
 msgid ""
-"This report performs analysis on your sales orders. Analysis check your "
-"sales revenues and sort it by different group criteria (salesman, partner, "
-"product, etc.) Use this report to perform analysis on sales not having "
-"invoiced yet. If you want to analyse your turnover, you should use the "
-"Invoice Analysis report in the Accounting application."
+"This report performs analysis on your sales orders. Analysis check your sales "
+"revenues and sort it by different group criteria (salesman, partner, product, "
+"etc.) Use this report to perform analysis on sales not having invoiced yet. If "
+"you want to analyse your turnover, you should use the Invoice Analysis report "
+"in the Accounting application."
 msgstr ""
-"这个报表会对你的销售订单进行分析。分析检查你的销售收入，并且按照不同的标准分"
-"组（业务员，业务伙伴，产品等）进行排序。用这个报表对还没有开票的销售订单进行"
-"分析。 如果你想分析你的营业额，你应该用会计模块里的发票分析报表。"
+"这个报表会对你的销售订单进行分析。分析检查你的销售收入，并且按照不同的标准分组"
+"（业务员，业务伙伴，产品等）进行排序。用这个报表对还没有开票的销售订单进行分"
+"析。 如果你想分析你的营业额，你应该用会计模块里的发票分析报表。"
 
 #. module: sale
 #: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
@@ -2212,15 +2178,14 @@ msgid "Total Price"
 msgstr "总价"
 
 #. module: sale
-#: view:sale.order:sale.view_order_tree
-#: view:sale.order:sale.view_quotation_tree
+#: view:sale.order:sale.view_order_tree view:sale.order:sale.view_quotation_tree
 msgid "Total Tax Included"
 msgstr "含税总金额"
 
 #. module: sale
 #: view:website:sale.report_saleorder_document
 msgid "Total Without Taxes"
-msgstr "除税后总额"
+msgstr "税前小计"
 
 #. module: sale
 #: field:sale.config.settings,module_sale_stock:0
@@ -2275,8 +2240,8 @@ msgid ""
 "Use Invoice the whole sale order to create the final invoice.\n"
 "                Use Percentage to invoice a percentage of the total amount.\n"
 "                Use Fixed Price to invoice a specific amound in advance.\n"
-"                Use Some Order Lines to invoice a selection of the sales "
-"order lines."
+"                Use Some Order Lines to invoice a selection of the sales order "
+"lines."
 msgstr ""
 "用销售订单来生成最终的发票。\n"
 "    按总额百分比开具发票。\n"
@@ -2287,8 +2252,7 @@ msgstr ""
 #: view:sale.config.settings:sale.view_sales_config
 msgid ""
 "Use contract to be able to manage your services with\n"
-"                        multiple invoicing as part of the same contract "
-"with\n"
+"                        multiple invoicing as part of the same contract with\n"
 "                        your customer."
 msgstr "使用合同管理多次开票的服务作为你的客户的相同合同的一部分。"
 
@@ -2328,22 +2292,12 @@ msgid "Warehouse Features"
 msgstr "仓库特性"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_line_invoice.py:107
-#: code:addons/sale/wizard/sale_make_invoice.py:42
-#: code:addons/sale/wizard/sale_make_invoice.py:55
+#: code:addons\sale\wizard\sale_line_invoice.py:108
+#: code:addons\sale\wizard\sale_make_invoice.py:42
+#: code:addons\sale\wizard\sale_make_invoice.py:55
 #, python-format
 msgid "Warning!"
 msgstr "警告！"
-
-#. module: sale
-#: field:sale.order,website_message_ids:0
-msgid "Website Messages"
-msgstr "网站消息"
-
-#. module: sale
-#: help:sale.order,website_message_ids:0
-msgid "Website communication history"
-msgstr "网站沟通历史"
 
 #. module: sale
 #: field:sale.order.line,th_weight:0
@@ -2356,32 +2310,31 @@ msgid "What do you want to invoice?"
 msgstr "你要开什么发票？"
 
 #. module: sale
-#: code:addons/sale/sale.py:983
+#: code:addons\sale\sale.py:990
 #, python-format
 msgid "You cannot cancel a sales order line that has already been invoiced."
 msgstr "已经开票的订单不能被取消。"
 
 #. module: sale
-#: code:addons/sale/sale.py:605
+#: code:addons\sale\sale.py:605
 #, python-format
 msgid "You cannot confirm a sales order which has no line."
 msgstr "该订单没有明细，不能被确认"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice.py:42
+#: code:addons\sale\wizard\sale_make_invoice.py:42
 #, python-format
 msgid "You cannot create invoice when sales order is not confirmed."
 msgstr "销售订单确认前不能确认发票。"
 
 #. module: sale
-#: code:addons/sale/sale.py:523
+#: code:addons\sale\sale.py:523
 #, python-format
-msgid ""
-"You cannot group sales having different currencies for the same partner."
+msgid "You cannot group sales having different currencies for the same partner."
 msgstr "你不能对同一个供应商使用不同的结算货币。"
 
 #. module: sale
-#: code:addons/sale/sale.py:1123
+#: code:addons\sale\sale.py:1130
 #, python-format
 msgid ""
 "You have to select a pricelist or a customer in the sales form !\n"
@@ -2389,7 +2342,7 @@ msgid ""
 msgstr "在销售订单选择价格表或是客户前请先选择一个产品。"
 
 #. module: sale
-#: code:addons/sale/wizard/sale_make_invoice.py:55
+#: code:addons\sale\wizard\sale_make_invoice.py:55
 #, python-format
 msgid "You shouldn't manually invoice the following sale order %s"
 msgstr "不能对下面的订单产生手动发票%s"
@@ -2400,9 +2353,25 @@ msgid "Your Reference:"
 msgstr "您的关联单号："
 
 #. module: sale
+#: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
+#: view:sale.make.invoice:sale.view_sale_order_make_invoice
+#: view:sale.order.line.make.invoice:sale.view_sale_order_line_make_invoice
+msgid "or"
+msgstr "或"
+
+#. module: sale
 #: view:res.partner:sale.res_partner_address_type
 msgid "sale.group_delivery_invoice_address"
 msgstr "sale.group_delivery_invoice_address"
+
+#~ msgid "Advance"
+#~ msgstr "高级"
+
+#~ msgid "Website Messages"
+#~ msgstr "网站消息"
+
+#~ msgid "Website communication history"
+#~ msgstr "网站沟通历史"
 
 #~ msgid "Order Date"
 #~ msgstr "订购日期"
@@ -2428,9 +2397,6 @@ msgstr "sale.group_delivery_invoice_address"
 #~ msgid "account.config.settings"
 #~ msgstr "account.config.settings"
 
-#~ msgid "or"
-#~ msgstr "或"
-
 #~ msgid "sale.config.settings"
 #~ msgstr "sale.config.settings"
 
@@ -2453,12 +2419,12 @@ msgstr "sale.group_delivery_invoice_address"
 #~ msgstr "对检查状态为无效的模式"
 
 #~ msgid ""
-#~ "Allow to manage several variants per product. As an example, if you  sell "
-#~ "T-Shirts, for the same \"Linux T-Shirt\", you may have variants on  sizes "
-#~ "or colors; S, M, L, XL, XXL."
+#~ "Allow to manage several variants per product. As an example, if you  sell T-"
+#~ "Shirts, for the same \"Linux T-Shirt\", you may have variants on  sizes or "
+#~ "colors; S, M, L, XL, XXL."
 #~ msgstr ""
-#~ "对应同一个产品允许管理不同的样式，比如，你卖一件T恤，对于“Linux T-Shirt”，"
-#~ "可以有不同的尺寸和颜色(S, M, L, XL, XXL)"
+#~ "对应同一个产品允许管理不同的样式，比如，你卖一件T恤，对于“Linux T-Shirt”，可"
+#~ "以有不同的尺寸和颜色(S, M, L, XL, XXL)"
 
 #~ msgid "Support multiple variants per products  "
 #~ msgstr "产品支持多规格"
@@ -2470,8 +2436,8 @@ msgstr "sale.group_delivery_invoice_address"
 #~ msgstr "销售控制台"
 
 #~ msgid ""
-#~ "From stock: When needed, the product is taken from the stock or we wait "
-#~ "for replenishment.\n"
+#~ "From stock: When needed, the product is taken from the stock or we wait for "
+#~ "replenishment.\n"
 #~ "On order: When needed, the product is purchased or produced."
 #~ msgstr ""
 #~ "从库存: 当需要时，产品从库存取得或者我们等待补充。\n"
@@ -2512,8 +2478,8 @@ msgstr "sale.group_delivery_invoice_address"
 #~ "policy is 'Shipping and Manual in Progress'. The invoice is created "
 #~ "automatically if the shipping policy is 'Payment before Delivery'."
 #~ msgstr ""
-#~ "如果销售订单的发货方式是‘发货并手工开票’， 业务员需要手工生成发票。如果发"
-#~ "货方式是‘先付款后发货’，发票将自动生成。"
+#~ "如果销售订单的发货方式是‘发货并手工开票’， 业务员需要手工生成发票。如果发货"
+#~ "方式是‘先付款后发货’，发票将自动生成。"
 
 #~ msgid ""
 #~ "The salesman confirms the quotation. The state of the sales order becomes "
@@ -2528,8 +2494,8 @@ msgstr "sale.group_delivery_invoice_address"
 
 #~ msgid ""
 #~ "The sales order will automatically create the invoice proposition (draft "
-#~ "invoice).                                              You have to "
-#~ "choose  if you want your invoice based on ordered "
+#~ "invoice).                                              You have to choose  "
+#~ "if you want your invoice based on ordered "
 #~ msgstr "如果你想根据订单做发票，这个销售订单将自动创建发票草稿"
 
 #~ msgid "Tel. :"
@@ -2553,8 +2519,8 @@ msgstr "sale.group_delivery_invoice_address"
 #~ msgid ""
 #~ "Depending on the Invoicing control of the sales order, the invoice can be "
 #~ "based on delivered or on ordered quantities. Thus, a sales order can "
-#~ "generates an invoice or a delivery order as soon as it is confirmed by "
-#~ "the salesman."
+#~ "generates an invoice or a delivery order as soon as it is confirmed by the "
+#~ "salesman."
 #~ msgstr ""
 #~ "根据销售订单的开票方式， 基于发货单或者订购数量生成发票。r\n"
 #~ "因此，一旦销售订单被业务员确认，就会为它生成发票或者发货单。"

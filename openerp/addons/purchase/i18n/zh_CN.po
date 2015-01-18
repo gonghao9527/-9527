@@ -7,29 +7,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-23 16:27+0000\n"
-"PO-Revision-Date: 2014-09-28 14:32+0800\n"
-"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"POT-Creation-Date: 2015-01-08 14:43+0000\n"
+"PO-Revision-Date: 2015-01-08 22:46+0800\n"
+"Last-Translator: \n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-03-08 05:59+0000\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.7.1\n"
 
 #. module: purchase
 #: model:email.template,body_html:purchase.email_template_edi_purchase_done
 msgid ""
 "\n"
-"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-"
-"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; "
+"font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
 "\n"
 "    <p>Hello ${object.partner_id.name},</p>\n"
 "    \n"
-"    <p>Here is a ${object.state in ('draft', 'sent') and 'request for "
-"quotation' or 'purchase order confirmation'} from ${object.company_id.name}: "
-"</p>\n"
+"    <p>Here is a ${object.state in ('draft', 'sent') and 'request for quotation' "
+"or 'purchase order confirmation'} from ${object.company_id.name}: </p>\n"
 "    \n"
 "    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
 "       &nbsp;&nbsp;<strong>REFERENCES</strong><br />\n"
@@ -44,8 +43,8 @@ msgid ""
 "       &nbsp;&nbsp;Your reference: ${object.partner_ref}<br />\n"
 "       % endif\n"
 "       % if object.validator:\n"
-"       &nbsp;&nbsp;Your contact: <a href=\"mailto:${object.validator.email "
-"or ''}?subject=Order%20${object.name}\">${object.validator.name}</a>\n"
+"       &nbsp;&nbsp;Your contact: <a href=\"mailto:${object.validator.email or "
+"''}?subject=Order%20${object.name}\">${object.validator.name}</a>\n"
 "       % endif\n"
 "    </p>\n"
 "\n"
@@ -57,10 +56,10 @@ msgid ""
 "    <div style=\"width: 375px; margin: 0px; padding: 0px; background-color: "
 "#8E0000; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; "
 "background-repeat: repeat no-repeat;\">\n"
-"        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: "
-"#DDD;\">\n"
-"            <strong style=\"text-transform:uppercase;\">${object.company_id."
-"name}</strong></h3>\n"
+"        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: #DDD;"
+"\">\n"
+"            <strong style=\"text-transform:uppercase;\">${object.company_id.name}"
+"</strong></h3>\n"
 "    </div>\n"
 "    <div style=\"width: 347px; margin: 0px; padding: 5px 14px; line-height: "
 "16px; background-color: #F2F2F2;\">\n"
@@ -80,9 +79,9 @@ msgid ""
 "        % endif\n"
 "        </span>\n"
 "        % if object.company_id.phone:\n"
-"            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: "
-"0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: "
-"0px; padding-left: 0px; \">\n"
+"            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; "
+"margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; "
+"padding-left: 0px; \">\n"
 "                Phone:&nbsp; ${object.company_id.phone}\n"
 "            </div>\n"
 "        % endif\n"
@@ -98,14 +97,13 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-"
-"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; "
+"font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
 "\n"
 "    <p>你好 ${object.partner_id.name},</p>\n"
 "    \n"
-"    <p>这是一个 ${object.state in ('draft', 'sent') and 'request for "
-"quotation' or 'purchase order confirmation'} from ${object.company_id.name}: "
-"</p>\n"
+"    <p>这是一个 ${object.state in ('draft', 'sent') and 'request for quotation' "
+"or 'purchase order confirmation'} from ${object.company_id.name}: </p>\n"
 "    \n"
 "    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
 "       &nbsp;&nbsp;<strong>参考</strong><br />\n"
@@ -120,8 +118,8 @@ msgstr ""
 "       &nbsp;&nbsp;您的参考：${object.partner_ref}<br />\n"
 "       % endif\n"
 "       % if object.validator:\n"
-"       &nbsp;&nbsp;您的联系方式：<a href=\"mailto:${object.validator.email "
-"or ''}?subject=Order%20${object.name}\">${object.validator.name}</a>\n"
+"       &nbsp;&nbsp;您的联系方式：<a href=\"mailto:${object.validator.email or "
+"''}?subject=Order%20${object.name}\">${object.validator.name}</a>\n"
 "       % endif\n"
 "    </p>\n"
 "\n"
@@ -133,10 +131,10 @@ msgstr ""
 "    <div style=\"width: 375px; margin: 0px; padding: 0px; background-color: "
 "#8E0000; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; "
 "background-repeat: repeat no-repeat;\">\n"
-"        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: "
-"#DDD;\">\n"
-"            <strong style=\"text-transform:uppercase;\">${object.company_id."
-"name}</strong></h3>\n"
+"        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: #DDD;"
+"\">\n"
+"            <strong style=\"text-transform:uppercase;\">${object.company_id.name}"
+"</strong></h3>\n"
 "    </div>\n"
 "    <div style=\"width: 347px; margin: 0px; padding: 5px 14px; line-height: "
 "16px; background-color: #F2F2F2;\">\n"
@@ -156,16 +154,16 @@ msgstr ""
 "        % endif\n"
 "        </span>\n"
 "        % if object.company_id.phone:\n"
-"            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: "
-"0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: "
-"0px; padding-left: 0px; \">\n"
+"            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; "
+"margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; "
+"padding-left: 0px; \">\n"
 "                电话号码：&nbsp; ${object.company_id.phone}\n"
 "            </div>\n"
 "        % endif\n"
 "        % if object.company_id.website:\n"
 "            <div>\n"
-"                网址 :&nbsp;<a href=\"${object.company_id.website}\">"
-"${object.company_id.website}</a>\n"
+"                网址 :&nbsp;<a href=\"${object.company_id.website}\">${object."
+"company_id.website}</a>\n"
 "            </div>\n"
 "        %endif\n"
 "        <p></p>\n"
@@ -177,14 +175,13 @@ msgstr ""
 #: model:email.template,body_html:purchase.email_template_edi_purchase
 msgid ""
 "\n"
-"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-"
-"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; "
+"font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
 "\n"
 "    <p>Hello ${object.partner_id.name},</p>\n"
 "    \n"
-"    <p>Here is a ${object.state in ('draft', 'sent') and 'request for "
-"quotation' or 'purchase order confirmation'} from ${object.company_id.name}: "
-"</p>\n"
+"    <p>Here is a ${object.state in ('draft', 'sent') and 'request for quotation' "
+"or 'purchase order confirmation'} from ${object.company_id.name}: </p>\n"
 "    \n"
 "    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
 "       &nbsp;&nbsp;<strong>REFERENCES</strong><br />\n"
@@ -197,8 +194,8 @@ msgid ""
 "       &nbsp;&nbsp;Your reference: ${object.partner_ref}<br />\n"
 "       % endif\n"
 "       % if object.validator:\n"
-"       &nbsp;&nbsp;Your contact: <a href=\"mailto:${object.validator.email "
-"or ''}?subject=Order%20${object.name}\">${object.validator.name}</a>\n"
+"       &nbsp;&nbsp;Your contact: <a href=\"mailto:${object.validator.email or "
+"''}?subject=Order%20${object.name}\">${object.validator.name}</a>\n"
 "       % endif\n"
 "    </p>\n"
 "\n"
@@ -210,10 +207,10 @@ msgid ""
 "    <div style=\"width: 375px; margin: 0px; padding: 0px; background-color: "
 "#8E0000; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; "
 "background-repeat: repeat no-repeat;\">\n"
-"        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: "
-"#DDD;\">\n"
-"            <strong style=\"text-transform:uppercase;\">${object.company_id."
-"name}</strong></h3>\n"
+"        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: #DDD;"
+"\">\n"
+"            <strong style=\"text-transform:uppercase;\">${object.company_id.name}"
+"</strong></h3>\n"
 "    </div>\n"
 "    <div style=\"width: 347px; margin: 0px; padding: 5px 14px; line-height: "
 "16px; background-color: #F2F2F2;\">\n"
@@ -233,9 +230,9 @@ msgid ""
 "        % endif\n"
 "        </span>\n"
 "        % if object.company_id.phone:\n"
-"            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: "
-"0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: "
-"0px; padding-left: 0px; \">\n"
+"            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; "
+"margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; "
+"padding-left: 0px; \">\n"
 "                Phone:&nbsp; ${object.company_id.phone}\n"
 "            </div>\n"
 "        % endif\n"
@@ -251,14 +248,13 @@ msgid ""
 "            "
 msgstr ""
 "\n"
-"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-"
-"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; "
+"font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
 "\n"
 "    <p>你好 ${object.partner_id.name},</p>\n"
 "    \n"
-"    <p>这是一个 ${object.state in ('draft', 'sent') and 'request for "
-"quotation' or 'purchase order confirmation'} from ${object.company_id.name}: "
-"</p>\n"
+"    <p>这是一个 ${object.state in ('draft', 'sent') and 'request for quotation' "
+"or 'purchase order confirmation'} from ${object.company_id.name}: </p>\n"
 "    \n"
 "    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
 "       &nbsp;&nbsp;<strong>参考</strong><br />\n"
@@ -271,8 +267,8 @@ msgstr ""
 "       &nbsp;&nbsp;您的参考：${object.partner_ref}<br />\n"
 "       % endif\n"
 "       % if object.validator:\n"
-"       &nbsp;&nbsp;您的联系方式：<a href=\"mailto:${object.validator.email "
-"or ''}?subject=Order%20${object.name}\">${object.validator.name}</a>\n"
+"       &nbsp;&nbsp;您的联系方式：<a href=\"mailto:${object.validator.email or "
+"''}?subject=Order%20${object.name}\">${object.validator.name}</a>\n"
 "       % endif\n"
 "    </p>\n"
 "\n"
@@ -284,10 +280,10 @@ msgstr ""
 "    <div style=\"width: 375px; margin: 0px; padding: 0px; background-color: "
 "#8E0000; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; "
 "background-repeat: repeat no-repeat;\">\n"
-"        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: "
-"#DDD;\">\n"
-"            <strong style=\"text-transform:uppercase;\">${object.company_id."
-"name}</strong></h3>\n"
+"        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: #DDD;"
+"\">\n"
+"            <strong style=\"text-transform:uppercase;\">${object.company_id.name}"
+"</strong></h3>\n"
 "    </div>\n"
 "    <div style=\"width: 347px; margin: 0px; padding: 5px 14px; line-height: "
 "16px; background-color: #F2F2F2;\">\n"
@@ -307,16 +303,16 @@ msgstr ""
 "        % endif\n"
 "        </span>\n"
 "        % if object.company_id.phone:\n"
-"            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: "
-"0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: "
-"0px; padding-left: 0px; \">\n"
+"            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; "
+"margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; "
+"padding-left: 0px; \">\n"
 "                电话号码：&nbsp; ${object.company_id.phone}\n"
 "            </div>\n"
 "        % endif\n"
 "        % if object.company_id.website:\n"
 "            <div>\n"
-"                网址：&nbsp;<a href=\"${object.company_id.website}\">"
-"${object.company_id.website}</a>\n"
+"                网址：&nbsp;<a href=\"${object.company_id.website}\">${object."
+"company_id.website}</a>\n"
 "            </div>\n"
 "        %endif\n"
 "        <p></p>\n"
@@ -328,8 +324,8 @@ msgstr ""
 #: help:purchase.config.settings,module_stock_dropshipping:0
 msgid ""
 "\n"
-"Creates the dropship route and add more complex tests-This installs the "
-"module stock_dropshipping."
+"Creates the dropship route and add more complex tests-This installs the module "
+"stock_dropshipping."
 msgstr ""
 "\n"
 "创建直运路线并且加入复杂的测试-这需要安装 “stock_dropshipp”模块。"
@@ -339,12 +335,11 @@ msgstr ""
 msgid ""
 " * The 'Draft' status is set automatically when purchase order in draft "
 "status.                                        \n"
-"* The 'Confirmed' status is set automatically as confirm when purchase order "
-"in confirm status.                                        \n"
+"* The 'Confirmed' status is set automatically as confirm when purchase order in "
+"confirm status.                                        \n"
 "* The 'Done' status is set automatically when purchase order is set as "
 "done.                                        \n"
-"* The 'Cancelled' status is set automatically when user cancel purchase "
-"order."
+"* The 'Cancelled' status is set automatically when user cancel purchase order."
 msgstr ""
 " *当采购单在草稿状态时，自动设置为“草稿”。\n"
 "*当采购单确认为确认状态时，设置为“确认”。\n"
@@ -352,14 +347,13 @@ msgstr ""
 "*当用户取消了采购单后，自动设置为“已经取消”"
 
 #. module: purchase
-#: code:addons/purchase/stock.py:185
+#: code:addons\purchase\stock.py:198
 #, python-format
 msgid " Buy"
 msgstr "购买"
 
 #. module: purchase
-#: field:product.product,purchase_count:0
-#: field:product.template,purchase_count:0
+#: field:product.product,purchase_count:0 field:product.template,purchase_count:0
 msgid "# Purchases"
 msgstr "# 采购"
 
@@ -399,8 +393,7 @@ msgid ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                    Click here to record a supplier invoice.\n"
 "                </p><p>\n"
-"                    Supplier invoices can be pre-generated based on "
-"purchase\n"
+"                    Supplier invoices can be pre-generated based on purchase\n"
 "                    orders or receipts. This allows you to control invoices\n"
 "                    you receive from your supplier according to the draft\n"
 "                    document in Odoo.\n"
@@ -419,13 +412,13 @@ msgstr ""
 #: model:ir.actions.act_window,help:purchase.act_res_partner_2_purchase_order
 msgid ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                    This supplier has no purchase order. Click to create a "
-"new RfQ.\n"
+"                    This supplier has no purchase order. Click to create a new "
+"RfQ.\n"
 "                </p><p>\n"
-"                    The request for quotation is the first step of the "
-"purchases flow. Once\n"
-"                    converted into a purchase order, you will be able to "
-"control the receipt\n"
+"                    The request for quotation is the first step of the purchases "
+"flow. Once\n"
+"                    converted into a purchase order, you will be able to control "
+"the receipt\n"
 "                    of the products and the supplier invoice.\n"
 "                </p>\n"
 "            "
@@ -433,8 +426,8 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                   这供应商没有采购单。单击创建 一个新的询价单。\n"
 "                </p><p>\n"
-"                    询价单是采购流程的第一步，一旦转换为采购单，你就能控制产"
-"品的入库和供应商发票。\n"
+"                    询价单是采购流程的第一步，一旦转换为采购单，你就能控制产品的"
+"入库和供应商发票。\n"
 "                </p>\n"
 "            "
 
@@ -446,8 +439,7 @@ msgid ""
 "              </p><p>\n"
 "                There can be more than one version of a pricelist, each of\n"
 "                these must be valid during a certain period of time. Some\n"
-"                examples of versions: Main Prices, 2010, 2011, Summer "
-"Sales,\n"
+"                examples of versions: Main Prices, 2010, 2011, Summer Sales,\n"
 "                etc.\n"
 "              </p>\n"
 "            "
@@ -467,18 +459,16 @@ msgid ""
 "                Click to create a new incoming shipment.\n"
 "              </p><p> \n"
 "                Here you can track all the product receipts of purchase\n"
-"                orders where the invoicing is \"Based on Incoming Shipments"
-"\",\n"
+"                orders where the invoicing is \"Based on Incoming Shipments\",\n"
 "                and for which you have not received a supplier invoice yet.\n"
-"                You can generate a supplier invoice based on those "
-"receipts.\n"
+"                You can generate a supplier invoice based on those receipts.\n"
 "              </p>\n"
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                点击创建一个新的来料收获单.\n"
-"                当开票方式是“基于收到的产品”时，这里能跟踪所有采购单的入库, "
-"和还没有收到供应商发票的产品入库单。\n"
+"                当开票方式是“基于收到的产品”时，这里能跟踪所有采购单的入库, 和还"
+"没有收到供应商发票的产品入库单。\n"
 "                你能基于这些入库单生成一个供应商发票。\n"
 " </p>"
 
@@ -490,10 +480,8 @@ msgid ""
 "purchase order. \n"
 "              </p><p>\n"
 "                Use this menu to search within your purchase orders by\n"
-"                references, supplier, products, etc. For each purchase "
-"order,\n"
-"                you can track the related discussion with the supplier, "
-"control\n"
+"                references, supplier, products, etc. For each purchase order,\n"
+"                you can track the related discussion with the supplier, control\n"
 "                the products received and control the supplier invoices.\n"
 "              </p>\n"
 "            "
@@ -502,8 +490,7 @@ msgstr ""
 "                单击创建一个 将被转换为采购单的询价单。\n"
 "              </p><p>\n"
 "                使用这个菜单能根据编号、供应商、产品等等来搜索采购单。\n"
-"                对每个采购单，你能跟踪相关供应商的相关沟通记录，控制产品的接"
-"收\n"
+"                对每个采购单，你能跟踪相关供应商的相关沟通记录，控制产品的接收\n"
 "               和供应商发票的开具。\n"
 "              </p>\n"
 "            "
@@ -515,12 +502,11 @@ msgid ""
 "                Click to create a request for quotation.\n"
 "              </p><p>\n"
 "                The quotation contains the history of the discussion/"
-"negociation\n"
+"negotiation\n"
 "                you had with your supplier. Once confirmed, a request for\n"
 "                quotation is converted into a purchase order.\n"
 "              </p><p>\n"
-"                Most propositions of purchase orders are created "
-"automatically\n"
+"                Most propositions of purchase orders are created automatically\n"
 "                by Odoo based on inventory needs.\n"
 "              </p>\n"
 "            "
@@ -556,8 +542,7 @@ msgstr ""
 "            用这个菜单来控制将要从供应商那里收到的发票。\n"
 "           根据你的设置，Odoo从你的采购单或者入库单生成一个草稿发票。\n"
 "          </p><p>\n"
-"            一旦你收到了供应商发票，你可用它跟你的草稿发票对比，然后核准"
-"它。\n"
+"            一旦你收到了供应商发票，你可用它跟你的草稿发票对比，然后核准它。\n"
 "          </p>\n"
 "        "
 
@@ -572,8 +557,7 @@ msgid ""
 "            subcontractants.\n"
 "          </p><p>\n"
 "            The product form contains detailed information to improve the\n"
-"            purchase process: prices, procurement logistics, accounting "
-"data,\n"
+"            purchase process: prices, procurement logistics, accounting data,\n"
 "            available suppliers, etc.\n"
 "          </p>\n"
 "        "
@@ -595,18 +579,16 @@ msgstr ""
 #: model:ir.actions.act_window,help:purchase.purchase_line_form_action2
 msgid ""
 "<p>\n"
-"                Here you can track all the lines of purchase orders where "
-"the\n"
-"                invoicing is \"Based on Purchase Order Lines\", and for "
-"which you\n"
-"                have not received a supplier invoice yet. You can generate "
-"a\n"
+"                Here you can track all the lines of purchase orders where the\n"
+"                invoicing is \"Based on Purchase Order Lines\", and for which "
+"you\n"
+"                have not received a supplier invoice yet. You can generate a\n"
 "                draft supplier invoice based on the lines from this list.\n"
 "              </p>\n"
 "            "
 msgstr ""
-"当开票方式是“基于采购单”时，这里能跟踪采购单的所有行 ，以及没有收到供应商发票"
-"的那些行。你能基于这个列表生成一个供应商发票草稿。\n"
+"当开票方式是“基于采购单”时，这里能跟踪采购单的所有行 ，以及没有收到供应商发票的那"
+"些行。你能基于这个列表生成一个供应商发票草稿。\n"
 "            "
 
 #. module: purchase
@@ -627,20 +609,20 @@ msgstr "根据产品或者供应商的提醒"
 #. module: purchase
 #: help:purchase.config.settings,module_warning:0
 msgid ""
-"Allow to configure notification on products and trigger them when a user "
-"wants to purchase a given product or a given supplier.\n"
+"Allow to configure notification on products and trigger them when a user wants "
+"to purchase a given product or a given supplier.\n"
 "Example: Product: this product is deprecated, do not purchase more than 5.\n"
 "Supplier: don't forget to ask for an express delivery."
 msgstr ""
-"允许在产品上设置通知，当用户要采购一个指定产品或者指定的供应商时，通知就会被"
-"发送。"
+"允许在产品上设置通知，当用户要采购一个指定产品或者指定的供应商时，通知就会被发"
+"送。"
 
 #. module: purchase
 #: help:account.config.settings,module_purchase_analytic_plans:0
 #: help:purchase.config.settings,module_purchase_analytic_plans:0
 msgid ""
-"Allows the user to maintain several analysis plans. These let you split "
-"lines on a purchase order between several accounts and analytic plans.\n"
+"Allows the user to maintain several analysis plans. These let you split lines on "
+"a purchase order between several accounts and analytic plans.\n"
 "-This installs the module purchase_analytic_plans."
 msgstr ""
 "允许用户维护几个分析计划。让你 在几个科目和分析计划之间分割采购单行 。\n"
@@ -652,8 +634,8 @@ msgid ""
 "Allows to manage different prices based on rules per category of Supplier.\n"
 "Example: 10% for retailers, promotion of 5 EUR on this product, etc."
 msgstr ""
-"允许给不同类别的供应商按规则管理不同的基础价格。例如：零售10%折扣，这个产品优"
-"惠5欧元，等等。"
+"允许给不同类别的供应商按规则管理不同的基础价格。例如：零售10%折扣，这个产品优惠5"
+"欧元，等等。"
 
 #. module: purchase
 #: help:purchase.config.settings,group_costing_method:0
@@ -662,8 +644,7 @@ msgstr "允许你基于平均成本计算产品成本"
 
 #. module: purchase
 #: help:purchase.config.settings,group_uom:0
-msgid ""
-"Allows you to select and maintain different units of measure for products."
+msgid "Allows you to select and maintain different units of measure for products."
 msgstr "允许你选择和维护产品的不同计量单位"
 
 #. module: purchase
@@ -737,8 +718,8 @@ msgstr "基于采购单明细"
 #. module: purchase
 #: help:purchase.order,invoice_method:0
 msgid ""
-"Based on Purchase Order lines: place individual lines in 'Invoice Control / "
-"On Purchase Order lines' from where you can selectively create an invoice.\n"
+"Based on Purchase Order lines: place individual lines in 'Invoice Control / On "
+"Purchase Order lines' from where you can selectively create an invoice.\n"
 "Based on generated invoice: create a draft invoice you can validate later.\n"
 "Based on incoming shipments: let you create an invoice when receipts are "
 "validated."
@@ -780,7 +761,7 @@ msgid "Bid Valid Until"
 msgstr "投标有效直至"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1160 code:addons/purchase/stock.py:179
+#: code:addons\purchase\purchase.py:1172 code:addons\purchase\stock.py:192
 #, python-format
 msgid "Buy"
 msgstr "购买"
@@ -801,8 +782,8 @@ msgid ""
 "from several suppliers."
 msgstr ""
 "当你要从几个供应商给一组产品询价时，使用采购招标单。\n"
-"                可为每个产品进行配置，如果只有一个供应商就直接询价，如果有多"
-"个供应商，就要进行采购谈判。"
+"                可为每个产品进行配置，如果只有一个供应商就直接询价，如果有多个供"
+"应商，就要进行采购谈判。"
 
 #. module: purchase
 #: view:product.template:purchase.product_template_search_view_purchase
@@ -811,7 +792,15 @@ msgid "Can be Purchased"
 msgstr "可采购"
 
 #. module: purchase
-#: code:addons/purchase/stock.py:182
+#: code:addons\purchase\purchase.py:1190
+#, python-format
+msgid ""
+"Can not cancel this procurement as the related purchase order has been confirmed "
+"already.  Please cancel the purchase order first. "
+msgstr "你不能取消这个补货，因为相关的采购单已经被确认。请先取消采购单。"
+
+#. module: purchase
+#: code:addons\purchase\stock.py:195
 #, python-format
 msgid "Can't find any generic Buy route."
 msgstr "找不到任何批量采购路线"
@@ -831,7 +820,7 @@ msgid "Cancelled"
 msgstr "已取消"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1007
+#: code:addons\purchase\purchase.py:1017
 #, python-format
 msgid "Cannot delete a purchase order line which is in state '%s'."
 msgstr "不能删除 '%s'状态的采购单行"
@@ -864,7 +853,7 @@ msgid "Company"
 msgstr "公司"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:506
+#: code:addons\purchase\purchase.py:516
 #, python-format
 msgid "Compose Email"
 msgstr "撰写邮件"
@@ -875,7 +864,7 @@ msgid "Configuration"
 msgstr "设置"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1214
+#: code:addons\purchase\purchase.py:1232
 #, python-format
 msgid "Configuration Error!"
 msgstr "设置错误!"
@@ -908,15 +897,14 @@ msgstr "开票"
 
 #. module: purchase
 #: field:purchase.config.settings,create_uid:0
-#: field:purchase.order.group,create_uid:0
-#: field:purchase.order.line,create_uid:0
+#: field:purchase.order.group,create_uid:0 field:purchase.order.line,create_uid:0
 #: field:purchase.order.line_invoice,create_uid:0
 msgid "Created by"
 msgstr "创建人"
 
 #. module: purchase
-#: field:purchase.config.settings,create_date:0
-#: field:purchase.order,create_date:0 field:purchase.order.group,create_date:0
+#: field:purchase.config.settings,create_date:0 field:purchase.order,create_date:0
+#: field:purchase.order.group,create_date:0
 #: field:purchase.order.line,create_date:0
 #: field:purchase.order.line_invoice,create_date:0
 msgid "Created on"
@@ -943,7 +931,7 @@ msgid "Date Approved"
 msgstr "批准日期"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Date Req."
 msgstr "要求日期"
 
@@ -998,13 +986,13 @@ msgid "Default invoicing control method"
 msgstr "默认的发票控制方法"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:546
+#: code:addons\purchase\purchase.py:556
 #, python-format
 msgid "Define an expense account for this product: \"%s\" (id:%d)."
 msgstr "定义该产品的费用科目： \"%s\" (id:%d)."
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:590
+#: code:addons\purchase\purchase.py:600
 #, python-format
 msgid "Define purchase journal for this company: \"%s\" (id:%d)."
 msgstr "为公司 \"%s\" (id:%d)  定义采购分录。"
@@ -1012,7 +1000,7 @@ msgstr "为公司 \"%s\" (id:%d)  定义采购分录。"
 #. module: purchase
 #: field:purchase.order,picking_type_id:0
 msgid "Deliver To"
-msgstr "发货给"
+msgstr "入库到"
 
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_form
@@ -1022,13 +1010,14 @@ msgstr "发货和开票"
 #. module: purchase
 #: help:purchase.order,date_order:0
 msgid ""
-"Depicts the date where the Quotation should be validated and converted into "
-"a Purchase Order, by default it's the creation date."
+"Depicts the date where the Quotation should be validated and converted into a "
+"Purchase Order, by default it's the creation date."
 msgstr "表明报价单应该被确认并转化成采购单的日期，默认是它的创建日期。"
 
 #. module: purchase
-#: field:purchase.order.line,name:0 view:website:purchase.report_purchaseorder
-#: view:website:purchase.report_purchasequotation
+#: field:purchase.order.line,name:0
+#: view:website:purchase.report_purchaseorder_document
+#: view:website:purchase.report_purchasequotation_document
 msgid "Description"
 msgstr "说明"
 
@@ -1045,8 +1034,8 @@ msgstr "你是否要生成供应商发票？"
 #. module: purchase
 #: help:stock.picking,reception_to_invoice:0
 msgid ""
-"Does the picking contains some moves related to a purchase order invoiceable "
-"on the receipt?"
+"Does the picking contains some moves related to a purchase order invoiceable on "
+"the receipt?"
 msgstr "在收货时这个分拣包含了一些可开票的采购单的相关移动吗？"
 
 #. module: purchase
@@ -1066,13 +1055,13 @@ msgid "Draft PO"
 msgstr "采购单草稿"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1366
+#: code:addons\purchase\purchase.py:1385
 #, python-format
 msgid "Draft Purchase Order created"
 msgstr "采购单草稿被创建"
 
 #. module: purchase
-#: code:addons/purchase/edi/purchase_order.py:132
+#: code:addons\purchase\edi\purchase_order.py:132
 #, python-format
 msgid "EDI Pricelist (%s)"
 msgstr "EDI 价格表 (%s)"
@@ -1088,9 +1077,10 @@ msgid "Email composition wizard"
 msgstr "电子邮件撰写向导"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:404 code:addons/purchase/purchase.py:529
-#: code:addons/purchase/purchase.py:546 code:addons/purchase/purchase.py:589
-#: code:addons/purchase/stock.py:182
+#: code:addons\purchase\purchase.py:160 code:addons\purchase\purchase.py:414
+#: code:addons\purchase\purchase.py:539 code:addons\purchase\purchase.py:556
+#: code:addons\purchase\purchase.py:599 code:addons\purchase\purchase.py:1189
+#: code:addons\purchase\stock.py:195
 #, python-format
 msgid "Error!"
 msgstr "错误!"
@@ -1105,7 +1095,7 @@ msgstr "异常"
 #: view:purchase.order:purchase.view_request_for_quotation_filter
 #: field:purchase.order,minimum_planned_date:0
 #: field:purchase.report,expected_date:0
-#: view:website:purchase.report_purchasequotation
+#: view:website:purchase.report_purchasequotation_document
 msgid "Expected Date"
 msgstr "预计日期"
 
@@ -1150,8 +1140,8 @@ msgstr "隐藏已取消的行"
 #. module: purchase
 #: help:purchase.order,message_summary:0
 msgid ""
-"Holds the Chatter summary (number of messages, ...). This summary is "
-"directly in html format in order to be inserted in kanban views."
+"Holds the Chatter summary (number of messages, ...). This summary is directly in "
+"html format in order to be inserted in kanban views."
 msgstr ""
 "保留复杂的摘要(消息数量,……等)。为了插入到看板视图，这一摘要直接是是HTML格式。"
 
@@ -1173,7 +1163,7 @@ msgid "In Shipments"
 msgstr "发货中"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:328
+#: code:addons\purchase\purchase.py:338
 #, python-format
 msgid "In order to delete a purchase order, you must cancel it first."
 msgstr "要删除采购单，你必须先取消它"
@@ -1181,8 +1171,8 @@ msgstr "要删除采购单，你必须先取消它"
 #. module: purchase
 #: help:purchase.config.settings,group_advance_purchase_requisition:0
 msgid ""
-"In the process of a public bidding, you can compare the bid lines and choose "
-"for each requested product from which bid you\n"
+"In the process of a public bidding, you can compare the bid lines and choose for "
+"each requested product from which bid you\n"
 "            buy which quantity"
 msgstr ""
 "在公开投标的流程中，你可以对招标行进行比较并为投标的产品选择\n"
@@ -1217,12 +1207,12 @@ msgstr "国际商务术语"
 #. module: purchase
 #: help:purchase.order,incoterm_id:0
 msgid ""
-"International Commercial Terms are a series of predefined commercial terms "
-"used in international transactions."
+"International Commercial Terms are a series of predefined commercial terms used "
+"in international transactions."
 msgstr "国际商务术语是一系列预先定义的在国际交易中使用的商业术语。"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:328 code:addons/purchase/purchase.py:1007
+#: code:addons\purchase\purchase.py:338 code:addons\purchase\purchase.py:1017
 #, python-format
 msgid "Invalid Action!"
 msgstr "非法的动作"
@@ -1258,13 +1248,13 @@ msgid "Invoice Received"
 msgstr "已收到发票"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1482
+#: code:addons\purchase\purchase.py:1501
 #, python-format
 msgid "Invoice paid"
 msgstr "已开票"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1462
+#: code:addons\purchase\purchase.py:1481
 #, python-format
 msgid "Invoice received"
 msgstr "已收发票"
@@ -1337,16 +1327,14 @@ msgstr "最后一条消息的日期"
 
 #. module: purchase
 #: field:purchase.config.settings,write_uid:0 field:purchase.order,write_uid:0
-#: field:purchase.order.group,write_uid:0
-#: field:purchase.order.line,write_uid:0
+#: field:purchase.order.group,write_uid:0 field:purchase.order.line,write_uid:0
 #: field:purchase.order.line_invoice,write_uid:0
 msgid "Last Updated by"
 msgstr "最后更新被"
 
 #. module: purchase
-#: field:purchase.config.settings,write_date:0
-#: field:purchase.order,write_date:0 field:purchase.order.group,write_date:0
-#: field:purchase.order.line,write_date:0
+#: field:purchase.config.settings,write_date:0 field:purchase.order,write_date:0
+#: field:purchase.order.group,write_date:0 field:purchase.order.line,write_date:0
 #: field:purchase.order.line_invoice,write_date:0
 msgid "Last Updated on"
 msgstr "最后更新在"
@@ -1355,6 +1343,12 @@ msgstr "最后更新在"
 #: view:purchase.config.settings:purchase.view_purchase_configuration
 msgid "Location & Warehouse"
 msgstr "位置和仓库"
+
+#. module: purchase
+#: code:addons\purchase\purchase.py:160
+#, python-format
+msgid "Make sure you have at least an incoming picking type defined"
+msgstr "请确认至少定义了一个入库分拣类型"
 
 #. module: purchase
 #: field:purchase.config.settings,module_purchase_requisition:0
@@ -1395,8 +1389,8 @@ msgstr "手动更正"
 #: help:res.company,po_lead:0
 msgid ""
 "Margin of error for supplier lead times. When the systemgenerates Purchase "
-"Orders for procuring products,they will be scheduled that many days earlier "
-"to cope with unexpected supplier delays."
+"Orders for procuring products,they will be scheduled that many days earlier to "
+"cope with unexpected supplier delays."
 msgstr "对于某些原因造成采购的物料不能按时到达，我们应该尽早安排物料采购。"
 
 #. module: purchase
@@ -1425,7 +1419,7 @@ msgid "Monthly Purchases"
 msgstr "每月购买"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Net Price"
 msgstr "净价"
 
@@ -1435,19 +1429,19 @@ msgid "New Mail"
 msgstr "新电子邮件"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1205
+#: code:addons\purchase\purchase.py:1223
 #, python-format
 msgid "No address defined for the supplier"
 msgstr "供应商地址未定义"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1203
+#: code:addons\purchase\purchase.py:1221
 #, python-format
 msgid "No default supplier defined for this product"
 msgstr "产品没定义默认供应商"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1201
+#: code:addons\purchase\purchase.py:1219
 #, python-format
 msgid "No supplier defined for this product !"
 msgstr "尚未定义这个产品的供应商！"
@@ -1494,7 +1488,7 @@ msgid "Order Date"
 msgstr "订单日期"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Order Date:"
 msgstr "订单日期："
 
@@ -1537,7 +1531,7 @@ msgid "Orders"
 msgstr "订单"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Our Order Reference:"
 msgstr "我们的订单："
 
@@ -1547,7 +1541,7 @@ msgid "Outgoing Mails"
 msgstr "发出邮件"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1346
+#: code:addons\purchase\purchase.py:1364
 #, python-format
 msgid "PO: %s"
 msgstr "PO: %s"
@@ -1580,7 +1574,7 @@ msgid "Picking List"
 msgstr "装箱单"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:404
+#: code:addons\purchase\purchase.py:414
 #, python-format
 msgid "Please create Invoices."
 msgstr "请创建发票"
@@ -1610,7 +1604,7 @@ msgstr ""
 " "
 
 #. module: purchase
-#: code:addons/purchase/wizard/purchase_order_group.py:45
+#: code:addons\purchase\wizard\purchase_order_group.py:45
 #, python-format
 msgid "Please select multiple order to merge in the list view."
 msgstr "请在此列表中选择多张待合并的订单"
@@ -1705,7 +1699,7 @@ msgid "Products by Category"
 msgstr "产品分类"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:842
+#: code:addons\purchase\purchase.py:852
 #, python-format
 msgid "Products received"
 msgstr "已收产品"
@@ -1713,8 +1707,7 @@ msgstr "已收产品"
 #. module: purchase
 #: help:purchase.config.settings,module_purchase_double_validation:0
 msgid ""
-"Provide a double validation mechanism for purchases exceeding minimum "
-"amount.\n"
+"Provide a double validation mechanism for purchases exceeding minimum amount.\n"
 "-This installs the module purchase_double_validation."
 msgstr ""
 "对于低于最小数量的采购，提供一个双重核准机制。\n"
@@ -1734,12 +1727,12 @@ msgstr "采购分析"
 #. module: purchase
 #: model:ir.actions.act_window,help:purchase.action_purchase_order_report_all
 msgid ""
-"Purchase Analysis allows you to easily check and analyse your company "
-"purchase history and performance. From this menu you can track your "
-"negotiation performance, the delivery performance of your suppliers, etc."
+"Purchase Analysis allows you to easily check and analyse your company purchase "
+"history and performance. From this menu you can track your negotiation "
+"performance, the delivery performance of your suppliers, etc."
 msgstr ""
-"采购分析使您轻松检查和分析您公司的采购日志和特性，在这菜单您能跟踪您协商的特"
-"性和您供应商发货的特性等。"
+"采购分析使您轻松检查和分析您公司的采购日志和特性，在这菜单您能跟踪您协商的特性和"
+"您供应商发货的特性等。"
 
 #. module: purchase
 #: selection:purchase.order,state:0
@@ -1764,7 +1757,7 @@ msgid "Purchase Order"
 msgstr "采购单"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Purchase Order Confirmation N°"
 msgstr "采购单确认 N°"
 
@@ -1795,7 +1788,7 @@ msgid "Purchase Order Merge"
 msgstr "采购单合并"
 
 #. module: purchase
-#: code:addons/purchase/wizard/purchase_order_group.py:72
+#: code:addons\purchase\wizard\purchase_order_group.py:72
 #: model:ir.actions.act_window,name:purchase.purchase_form_action
 #: model:ir.ui.menu,name:purchase.menu_purchase_form_action
 #: view:purchase.order:purchase.view_purchase_order_filter
@@ -1816,7 +1809,7 @@ msgid "Purchase Pricelist"
 msgstr "采购价格表"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1368
+#: code:addons\purchase\purchase.py:1387
 #, python-format
 msgid "Purchase line created and linked to an existing Purchase Order"
 msgstr "采购订单行被创建并且已与一个已存在的采购单关联"
@@ -1857,12 +1850,12 @@ msgid ""
 "Put an address if you want to deliver directly from the supplier to the "
 "customer. Otherwise, keep empty to deliver to your own company."
 msgstr ""
-"如果你要直接从供应商发货给给客户，输入一个地址。否则，发给你自己公司的时候，"
-"留空。"
+"如果你要直接从供应商发货给给客户，输入一个地址。否则，发给你自己公司的时候，留"
+"空。"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
-#: view:website:purchase.report_purchasequotation
+#: view:website:purchase.report_purchaseorder_document
+#: view:website:purchase.report_purchasequotation_document
 msgid "Qty"
 msgstr "数量"
 
@@ -1872,7 +1865,7 @@ msgid "Quantity"
 msgstr "数量"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1370
+#: code:addons\purchase\purchase.py:1389
 #, python-format
 msgid "Quantity added in existing Purchase Order Line"
 msgstr "在现有的订单行添加数量"
@@ -1910,7 +1903,7 @@ msgid "RFQ Done"
 msgstr "确认询价单"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:318 code:addons/purchase/purchase.py:936
+#: code:addons\purchase\purchase.py:328 code:addons\purchase\purchase.py:946
 #, python-format
 msgid "RFQ created"
 msgstr "创建询价单"
@@ -1970,22 +1963,22 @@ msgstr "参考计量单位"
 #. module: purchase
 #: help:purchase.order,origin:0
 msgid ""
-"Reference of the document that generated this purchase order request; a "
-"sales order or an internal procurement request."
+"Reference of the document that generated this purchase order request; a sales "
+"order or an internal procurement request."
 msgstr "关联单据是创建此采购订单的需求；是销售订单或内部的补货申请。"
 
 #. module: purchase
 #: help:purchase.order,partner_ref:0
 msgid ""
-"Reference of the sales order or bid sent by your supplier. It's mainly used "
-"to do the matching when you receive the products as this reference is "
-"usually written on the delivery order sent by your supplier."
+"Reference of the sales order or bid sent by your supplier. It's mainly used to "
+"do the matching when you receive the products as this reference is usually "
+"written on the delivery order sent by your supplier."
 msgstr ""
-"你的供应商发给你的销售订单或询价单的参考单号。主要用于当你收到货物时，供应商"
-"有可能会把这个参考号写在他们的发货清单上，此时你可以用它来进行单号对照。"
+"你的供应商发给你的销售订单或询价单的参考单号。主要用于当你收到货物时，供应商有可"
+"能会把这个参考号写在他们的发货清单上，此时你可以用它来进行单号对照。"
 
 #. module: purchase
-#: view:website:purchase.report_purchasequotation
+#: view:website:purchase.report_purchasequotation_document
 msgid "Regards,"
 msgstr "尊敬的"
 
@@ -1998,12 +1991,12 @@ msgstr "相关库位"
 #: model:ir.actions.report.xml,name:purchase.report_purchase_quotation
 #: view:purchase.order:purchase.purchase_order_form
 #: selection:purchase.report,state:0
-#: view:website:purchase.report_purchasequotation
+#: view:website:purchase.report_purchasequotation_document
 msgid "Request for Quotation"
 msgstr "询价单"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Request for Quotation N°"
 msgstr "询价单 N°"
 
@@ -2048,7 +2041,7 @@ msgid "Select an Open Sales Order"
 msgstr "选择一个待支付的销售订单"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1104
+#: code:addons\purchase\purchase.py:1115
 #, python-format
 msgid ""
 "Selected Unit of Measure does not belong to the same category as the product "
@@ -2076,10 +2069,10 @@ msgid "Shipping Exception"
 msgstr "运输异常"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
-#: view:website:purchase.report_purchasequotation
-msgid "Shipping address :"
-msgstr "运货地址:"
+#: view:website:purchase.report_purchaseorder_document
+#: view:website:purchase.report_purchasequotation_document
+msgid "Shipping address:"
+msgstr "收货地址:"
 
 #. module: purchase
 #: field:purchase.order,origin:0
@@ -2141,8 +2134,8 @@ msgid "Supplier Inv."
 msgstr "供应商发票"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:435
-#: code:addons/purchase/wizard/purchase_line_invoice.py:115
+#: code:addons\purchase\purchase.py:445
+#: code:addons\purchase\wizard\purchase_line_invoice.py:115
 #: model:ir.actions.act_window,name:purchase.act_res_partner_2_supplier_invoices
 #: view:res.partner:purchase.res_partner_view_purchase_account_buttons
 #, python-format
@@ -2156,7 +2149,7 @@ msgstr "供应商单号"
 
 #. module: purchase
 #: field:purchase.order,amount_tax:0 field:purchase.order.line,taxes_id:0
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Taxes"
 msgstr "税"
 
@@ -2178,20 +2171,20 @@ msgstr "不含税金额"
 #. module: purchase
 #: help:purchase.order,pricelist_id:0
 msgid ""
-"The pricelist sets the currency used for this purchase order. It also "
-"computes the supplier price for the selected products/quantities."
+"The pricelist sets the currency used for this purchase order. It also computes "
+"the supplier price for the selected products/quantities."
 msgstr "价格表设定采购单使用的币别。它还决定选定产品/数量的供应商价格。"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1214
+#: code:addons\purchase\purchase.py:1232
 #, python-format
 msgid ""
-"The product \"%s\" has been defined with your company as reseller which "
-"seems to be a configuration error!"
+"The product \"%s\" has been defined with your company as reseller which seems to "
+"be a configuration error!"
 msgstr "产品 \"%s\" 中，你公司被被定义经销商，这看起来是个配置错误！"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1123
+#: code:addons\purchase\purchase.py:1135
 #, python-format
 msgid ""
 "The selected supplier has a minimal quantity set to %s %s, you should not "
@@ -2199,7 +2192,7 @@ msgid ""
 msgstr "这个选择的供应商有最小数量设置为 %s %s，你不应该购买更少。"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1119
+#: code:addons\purchase\purchase.py:1131
 #, python-format
 msgid "The selected supplier only sells this product by %s"
 msgstr "选择的供应商只销售这产品  %s"
@@ -2209,16 +2202,15 @@ msgstr "选择的供应商只销售这产品  %s"
 msgid ""
 "The status of the purchase order or the quotation request. A request for "
 "quotation is a purchase order in a 'Draft' status. Then the order has to be "
-"confirmed by the user, the status switch to 'Confirmed'. Then the supplier "
-"must confirm the order to change the status to 'Approved'. When the purchase "
-"order is paid and received, the status becomes 'Done'. If a cancel action "
-"occurs in the invoice or in the receipt of goods, the status becomes in "
-"exception."
+"confirmed by the user, the status switch to 'Confirmed'. Then the supplier must "
+"confirm the order to change the status to 'Approved'. When the purchase order is "
+"paid and received, the status becomes 'Done'. If a cancel action occurs in the "
+"invoice or in the receipt of goods, the status becomes in exception."
 msgstr ""
-"采购单或者询价单的状态。一个询价单是采购单的“草稿”状态。然后这个采购单被用户"
-"确认后，状态切换为“已经确认”。供应商确认这个订单后，改变状态到“批准”。当采购"
-"单被支付和入库以后，状态变成“完成”。如果在开票或者收货过程中出现了 “取消”操"
-"作，状态变成了“异常”。"
+"采购单或者询价单的状态。一个询价单是采购单的“草稿”状态。然后这个采购单被用户确认"
+"后，状态切换为“已经确认”。供应商确认这个订单后，改变状态到“批准”。当采购单被支付"
+"和入库以后，状态变成“完成”。如果在开票或者收货过程中出现了 “取消”操作，状态变成"
+"了“异常”。"
 
 #. module: purchase
 #: help:purchase.order,amount_tax:0
@@ -2231,7 +2223,7 @@ msgid "The total amount"
 msgstr "总金额"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1318
+#: code:addons\purchase\purchase.py:1336
 #, python-format
 msgid "There is no supplier associated to product %s"
 msgstr "这个产品没有供应商 %s"
@@ -2246,15 +2238,14 @@ msgstr "计算所有采购单明细产品的最小计划日期"
 #. module: purchase
 #: help:purchase.order,picking_ids:0
 msgid ""
-"This is the list of receipts that have been generated for this purchase "
-"order."
+"This is the list of receipts that have been generated for this purchase order."
 msgstr "这是为这个采购单生成的操作列表。"
 
 #. module: purchase
 #: help:res.partner,property_product_pricelist_purchase:0
 msgid ""
-"This pricelist will be used, instead of the default one, for purchases from "
-"the current partner"
+"This pricelist will be used, instead of the default one, for purchases from the "
+"current partner"
 msgstr "这价格表将替代当前业务伙伴采购的默认价格表"
 
 #. module: purchase
@@ -2263,13 +2254,8 @@ msgid "This will determine picking type of incoming shipment"
 msgstr "它将定义入库产品的分拣类型"
 
 #. module: purchase
-#: view:product.template:purchase.product_template_search_view_purchase
-msgid "To Purchase"
-msgstr "采购"
-
-#. module: purchase
 #: field:purchase.order,amount_total:0
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Total"
 msgstr "合计"
 
@@ -2284,9 +2270,9 @@ msgid "Total Untaxed amount"
 msgstr "总未完税金额"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Total Without Taxes"
-msgstr "不含税总金额"
+msgstr "税前小计"
 
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_tree
@@ -2294,13 +2280,13 @@ msgid "Total amount"
 msgstr "总金额"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:685
+#: code:addons\purchase\purchase.py:695
 #, python-format
 msgid "Unable to cancel the purchase order %s."
 msgstr "不能取消这个采购单 %s。"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:691
+#: code:addons\purchase\purchase.py:701
 #, python-format
 msgid "Unable to cancel this purchase order."
 msgstr "不能取消这个采购单"
@@ -2308,13 +2294,13 @@ msgstr "不能取消这个采购单"
 #. module: purchase
 #: help:purchase.order,name:0
 msgid ""
-"Unique number of the purchase order, computed automatically when the "
-"purchase order is created."
+"Unique number of the purchase order, computed automatically when the purchase "
+"order is created."
 msgstr "采购单的唯一编号，当采购单被创建时自动生成。"
 
 #. module: purchase
 #: field:purchase.order.line,price_unit:0
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Unit Price"
 msgstr "单价"
 
@@ -2352,7 +2338,7 @@ msgstr "未完税金额"
 #. module: purchase
 #: field:purchase.config.settings,group_costing_method:0
 msgid "Use 'Real Price' or 'Average' costing methods."
-msgstr "使用'实际价格'或'平均价'的成本核算方法。"
+msgstr "使用“实时价格”或“平均价格”的成本核算方法。"
 
 #. module: purchase
 #: field:account.config.settings,module_purchase_analytic_plans:0
@@ -2370,8 +2356,8 @@ msgid "User"
 msgstr "用户"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
-#: view:website:purchase.report_purchasequotation
+#: view:website:purchase.report_purchaseorder_document
+#: view:website:purchase.report_purchasequotation_document
 msgid "VAT:"
 msgstr "增值税："
 
@@ -2381,7 +2367,7 @@ msgid "Validated By"
 msgstr "批准人"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Validated By:"
 msgstr "审核人："
 
@@ -2407,22 +2393,12 @@ msgid "Warehouse"
 msgstr "仓库"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:1104 code:addons/purchase/purchase.py:1119
-#: code:addons/purchase/purchase.py:1123
-#: code:addons/purchase/wizard/purchase_order_group.py:44
+#: code:addons\purchase\purchase.py:1115 code:addons\purchase\purchase.py:1131
+#: code:addons\purchase\purchase.py:1135
+#: code:addons\purchase\wizard\purchase_order_group.py:44
 #, python-format
 msgid "Warning!"
 msgstr "警告！"
-
-#. module: purchase
-#: field:purchase.order,website_message_ids:0
-msgid "Website Messages"
-msgstr "网站信息"
-
-#. module: purchase
-#: help:purchase.order,website_message_ids:0
-msgid "Website communication history"
-msgstr "网站通信历史"
 
 #. module: purchase
 #: help:stock.warehouse,buy_to_resupply:0
@@ -2430,27 +2406,48 @@ msgid "When products are bought, they can be delivered to this warehouse"
 msgstr "当产品购买了，它们可以被发送到这个仓库"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:529
+#: code:addons\purchase\purchase.py:539
 #, python-format
 msgid "You cannot confirm a purchase order without any purchase order line."
 msgstr "你不能确认没有任何明细的采购单"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:686
+#: code:addons\purchase\purchase.py:696
 #, python-format
 msgid "You have already received some goods for it.  "
 msgstr "对于此订单，你已经接收了部分产品。"
 
 #. module: purchase
-#: code:addons/purchase/purchase.py:692
+#: code:addons\purchase\purchase.py:702
 #, python-format
 msgid "You must first cancel all invoices related to this purchase order."
 msgstr "你必须先取消与此采购订单相关的所有发票。"
 
 #. module: purchase
-#: view:website:purchase.report_purchaseorder
+#: view:website:purchase.report_purchaseorder_document
 msgid "Your Order Reference"
 msgstr "你的订单编号"
+
+#. module: purchase
+#: view:purchase.config.settings:purchase.view_purchase_configuration
+#: view:purchase.order.group:purchase.view_purchase_order_group
+#: view:purchase.order.line_invoice:purchase.view_purchase_line_invoice
+msgid "or"
+msgstr "或"
+
+#. module: purchase
+#: field:purchase.order,related_usage:0
+msgid "unknown"
+msgstr "未知"
+
+#~ msgid "To Purchase"
+#~ msgstr "采购"
+
+#~ msgid "Website Messages"
+#~ msgstr "网站信息"
+
+#~ msgid "Website communication history"
+#~ msgstr "网站通信历史"
 
 #~ msgid "First cancel all receipts related to this purchase order."
 #~ msgstr "首先取消这个采购单相关的入库单"
@@ -2475,9 +2472,6 @@ msgstr "你的订单编号"
 
 #~ msgid "account.config.settings"
 #~ msgstr "account.config.settings"
-
-#~ msgid "or"
-#~ msgstr "或"
 
 #~ msgid "purchase.config.settings"
 #~ msgstr "purchase.config.settings"
@@ -2564,11 +2558,10 @@ msgstr "你的订单编号"
 #~ msgstr "预定交货地址:"
 
 #~ msgid ""
-#~ "The buyer has to approve the RFQ before being sent to the supplier. The "
-#~ "RFQ becomes a confirmed Purchase Order."
+#~ "The buyer has to approve the RFQ before being sent to the supplier. The RFQ "
+#~ "becomes a confirmed Purchase Order."
 #~ msgstr ""
-#~ "询价单(RFQ) 必须先得到采购经理审批后才能发给供应商。 询价单能确认为采购"
-#~ "单。"
+#~ "询价单(RFQ) 必须先得到采购经理审批后才能发给供应商。 询价单能确认为采购单。"
 
 #~ msgid "State of the Purchase Order."
 #~ msgstr "采购单状态"
@@ -2580,12 +2573,12 @@ msgstr "你的订单编号"
 #~ msgstr "来自装箱单"
 
 #~ msgid ""
-#~ "The invoice is created automatically if the Invoice control of the "
-#~ "purchase order is 'On picking'. The invoice can also be generated "
-#~ "manually by the accountant (Invoice control = Manual)."
+#~ "The invoice is created automatically if the Invoice control of the purchase "
+#~ "order is 'On picking'. The invoice can also be generated manually by the "
+#~ "accountant (Invoice control = Manual)."
 #~ msgstr ""
-#~ "如果这采购单的发票控制是“来自装箱单”发票将自动生成。发票也可以是会计人员手"
-#~ "工生成(发票控制 = 手动)。"
+#~ "如果这采购单的发票控制是“来自装箱单”发票将自动生成。发票也可以是会计人员手工生"
+#~ "成(发票控制 = 手动)。"
 
 #~ msgid "Partial Picking Processing Wizard"
 #~ msgstr "分部拣货处理向导"
@@ -2612,12 +2605,11 @@ msgstr "你的订单编号"
 #~ "当收到产品后，出库单将准备完毕。"
 
 #~ msgid ""
-#~ "A Pick list generates an invoice. Depending on the Invoicing control of "
-#~ "the sales order, the invoice is based on delivered or on ordered "
-#~ "quantities."
+#~ "A Pick list generates an invoice. Depending on the Invoicing control of the "
+#~ "sales order, the invoice is based on delivered or on ordered quantities."
 #~ msgstr ""
-#~ "一个出库单产生一张发票。这取决于销售订单的发票控制方式：发票可以根据发货数"
-#~ "量或订购数量来生成。"
+#~ "一个出库单产生一张发票。这取决于销售订单的发票控制方式：发票可以根据发货数量或"
+#~ "订购数量来生成。"
 
 #~ msgid "Resend Purchase Order"
 #~ msgstr "重发采购单"
@@ -2626,11 +2618,10 @@ msgstr "你的订单编号"
 #~ msgstr "询价单"
 
 #~ msgid ""
-#~ "A Pick list generates a supplier invoice. Depending on the Invoicing "
-#~ "control of the purchase order, the invoice is based on received or on "
-#~ "ordered quantities."
-#~ msgstr ""
-#~ "装箱单生成供应商发票。采购单控制发票，发票是基于已接收或已下单数量。"
+#~ "A Pick list generates a supplier invoice. Depending on the Invoicing control "
+#~ "of the purchase order, the invoice is based on received or on ordered "
+#~ "quantities."
+#~ msgstr "装箱单生成供应商发票。采购单控制发票，发票是基于已接收或已下单数量。"
 
 #~ msgid "RFQ Sent"
 #~ msgstr "发送询价单"
@@ -2656,12 +2647,12 @@ msgstr "你的订单编号"
 #~ msgstr "采购的产品"
 
 #~ msgid ""
-#~ "A purchase order generates a supplier invoice, as soon as it is confirmed "
-#~ "by the buyer. Depending on the Invoicing control of the purchase order, "
-#~ "the invoice is based on received or on ordered quantities."
+#~ "A purchase order generates a supplier invoice, as soon as it is confirmed by "
+#~ "the buyer. Depending on the Invoicing control of the purchase order, the "
+#~ "invoice is based on received or on ordered quantities."
 #~ msgstr ""
-#~ "一旦买方确认根据采购单开发票，一个采购单生成一个供应商发票，发票根据已收到"
-#~ "或已下单的数量。"
+#~ "一旦买方确认根据采购单开发票，一个采购单生成一个供应商发票，发票根据已收到或已"
+#~ "下单的数量。"
 
 #~ msgid "Outgoing products to invoice"
 #~ msgstr "出库产品要开发票"
@@ -2673,10 +2664,9 @@ msgstr "你的订单编号"
 #~ msgstr "一个采购单草稿"
 
 #~ msgid ""
-#~ "Reception Analysis allows you to easily check and analyse your company "
-#~ "order receptions and the performance of your supplier's deliveries."
-#~ msgstr ""
-#~ "接收分析使您轻松检查和分析您公司订单的接收数量和您供应商交货的特性。"
+#~ "Reception Analysis allows you to easily check and analyse your company order "
+#~ "receptions and the performance of your supplier's deliveries."
+#~ msgstr "接收分析使您轻松检查和分析您公司订单的接收数量和您供应商交货的特性。"
 
 #~ msgid "A pick list is generated to track the incoming products."
 #~ msgstr "生成装箱单用来跟踪入库的产品"
@@ -2703,11 +2693,11 @@ msgstr "你的订单编号"
 #~ msgstr "入库分析"
 
 #~ msgid ""
-#~ "In case there is no supplier for this product, the buyer can fill the "
-#~ "form manually and confirm it. The RFQ becomes a confirmed Purchase Order."
+#~ "In case there is no supplier for this product, the buyer can fill the form "
+#~ "manually and confirm it. The RFQ becomes a confirmed Purchase Order."
 #~ msgstr ""
-#~ "在这业务产品没有供应商，买方可以手动填写并确认。这询价单能通过确认转换为采"
-#~ "购订单。"
+#~ "在这业务产品没有供应商，买方可以手动填写并确认。这询价单能通过确认转换为采购订"
+#~ "单。"
 
 #~ msgid "Manage purchase requisitions"
 #~ msgstr "管理采购招标"
@@ -2719,12 +2709,12 @@ msgstr "你的订单编号"
 #~ msgstr "从采购单"
 
 #~ msgid ""
-#~ "The invoice is created automatically if the Invoice control of the "
-#~ "purchase order is 'On order'. The invoice can also be generated manually "
-#~ "by the accountant (Invoice control = Manual)."
+#~ "The invoice is created automatically if the Invoice control of the purchase "
+#~ "order is 'On order'. The invoice can also be generated manually by the "
+#~ "accountant (Invoice control = Manual)."
 #~ msgstr ""
-#~ "如果采购单的发票控制是“来自订单”发票是自动生成。发票也可以由会计人员手动产"
-#~ "生(发票控制 = 手动)"
+#~ "如果采购单的发票控制是“来自订单”发票是自动生成。发票也可以由会计人员手动产生"
+#~ "(发票控制 = 手动)"
 
 #~ msgid "December"
 #~ msgstr "12月"

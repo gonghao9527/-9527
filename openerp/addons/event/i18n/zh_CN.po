@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-23 16:27+0000\n"
-"PO-Revision-Date: 2014-09-28 08:56+0800\n"
+"PO-Revision-Date: 2014-10-21 18:53+0800\n"
 "Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "Language: zh_CN\n"
@@ -1256,12 +1256,12 @@ msgstr "在记录上发布的信息的最近日期"
 #. module: event
 #: field:event.type,default_registration_max:0
 msgid "Default Maximum Registration"
-msgstr "默认最多注册人数"
+msgstr "默认最多参与人数"
 
 #. module: event
 #: field:event.type,default_registration_min:0
 msgid "Default Minimum Registration"
-msgstr "默认最少注册人数"
+msgstr "默认最少参与人数"
 
 #. module: event
 #: field:event.type,default_reply_to:0
@@ -1832,7 +1832,7 @@ msgstr "关联单据"
 #. module: event
 #: field:res.partner,speaker:0
 msgid "Speaker"
-msgstr "关注者"
+msgstr "发言人"
 
 #. module: event
 #: field:event.event,date_begin:0

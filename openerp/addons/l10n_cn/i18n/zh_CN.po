@@ -102,18 +102,18 @@ msgstr ""
 
 #. module: l10n_cn
 #: model:account.account.template,name:l10n_cn.small_business_chart5402
-msgid "其他业务成本"
+msgid "其它业务成本"
 msgstr ""
 
 #. module: l10n_cn
 #: model:account.account.template,name:l10n_cn.chart6402
-msgid "其他业务支出"
+msgid "其它业务支出"
 msgstr ""
 
 #. module: l10n_cn
 #: model:account.account.template,name:l10n_cn.chart6051
 #: model:account.account.template,name:l10n_cn.small_business_chart5051
-msgid "其他业务收入"
+msgid "其它业务收入"
 msgstr ""
 
 #. module: l10n_cn
@@ -131,7 +131,7 @@ msgstr ""
 #. module: l10n_cn
 #: model:account.account.template,name:l10n_cn.chart1015
 #: model:account.account.template,name:l10n_cn.small_business_chart1012
-msgid "其他货币资金"
+msgid "其它货币资金"
 msgstr ""
 
 #. module: l10n_cn
@@ -183,7 +183,7 @@ msgstr ""
 
 #. module: l10n_cn
 #: model:account.account.type,name:l10n_cn.user_type_pl9
-msgid "加：其他业务利润（亏损以“－”号填列）"
+msgid "加：其它业务利润（亏损以“－”号填列）"
 msgstr ""
 
 #. module: l10n_cn
