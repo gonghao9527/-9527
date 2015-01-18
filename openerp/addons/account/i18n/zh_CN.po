@@ -6584,7 +6584,7 @@ msgstr "链接到自动生成的分类账项"
 #: selection:account.account,type:0 selection:account.account.template,type:0
 #: view:account.journal:account.view_account_journal_search
 msgid "Liquidity"
-msgstr "流动资金"
+msgstr "货币资金"
 
 #. module: account
 #: help:account.chart.template,tax_template_ids:0
