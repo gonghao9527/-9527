@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0alpha1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-23 16:27+0000\n"
-"PO-Revision-Date: 2014-09-28 14:37+0800\n"
-"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"POT-Creation-Date: 2015-01-02 04:41+0000\n"
+"PO-Revision-Date: 2015-01-02 12:42+0800\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.7.1\n"
 
 #. module: stock_account
 #: view:stock.history:stock_account.view_stock_history_report_tree
@@ -43,15 +43,14 @@ msgid "Accounting Information"
 msgstr "会计信息"
 
 #. module: stock_account
-#: code:addons/stock_account/wizard/stock_change_standard_price.py:76
+#: code:addons\stock_account\wizard\stock_change_standard_price.py:76
 #, python-format
 msgid "Active ID is not set in Context."
 msgstr "在上下文中没设置活动的 ID。"
 
 #. module: stock_account
 #: help:stock.config.settings,group_stock_inventory_valuation:0
-msgid ""
-"Allows to configure inventory valuations on products and product categories."
+msgid "Allows to configure inventory valuations on products and product categories."
 msgstr "允许在产品和产品类别配置库存估值"
 
 #. module: stock_account
@@ -62,7 +61,7 @@ msgstr "平均价格"
 #. module: stock_account
 #: field:stock.config.settings,module_stock_landed_costs:0
 msgid "Calculate landed costs on products"
-msgstr "计算到岸成本的产品"
+msgstr "计算产品的到岸成本"
 
 #. module: stock_account
 #: view:stock.change.standard.price:stock_account.view_change_standard_price
@@ -91,28 +90,24 @@ msgstr "选择特定日期"
 #. module: stock_account
 #: help:stock.inventory,period_id:0
 msgid ""
-"Choose the accounting period where you want to value the stock moves created "
-"by the inventory instead of the default one (chosen by the inventory end "
-"date)"
+"Choose the accounting period where you want to value the stock moves created by the "
+"inventory instead of the default one (chosen by the inventory end date)"
 msgstr ""
-"当你要查看仓库移动的估值时，请选择会计区间来代替默认的期间(通过选择仓库截止日"
-"期)。"
+"当你要查看仓库移动的估值时，请选择会计区间来代替默认的期间(通过选择仓库截止日期)。"
 
 #. module: stock_account
 #: view:wizard.valuation.history:stock_account.view_wizard_valuation_history
 msgid ""
-"Choose the date for which you want to get the stock valuation of your "
-"products.\n"
+"Choose the date for which you want to get the stock valuation of your products.\n"
 "\n"
-"                        This will filter the stock operation that weren't "
-"done at the selected date, to retreive the quantity\n"
-"                        you had, and gives you the inventory value according "
-"to the standard price used at that time."
+"                        This will filter the stock operation that weren't done at "
+"the selected date, to retreive the quantity\n"
+"                        you had, and gives you the inventory value according to the "
+"standard price used at that time."
 msgstr ""
 "选择为你的产品进行库存估值的日期。\n"
 "\n"
-"                       在选择的日期内不会被完成的操作将被过滤掉，以返回你有的"
-"数量，\n"
+"                       在选择的日期内不会被完成的操作将被过滤掉，以返回你有的数量，\n"
 "                        提供的库存估值基于当时的标准价格。."
 
 #. module: stock_account
@@ -140,7 +135,7 @@ msgstr "成本计算方法"
 #. module: stock_account
 #: view:stock.invoice.onshipping:stock_account.view_stock_invoice_onshipping
 msgid "Create"
-msgstr "创建"
+msgstr "新建"
 
 #. module: stock_account
 #: selection:stock.invoice.onshipping,journal_type:0
@@ -165,7 +160,7 @@ msgstr "创建供应商发票"
 #. module: stock_account
 #: field:stock.config.settings,module_stock_invoice_directly:0
 msgid "Create and open the invoice when the user finish a delivery order"
-msgstr "创建并打开发票，当用户完成一个交货单"
+msgstr "当用户完成一个发货单时，创建并打开发票。"
 
 #. module: stock_account
 #: view:stock.invoice.onshipping:stock_account.view_stock_invoice_onshipping
@@ -203,9 +198,8 @@ msgid "Destination Journal"
 msgstr "目标账簿"
 
 #. module: stock_account
-#: code:addons/stock_account/product.py:83
-#: code:addons/stock_account/product.py:116
-#: code:addons/stock_account/wizard/stock_invoice_onshipping.py:91
+#: code:addons\stock_account\product.py:83 code:addons\stock_account\product.py:116
+#: code:addons\stock_account\wizard\stock_invoice_onshipping.py:91
 #, python-format
 msgid "Error!"
 msgstr "错误！"
@@ -239,35 +233,33 @@ msgstr "ID"
 #. module: stock_account
 #: help:stock.change.standard.price,new_price:0
 msgid ""
-"If cost price is increased, stock variation account will be debited and "
-"stock output account will be credited with the value = (difference of amount "
-"* quantity available).\n"
-"If cost price is decreased, stock variation account will be creadited and "
-"stock input account will be debited."
+"If cost price is increased, stock variation account will be debited and stock output "
+"account will be credited with the value = (difference of amount * quantity "
+"available).\n"
+"If cost price is decreased, stock variation account will be creadited and stock "
+"input account will be debited."
 msgstr ""
-"如果成本价增加，库存核算科目为借方，出库科目为贷方，其值=(相差的金额 * 数"
-"量)。\n"
+"如果成本价增加，库存核算科目为借方，出库科目为贷方，其值=(相差的金额 * 数量)。\n"
 "如果成本价减少，库存核算科目为贷方，入库科目为借方。"
 
 #. module: stock_account
 #: help:product.template,valuation:0
 msgid ""
-"If real-time valuation is enabled for a product, the system will "
-"automatically write journal entries corresponding to stock moves, with "
-"product price as specified by the 'Costing Method'The inventory variation "
-"account set on the product category will represent the current inventory "
-"value, and the stock input and stock output account will hold the "
-"counterpart moves for incoming and outgoing products."
+"If real-time valuation is enabled for a product, the system will automatically write "
+"journal entries corresponding to stock moves, with product price as specified by the "
+"'Costing Method'The inventory variation account set on the product category will "
+"represent the current inventory value, and the stock input and stock output account "
+"will hold the counterpart moves for incoming and outgoing products."
 msgstr ""
-"如果一个产品激活了实时估值，对于库存移动系统将自动写入账簿，将根据成本方法计"
-"算产品价格。此产品设置的不同仓库科目将代替当前的库存估值，并且出库和入库科目"
-"将作为发货和入库的两个对方科目。"
+"如果一个产品激活了实时估值，对于库存移动系统将自动写入账簿，将根据成本方法计算产品价"
+"格。此产品设置的不同仓库科目将代替当前的库存估值，并且出库和入库科目将作为发货和入库"
+"的两个对方科目。"
 
 #. module: stock_account
 #: help:stock.config.settings,module_stock_landed_costs:0
 msgid ""
-"Install the module that allows to affect landed costs on pickings, and split "
-"them onto the different products."
+"Install the module that allows to affect landed costs on pickings, and split them "
+"onto the different products."
 msgstr "安装，允许影响到采摘到岸成本的模块，然后将它们拆分到不同的产品。"
 
 #. module: stock_account
@@ -303,16 +295,14 @@ msgid "Invoice Date"
 msgstr "开票日期"
 
 #. module: stock_account
-#: field:procurement.rule,invoice_state:0
-#: field:stock.location.path,invoice_state:0
+#: field:procurement.rule,invoice_state:0 field:stock.location.path,invoice_state:0
 msgid "Invoice Status"
 msgstr "发票状态"
 
 #. module: stock_account
 #: selection:procurement.order,invoice_state:0
 #: selection:procurement.rule,invoice_state:0
-#: selection:stock.location.path,invoice_state:0
-#: selection:stock.move,invoice_state:0
+#: selection:stock.location.path,invoice_state:0 selection:stock.move,invoice_state:0
 #: selection:stock.picking,invoice_state:0
 msgid "Invoiced"
 msgstr "已开发票"
@@ -358,13 +348,13 @@ msgid "Move"
 msgstr "移动"
 
 #. module: stock_account
-#: code:addons/stock_account/product.py:116
+#: code:addons\stock_account\product.py:116
 #, python-format
 msgid "No difference between standard price and new price!"
 msgstr "标准价格和新价格没有区别！"
 
 #. module: stock_account
-#: code:addons/stock_account/wizard/stock_invoice_onshipping.py:91
+#: code:addons\stock_account\wizard\stock_invoice_onshipping.py:91
 #, python-format
 msgid "No invoice created!"
 msgstr "没有发票被创建！"
@@ -375,7 +365,7 @@ msgid "No invoicing"
 msgstr "没有开票"
 
 #. module: stock_account
-#: code:addons/stock_account/wizard/stock_invoice_onshipping.py:82
+#: code:addons\stock_account\wizard\stock_invoice_onshipping.py:82
 #, python-format
 msgid "None of these picking lists require invoicing."
 msgstr "这些分拣列表不需要开票。"
@@ -383,18 +373,17 @@ msgstr "这些分拣列表不需要开票。"
 #. module: stock_account
 #: selection:procurement.order,invoice_state:0
 #: selection:procurement.rule,invoice_state:0
-#: selection:stock.location.path,invoice_state:0
-#: selection:stock.move,invoice_state:0
+#: selection:stock.location.path,invoice_state:0 selection:stock.move,invoice_state:0
 #: selection:stock.picking,invoice_state:0
 msgid "Not Applicable"
 msgstr "无效"
 
 #. module: stock_account
-#: code:addons/stock_account/product.py:83
+#: code:addons\stock_account\product.py:83
 #, python-format
 msgid ""
-"One of the following information is missing on the product or product "
-"category and prevents the accounting valuation entries to be created:\n"
+"One of the following information is missing on the product or product category and "
+"prevents the accounting valuation entries to be created:\n"
 "    Product: %s\n"
 "    Stock Input Account: %s\n"
 "    Stock Output Account: %s\n"
@@ -519,8 +508,7 @@ msgid "Standard Price"
 msgstr "标准价格"
 
 #. module: stock_account
-#: code:addons/stock_account/product.py:137
-#: code:addons/stock_account/product.py:144
+#: code:addons\stock_account\product.py:137 code:addons\stock_account\product.py:144
 #, python-format
 msgid "Standard Price changed"
 msgstr "标准价格已改变"
@@ -528,18 +516,17 @@ msgstr "标准价格已改变"
 #. module: stock_account
 #: help:product.template,cost_method:0
 msgid ""
-"Standard Price: The cost price is manually updated at the end of a specific "
-"period (usually every year).\n"
-"                    Average Price: The cost price is recomputed at each "
-"incoming shipment and used for the product valuation.\n"
-"                    Real Price: The cost price displayed is the price of the "
-"last outgoing product (will be use in case of inventory loss for example)."
+"Standard Price: The cost price is manually updated at the end of a specific period "
+"(usually every year).\n"
+"                    Average Price: The cost price is recomputed at each incoming "
+"shipment and used for the product valuation.\n"
+"                    Real Price: The cost price displayed is the price of the last "
+"outgoing product (will be use in case of inventory loss for example)."
 msgstr ""
 "标准价格： 成本价格一般在特定周期后人工更新（一般是每年）。\n"
-"                    平均价格：成本价格在每次入库和使用产品估值后就会重新计"
-"算。 \n"
-"                    实时价格：显示的成本价格是最后一次发货的价格（例如：用于"
-"库存丢失时）。"
+"                    平均价格：成本价格在每次入库和使用产品估值后就会重新计算。 \n"
+"                    实时价格：显示的成本价格是最后一次发货的价格（例如：用于库存丢失"
+"时）。"
 
 #. module: stock_account
 #: field:product.category,property_stock_account_input_categ:0
@@ -558,8 +545,7 @@ msgid "Stock Journal"
 msgstr "库存账簿"
 
 #. module: stock_account
-#: model:ir.model,name:stock_account.model_stock_move
-#: field:stock.history,move_id:0
+#: model:ir.model,name:stock_account.model_stock_move field:stock.history,move_id:0
 msgid "Stock Move"
 msgstr "库存调拨"
 
@@ -591,7 +577,7 @@ msgid "Stock Valuation Account (Outgoing)"
 msgstr "库存核算科目（即将出库）"
 
 #. module: stock_account
-#: code:addons/stock_account/wizard/stock_valuation_history.py:30
+#: code:addons\stock_account\wizard\stock_valuation_history.py:30
 #: view:stock.history:stock_account.view_stock_history_report_graph
 #: view:stock.history:stock_account.view_stock_history_report_search
 #: view:stock.history:stock_account.view_stock_history_report_tree
@@ -602,8 +588,8 @@ msgstr "当天库存金额"
 #. module: stock_account
 #: help:stock.config.settings,module_stock_invoice_directly:0
 msgid ""
-"This allows to automatically launch the invoicing wizard if the delivery is "
-"to be invoiced when you send or deliver goods.\n"
+"This allows to automatically launch the invoicing wizard if the delivery is to be "
+"invoiced when you send or deliver goods.\n"
 "-This installs the module stock_invoice_directly."
 msgstr ""
 "当您发送或交付货物要发票将允许自动启动发货的发票向导\n"
@@ -612,8 +598,7 @@ msgstr ""
 #. module: stock_account
 #: selection:procurement.order,invoice_state:0
 #: selection:procurement.rule,invoice_state:0
-#: selection:stock.location.path,invoice_state:0
-#: selection:stock.move,invoice_state:0
+#: selection:stock.location.path,invoice_state:0 selection:stock.move,invoice_state:0
 #: selection:stock.picking,invoice_state:0
 msgid "To Be Invoiced"
 msgstr "待开票"
@@ -631,27 +616,24 @@ msgstr "总价值"
 #. module: stock_account
 #: help:stock.location,valuation_in_account_id:0
 msgid ""
-"Used for real-time inventory valuation. When set on a virtual location (non "
-"internal type), this account will be used to hold the value of products "
-"being moved from an internal location into this location, instead of the "
-"generic Stock Output Account set on the product. This has no effect for "
-"internal locations."
+"Used for real-time inventory valuation. When set on a virtual location (non internal "
+"type), this account will be used to hold the value of products being moved from an "
+"internal location into this location, instead of the generic Stock Output Account "
+"set on the product. This has no effect for internal locations."
 msgstr ""
-"用于实时库存核算。当设定在一个虚拟库位（而不是内部类型）时，这科目将用于记录"
-"从内部库位调拨产品的估值。一般代替这产品的出库科目。它不影响内部库位。"
+"用于实时库存核算。当设定在一个虚拟库位（而不是内部类型）时，这科目将用于记录从内部库"
+"位调拨产品的估值。一般代替这产品的出库科目。它不影响内部库位。"
 
 #. module: stock_account
 #: help:stock.location,valuation_out_account_id:0
 msgid ""
-"Used for real-time inventory valuation. When set on a virtual location (non "
-"internal type), this account will be used to hold the value of products "
-"being moved out of this location and into an internal location, instead of "
-"the generic Stock Output Account set on the product. This has no effect for "
-"internal locations."
+"Used for real-time inventory valuation. When set on a virtual location (non internal "
+"type), this account will be used to hold the value of products being moved out of "
+"this location and into an internal location, instead of the generic Stock Output "
+"Account set on the product. This has no effect for internal locations."
 msgstr ""
-"用于实时库存核算。当设在虚拟库位（不是内部类型）时，在产品被移出这库位和移入"
-"内部库位时这科目将用于记录产品的估值，一般代替产品的出库科目。对内部库位没影"
-"响。"
+"用于实时库存核算。当设在虚拟库位（不是内部类型）时，在产品被移出这库位和移入内部库位"
+"时这科目将用于记录产品的估值，一般代替产品的出库科目。对内部库位没影响。"
 
 #. module: stock_account
 #: field:stock.history,price_unit_on_quant:0
@@ -659,7 +641,7 @@ msgid "Value"
 msgstr "价值"
 
 #. module: stock_account
-#: code:addons/stock_account/wizard/stock_invoice_onshipping.py:82
+#: code:addons\stock_account\wizard\stock_invoice_onshipping.py:82
 #, python-format
 msgid "Warning!"
 msgstr "警告!"
@@ -667,61 +649,59 @@ msgstr "警告!"
 #. module: stock_account
 #: help:product.category,property_stock_account_input_categ:0
 msgid ""
-"When doing real-time inventory valuation, counterpart journal items for all "
-"incoming stock moves will be posted in this account, unless there is a "
-"specific valuation account set on the source location. This is the default "
-"value for all products in this category. It can also directly be set on each "
-"product"
+"When doing real-time inventory valuation, counterpart journal items for all incoming "
+"stock moves will be posted in this account, unless there is a specific valuation "
+"account set on the source location. This is the default value for all products in "
+"this category. It can also directly be set on each product"
 msgstr ""
-"在进行实时库存核算时，除非在源库位指定一个核算科目，否则所有进仓调拨在对应的"
-"的账簿将登入这科目。这是该产品类别的默认值。它也可以直接设定在每个产品上。"
+"在进行实时库存核算时，除非在源库位指定一个核算科目，否则所有进仓调拨在对应的的账簿将"
+"登入这科目。这是该产品类别的默认值。它也可以直接设定在每个产品上。"
 
 #. module: stock_account
 #: help:product.template,property_stock_account_input:0
 msgid ""
-"When doing real-time inventory valuation, counterpart journal items for all "
-"incoming stock moves will be posted in this account, unless there is a "
-"specific valuation account set on the source location. When not set on the "
-"product, the one from the product category is used."
+"When doing real-time inventory valuation, counterpart journal items for all incoming "
+"stock moves will be posted in this account, unless there is a specific valuation "
+"account set on the source location. When not set on the product, the one from the "
+"product category is used."
 msgstr ""
-"在进行实时库存盘点时，除非为源库位指定一个库存核算科目，否则所有的入库调拨账"
-"簿明细将登入这科目。当没在产品设定时，使用产品类别的设定。"
+"在进行实时库存盘点时，除非为源库位指定一个库存核算科目，否则所有的入库调拨账簿明细将"
+"登入这科目。当没在产品设定时，使用产品类别的设定。"
 
 #. module: stock_account
 #: help:product.category,property_stock_account_output_categ:0
 msgid ""
-"When doing real-time inventory valuation, counterpart journal items for all "
-"outgoing stock moves will be posted in this account, unless there is a "
-"specific valuation account set on the destination location. This is the "
-"default value for all products in this category. It can also directly be set "
-"on each product"
+"When doing real-time inventory valuation, counterpart journal items for all outgoing "
+"stock moves will be posted in this account, unless there is a specific valuation "
+"account set on the destination location. This is the default value for all products "
+"in this category. It can also directly be set on each product"
 msgstr ""
-"在进行实时库存核算时，除非目标库位指定一个核算科目否则所有出库调拨账簿明细将"
-"记录到这科目。这是该产品类别的默认设置。它也可直接设定在每个产品上。"
+"在进行实时库存核算时，除非目标库位指定一个核算科目否则所有出库调拨账簿明细将记录到这"
+"科目。这是该产品类别的默认设置。它也可直接设定在每个产品上。"
 
 #. module: stock_account
 #: help:product.template,property_stock_account_output:0
 msgid ""
-"When doing real-time inventory valuation, counterpart journal items for all "
-"outgoing stock moves will be posted in this account, unless there is a "
-"specific valuation account set on the destination location. When not set on "
-"the product, the one from the product category is used."
+"When doing real-time inventory valuation, counterpart journal items for all outgoing "
+"stock moves will be posted in this account, unless there is a specific valuation "
+"account set on the destination location. When not set on the product, the one from "
+"the product category is used."
 msgstr ""
-"在进行实时核算时，除非对目标库位指定一个核算科目否则出库调拨账簿分录将登入这"
-"个科目。当产品没设定时，它默认继承产品的类别的设定。"
+"在进行实时核算时，除非对目标库位指定一个核算科目否则出库调拨账簿分录将登入这个科目。"
+"当产品没设定时，它默认继承产品的类别的设定。"
 
 #. module: stock_account
 #: help:product.category,property_stock_journal:0
 msgid ""
-"When doing real-time inventory valuation, this is the Accounting Journal in "
-"which entries will be automatically posted when stock moves are processed."
+"When doing real-time inventory valuation, this is the Accounting Journal in which "
+"entries will be automatically posted when stock moves are processed."
 msgstr "在进行实时库存核算时，库存调拨处理将自动登入这账簿的明细里."
 
 #. module: stock_account
 #: help:product.category,property_stock_valuation_account_id:0
 msgid ""
-"When real-time inventory valuation is enabled on a product, this account "
-"will hold the current value of the products."
+"When real-time inventory valuation is enabled on a product, this account will hold "
+"the current value of the products."
 msgstr "在进行产品实时库存核算时，此科目记录产品的当前估值。"
 
 #. module: stock_account
@@ -734,11 +714,28 @@ msgstr "打开库存估值历史表格的向导"
 msgid "_Apply"
 msgstr "应用(_A)"
 
+#. module: stock_account
+#: view:stock.change.standard.price:stock_account.view_change_standard_price
+#: view:stock.invoice.onshipping:stock_account.view_stock_invoice_onshipping
+#: view:wizard.valuation.history:stock_account.view_wizard_valuation_history
+msgid "or"
+msgstr "或"
+
+#. module: stock_account
+#: view:stock.picking:stock_account.view_picking_inherit_form2
+msgid ""
+"{'default_invoice_state': invoice_state, 'address_in_id': partner_id, "
+"'form_view_ref':'stock.view_move_picking_form', 'tree_view_ref':'stock."
+"view_move_picking_tree', 'default_picking_type_id': "
+"picking_type_id,'default_picking_id': active_id}"
+msgstr ""
+"{'default_invoice_state': invoice_state, 'address_in_id': partner_id, "
+"'form_view_ref':'stock.view_move_picking_form', 'tree_view_ref':'stock."
+"view_move_picking_tree', 'default_picking_type_id': "
+"picking_type_id,'default_picking_id': active_id}"
+
 #~ msgid "Accounting Entries"
 #~ msgstr "会计分录"
-
-#~ msgid "or"
-#~ msgstr "或"
 
 #~ msgid "stock.config.settings"
 #~ msgstr "stock.config.settings"
@@ -764,8 +761,7 @@ msgstr "应用(_A)"
 #~ msgid "Please define stock input account for this product: \"%s\" (id: %d)."
 #~ msgstr "请为此产品定义入库科目： \"%s\" (id: %d)."
 
-#~ msgid ""
-#~ "Please define stock output account for this product: \"%s\" (id: %d)."
+#~ msgid "Please define stock output account for this product: \"%s\" (id: %d)."
 #~ msgstr "请为此产品定义出库科目: \"%s\" (id: %d)."
 
 #~ msgid "Please specify company in Location."

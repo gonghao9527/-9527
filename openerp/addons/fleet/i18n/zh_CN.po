@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-23 16:28+0000\n"
-"PO-Revision-Date: 2014-09-28 08:53+0800\n"
+"PO-Revision-Date: 2014-10-27 07:10+0800\n"
 "Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "Language: zh_CN\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-03-08 05:42+0000\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #. module: fleet
 #: code:addons/fleet/fleet.py:387
@@ -743,7 +743,7 @@ msgstr "实际成本"
 #. module: fleet
 #: selection:fleet.vehicle,fuel_type:0
 msgid "Electric"
-msgstr "电启动"
+msgstr "电动"
 
 #. module: fleet
 #: model:fleet.service.type,name:fleet.type_service_service_17
@@ -844,7 +844,7 @@ msgstr "更换燃油泵"
 #. module: fleet
 #: field:fleet.vehicle,fuel_type:0
 msgid "Fuel Type"
-msgstr "燃油类型"
+msgstr "燃料类型"
 
 #. module: fleet
 #: help:fleet.vehicle,fuel_type:0

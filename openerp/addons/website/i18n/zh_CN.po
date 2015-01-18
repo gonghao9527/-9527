@@ -6,17 +6,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0alpha1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-23 16:28+0000\n"
-"PO-Revision-Date: 2014-09-29 13:14+0800\n"
-"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"POT-Creation-Date: 2014-11-07 08:08+0000\n"
+"PO-Revision-Date: 2014-11-09 17:39+0800\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.6.10\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+
+#. module: website
+#: view:website:website.snippets
+msgid "\"OpenERP\""
+msgstr "\"OpenERP\""
 
 #. module: website
 #. openerp-web
@@ -65,7 +70,7 @@ msgstr ""
 #. module: website
 #: view:website:website.info
 msgid ", author:"
-msgstr "，作者"
+msgstr "，作者："
 
 #. module: website
 #: view:website:website.info
@@ -178,6 +183,16 @@ msgid ""
 "story."
 msgstr ""
 "一个非常好的抓住读者眼球讲故事的方法。一切你考虑写下来的都被当作一个故事。"
+
+#. module: website
+#: view:website:website.snippets
+msgid ""
+"A great way to catch your reader's attention is to tell a story. Everything "
+"you consider writing can be told as a story."
+msgstr ""
+"讲述一个故事是吸引访问者注意力的一个好办法.\n"
+"                                    任何你想写的东西都可以作为一个故事来讲"
+"述。"
 
 #. module: website
 #: view:website:website.snippets
@@ -438,6 +453,11 @@ msgstr "商人"
 
 #. module: website
 #: view:website:website.snippets
+msgid "But"
+msgstr "但是"
+
+#. module: website
+#: view:website:website.snippets
 msgid "Button"
 msgstr "按钮"
 
@@ -509,6 +529,11 @@ msgid "Check Mobile Preview"
 msgstr "查看手机预览"
 
 #. module: website
+#: view:website:website.snippets
+msgid "Check now and discover more today!"
+msgstr "现在就来检验一下并且今天会发现更多！"
+
+#. module: website
 #: field:website.menu,child_id:0
 msgid "Child Menus"
 msgstr "子菜单"
@@ -531,6 +556,11 @@ msgstr "选择一张图片..."
 #: view:website:website.snippet_options
 msgid "Circle"
 msgstr "圆圈"
+
+#. module: website
+#: view:website:website.snippets
+msgid "Click Here"
+msgstr "点击这里"
 
 #. module: website
 #. openerp-web
@@ -712,7 +742,7 @@ msgstr "创建一个页面"
 
 #. module: website
 #. openerp-web
-#: code:addons/website/static/src/js/website.editor.js:987
+#: code:addons/website/static/src/js/website.editor.js:981
 #, python-format
 msgid "Create page '%s'"
 msgstr "创建 '%s' 页"
@@ -877,6 +907,11 @@ msgstr "取消"
 #, python-format
 msgid "Discard edition"
 msgstr "放弃编辑"
+
+#. module: website
+#: view:website:website.snippets
+msgid "Discover more about Odoo"
+msgstr "发现更多关于Odoo的信息"
 
 #. module: website
 #: view:website:website.template_partner_comment
@@ -1064,6 +1099,11 @@ msgid "Extra Small"
 msgstr "特小"
 
 #. module: website
+#: view:website:website.snippet_options
+msgid "Extra-Large"
+msgstr "特大"
+
+#. module: website
 #: view:website:website.snippets
 msgid "FAQ"
 msgstr "FAQ"
@@ -1128,6 +1168,11 @@ msgstr "平面和现代"
 #: view:website:website.themes
 msgid "Flatly"
 msgstr "断然"
+
+#. module: website
+#: view:website:website.snippet_options
+msgid "Float"
+msgstr "浮动"
 
 #. module: website
 #: view:website:website.snippet_options
@@ -1258,6 +1303,11 @@ msgid "Here are the visuals used to help you translate efficiently:"
 msgstr "这是用来帮助你提高翻译效率的可视化工具"
 
 #. module: website
+#: view:website:website.snippet_options
+msgid "Hide link"
+msgstr "隐藏链接"
+
+#. module: website
 #: view:website:website.500 view:website:website.layout
 #: model:website.menu,name:website.menu_homepage
 msgid "Home"
@@ -1336,13 +1386,32 @@ msgstr "图像"
 
 #. module: website
 #: view:website:website.snippets
+msgid "Image Floating"
+msgstr "图像浮动"
+
+#. module: website
+#: view:website:website.snippets
 msgid "Image Gallery"
 msgstr "相册"
 
 #. module: website
 #: view:website:website.snippets
+msgid "Image-Floating"
+msgstr "图像-浮动"
+
+#. module: website
+#: view:website:website.snippets
 msgid "Image-Text"
 msgstr "图像-文本"
+
+#. module: website
+#: view:website:website.snippets
+msgid ""
+"In case you still feel a bit puzzled about all\n"
+"                            of our yesterday's announcements, here is a "
+"little\n"
+"                            summary for you."
+msgstr "假如你仍然感觉我们昨天的公告把你搞糊涂了，这里是一些概要。"
 
 #. module: website
 #. openerp-web
@@ -1458,6 +1527,7 @@ msgstr "语言"
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.editor.xml:126
+#: view:website:website.snippet_options
 #, python-format
 msgid "Large"
 msgstr "大的"
@@ -1475,6 +1545,11 @@ msgstr "最后更新被"
 #: field:website.menu,write_date:0 field:website.seo.metadata,write_date:0
 msgid "Last Updated on"
 msgstr "最后更新在"
+
+#. module: website
+#: view:website:website.snippet_options
+msgid "Left"
+msgstr "左"
 
 #. module: website
 #. openerp-web
@@ -1543,6 +1618,11 @@ msgid "Mango"
 msgstr "芒果"
 
 #. module: website
+#: view:website:website.snippet_options
+msgid "Margin"
+msgstr "留白"
+
+#. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.snippets.xml:60
 #, python-format
@@ -1553,6 +1633,11 @@ msgstr "重设边距"
 #: view:website:website.403 view:website:website.404
 msgid "Maybe you were looking for one of these popular pages ?"
 msgstr "也许你正在寻找其中很流行的一页"
+
+#. module: website
+#: view:website:website.snippet_options
+msgid "Medium"
+msgstr "中等"
 
 #. module: website
 #: view:website.config.settings:website.view_website_config_settings
@@ -1637,7 +1722,7 @@ msgstr "新建窗口"
 
 #. module: website
 #. openerp-web
-#: code:addons/website/static/src/js/website.editor.js:972
+#: code:addons/website/static/src/js/website.editor.js:966
 #, python-format
 msgid "New or existing page"
 msgstr "新建或已存在的页面"
@@ -1670,7 +1755,7 @@ msgstr "None"
 #: view:website:website.publish_management view:website:website.publish_short
 #, python-format
 msgid "Not Published"
-msgstr "未出版"
+msgstr "未发布"
 
 #. module: website
 #: view:website:website.info
@@ -1678,7 +1763,7 @@ msgid "Note: To hide this page, uncheck it from the top Customize menu."
 msgstr "注意：要隐藏此页面，从顶部定制菜单取消勾选"
 
 #. module: website
-#: view:website:website.layout
+#: view:website:website.layout view:website:website.snippets
 msgid "Odoo"
 msgstr "Odoo"
 
@@ -1887,7 +1972,7 @@ msgstr "合作伙伴"
 #. module: website
 #: view:website:website.snippet_options
 msgid "People"
-msgstr "人脉"
+msgstr "成员"
 
 #. module: website
 #. openerp-web
@@ -1943,7 +2028,7 @@ msgstr "项目管理问题"
 #: view:website:website.layout
 #, python-format
 msgid "Promote"
-msgstr "提升"
+msgstr "推广"
 
 #. module: website
 #. openerp-web
@@ -1988,7 +2073,7 @@ msgstr "点击 <em>'保存'</em> 按钮来发布页面."
 #: view:website:website.publish_management view:website:website.publish_short
 #, python-format
 msgid "Published"
-msgstr "公共的"
+msgstr "已发布"
 
 #. module: website
 #: view:website:website.themes
@@ -2080,6 +2165,11 @@ msgstr "重设大小"
 #: field:ir.attachment,datas_big:0
 msgid "Resized file content"
 msgstr "调整文件内容"
+
+#. module: website
+#: view:website:website.snippet_options
+msgid "Right"
+msgstr "右侧"
 
 #. module: website
 #. openerp-web
@@ -2285,6 +2375,7 @@ msgstr "慢"
 #. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.editor.xml:120
+#: view:website:website.snippet_options
 #, python-format
 msgid "Small"
 msgstr "小"
@@ -2647,7 +2738,7 @@ msgstr "无限制的支持"
 #. module: website
 #: view:website:website.publish_management
 msgid "Unpublish"
-msgstr "未出版"
+msgstr "取消发布"
 
 #. module: website
 #. openerp-web
@@ -2673,7 +2764,7 @@ msgstr "上传中..."
 #. module: website
 #: field:website.menu,url:0
 msgid "Url"
-msgstr "Url"
+msgstr "网址"
 
 #. module: website
 #: view:website:website.snippet_options
@@ -2746,6 +2837,13 @@ msgstr ""
 "软件系统这样一个产品，\n"
 "                          来提升每一个人的生活品质，\n"
 "                          来解决各位在商业活动中遇到的诸多问题"
+
+#. module: website
+#: view:website:website.snippets
+msgid ""
+"We have decided to change the\n"
+"                            name because"
+msgstr "我们已经决定改变名称是因为"
 
 #. module: website
 #: view:website:website.contactus
@@ -2880,6 +2978,11 @@ msgid "Well done, you created your homepage."
 msgstr "干得好,你成功创建了自己的主页。"
 
 #. module: website
+#: view:website:website.snippets
+msgid "What a day it was yesterday - such a big day for us!"
+msgstr "昨天是不平常的一天，对我们来讲是很重要的一天！"
+
+#. module: website
 #: field:ir.ui.view,page:0
 msgid "Whether this view is a web page template (complete)"
 msgstr "此视图是否是一个新的Web页面模板（完成）"
@@ -2896,6 +2999,22 @@ msgid ""
 "                    Sale, it will stay operational even after a complete "
 "disconnection."
 msgstr "销售只是在开始需要联网，之后即便网络完全断掉仍然可以操作。"
+
+#. module: website
+#: view:website:website.snippets
+msgid ""
+"With Odoo's fully integrated software, you can easily manage your\n"
+"                            meetings, schedule business calls, create "
+"recurring meetings,\n"
+"                            synchronize your agenda and easily keep in touch "
+"with your colleagues,\n"
+"                            partners and other people involved in projects "
+"or business discussions."
+msgstr ""
+"使用Odoo内部集成的软件，你能够轻松管理你的会议，\n"
+"安排业务联系电话，创建可循环的会议，\n"
+"同步你的日程并且轻松与同事，\n"
+"合作伙伴和其他项目中提到的人或者业务讨论组保持联系。"
 
 #. module: website
 #: view:website:website.snippet_options
@@ -3050,6 +3169,23 @@ msgid "describing your page content"
 msgstr "显示你的页面内容"
 
 #. module: website
+#: view:website:website.snippets
+msgid ""
+"didn't reflect the offering\n"
+"                            of the company anymore. With our newest apps, "
+"such\n"
+"                            as Website Builder, PoS or eCommerce, we have\n"
+"                            moved beyond the ERP territory."
+msgstr ""
+"不要再对公司的贡献有什么反映。使用我们最新的应用，例如网站构建器，pos或者"
+"ecommerce，我们已经将他们移出了ERP的范畴。"
+
+#. module: website
+#: view:website:website.snippets
+msgid "don't worry"
+msgstr "不要担心"
+
+#. module: website
 #: view:website:website.500
 msgid "factory settings"
 msgstr "工厂设置"
@@ -3140,6 +3276,19 @@ msgstr "https://youraccount.github.io"
 #: view:website:website.info
 msgid "instance of Odoo, the"
 msgstr "Odoo实例，这个"
+
+#. module: website
+#: view:website:website.snippets
+msgid ""
+"is and always will be\n"
+"                            fully open source. You can read more about the "
+"new name here.\n"
+"                            We have also prepared a short FAQ to explain all "
+"these changes\n"
+"                            to all of you."
+msgstr ""
+"是并且将是完全开源的。你能够在这里了解更多的新名称。\n"
+"我们也已经准备了一个简短的FAQ来为您解释一些的变化。"
 
 #. module: website
 #: view:website:website.snippets
@@ -3555,17 +3704,6 @@ msgstr "前一个"
 
 #~ msgid "Add Column"
 #~ msgstr "添加列"
-
-#~ msgid ""
-#~ "when your cursor is in a valid zone,\n"
-#~ "                            Odoo shows you a preview of the building "
-#~ "block\n"
-#~ "                            in the page.  You must release the block when "
-#~ "the\n"
-#~ "                            preview is visible."
-#~ msgstr ""
-#~ "当你的焦点位于有效区域时，Odoo会在此页向你展示构造块的预览。但预览可见时，"
-#~ "你必须释放块。"
 
 #~ msgid ""
 #~ "Work in multi-company environments, with appropriate security access "

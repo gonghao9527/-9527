@@ -58,7 +58,7 @@ msgstr "日历视图的为定义 'date_start'属性"
 #: code:addons/web_calendar/static/src/js/web_calendar.js:939
 #, python-format
 msgid "Create"
-msgstr "创建"
+msgstr "新建"
 
 #. module: web_calendar
 #. openerp-web

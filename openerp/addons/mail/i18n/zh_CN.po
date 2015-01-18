@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 7.0-20130420-232354\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-23 16:27+0000\n"
-"PO-Revision-Date: 2014-09-28 08:52+0800\n"
-"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"POT-Creation-Date: 2014-11-07 09:11+0000\n"
+"PO-Revision-Date: 2014-11-07 17:17+0800\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.6.10\n"
 
 #. module: mail
 #: code:addons/mail/mail_thread.py:384
@@ -78,7 +78,7 @@ msgid ""
 "<p class='oe_view_nocontent_create'>Click here to add new %(document)s</p>"
 "%(static_help)s"
 msgstr ""
-"<p class='oe_view_nocontent_create'>点击这里创建新 %(document)s</p>"
+"<p class='oe_view_nocontent_create'>点击这里新建%(document)s</p>"
 "%(static_help)s"
 
 #. module: mail
@@ -303,7 +303,7 @@ msgstr ""
 
 #. module: mail
 #. openerp-web
-#: code:addons/mail/static/src/js/mail_followers.js:101
+#: code:addons/mail/static/src/js/mail_followers.js:102
 #, python-format
 msgid "Apply"
 msgstr "应用"
@@ -400,7 +400,7 @@ msgstr "正文"
 
 #. module: mail
 #. openerp-web
-#: code:addons/mail/static/src/js/mail_followers.js:105
+#: code:addons/mail/static/src/js/mail_followers.js:106
 #: view:mail.compose.message:mail.email_compose_message_wizard_form
 #: view:mail.mail:mail.view_mail_form
 #: view:mail.wizard.invite:mail.mail_wizard_invite_form
@@ -441,7 +441,7 @@ msgstr "评论"
 
 #. module: mail
 #. openerp-web
-#: code:addons/mail/static/src/js/mail.js:1970
+#: code:addons/mail/static/src/js/mail.js:1966
 #: model:ir.actions.act_window,name:mail.action_email_compose_message_wizard
 #: view:mail.compose.message:mail.email_compose_message_wizard_form
 #, python-format
@@ -599,7 +599,7 @@ msgstr "完成"
 
 #. module: mail
 #. openerp-web
-#: code:addons/mail/static/src/js/mail_followers.js:99
+#: code:addons/mail/static/src/js/mail_followers.js:100
 #, python-format
 msgid "Edit Subscription of "
 msgstr "编辑订阅"
@@ -1018,7 +1018,7 @@ msgid "Log an internal note"
 msgstr "新增内部备注"
 
 #. module: mail
-#: code:addons/mail/mail_mail.py:330
+#: code:addons/mail/mail_mail.py:340
 #, python-format
 msgid "Mail Delivery Failed"
 msgstr "邮件发送失败"
@@ -1233,7 +1233,7 @@ msgstr "新建"
 
 #. module: mail
 #. openerp-web
-#: code:addons/mail/static/src/js/mail_followers.js:184
+#: code:addons/mail/static/src/js/mail_followers.js:205
 #, python-format
 msgid "No followers"
 msgstr "没有关注者"
@@ -1284,7 +1284,7 @@ msgstr "通知文档关注者（仅限群发邮件）"
 
 #. module: mail
 #. openerp-web
-#: code:addons/mail/static/src/js/mail_followers.js:186
+#: code:addons/mail/static/src/js/mail_followers.js:207
 #, python-format
 msgid "One follower"
 msgstr "一个关注者"
@@ -1973,7 +1973,7 @@ msgstr "警告！"
 
 #. module: mail
 #. openerp-web
-#: code:addons/mail/static/src/js/mail_followers.js:140
+#: code:addons/mail/static/src/js/mail_followers.js:141
 #, python-format
 msgid ""
 "Warning! \n"
@@ -1985,7 +1985,7 @@ msgstr ""
 
 #. module: mail
 #. openerp-web
-#: code:addons/mail/static/src/js/mail_followers.js:309
+#: code:addons/mail/static/src/js/mail_followers.js:330
 #, python-format
 msgid ""
 "Warning! \n"
@@ -2003,7 +2003,7 @@ msgstr "该消息是否是一个内部笔记（注释模式）"
 #. module: mail
 #: model:mail.group,name:mail.group_all_employees
 msgid "Whole Company"
-msgstr "整个公司"
+msgstr "全体员工"
 
 #. module: mail
 #: code:addons/mail/res_users.py:74
@@ -2063,7 +2063,7 @@ msgstr "文档"
 
 #. module: mail
 #. openerp-web
-#: code:addons/mail/static/src/js/mail_followers.js:188
+#: code:addons/mail/static/src/js/mail_followers.js:209
 #, python-format
 msgid "followers"
 msgstr "关注者"
@@ -2073,7 +2073,7 @@ msgstr "关注者"
 #: code:addons/mail/static/src/xml/mail.xml:348
 #, python-format
 msgid "like"
-msgstr "像"
+msgstr "点赞"
 
 #. module: mail
 #. openerp-web
@@ -2179,7 +2179,7 @@ msgstr "到"
 #: code:addons/mail/static/src/xml/mail.xml:349
 #, python-format
 msgid "unlike"
-msgstr "不喜欢"
+msgstr "拍砖"
 
 #. module: mail
 #. openerp-web

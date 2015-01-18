@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 8.0alpha1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-09-24 20:50+0800\n"
+"PO-Revision-Date: 2014-10-18 18:36+0800\n"
 "Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -213,7 +213,7 @@ msgstr "母公司销售团队"
 #. module: sales_team
 #: field:crm.case.section,parent_id:0
 msgid "Parent Team"
-msgstr "父团队"
+msgstr "上级团队"
 
 #. module: sales_team
 #: model:ir.model,name:sales_team.model_res_partner
@@ -223,7 +223,7 @@ msgstr "伙伴"
 #. module: sales_team
 #: field:crm.case.section,change_responsible:0
 msgid "Reassign Escalated"
-msgstr "重新分配已上报"
+msgstr "团队领导同上级团队"
 
 #. module: sales_team
 #: field:crm.case.section,reply_to:0
