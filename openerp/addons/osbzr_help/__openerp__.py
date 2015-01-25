@@ -45,6 +45,6 @@
         "static/src/xml/osbzr_help.xml",
     ],
     "certificate" : "",
-    'auto_install': True,
+    'auto_install': False,
     "category":'Generic Modules/Others'
 }
