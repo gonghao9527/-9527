@@ -27,19 +27,24 @@
 
 如何参与开发：
 -------------
-1. 添加 osbzr 的 remote 只需要做一次
-git remote add osbzr http://git.oschina.net/osbzr/openerp_7_osbzr.git
 
-2. 拉 主干代码到本地
+1. 在openerp-china项目上点击fork按钮，形成你自己的项目
+
+2. clone你自己的项目到本地
+
+3. 添加 osbzr 的 remote 只需要做一次
+git remote add osbzr http://git.oschina.net/osbzr/openerp-china.git
+
+4. 拉 主干代码到本地
 git fetch osbzr
 
-3. 合并 主干代码到本地
+5. 合并 主干代码到本地
 git merge osbzr/master
 
-4. 推送 本地合并后的代码到 fork 项目
+6. 推送 本地合并后的代码到 fork 项目
 git push origin master
 
-5. 向主项目提交合并请求
+7. 向主项目提交合并请求
 
 网友评论：OpenERP中国版和官方版有什么区别？
 =============================================
