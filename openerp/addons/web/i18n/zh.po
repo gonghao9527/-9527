@@ -128,7 +128,7 @@ msgstr "'%s' 时间格式不正确"
 #: code:addons/web/static/src/js/formats.js:253
 #, python-format
 msgid "'%s' is not a correct float"
-msgstr "'%s' 不是正确的float数据类型"
+msgstr "'%s' 不是正确的数字格式"
 
 #. module: web
 #. openerp-web
