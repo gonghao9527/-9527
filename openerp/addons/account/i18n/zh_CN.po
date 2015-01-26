@@ -6384,7 +6384,7 @@ msgstr "没有未配置的公司"
 #. module: account
 #: selection:account.financial.report,display_detail:0
 msgid "No detail"
-msgstr "不详"
+msgstr "无详细信息"
 
 #. module: account
 #: code:addons\account\wizard\account_invoice_refund.py:154
