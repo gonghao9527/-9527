@@ -1623,7 +1623,7 @@ msgstr "预测："
 #: code:addons\stock\static\src\xml\picking.xml:124
 #, python-format
 msgid "From"
-msgstr "开始时间"
+msgstr "从"
 
 #. module: stock
 #: field:product.template,track_all:0
@@ -2466,7 +2466,7 @@ msgstr "手动操作"
 #. module: stock
 #: view:stock.picking:stock.view_picking_form
 msgid "Mark as Todo"
-msgstr "标记为待办事项"
+msgstr "标记为待处理"
 
 #. module: stock
 #: field:stock.picking,max_date:0
@@ -4871,7 +4871,7 @@ msgstr "这将告诉你库位并且允许你定义多个分拣类型和仓库"
 #: code:addons\stock\static\src\xml\picking.xml:125
 #, python-format
 msgid "To"
-msgstr "结束时间"
+msgstr "到"
 
 #. module: stock
 #: view:stock.move:stock.view_move_search
@@ -4888,7 +4888,7 @@ msgstr "今天"
 #: code:addons\stock\static\src\xml\picking.xml:123
 #, python-format
 msgid "Todo"
-msgstr "待办事项"
+msgstr "待处理"
 
 #. module: stock
 #: view:website:stock.report_inventory
