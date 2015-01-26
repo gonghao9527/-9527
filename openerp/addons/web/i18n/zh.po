@@ -107,21 +107,21 @@ msgstr "%s (%d)"
 #: code:addons/web/static/src/js/formats.js:302
 #, python-format
 msgid "'%s' is not a correct date"
-msgstr "'%s'不是正确的date数据类型"
+msgstr "'%s'日期格式不正确"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/formats.js:325
 #, python-format
 msgid "'%s' is not a correct date, datetime nor time"
-msgstr "'%s'不是正确的date,datetime或timet数据类型"
+msgstr "'%s'日期或时间格式不正确"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/formats.js:289
 #, python-format
 msgid "'%s' is not a correct datetime"
-msgstr "'%s' 不是正确的datetime数据类型"
+msgstr "'%s' 时间格式不正确"
 
 #. module: web
 #. openerp-web
@@ -135,21 +135,21 @@ msgstr "'%s' 不是正确的float数据类型"
 #: code:addons/web/static/src/js/formats.js:238
 #, python-format
 msgid "'%s' is not a correct integer"
-msgstr "'%s' 不是正确的inter数据类型"
+msgstr "'%s' 不是整数"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/formats.js:310
 #, python-format
 msgid "'%s' is not a correct time"
-msgstr "'%s' 不是正确的time数据类型"
+msgstr "'%s' 时间格式不正确"
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/formats.js:337
 #, python-format
 msgid "'%s' is not convertible to date, datetime nor time"
-msgstr "'%s' 无法转换为date,datetime或time格式"
+msgstr "'%s' 没法转化为有效的日期或时间格式"
 
 #. module: web
 #. openerp-web
@@ -240,7 +240,7 @@ msgstr "2. 检查您的文件格式"
 #: code:addons/web/static/src/js/view_form.js:2644
 #, python-format
 msgid "<Prev"
-msgstr "<Prev(上翻)"
+msgstr "<Prev(上一页)"
 
 #. module: web
 #. openerp-web
