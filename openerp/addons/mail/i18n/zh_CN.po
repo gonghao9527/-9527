@@ -34,7 +34,7 @@ msgstr "%s 已加入到 %s 网络."
 #: code:addons/mail/static/src/xml/mail.xml:29
 #, python-format
 msgid "&ograve"
-msgstr "和严重"
+msgstr "&ograve"
 
 #. module: mail
 #. openerp-web
