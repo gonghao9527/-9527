@@ -2523,6 +2523,7 @@ class stock_inventory(osv.osv):
         'move_ids_exist': fields.function(_get_move_ids_exist, type='boolean', string=' Stock Move Exists?', help='technical field for attrs in view'),
         'filter': fields.selection(_get_available_filters, 'Selection Filter', required=True),
         'total_qty': fields.function(_get_total_qty, type="float"),
+        'note': fields.text('Notes'),
     }
 
     def _default_stock_location(self, cr, uid, context=None):

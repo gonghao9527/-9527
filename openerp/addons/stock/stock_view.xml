@@ -129,6 +129,7 @@
                                     <field name="state" invisible="True"/>
                                 </tree>
                             </field>
+                            <field name="note" placeholder="Add an internal note..." class="oe_inline"/>
                             <p></p>
                             <h3 class="oe_grey">Notes</h3>
                             <ul class="oe_grey"><li>Inventory adjustments will be made by comparing the theoretical and the checked quantities.</li>
