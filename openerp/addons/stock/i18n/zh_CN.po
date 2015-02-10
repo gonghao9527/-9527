@@ -684,7 +684,7 @@ msgstr "有库存的产品"
 #. module: stock
 #: field:stock.move,backorder_id:0 field:stock.picking,backorder_id:0
 msgid "Back Order of"
-msgstr "后续分批出库单"
+msgstr "拆分自"
 
 #. module: stock
 #: code:addons\stock\stock.py:952
