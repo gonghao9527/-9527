@@ -2,7 +2,7 @@
 <openerp>
     <data noupdate="1">
         <record id="ir_cron_db_backup_scheduler" model="ir.cron">
-            <field eval="&quot;&quot;&quot;schedule_backup&quot;&quot;&quot;" name="function"/>
+            <field eval="&quot;&quot;&quot;schedule_backup_pgtool&quot;&quot;&quot;" name="function"/>
             <field eval="&quot;&quot;&quot;work_days&quot;&quot;&quot;" name="interval_type"/>
             <field name="user_id" ref="base.user_root"/>
             <field eval="&quot;&quot;&quot;Backup scheduler&quot;&quot;&quot;" name="name"/>
