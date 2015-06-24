@@ -161,6 +161,7 @@ class db_backup(osv.osv):
     def _db_pg_dump(self, cr, uid, db_name, db_filename, context=None):
         _logger.info('auto_backup DUMP DB!')
         pg_passwd = os.environ.get('PGPASSWORD') or tools.config['db_password'] or False
+        data = ''
         if not pg_passwd:
             _logger.error(
                     'DUMP DB: %s failed! Please verify the configuration of the database password on the server. '
