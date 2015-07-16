@@ -86,7 +86,7 @@ msgstr "曲线图"
 #: code:addons/web_graph/static/src/xml/web_graph.xml:49
 #, python-format
 msgid "Measures"
-msgstr "衡量"
+msgstr "计量值"
 
 #. module: web_graph
 #. openerp-web
@@ -127,7 +127,7 @@ msgstr "饼状图"
 #: code:addons/web_graph/static/src/js/pivot_table.js:20
 #, python-format
 msgid "Quantity"
-msgstr "数量"
+msgstr "记录数"
 
 #. module: web_graph
 #. openerp-web
