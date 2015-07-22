@@ -9,7 +9,7 @@ instance.web.ViewManagerAction.include({
     },
     on_click_help_link: function(e) {
         e.preventDefault();
-        window.open('http://www.osbzr.com/help.php?page='+this.dataset.model);
+        window.open('http://www.osbzr.com/index.php?page='+this.dataset.model);
     },
 });
 
