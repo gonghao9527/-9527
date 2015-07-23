@@ -21,6 +21,5 @@
 # __author__ = jeff@openerp.cn
 # __author__ = cysnake4713@gmail.com
 
-import models
-import wizard
-import report
+import account
+import account_new
