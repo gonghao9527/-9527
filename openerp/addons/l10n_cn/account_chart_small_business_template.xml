@@ -480,7 +480,7 @@ http://kjs.mof.gov.cn/zhengwuxinxi/zhengcefabu/201111/t20111107_605525.html
             <field ref="cn_small_business_cost" name="parent_id"/>
             <field name="type">other</field>
             <field name="name">生产成本</field>
-            <field name="user_type" ref="user_type_cost1"/>
+            <field name="user_type" ref="user_type_cost2"/>
         </record>
         <record id="small_business_chart4101" model="account.account.template">
             <field name="code">4101</field>
@@ -488,7 +488,7 @@ http://kjs.mof.gov.cn/zhengwuxinxi/zhengcefabu/201111/t20111107_605525.html
             <field ref="cn_small_business_cost" name="parent_id"/>
             <field name="type">other</field>
             <field name="name">制造费用</field>
-            <field name="user_type" ref="user_type_cost1"/>
+            <field name="user_type" ref="user_type_cost2"/>
         </record>
 
         <record id="small_business_chart4301" model="account.account.template">
@@ -506,7 +506,7 @@ http://kjs.mof.gov.cn/zhengwuxinxi/zhengcefabu/201111/t20111107_605525.html
             <field ref="cn_small_business_cost" name="parent_id"/>
             <field name="type">other</field>
             <field name="name">工程施工</field>
-            <field name="user_type" ref="user_type_cost1"/>
+            <field name="user_type" ref="user_type_cost2"/>
         </record>
 
         <record id="small_business_chart4403" model="account.account.template">
