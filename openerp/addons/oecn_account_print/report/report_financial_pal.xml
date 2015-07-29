@@ -43,12 +43,23 @@
                                 <!--</div>-->
                             </div>
                             <style>
-                                .padding_override {
+                                body {
+                                   font-size: 15px;
+                                }
+                               .padding_override {
                                     padding-left: 2px !important;
                                     padding-right: 2px !important;
                                 }
                                 .row_margin {
                                     margin-left: -50px !important;
+                                }
+                                .mb32 {
+                                    margin-bottom: 0px !important;
+                                    margin-top: 0px !important;
+                                }
+
+                                .table > tbody > tr > td {
+                                    padding: 3px !important;
                                 }
                             </style>
                             <table class="table col-xs-12">
