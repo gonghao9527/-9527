@@ -1127,6 +1127,7 @@ class sale_order_line(osv.osv):
             price = self.pool.get('product.pricelist').price_get(cr, uid, [pricelist],
                     product, qty or 1.0, partner_id, {
                         'uom': uom or result.get('product_uom'),
+                        'lang': lang,
                         'date': date_order,
                         })[pricelist]
             if price is False:
