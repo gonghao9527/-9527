@@ -315,7 +315,7 @@ class stock_picking(osv.osv):
                 if not invoice.origin or invoice_vals['origin'] not in invoice.origin.split(', '):
                     invoice_origin = filter(None, [invoice.origin, invoice_vals['origin']])
                     merge_vals['origin'] = ', '.join(invoice_origin)
-                if not invoice.name or invoice_vals['name'] not in invoice.name.split(', '):
+                if invoice_vals.get('name', False) and (not invoice.name or invoice_vals['name'] not in invoice.name.split(', ')):
                     invoice_name = filter(None, [invoice.name, invoice_vals['name']])
                     merge_vals['name'] = ', '.join(invoice_name)
                 if merge_vals:
