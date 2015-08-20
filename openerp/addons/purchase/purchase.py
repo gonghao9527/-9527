@@ -1436,6 +1436,9 @@ class procurement_order(osv.osv):
 
         return qty, price
 
+    def update_origin_po(self, cr, uid, po, proc, context=None):
+        pass
+
     def make_po(self, cr, uid, ids, context=None):
         """ Resolve the purchase from procurement, which may result in a new PO creation, a new PO line creation or a quantity change on existing PO line.
         Note that some operations (as the PO creation) are made as SUPERUSER because the current user may not have rights to do it (mto product launched by a sale for example)
