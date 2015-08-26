@@ -3040,7 +3040,7 @@ class stock_warehouse(osv.osv):
         'crossdock_route_id': fields.many2one('stock.location.route', 'Crossdock Route'),
         'reception_route_id': fields.many2one('stock.location.route', 'Receipt Route'),
         'delivery_route_id': fields.many2one('stock.location.route', 'Delivery Route'),
-        'resupply_from_wh': fields.boolean('Resupply From Other Warehouses'),
+        'resupply_from_wh': fields.boolean('Resupply From Other Warehouses', help='Unused field'),
         'resupply_wh_ids': fields.many2many('stock.warehouse', 'stock_wh_resupply_table', 'supplied_wh_id', 'supplier_wh_id', 'Resupply Warehouses'),
         'resupply_route_ids': fields.one2many('stock.location.route', 'supplied_wh_id', 'Resupply Routes', 
                                               help="Routes will be created for these resupply warehouses and you can select them on products and product categories"),
@@ -3100,7 +3100,7 @@ class stock_warehouse(osv.osv):
                     pull_obj.create(cr, uid, vals=pull_rule, context=context)
                 #if the warehouse is also set as default resupply method, assign this route automatically to the warehouse
                 if default_resupply_wh and default_resupply_wh.id == wh.id:
-                    self.write(cr, uid, [warehouse.id], {'route_ids': [(4, inter_wh_route_id)]}, context=context)
+                    self.write(cr, uid, [warehouse.id, wh.id], {'route_ids': [(4, inter_wh_route_id)]}, context=context)
 
     _defaults = {
         'company_id': lambda self, cr, uid, c: self.pool.get('res.company')._company_default_get(cr, uid, 'stock.inventory', context=c),
@@ -3651,9 +3651,13 @@ class stock_warehouse(osv.osv):
                 self._handle_renaming(cr, uid, warehouse, name, vals.get('code', warehouse.code), context=context_with_inactive)
                 if warehouse.in_type_id:
                     seq_obj.write(cr, uid, warehouse.in_type_id.sequence_id.id, {'name': name + _(' Sequence in'), 'prefix': vals.get('code', warehouse.code) + '\IN\\'}, context=context)
+                if warehouse.out_type_id:
                     seq_obj.write(cr, uid, warehouse.out_type_id.sequence_id.id, {'name': name + _(' Sequence out'), 'prefix': vals.get('code', warehouse.code) + '\OUT\\'}, context=context)
+                if warehouse.pack_type_id:
                     seq_obj.write(cr, uid, warehouse.pack_type_id.sequence_id.id, {'name': name + _(' Sequence packing'), 'prefix': vals.get('code', warehouse.code) + '\PACK\\'}, context=context)
+                if warehouse.pick_type_id:
                     seq_obj.write(cr, uid, warehouse.pick_type_id.sequence_id.id, {'name': name + _(' Sequence picking'), 'prefix': vals.get('code', warehouse.code) + '\PICK\\'}, context=context)
+                if warehouse.int_type_id:
                     seq_obj.write(cr, uid, warehouse.int_type_id.sequence_id.id, {'name': name + _(' Sequence internal'), 'prefix': vals.get('code', warehouse.code) + '\INT\\'}, context=context)
         if vals.get('resupply_wh_ids') and not vals.get('resupply_route_ids'):
             for cmd in vals.get('resupply_wh_ids'):
