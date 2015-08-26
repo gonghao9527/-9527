@@ -369,7 +369,7 @@
         <record id="user_type_cost3" model="account.account.type">
             <field name="name">开发支出</field>
             <field name="code">cost</field>
-            <field name="close_method">balance</field>
+            <field name="close_method">none</field>
             <field name="report_type">none</field>
         </record>
 
