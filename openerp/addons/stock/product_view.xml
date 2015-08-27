@@ -120,6 +120,10 @@
                                 <field name="incoming_qty" class="oe_inline"/>
                                 <button string="⇒ Request Procurement" name="%(stock.act_make_procurement)d" type="action" class="oe_link"/>
                             </div>
+                        <label for="outgoing_qty"/>
+                            <div>
+                                <field name="outgoing_qty" class="oe_inline"/>                              
+                            </div>                      
                         <field name="virtual_available"/>
                     </group>
                 </group>

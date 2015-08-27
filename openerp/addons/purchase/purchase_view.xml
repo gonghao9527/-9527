@@ -591,6 +591,9 @@
                         <label for="purchase_ok"/>
                     </div>
                 </div>
+                <xpath expr="//page[@string='Procurements']" position='attributes'>
+					<attribute name="groups">purchase.group_purchase_user</attribute>
+				</xpath>
             </field>
         </record>
 
