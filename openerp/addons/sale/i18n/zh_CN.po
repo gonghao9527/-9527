@@ -1705,7 +1705,7 @@ msgstr "产生此销售订单的关联单据"
 #. module: sale
 #: field:sale.order,client_order_ref:0
 msgid "Reference/Description"
-msgstr "参考/说明"
+msgstr "客户订单号"
 
 #. module: sale
 #: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
