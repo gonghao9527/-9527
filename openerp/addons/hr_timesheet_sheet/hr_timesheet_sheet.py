@@ -415,6 +415,7 @@ class hr_attendance(osv.osv):
                          ON u.partner_id = p.id
                          WHERE %(date_to)s >= date_trunc('day', a.name AT TIME ZONE 'UTC' AT TIME ZONE coalesce(p.tz, 'UTC'))
                               AND %(date_from)s <= date_trunc('day', a.name AT TIME ZONE 'UTC' AT TIME ZONE coalesce(p.tz, 'UTC'))
+                              AND %(user_id)s = r.user_id
                          GROUP BY a.id""", {'date_from': ts.date_from,
                                             'date_to': ts.date_to,
                                             'user_id': ts.employee_id.user_id.id,})
