@@ -29,7 +29,7 @@ class hr_expense_expense(osv.osv):
             
             #create one more move line, a counterline for the total on payable account
             total, total_currency, eml = self.compute_expense_totals(cr, uid, exp, company_currency, exp.name, eml, context=context)
-			if not exp.journal_id:
+            if not exp.journal_id:
                 raise osv.except_osv(_('错误!'), _('先选择正确的付款方式后再生成会计凭证！'))
             acc = exp.journal_id.default_credit_account_id.id  #付款方式改为手动选择，不再默认记入应付账款
             eml.append({
