@@ -224,7 +224,7 @@ class TestResource(TestResourceCommon):
         intervals = self.resource_calendar.get_working_intervals_of_day(
             cr, uid, self.calendar_id,
             start_dt=self.date1.replace(hour=7, minute=0, second=0) + relativedelta(days=14),
-            compute_leaves=True
+            compute_leaves=True, context={'tz': 'UTC'}
         )
         # Result: day1 (08->16)
         self.assertEqual(len(intervals), 1, 'resource_calendar: wrong working interval/day computing')
