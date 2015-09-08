@@ -23,13 +23,15 @@ openerp.web_export_view = function (instance) {
     var _t = instance.web._t, QWeb = instance.web.qweb;
 
     instance.web.Sidebar.include({
-        redraw: function () {
+        start: function(){
             var self = this;
-            this._super.apply(this, arguments);
-            if (self.getParent().ViewManager.active_view == 'list') {
-                self.$el.find('.oe_sidebar').append(QWeb.render('AddExportViewMain', {widget: self}));
-                self.$el.find('.oe_sidebar_export_view_xls').on('click', self.on_sidebar_export_view_xls);
-            }
+            this._super(this);
+            this.add_items('other', [
+                {
+                    label: _t('Export View to Excel'),
+                    callback: self.on_sidebar_export_view_xls
+                }
+            ]);
         },
 
         on_sidebar_export_view_xls: function () {
@@ -68,7 +70,7 @@ openerp.web_export_view = function (instance) {
                 if ($row.attr('data-id')) {
                     export_row = [];
                     checked = $row.find('th input[type=checkbox]').attr("checked");
-                    if (children && checked === "checked") {
+                    if (children || checked === "checked") {
                         $.each(export_columns_keys, function () {
                             cell = $row.find('td[data-field="' + this + '"]').get(0);
                             text = cell.text || cell.textContent || cell.innerHTML || "";
