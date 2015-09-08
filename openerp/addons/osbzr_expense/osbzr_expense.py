@@ -7,9 +7,6 @@ from openerp.tools.translate import _
  
 class hr_expense_expense(osv.osv):
     _inherit ="hr.expense.expense"
-    _columns ={
-               'journal_id':fields.many2one('account.journal', required=True, readonly=True, states={'accepted':[('readonly',False)]}),
-              }
     
     def action_move_create(self, cr, uid, ids, context=None):
         '''
@@ -32,6 +29,8 @@ class hr_expense_expense(osv.osv):
             
             #create one more move line, a counterline for the total on payable account
             total, total_currency, eml = self.compute_expense_totals(cr, uid, exp, company_currency, exp.name, eml, context=context)
+            if not exp.journal_id:
+                raise osv.except_osv(_('错误!'), _('先选择正确的付款方式后再生成会计凭证！'))
             acc = exp.journal_id.default_credit_account_id.id  #付款方式改为手动选择，不再默认记入应付账款
             eml.append({
                     'type': 'dest',
