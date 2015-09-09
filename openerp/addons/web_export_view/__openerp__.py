@@ -53,7 +53,6 @@ the same data of the tree view you are looking at, headers included.
         'view/web_export_view.xml',
     ],
     'qweb': [
-        'static/src/xml/web_export_view_template.xml',
     ],
     'installable': True,
     'auto_install': False,
