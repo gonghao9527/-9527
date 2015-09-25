@@ -7805,7 +7805,7 @@ msgstr "发票上产品的关联单据"
 #. module: account
 #: field:account.invoice,name:0
 msgid "Reference/Description"
-msgstr "参考/描述"
+msgstr "纸质发票号"
 
 #. module: account
 #: view:website:account.report_invoice_document
