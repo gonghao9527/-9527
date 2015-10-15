@@ -711,7 +711,7 @@ class ir_attachment(osv.osv):
             if record.res_model != 'ir.ui.view' or not record.datas: continue
             try:
                 result[record.id] = openerp.tools.image_resize_image_big(record.datas)
-            except IOError: # apparently the error PIL.Image.open raises
+            except Exception,ex:  # ignore any fucking exceptions
                 pass
 
         return result
