@@ -23,15 +23,13 @@ openerp.web_export_view = function (instance) {
     var _t = instance.web._t, QWeb = instance.web.qweb;
 
     instance.web.Sidebar.include({
-        start: function(){
+        redraw: function () {
             var self = this;
-            this._super(this);
-            this.add_items('other', [
-                {
-                    label: _t('Export View to Excel'),
-                    callback: self.on_sidebar_export_view_xls
-                }
-            ]);
+            this._super.apply(this, arguments);
+            if (self.getParent().ViewManager.active_view == 'list') {
+                self.$el.find('.oe_sidebar').append(QWeb.render('AddExportViewMain', {widget: self}));
+                self.$el.find('.oe_sidebar_export_view_xls').on('click', self.on_sidebar_export_view_xls);
+            }
         },
 
         on_sidebar_export_view_xls: function () {
@@ -70,7 +68,7 @@ openerp.web_export_view = function (instance) {
                 if ($row.attr('data-id')) {
                     export_row = [];
                     checked = $row.find('th input[type=checkbox]').attr("checked");
-                    if (children || checked === "checked") {
+                    if (children && checked === "checked") {
                         $.each(export_columns_keys, function () {
                             cell = $row.find('td[data-field="' + this + '"]').get(0);
                             text = cell.text || cell.textContent || cell.innerHTML || "";
@@ -87,7 +85,13 @@ openerp.web_export_view = function (instance) {
                                 }
                             }
                             else if (cell.classList.contains("oe_list_field_integer")) {
-                                export_row.push(parseInt(text));
+                                var tmp2 = text;
+                                do {
+                                    tmp = tmp2;
+                                    tmp2 = tmp.replace(instance.web._t.database.parameters.thousands_sep, "");
+                                } while (tmp !== tmp2);
+
+                                export_row.push(parseInt(tmp2));
                             }
                             else {
                                 export_row.push(text.trim());
