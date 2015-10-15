@@ -2246,7 +2246,7 @@ class BaseModel(object):
                 # if val is a many2one, just write the ID
                 if type(val) == tuple:
                     val = val[0]
-                if val is not False:
+                if f._type == 'boolean' or val is not False:
                     cr.execute(update_query, (ss[1](val), key))
 
     @api.model
@@ -3212,6 +3212,14 @@ class BaseModel(object):
             fnames = {fname
                 for fname, fcolumn in self._columns.iteritems()
                 if fcolumn._prefetch
+                if not fcolumn.groups or self.user_has_groups(fcolumn.groups)
+            }
+        elif self._columns[field.name]._multi:
+            # prefetch all function fields with the same value for 'multi'
+            multi = self._columns[field.name]._multi
+            fnames = {fname
+                for fname, fcolumn in self._columns.iteritems()
+                if fcolumn._multi == multi
                 if not fcolumn.groups or self.user_has_groups(fcolumn.groups)
             }
         else:
@@ -5782,7 +5790,19 @@ class BaseModel(object):
                 if 'domain' in method_res:
                     result.setdefault('domain', {}).update(method_res['domain'])
                 if 'warning' in method_res:
-                    result['warning'] = method_res['warning']
+                    if result.get('warning'):
+                        if method_res['warning']:
+                            # Concatenate multiple warnings
+                            warning = result['warning']
+                            warning['message'] = '\n\n'.join(filter(None, [
+                                warning.get('title'),
+                                warning.get('message'),
+                                method_res['warning'].get('title'),
+                                method_res['warning'].get('message')
+                            ]))
+                            warning['title'] = _('Warnings')
+                    else:
+                        result['warning'] = method_res['warning']
             return
 
         # onchange V7
@@ -5823,7 +5843,19 @@ class BaseModel(object):
             if 'domain' in method_res:
                 result.setdefault('domain', {}).update(method_res['domain'])
             if 'warning' in method_res:
-                result['warning'] = method_res['warning']
+                if result.get('warning'):
+                    if method_res['warning']:
+                        # Concatenate multiple warnings
+                        warning = result['warning']
+                        warning['message'] = '\n\n'.join(filter(None, [
+                            warning.get('title'),
+                            warning.get('message'),
+                            method_res['warning'].get('title'),
+                            method_res['warning'].get('message')
+                        ]))
+                        warning['title'] = _('Warnings')
+                else:
+                    result['warning'] = method_res['warning']
 
     @api.multi
     def onchange(self, values, field_name, field_onchange):
