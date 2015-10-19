@@ -1250,6 +1250,11 @@ msgstr "例如： 003/10"
 msgid "e.g. Invoice SAJ/0042"
 msgstr "例如：Invoice SAJ/0042"
 
+#. module: account_voucher
+#: view:account.voucher:account_voucher.view_vendor_receipt_dialog_form
+msgid "Register Payment"
+msgstr "确定"
+
 #~ msgid "Companies"
 #~ msgstr "公司"
 

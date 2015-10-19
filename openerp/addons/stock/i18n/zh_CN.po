@@ -5560,6 +5560,12 @@ msgstr "⇒ 设置数量为 0"
 msgid "⇒ Update"
 msgstr "=> 更新"
 
+#. module: stock
+#: code:addons\stock\stock.py:2530
+#, python-format
+msgid "Manual Selection of Products"
+msgstr "手工输入产品"
+
 #~ msgid "Big Suppliers"
 #~ msgstr "大供应商"
 
