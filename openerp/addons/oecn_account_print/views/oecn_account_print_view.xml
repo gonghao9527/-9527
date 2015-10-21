@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <!-- __author__ = jeff@openerp.cn,joshua@openepr.cn  -->
 <openerp>
@@ -138,7 +139,6 @@
                     <field name="starting_balance"/>
                     <field name="debit"/>
                     <field name="credit"/>
-                    <field name="balance"/>
                     <field name="ending_balance"/>
                     <field name="company_id" groups="base.group_multi_company"/>
                 </tree>
