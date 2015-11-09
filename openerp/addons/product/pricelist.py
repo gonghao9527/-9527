@@ -324,6 +324,9 @@ class product_pricelist(osv.osv):
                         for line in seller.pricelist_ids:
                             if line.min_quantity <= qty_in_seller_uom:
                                 price = line.price
+                    #rule.base == 2(价格计算基于“产品窗体中的供应商价格”)，当没有设置供应商价格时，上面的代码取到的price为空，应该取成standard_price
+                    if not price:
+                        price = product.standard_price
 
                 else:
                     if rule.base not in price_types:
