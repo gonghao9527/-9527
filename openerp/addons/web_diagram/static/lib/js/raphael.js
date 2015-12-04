@@ -25,7 +25,7 @@
         current_event,
         stop,
         events = {n: {}},
-    
+
         eve = function (name, scope) {
             var e = events,
                 oldstop = stop,
@@ -86,7 +86,9 @@
             current_event = ce;
             return out.length ? out : null;
         };
-    
+
+    window.eve = eve;
+
     eve.listeners = function (name) {
         var names = name.split(separator),
             e = events,
