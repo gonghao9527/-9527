@@ -1251,7 +1251,7 @@ msgstr "已收到发票"
 #: code:addons\purchase\purchase.py:1501
 #, python-format
 msgid "Invoice paid"
-msgstr "已开票"
+msgstr "已付清"
 
 #. module: purchase
 #: code:addons\purchase\purchase.py:1481

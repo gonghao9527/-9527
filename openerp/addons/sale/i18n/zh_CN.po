@@ -1214,7 +1214,7 @@ msgstr ""
 #: code:addons\sale\wizard\sale_line_invoice.py:97
 #, python-format
 msgid "Invoice created"
-msgstr "开票日期。"
+msgstr "开票日期"
 
 #. module: sale
 #: code:addons\sale\sale.py:1224
@@ -1231,7 +1231,7 @@ msgstr "为整个销售订单开票"
 #: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
 #: field:sale.order,invoice_exists:0 field:sale.order.line,invoiced:0
 msgid "Invoiced"
-msgstr "已开票"
+msgstr "已付清"
 
 #. module: sale
 #: field:sale.order,invoiced_rate:0
@@ -1370,12 +1370,12 @@ msgstr "旧的报价单"
 #. module: sale
 #: selection:sale.order,order_policy:0
 msgid "On Delivery Order"
-msgstr "基于发货单"
+msgstr "按发货单开票"
 
 #. module: sale
 #: selection:sale.order,order_policy:0
 msgid "On Demand"
-msgstr "人工开具"
+msgstr "按订单开票"
 
 #. module: sale
 #: help:sale.order,order_policy:0
@@ -1386,9 +1386,9 @@ msgid ""
 "Before delivery: A draft invoice is created from the sales order and must be "
 "paid before the products can be delivered."
 msgstr ""
-"按需求：可以按需求创造一个发票草案\n"
-"货到付款：当产品到货时可以创建一个发票草案\n"
-"发货前：从销售订单成生发票草稿，产品将会前必须支付。"
+"按订单开票：可以按客户要求基于订单创建多个发票草稿\n"
+"按发货单开票：当产品到货时可以创建一个发票草稿\n"
+"款到发货：从销售订单成生发票草稿，必须付清才生成发货单。"
 
 #. module: sale
 #: field:sale.config.settings,module_analytic_user_function:0

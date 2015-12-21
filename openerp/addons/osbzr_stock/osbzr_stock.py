@@ -1,7 +1,7 @@
 # -*- coding: utf-8-*- 
 
-from openerp import models,api,_
-from openerp.osv import osv
+from openerp import models,api,_,tools
+from openerp.osv import osv,fields
 import decimal
 
 class stock_transfer_details(osv.TransientModel):
@@ -52,4 +52,65 @@ class stock_transfer_details(osv.TransientModel):
             if decimal.Decimal(str(all_number)) < decimal.Decimal(str(res[key])): #使用decimal来保证精度正确
                 raise osv.except_osv(_(u'错误'), _(u'移动的产品 <%s> 数量不能大于该产品的库存数量！' % self.env['product.product'].browse(key[0]).name))
         return super(stock_transfer_details,self).do_detailed_transfer()
+
+'''
+库存周转天数（库存周转率）= 一个月每天平均库存金额（不含VAT）/一个月发货材料成本（不含VAT）*30
+
+要求针对产品和产品类别各出一个列表
+
+实现思路：根据stock.move填充产品每天的库存数据，根据out的stock.move的quant取发出成本（新建一个表存储下来）
+'''
+
+class stock_daily(osv.osv):
+    _name = 'stock.daily'
+    _auto = False
+    _rec_name = 'date'
+    _columns = {
+            'date':fields.date(u'日期'),
+            'month':fields.char(u'月份'),
+            'location_id':fields.many2one('stock.location',u'库位'),
+            'product_id':fields.many2one('product.product',u'产品'),
+            'categ_id':fields.related('product_id','categ_id',type='many2one',relation='product.category',string=u'分类'),
+            'qty_begin':fields.float(u'期初数量'),
+            'amt_begin':fields.float(u'期初余额'),
+            'qty_in':fields.float(u'入库数量'),
+            'amt_in':fields.float(u'入库成本'),
+            'qty_out':fields.float(u'出库数量'),
+            'amt_out':fields.float(u'发出成本'),
+            'qty_end':fields.float(u'结存数量'),
+            'amt_end':fields.float(u'结存余额'),
+        }
+        
+    def init(self, cr):
+        tools.drop_view_if_exists(cr, 'stock_daily')
+        cr.execute("""
+            CREATE OR REPLACE VIEW stock_daily AS (
+                SELECT moves.id,
+                       moves.date,
+                       substring(moves.cdate FROM 1 FOR 7) AS month,
+                       moves.location_id,
+                       moves.product_id,
+                       (SELECT sum(CASE WHEN location_dest_id=moves.location_id THEN product_qty WHEN location_id=moves.location_id THEN -product_qty ELSE 0 end) FROM stock_move 
+                       WHERE date::date<moves.date AND product_id=moves.product_id AND state='done') AS qty_begin,
+                       (SELECT sum(CASE WHEN location_dest_id=moves.location_id THEN product_qty*price_unit WHEN location_id=moves.location_id THEN -product_qty*price_unit ELSE 0 end) FROM stock_move 
+                       WHERE date::date<moves.date AND product_id=moves.product_id AND state='done') AS amt_begin,
+                       (SELECT sum(product_qty) FROM stock_move 
+                       WHERE date::date<=moves.date AND product_id=moves.product_id AND state='done' AND location_dest_id=moves.location_id) AS qty_in,
+                       (SELECT sum(product_qty*price_unit) FROM stock_move 
+                       WHERE date::date<=moves.date AND product_id=moves.product_id AND state='done' AND location_dest_id=moves.location_id) AS amt_in,
+                       (SELECT sum(product_qty) FROM stock_move 
+                       WHERE date::date<=moves.date AND product_id=moves.product_id AND state='done' AND location_id=moves.location_id) AS qty_out,
+                       (SELECT sum(product_qty*price_unit) FROM stock_move 
+                       WHERE date::date<=moves.date AND product_id=moves.product_id AND state='done' AND location_id=moves.location_id) AS amt_out,
+                       (SELECT sum(CASE WHEN location_dest_id=moves.location_id THEN product_qty WHEN location_id=moves.location_id THEN -product_qty ELSE 0 end) FROM stock_move 
+                       WHERE date::date<=moves.date AND product_id=moves.product_id AND state='done') AS qty_end,
+                       (SELECT sum(CASE WHEN location_dest_id=moves.location_id THEN product_qty*price_unit WHEN location_id=moves.location_id THEN -product_qty*price_unit ELSE 0 end) FROM stock_move 
+                       WHERE date::date<=moves.date AND product_id=moves.product_id AND state='done') AS amt_end
+                FROM (
+                       SELECT DISTINCT id, to_char(date, 'YYYY-MM-DD') AS cdate,date::date,product_id,location_id FROM stock_move WHERE state='done'
+                       UNION 
+                       SELECT DISTINCT id, to_char(date, 'YYYY-MM-DD') AS cdate,date::date,product_id,location_dest_id FROM stock_move WHERE state='done') moves
+                ORDER BY product_id ,location_id,date
+
+            )""")
     
