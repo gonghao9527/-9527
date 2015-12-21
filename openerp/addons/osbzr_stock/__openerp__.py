@@ -15,6 +15,9 @@
     "depends": [
                 'stock',
                 ],
+    "data":[
+        'osbzr_stock_view.xml'
+            ],
     'installable': True,
     'application': False,
 }
