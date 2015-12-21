@@ -44,7 +44,7 @@
     "qweb":[
         "static/src/xml/osbzr_help.xml",
     ],
-    "certificate" : "",
+    "certificate" : "osbzr",
     'auto_install': True,
     "category":'Generic Modules/Others'
 }
