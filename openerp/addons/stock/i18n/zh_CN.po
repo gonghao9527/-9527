@@ -1511,7 +1511,7 @@ msgstr "序列号上的过期日期"
 #: code:addons\stock\stock.py:1310
 #, python-format
 msgid "Extra Move: "
-msgstr "损耗调拨"
+msgstr "超计划"
 
 #. module: stock
 #: help:product.removal,method:0

@@ -50,7 +50,6 @@ class stock_invoice_onshipping(osv.osv_memory):
             return 'sale'
         type = pick.picking_type_id.code
         usage = pick.move_lines[0].location_id.usage if type == 'incoming' else pick.move_lines[0].location_dest_id.usage
-
         return JOURNAL_TYPE_MAP.get((type, usage), ['sale'])[0]
 
     _name = "stock.invoice.onshipping"
