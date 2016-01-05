@@ -179,6 +179,11 @@ class stock_move(osv.osv):
             else:
                 is_extra_move[move.id] = False
         return (is_extra_move, extra_move_tax)
+    
+    def action_cancel(self, cr, uid, ids, context=None):
+        res = super(stock_move, self).action_cancel(cr, uid, ids, context=context)
+        self.write(cr, uid, ids, {'invoice_state': 'none'}, context=context)
+        return res
 
 #----------------------------------------------------------
 # Picking
