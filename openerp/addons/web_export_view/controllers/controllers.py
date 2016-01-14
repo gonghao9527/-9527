@@ -23,12 +23,19 @@ try:
     import json
 except ImportError:
     import simplejson as json
-
+from openerp.osv import osv
+import time
 import openerp.http as http
 from openerp.http import request
 from openerp.addons.web.controllers.main import ExcelExport
 
-
+class res_users(osv.osv):
+    _inherit="res.users"
+    def get_time(self,cr,uid,context=None):
+        ISOTIMEFORMAT="%Y-%m-%d"
+        return   str(time.strftime(ISOTIMEFORMAT, time.localtime( time.time() ) ))
+    
+    
 class ExcelExportView(ExcelExport):
     def __getattribute__(self, name):
         if name == 'fmt':
@@ -36,10 +43,11 @@ class ExcelExportView(ExcelExport):
         return super(ExcelExportView, self).__getattribute__(name)
 
     @http.route('/web/export/xls_view', type='http', auth='user')
-    def index(self, data, token):
+    def export_xls_view(self, data, token):
         data = json.loads(data)
         model = data.get('model', [])
         columns_headers = data.get('headers', [])
+        print columns_headers
         rows = data.get('rows', [])
 
         return request.make_response(
