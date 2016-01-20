@@ -3598,7 +3598,7 @@ msgstr "数量(开票单位)"
 
 #. module: stock
 #: field:product.template,virtual_available:0 field:stock.move,availability:0
-msgid "Quantity Available"
+msgid "Forecast Quantity"
 msgstr "可用数量"
 
 #. module: stock
