@@ -1181,12 +1181,12 @@ msgstr ""
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_action_picking_tree_in_move
 msgid "Incoming  Products"
-msgstr "产品入库"
+msgstr "产品入库查询"
 
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_procurement_management_inventory
 msgid "Incoming Products"
-msgstr "产品入库"
+msgstr "产品入库查询"
 
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_2_stock_picking
