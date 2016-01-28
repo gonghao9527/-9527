@@ -926,6 +926,7 @@ class stock_picking(osv.osv):
 
     def action_cancel(self, cr, uid, ids, context=None):
         for pick in self.browse(cr, uid, ids, context=context):
+            pick.write({'pack_operation_ids':[(2,op.id) for op in pick.pack_operation_ids]}) #remove operations
             ids2 = [move.id for move in pick.move_lines]
             self.pool.get('stock.move').action_cancel(cr, uid, ids2, context)
         return True
