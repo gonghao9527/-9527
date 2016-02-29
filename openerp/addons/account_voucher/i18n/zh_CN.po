@@ -757,7 +757,7 @@ msgstr "付款汇率货币"
 #: view:account.voucher:account_voucher.view_vendor_receipt_dialog_form
 #: view:account.voucher:account_voucher.view_vendor_receipt_form
 msgid "Payment Ref"
-msgstr "关联单号"
+msgstr "凭证摘要"
 
 #. module: account_voucher
 #: view:account.voucher:account_voucher.view_voucher_filter
@@ -865,7 +865,7 @@ msgstr "核销付款差额"
 #. module: account_voucher
 #: field:account.voucher,reference:0
 msgid "Ref #"
-msgstr "关联单号"
+msgstr "凭证摘要"
 
 #. module: account_voucher
 #: view:account.invoice:account_voucher.view_invoice_customer
