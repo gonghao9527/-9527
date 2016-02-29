@@ -1833,7 +1833,7 @@ msgstr "每个生产活动的确保天数"
 #. module: mrp
 #: field:mrp.product.produce,product_qty:0
 msgid "Select Quantity"
-msgstr "选择数量"
+msgstr "完工数量"
 
 #. module: mrp
 #: view:mrp.workcenter.load:mrp.view_mrp_workcenter_load_wizard
