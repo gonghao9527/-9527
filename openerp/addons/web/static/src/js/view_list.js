@@ -2209,10 +2209,16 @@ instance.web.list.Column = instance.web.Class.extend({
         if (this.type !== 'integer' && this.type !== 'float') {
             return {};
         }
-        var aggregation_func = this['group_operator'] || 'sum';
-        if (!(aggregation_func in this)) {
+        var func_list = ['sum', 'avg', 'min', 'max'];
+        var self = this;
+        var aggregation_func = _.find(func_list, function(func) {
+            return func in self;
+        });
+
+        if (_.isUndefined(aggregation_func)) {
             return {};
         }
+
         var C = function (fn, label) {
             this['function'] = fn;
             this.label = label;
@@ -2220,6 +2226,7 @@ instance.web.list.Column = instance.web.Class.extend({
         C.prototype = this;
         return new C(aggregation_func, this[aggregation_func]);
     },
+
     /**
      *
      * @param row_data record whose values should be displayed in the cell
