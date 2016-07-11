@@ -1,22 +1,16 @@
-# Chinese (Simplified) translation for openobject-addons
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the openobject-addons package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * account
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-26 14:48+0000\n"
 "PO-Revision-Date: 2015-01-07 13:13+0800\n"
-"Last-Translator: \n"
+"Last-Translator: 开阖软件Jeff Wang <jeff@osbzr.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-03-08 05:30+0000\n"
-"X-Generator: Poedit 1.7.1\n"
 
 #. module: account
 #: model:email.template,body_html:account.email_template_edi_invoice
@@ -103,10 +97,10 @@ msgstr ""
 "\n"
 "    <p>您好 ${object.partner_id.name},</p>\n"
 "\n"
-"    <p>您有一张新的发票: </p>\n"
+"    <p>这是我们开具给您的新发票: </p>\n"
 "    \n"
 "    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
-"       &nbsp;&nbsp;<strong>REFERENCES</strong><br />\n"
+"       &nbsp;&nbsp;<strong>详情</strong><br />\n"
 "       &nbsp;&nbsp;发票编号: <strong>${object.number}</strong><br />\n"
 "       &nbsp;&nbsp;发票合计: <strong>${object.amount_total} ${object.currency_id.name}</"
 "strong><br />\n"
@@ -115,14 +109,14 @@ msgstr ""
 "       &nbsp;&nbsp;订单编号: ${object.origin}<br />\n"
 "       % endif\n"
 "       % if object.user_id:\n"
-"       &nbsp;&nbsp;您的联系人: <a href=\"mailto:${object.user_id.email or ''}?subject=Invoice"
+"       &nbsp;&nbsp;请联系: <a href=\"mailto:${object.user_id.email or ''}?subject=Invoice"
 "%20${object.number}\">${object.user_id.name}</a>\n"
 "       % endif\n"
 "    </p>  \n"
 "    \n"
 "    % if object.paypal_url:\n"
 "    <br/>\n"
-"    <p>您可以直接用Paypal支付:</p>\n"
+"    <p>您可以直接用Paypal付款:</p>\n"
 "        <a style=\"margin-left: 120px;\" href=\"${object.paypal_url}\">\n"
 "            <img class=\"oe_edi_paypal_button\" src=\"https://www.paypal.com/en_US/i/btn/"
 "btn_paynowCC_LG.gif\"/>\n"
@@ -130,8 +124,8 @@ msgstr ""
 "    % endif\n"
 "    \n"
 "    <br/>\n"
-"    <p>如果您有任何问题,请立即与我们联系.</p>\n"
-"    <p>感谢您的选择 ${object.company_id.name or 'us'}!</p>\n"
+"    <p>如果您有任何问题,请立即与我们联系。</p>\n"
+"    <p>感谢您惠顾 ${object.company_id.name or 'us'}!</p>\n"
 "    <br/>\n"
 "    <br/>\n"
 "    <div style=\"width: 375px; margin: 0px; padding: 0px; background-color: #8E0000; border-top-"
@@ -164,7 +158,7 @@ msgstr ""
 "        % endif\n"
 "        % if object.company_id.website:\n"
 "            <div>\n"
-"                网址 :&nbsp;<a href=\"${object.company_id.website}\">${object.company_id.website}</"
+"                网址:&nbsp;<a href=\"${object.company_id.website}\">${object.company_id.website}</"
 "a>\n"
 "            </div>\n"
 "        %endif\n"
@@ -184,58 +178,57 @@ msgid ""
 "may or may not be reconciled.\n"
 " * The 'Cancelled' status is used when user cancel invoice."
 msgstr ""
-" * 当用户编辑一张新的未确认的发票时为“草稿\"状态。            \n"
-"* 当一张发票无发票号码时为“形成”状态。             \n"
-"* 当发票已创建，发票号已生成，但仍未发出，则为“启用”状态。             \n"
-"* 当发票已收款，则会自动设置为“已收款”状态，发票的相关会计分录可以关联或不关联。            \n"
-"* 当用户删除发票时为“删除”状态。"
+"* 当用户输入一张新的发票时为“草稿”状态。\n"
+"* 当用户点击【形式发票】按钮后发票为“形式发票”状态，此时发票没有编号。\n"
+"* 当用户点击【记账】按钮后，生成发票号，为“未付清”状态。\n"
+"* 当发票款已全部结清，则为“已付清”状态。 \n"
+"* 当用户点击【取消】按钮后，发票为“取消”状态。"
 
 #. module: account
 #: code:addons\account\account.py:1468
-#, python-format
 msgid " Centralisation"
-msgstr "集中"
+msgstr "汇总"
 
 #. module: account
 #: field:analytic.entries.report,nbr:0
 msgid "# Entries"
-msgstr "#分录 "
+msgstr "凭证行数"
 
 #. module: account
 #: field:account.chart.template,code_digits:0 field:account.config.settings,code_digits:0
 #: field:wizard.multi.charts.accounts,code_digits:0
 msgid "# of Digits"
-msgstr "# 数字"
+msgstr "科目编号最小长度"
 
 #. module: account
 #: view:account.entries.report:account.view_account_entries_report_tree
 msgid "# of Entries"
-msgstr "# 分录 "
+msgstr "凭证行数"
 
 #. module: account
 #: field:account.invoice.report,nbr:0
 msgid "# of Invoices"
-msgstr "#发票"
+msgstr "发票数"
 
 #. module: account
 #: field:account.entries.report,nbr:0
 msgid "# of Items"
-msgstr "# 明细"
+msgstr "凭证行数"
 
 #. module: account
 #: view:account.entries.report:account.view_account_entries_report_tree
 msgid "# of Products Qty"
-msgstr "# 产品数量 "
+msgstr "产品数量"
 
 #. module: account
 #: field:account.move.line.reconcile,trans_nbr:0
 msgid "# of Transaction"
-msgstr "# 处理"
+msgstr "笔数"
 
 #. module: account
 #: model:email.template,subject:account.email_template_edi_invoice
 msgid "${object.company_id.name|safe} Invoice (Ref ${object.number or 'n/a'})"
-msgstr "${object.company_id.name} 发票 (Ref ${object.number or 'n/a'})"
+msgstr "${object.company_id.name} 发票 (编号 ${object.number or 'n/a'})"
 
 #. module: account
 #: code:addons\account\account.py:1861
@@ -253,33 +246,33 @@ msgstr "%s (副本)"
 #. module: account
 #: view:website:account.report_partnerbalance
 msgid "(Account/Partner) Name"
-msgstr "(业务伙伴/科目)名称"
+msgstr "(科目/往来单位)名称"
 
 #. module: account
 #: view:account.chart:account.view_account_chart
 msgid "(If you do not select a specific fiscal year, all open fiscal years will be selected.)"
-msgstr "（如果你没有选择会计年度，所有打开的会计年度将被选择。）"
+msgstr "（如果你没有选择会计年度，所有未关闭的会计年度数据都将参与计算。）"
 
 #. module: account
 #: view:account.tax.chart:account.view_account_tax_chart
 msgid "(If you do not select a specific period, all open periods will be selected)"
-msgstr "（如果你不选择会计期间，所有打开状态的会计期间将被选择）"
+msgstr "（如果你不选择会计期间，所有未关闭的会计期间都将参与运算）"
 
 #. module: account
 #: view:account.state.open:account.view_account_state_open
 msgid "(Invoice should be unreconciled if you want to open it)"
-msgstr "(反核销后才能打开发票)"
+msgstr "(反核销后才能将发票重新置为“未付清”状态)"
 
 #. module: account
 #: view:account.analytic.chart:account.account_analytic_chart_view
 #: view:project.account.analytic.line:account.view_project_account_analytic_line_form
 msgid "(Keep empty to open the current situation)"
-msgstr "(当前状态留空为待处理)"
+msgstr "(起止日期留空则输出当前数据)"
 
 #. module: account
 #: view:account.invoice:account.invoice_form
 msgid "(change)"
-msgstr "(改变)"
+msgstr "(修改币别)"
 
 #. module: account
 #: view:account.bank.statement:account.view_bank_statement_form
@@ -290,7 +283,7 @@ msgstr "（更新）"
 #. module: account
 #: view:account.bank.statement:account.view_bank_statement_form2
 msgid "+ Transactions"
-msgstr "+ 交易"
+msgstr "+ 发生额"
 
 #. module: account
 #: model:account.payment.term,name:account.account_payment_term_15days
@@ -353,14 +346,14 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                单击来添加分录.\n"
+"                单击来添加凭证类型。\n"
 "              </p><p>\n"
-"                分类帐由用于记录相关日常\n"
-"                业务的所有会计数据.\n"
+"                凭证类型用来对日常\n"
+"                业务对应的所有会计数据进行分类。\n"
 "              </p><p>\n"
-"                一般的公司采用支付方式（现金、银行帐户、\n"
-"                支票）分录、采购分录、\n"
-"                销售分录、杂项分录.\n"
+"                一般公司会给每个支付方式（现金、银行帐户、\n"
+"                支票）定义一个凭证类型，\n"
+"                另外各定义一个销售、采购和调账的凭证类型。\n"
 "              </p>"
 
 #. module: account
@@ -381,12 +374,12 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                单击增加一个科目。\n"
 "              </p><p>\n"
-"                科目是分类帐的组成部分，它记录公司\n"
-"                所有种类的借方和贷方帐目，\n"
-"                公司的年度帐分两部分：\n"
-"                资产负债表和损益表（赢余或亏损帐），\n"
-"                公司的年度帐是法律要求的，\n"
-"                要公开特定内容的信息.\n"
+"                科目是会计记账的基本单位，它将公司\n"
+"                所有业务记录在借方或贷方。\n"
+"                公司每年出具两张报表：\n"
+"                资产负债表和损益表（利润表），\n"
+"                这是法律规定披露公司\n"
+"                信息的重要媒介。\n"
 "              </p>"
 
 #. module: account
@@ -406,11 +399,11 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "               单击增加一个科目。\n"
 "              </p><p>\n"
-"                当进行多币种数据的处理时，你可能会因为汇率\n"
-"                的改变增加或减少一定的数额，\n"
-"                如果这些数据在今天截止，\n"
-"                这一菜单给你一个增加或减少多少的预\n"
-"                测，仅用于帐目第二币种设置。\n"
+"                当进行多币种数据的处理时，如果所有外币在当前日期换算为本币，\n"
+"                你可能会因为汇率的\n"
+"                改变而有一定的损益，\n"
+"                此菜单给你一个（未实现）的汇兑损益预\n"
+"                测，只适用于使用外币记账的科目。\n"
 "              </p>"
 
 #. module: account
@@ -432,7 +425,7 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                单击创建一张客户发票。\n"
 "              </p><p>\n"
-"                Odoo的电子发票允许你方便快捷地\n"
+"                Odoo的发票允许你方便快捷地\n"
 "                收取客户付款，客户也可通过电子邮件来接收发票、\n"
 "                在线支付，或将数据导入到\n"
 "                他自己的系统中。\n"
@@ -456,11 +449,11 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                单击新建客户退款.\n"
+"                单击新建客户红字发票.\n"
 "              </p><p>\n"
-"                退款是全部或部分借记销售发票的证明.\n"
+"                红字发票是全部或部分冲销销售发票.\n"
 "              </p><p>\n"
-"                代替手工创建客户退款，你可以直接从与客户相关联的发票直接生成退款\n"
+"                无需手工创建，你可以直接从相关联的客户发票直接生成红字发票\n"
 "              </p>\n"
 "            "
 
@@ -481,12 +474,12 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                单击新建一个会计分录。\n"
+"                单击新建一个会计凭证。\n"
 "              </p><p>\n"
-"                会计分录由几个分类账项组成，每个项目为借方或贷方。\n"
+"                会计凭证由多个凭证行组成，每个凭证行为借方或贷方。\n"
 "              </p><p>\n"
-"                Odoo自动创建会计文档的每种会计凭证，如发票、退款、供应商付款、银行帐单等。这样，你"
-"只需手工记录杂项的会计分录。\n"
+"                Odoo会根据发票、红字发票、供应商付款、银行对账单等自动生成凭证。这样，你"
+"只需手工记录调账的会计凭证。\n"
 "              </p>"
 
 #. module: account
@@ -506,8 +499,8 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                单击新建现金记录。\n"
 "              </p><p>\n"
-"                现金记录允许你在现金分录中管理现金账目，这一功能提供了一个跟踪每天付款情况的简便方"
-"法，你可以记录钱箱的硬币，然后在有资金进入或提出钱箱时记帐。\n"
+"                现金记录允许你在现金凭证类型中管理现金账目，这一功能提供了一个跟踪每天现金收支情况的简便方"
+"法，你可以记录钱箱的硬币，然后在有现金进入或提出钱箱时记帐。\n"
 "              </p>"
 
 #. module: account
@@ -522,9 +515,9 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"单击添加一个对账操作模板.\n"
+"单击添加一个核销操作模板.\n"
 "</p><p>\n"
-"这些可以被用为在反核销银行对账时快速的创建一个移动行。\n"
+"这些模块可以在核销银行对账时快速创建一个对方科目凭证行。\n"
 "</p>\n"
 "            "
 
@@ -543,10 +536,10 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                单击定义一个新的科目类型.\n"
+"                单击定义一个新的科目类型。\n"
 "              </p><p>\n"
-"                科目类型用来确定科目在凭证上的\n"
-"                用法。客户类型的结转方式决定\n"
+"                科目类型用来给科目分类\n"
+"                。科目类型的结转方式决定\n"
 "                年末结转的过程。 用PL和BS\n"
 "                分类来决定这个科目在资产负债表还是\n"
 "                利润表。\n"
@@ -567,12 +560,12 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                单击定义一个新的经常性日记帐分录.\n"
+"                单击定义一个新的周期性凭证。\n"
 "              </p><p>\n"
-"                经常性日记帐分录的产生是基于一种具体数据的\n"
-"                重复发生，即，对于合同的同一个签署，或对于\n"
-"                同一个客户，或同一个供应商的合同书，你可以\n"
-"                创建一个这样的分录，让系统自动生成。\n"
+"                周期性凭证是在具体的日期重复发生的业务\n"
+"                例如，根据你跟客户或供应商签署\n"
+"                的合同或协议，你可以\n"
+"                创建一个这样的周期性凭证，让系统自动记账。\n"
 "              </p>"
 
 #. module: account
@@ -589,12 +582,12 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                单击定义一个新的税号.\n"
+"                单击定义一个新的税项。\n"
 "              </p><p>\n"
-"                根据国家要求，是填写法定税报表通常以\n"
-"                税号为单位，Odoo 允许你定义\n"
-"                税种组成，每种税的计算会计入\n"
-"                一个或多个税号。\n"
+"                根据各国要求，填写纳税申报表通常以\n"
+"                税项为单位，Odoo 允许你定义\n"
+"                多个税种，每种税的计算结果会记录到\n"
+"                一个或多个税项上。\n"
 "              </p>"
 
 #. module: account
@@ -612,7 +605,7 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                单击新建供应商发票。\n"
 "              </p><p>\n"
-"               你可以基于从供应商处采购或收到的货物来控制发票，Odoo能够根据采购单或者收货单自动生成"
+"               你可以基于供应商处采购或收到的货物来校验发票，Odoo能够根据采购单或者收货单生成"
 "一张草稿状态的发票。\n"
 "              </p>\n"
 "            "
@@ -635,10 +628,10 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                单击新建银行对帐单。\n"
 "              </p><p>\n"
-"                银行对帐单是银行帐户在一定时间内产生的财务往来汇总，你应该定期从银行收到这样的对帐"
+"                银行对帐单是银行帐户在一定时间内产生的财务往来汇总，你可以定期从银行收到这样的对帐"
 "单。\n"
 "              </p><p>\n"
-"                Odoo允许你直接与相关的销售或采购发票对账。\n"
+"                Odoo允许你直接与相关的销售或采购发票核销。\n"
 "              </p>"
 
 #. module: account
@@ -653,9 +646,9 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                单击记录你从供应商收到的退款.\n"
+"                单击记录你从供应商收到的红字发票。\n"
 "              </p><p>\n"
-"                不需要手工创建供应商退款，你可以从供应商发票生成退款，并且将它们直接关联。\n"
+"                不需要手工创建供应商红字发票，你可以在供应商发票上生成红字发票，并且将它们直接核销掉。\n"
 "              </p>"
 
 #. module: account
@@ -674,11 +667,11 @@ msgid ""
 "              </p>\n"
 "            "
 msgstr ""
-"单击建立新的财年.\n"
+"单击建立新的会计年度.\n"
 "              </p><p>\n"
-"                根据需要定义公司的会计年度。会计年度通常是公司的账户最后结转的期间，通常是12个月。"
-"会计年度通常和结束日期有关。例如，假如一个公司的会计年度结束在2011年11月30日，那么在2010年12月1日至"
-"2011年11月30日的每一个交易会被记录到2011会计年度。              </p>\n"
+"                根据需要定义公司的会计年度。公司一般在会计年度终了结转利润，通常是12个月。"
+"会计年度的结束日期很关键。例如，假如一个公司的会计年度结束在2011年11月30日，那么在2010年12月1日至"
+"2011年11月30日的每一个凭证都会被记录到2011会计年度。              </p>\n"
 "            "
 
 #. module: account
@@ -696,10 +689,10 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"                选择期间和你要填写的分录。\n"
+"                选择期间和你要填写的会计凭证类型。\n"
 "              </p><p>\n"
-"                会计人员可以此界面快速录入分类帐到Odoo，如果你想录入\n"
-"                供应商发票，可先录入费用科目，Odoo会自动提示和此科目相关的税种和对方\"应付科目"
+"                会计人员可以在此界面快速录入会计凭证，如果你想录入\n"
+"                供应商发票，可先录入费用科目，Odoo会自动提示和此科目相关的税种和对方科目——也就是"应付科目"
 "\"。\n"
 "              </p>"
 
@@ -718,11 +711,11 @@ msgid ""
 "        "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"           单击设置一个新的银行账户。 \n"
+"           单击新建一个银行账户。 \n"
 "          </p><p>\n"
-"            配置贵公司的银行账户，并选择在报表脚注必须显示的账户。\n"
+"            配置贵公司的银行账户，并选择在报表页脚显示此账户。\n"
 "          </p><p>\n"
-"           若使用Odoo的会计应用,分录和科目将按这些数据自动创建。\n"
+"           若使用Odoo的会计功能,会自动创建对应的凭证类型（银行账户对应的支付方式）和会计科目。\n"
 "          </p>\n"
 "        "
 
@@ -735,7 +728,7 @@ msgid ""
 "            "
 msgstr ""
 "<p>\n"
-"                    分类账项未找到.\n"
+"                    没有需要核销的凭证行。\n"
 "                </p>\n"
 "            "
 
@@ -758,29 +751,23 @@ msgid ""
 "            "
 msgstr ""
 "<p>\n"
-"                点击这里新建一个文档</p><p>\n"
-"                单击添加一个新的分析科目.\n"
+"                单击新建一个成本要素。\n"
 "              </p><p>\n"
-"                正规的会计科目表有国家\n"
-"                法定要求的内容，帐户的分析\n"
-"                科目应反映企业自身的业务\n"
-"                成本/收入分析和报告的需要。\n"
+"                总账会计科目由国家\n"
+"                立法规定，成本要素\n"
+"                则反映企业自身的业务\n"
+"                对成本/收入分析和报告的需要。\n"
 "              </p><p>\n"
-"                它们通常由合约、项目、产品或\n"
-"                部门构成，多数的Odoo运用程序\n"
-"                （发票、时间表、费用等）会在\n"
-"                相关的帐户生成分析分录。\n"
+"                通常用于合同核算、项目核算、产品核算或\n"
+"                部门核算，很多的Odoo单据\n"
+"                （发票、记工单、报销等）会在\n"
+"                相关的科目下生成成本凭证行。\n"
 "              </p>"
 
 #. module: account
 #: view:account.bank.statement:account.view_bank_statement_form2
 msgid "= Theoretical Closing Balance"
 msgstr "=理论的期末余额"
-
-#. module: account
-#: model:ir.model,name:account.model_temp_range
-msgid "A Temporary table used for Dashboard view"
-msgstr "用于控制面板视图的临时表"
 
 #. module: account
 #: model:ir.actions.act_window,help:account.action_account_period_tree
@@ -793,24 +780,24 @@ msgid ""
 "related calculation."
 msgstr ""
 "会计期间是对会计记录人为规定的时间段。一般按月分期，按贵公司所在国家的需要也可以按季度分期。关闭的"
-"会计期间不能继续记账，只能记账在后面的会计期间。如果希望不能创建新的凭证或发生税额变动请关闭会计期"
+"会计期间不能继续记账，只能记账在后面的会计期间。如果希望不需要创建新的凭证或发生税额变动请关闭会计期"
 "间。"
 
 #. module: account
 #: code:addons\account\account_bank_statement.py:736
 #, python-format
 msgid "A selected move line was already reconciled."
-msgstr "发票已经被核销"
+msgstr "所选凭证行已经被核销"
 
 #. module: account
 #: sql_constraint:account.fiscal.position.tax:0
 msgid "A tax fiscal position could be defined only once time on same taxes."
-msgstr "同样的税 上面一次只能定义一个替换规则。"
+msgstr "同样的税 上面只能定义一个替换规则。"
 
 #. module: account
 #: view:website:account.report_centraljournal
 msgid "A/C No."
-msgstr "A/C 号"
+msgstr "科目编号"
 
 #. module: account
 #: view:account.entries.report:account.view_account_entries_report_search
@@ -840,42 +827,42 @@ msgstr "科目类型"
 #: view:website:account.report_salepurchasejournal view:website:account.report_trialbalance
 #, python-format
 msgid "Account"
-msgstr "科目"
+msgstr "会计科目"
 
 #. module: account
 #: model:ir.model,name:account.model_account_aged_trial_balance
 msgid "Account Aged Trial balance Report"
-msgstr "科目的账龄分析报告"
+msgstr "账龄分析表"
 
 #. module: account
 #: model:ir.model,name:account.model_account_analytic_balance
 msgid "Account Analytic Balance"
-msgstr "辅助核算余额"
+msgstr "成本要素科目余额"
 
 #. module: account
 #: model:ir.model,name:account.model_account_analytic_chart
 msgid "Account Analytic Chart"
-msgstr "辅助核算项一览表"
+msgstr "成本要素一览表"
 
 #. module: account
 #: model:ir.model,name:account.model_account_analytic_cost_ledger
 msgid "Account Analytic Cost Ledger"
-msgstr "成本科目明细分析"
+msgstr "成本要素明细帐"
 
 #. module: account
 #: model:ir.model,name:account.model_account_analytic_cost_ledger_journal_report
 msgid "Account Analytic Cost Ledger For Journal Report"
-msgstr "分析本期成本明细账的报表"
+msgstr "成本要素分类账"
 
 #. module: account
 #: model:ir.model,name:account.model_account_analytic_inverted_balance
 msgid "Account Analytic Inverted Balance"
-msgstr "辅助核算反向余额"
+msgstr "科目成本要素余额"
 
 #. module: account
 #: model:ir.model,name:account.model_account_analytic_journal_report
 msgid "Account Analytic Journal"
-msgstr "辅助核算分录"
+msgstr "成本要素帐"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_automatic_reconcile
@@ -885,13 +872,13 @@ msgstr "科目自动核销"
 #. module: account
 #: field:account.tax,base_code_id:0
 msgid "Account Base Code"
-msgstr "税基编码"
+msgstr "税基税项"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_central_journal
 #: model:ir.model,name:account.model_account_central_journal
 msgid "Account Central Journal"
-msgstr "汇总分录"
+msgstr "会计总账"
 
 #. module: account
 #: view:account.account:account.view_account_form
@@ -901,17 +888,17 @@ msgstr "科目代码和名称"
 #. module: account
 #: model:ir.model,name:account.model_account_common_account_report
 msgid "Account Common Account Report"
-msgstr "科目合并的科目报表"
+msgstr "会计明细账"
 
 #. module: account
 #: model:ir.model,name:account.model_account_common_journal_report
 msgid "Account Common Journal Report"
-msgstr "科目常用报表"
+msgstr "凭证汇总表"
 
 #. module: account
 #: model:ir.model,name:account.model_account_common_partner_report
 msgid "Account Common Partner Report"
-msgstr "业务伙伴普通报表"
+msgstr "往来常用报表"
 
 #. module: account
 #: model:ir.model,name:account.model_account_common_report
@@ -932,45 +919,45 @@ msgstr "替代科目"
 #. module: account
 #: view:account.move:account.view_move_form model:ir.model,name:account.model_account_move
 msgid "Account Entry"
-msgstr "凭证"
+msgstr "会计凭证"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_general_journal
 #: model:ir.model,name:account.model_account_general_journal
 msgid "Account General Journal"
-msgstr "科目总账分录"
+msgstr "科目总账"
 
 #. module: account
 #: view:account.journal:account.view_account_journal_form
 #: view:account.journal:account.view_account_journal_tree field:res.partner.bank,journal_id:0
 msgid "Account Journal"
-msgstr "会计分录"
+msgstr "凭证类型"
 
 #. module: account
 #: model:ir.model,name:account.model_account_journal_select
 msgid "Account Journal Select"
-msgstr "选择分录"
+msgstr "选择凭证类型"
 
 #. module: account
 #: field:account.invoice.report,account_line_id:0
 msgid "Account Line"
-msgstr "发票明细"
+msgstr "会计科目"
 
 #. module: account
 #: view:account.fiscal.position:account.view_account_position_form
 #: field:account.fiscal.position,account_ids:0 field:account.fiscal.position.template,account_ids:0
 msgid "Account Mapping"
-msgstr "科目一览表"
+msgstr "科目替换"
 
 #. module: account
 #: field:account.use.model,model:0 model:ir.model,name:account.model_account_model
 msgid "Account Model"
-msgstr "科目模型"
+msgstr "凭证模板"
 
 #. module: account
 #: model:ir.model,name:account.model_account_model_line
 msgid "Account Model Entries"
-msgstr "凭证模板"
+msgstr "凭证模板行"
 
 #. module: account
 #: view:website:account.report_analyticbalance view:website:account.report_centraljournal
@@ -986,7 +973,7 @@ msgstr "科目名称"
 #. module: account
 #: model:ir.model,name:account.model_account_partner_ledger
 msgid "Account Partner Ledger"
-msgstr "业务伙伴会计分类账(往来帐)"
+msgstr "往来帐"
 
 #. module: account
 #: field:res.partner,property_account_payable:0
@@ -1002,7 +989,7 @@ msgstr "会计期间"
 #: model:ir.actions.act_window,name:account.action_account_print_journal
 #: model:ir.model,name:account.model_account_print_journal
 msgid "Account Print Journal"
-msgstr "打印分录"
+msgstr "打印凭证汇总"
 
 #. module: account
 #: view:product.category:account.view_category_property_form
@@ -1026,7 +1013,7 @@ msgstr "科目核销"
 #: field:account.financial.report,children_ids:0
 #: model:ir.model,name:account.model_account_financial_report
 msgid "Account Report"
-msgstr "科目报表"
+msgstr "会计报表"
 
 #. module: account
 #: field:accounting.report,account_report_id:0
@@ -1044,13 +1031,13 @@ msgstr "会计报表树"
 #: field:account.fiscal.position.account,account_src_id:0
 #: field:account.fiscal.position.account.template,account_src_id:0
 msgid "Account Source"
-msgstr "源科目"
+msgstr "原科目"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_state_open
 #: model:ir.model,name:account.model_account_state_open
 msgid "Account State Open"
-msgstr "科目状态打开"
+msgstr "发票重置为未付清"
 
 #. module: account
 #: view:account.account:account.account_account_graph
@@ -1063,12 +1050,12 @@ msgstr "科目统计"
 #: view:account.subscription:account.view_subscription_search
 #: model:ir.model,name:account.model_account_subscription
 msgid "Account Subscription"
-msgstr "周期性凭证科目"
+msgstr "周期性凭证"
 
 #. module: account
 #: model:ir.model,name:account.model_account_subscription_line
 msgid "Account Subscription Line"
-msgstr "科目的周期性分录明细"
+msgstr "周期性凭证行"
 
 #. module: account
 #: view:account.tax:account.view_tax_form view:account.tax:account.view_tax_tree
@@ -1080,18 +1067,18 @@ msgstr "税"
 #: view:account.tax.code:account.view_tax_code_search
 #: view:account.tax.code:account.view_tax_code_tree
 msgid "Account Tax Code"
-msgstr "税编码"
+msgstr "税项"
 
 #. module: account
 #: view:account.tax.code.template:account.view_tax_code_template_form
 #: view:account.tax.code.template:account.view_tax_code_template_tree
 msgid "Account Tax Code Template"
-msgstr "税编码模板"
+msgstr "税项模板"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_vat_declaration
 msgid "Account Tax Declaration"
-msgstr "会计税务申报"
+msgstr "税务申报"
 
 #. module: account
 #: view:account.tax.template:account.view_account_tax_template_form
@@ -1116,7 +1103,7 @@ msgstr "科目模板"
 #. module: account
 #: view:website:account.report_agedpartnerbalance
 msgid "Account Total"
-msgstr "总账"
+msgstr "科目合计"
 
 #. module: account
 #: view:account.account:account.view_account_search field:account.account,user_type:0
@@ -1129,7 +1116,7 @@ msgstr "总账"
 #: selection:account.financial.report,type:0 model:ir.model,name:account.model_account_account_type
 #: field:report.account.receivable,type:0 field:report.account_type.sales,user_type:0
 msgid "Account Type"
-msgstr "类型"
+msgstr "科目类型"
 
 #. module: account
 #: help:account.account,user_type:0
@@ -1158,12 +1145,12 @@ msgstr "科目核销反核销"
 #. module: account
 #: model:ir.model,name:account.model_account_vat_declaration
 msgid "Account Vat Declaration"
-msgstr "科目复原申明"
+msgstr "增值税申报"
 
 #. module: account
 #: constraint:account.move.line:0
 msgid "Account and Period must belong to the same company."
-msgstr "帐户和帐期必须属于同一家公司。"
+msgstr "会计科目和期间必须属于同一家公司。"
 
 #. module: account
 #: model:ir.model,name:account.model_account_chart
@@ -1178,7 +1165,7 @@ msgstr "科目一览表"
 #. module: account
 #: view:account.account:account.view_account_form
 msgid "Account code"
-msgstr "账号"
+msgstr "科目编号"
 
 #. module: account
 #: model:ir.model,name:account.model_account_move_line_reconcile
@@ -1188,17 +1175,17 @@ msgstr "核销凭证明细"
 #. module: account
 #: model:ir.model,name:account.model_account_move_line_reconcile_writeoff
 msgid "Account move line reconcile (writeoff)"
-msgstr "凭证行核销（注销）"
+msgstr "凭证行核销（尾差）"
 
 #. module: account
 #: view:account.account:account.view_account_form
 msgid "Account name"
-msgstr "帐户名称"
+msgstr "科目名称"
 
 #. module: account
 #: view:website:account.report_analyticjournal
 msgid "Account n°"
-msgstr "科目编码"
+msgstr "科目编号"
 
 #. module: account
 #: model:ir.model,name:account.model_account_period
@@ -1208,22 +1195,22 @@ msgstr "会计期间"
 #. module: account
 #: model:ir.actions.report.xml,name:account.action_report_vat
 msgid "Account tax"
-msgstr "帐户税"
+msgstr "税"
 
 #. module: account
 #: model:ir.model,name:account.model_account_tax_chart
 msgid "Account tax chart"
-msgstr "税科目图表"
+msgstr "税一览表"
 
 #. module: account
 #: view:account.tax.chart:account.view_account_tax_chart
 msgid "Account tax charts"
-msgstr "纳税明细表"
+msgstr "税一览表"
 
 #. module: account
 #: field:account.bank.statement,account_id:0
 msgid "Account used in this journal"
-msgstr "这分录上的科目"
+msgstr "凭证类型对应的科目"
 
 #. module: account
 #: model:res.groups,name:account.group_account_user
@@ -1247,7 +1234,7 @@ msgstr "会计和财务"
 #: view:account.installer:account.view_account_configuration_installer
 #: view:wizard.multi.charts.accounts:account.view_wizard_multi_chart
 msgid "Accounting Application Configuration"
-msgstr "会计应用程序设置"
+msgstr "会计模块设置"
 
 #. module: account
 #: view:account.move:account.view_move_form view:account.move.line:account.view_move_line_form
@@ -1282,7 +1269,7 @@ msgstr "会计报表"
 #. module: account
 #: view:res.partner:account.view_partner_property_form
 msgid "Accounting-related settings are managed on"
-msgstr "与会计相关的设置的管理是在"
+msgstr "与会计相关的设置在"
 
 #. module: account
 #: view:account.account:account.view_account_search field:account.financial.report,account_ids:0
@@ -1298,7 +1285,7 @@ msgstr "科目"
 #. module: account
 #: view:account.journal:account.view_account_journal_form
 msgid "Accounts Allowed (empty for no control)"
-msgstr "允许科目(留空为不限制)"
+msgstr "只允许以下科目(留空为不限制)"
 
 #. module: account
 #: model:ir.model,name:account.model_account_fiscal_position_account
@@ -1309,29 +1296,29 @@ msgstr "科目替换规则"
 #: view:account.fiscal.position:account.view_account_position_form
 #: view:account.fiscal.position.template:account.view_account_position_template_form
 msgid "Accounts Mapping"
-msgstr "科目一览"
+msgstr "科目替换"
 
 #. module: account
 #: view:account.journal:account.view_account_journal_form
 msgid "Accounts Type Allowed (empty for no control)"
-msgstr "科目类型允许(留空为不限制)"
+msgstr "只允许的科目类型(留空为不限制)"
 
 #. module: account
 #: view:report.account.receivable:account.view_crm_case_user_form
 #: view:report.account.receivable:account.view_crm_case_user_graph
 #: view:report.account.receivable:account.view_crm_case_user_tree
 msgid "Accounts by Type"
-msgstr "按类型划分的科目"
+msgstr "按科目类型"
 
 #. module: account
 #: field:account.automatic.reconcile,account_ids:0
 msgid "Accounts to Reconcile"
-msgstr "科目核销"
+msgstr "要核销的科目"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.act_account_renew_view
 msgid "Accounts to Renew"
-msgstr "延续科目有效期"
+msgstr "待续约的合同"
 
 #. module: account
 #: field:account.account,active:0 field:account.analytic.journal,active:0
@@ -1348,7 +1335,7 @@ msgstr "添加"
 #. module: account
 #: view:account.move:account.view_move_form view:account.move.line:account.view_move_line_form
 msgid "Add an internal note..."
-msgstr "添加内部备注"
+msgstr "备注"
 
 #. module: account
 #: field:account.invoice,comment:0
@@ -1363,7 +1350,7 @@ msgstr "备注"
 #. module: account
 #: field:account.account,adjusted_balance:0
 msgid "Adjusted Balance"
-msgstr "已调整的余额"
+msgstr "外币重估余额"
 
 #. module: account
 #: view:account.journal:account.view_account_journal_form
@@ -1376,7 +1363,7 @@ msgstr "高级选项"
 #: model:ir.actions.report.xml,name:account.action_report_aged_partner_balance
 #: model:ir.ui.menu,name:account.menu_aged_trial_balance
 msgid "Aged Partner Balance"
-msgstr "业务伙伴账龄分析"
+msgstr "账龄分析"
 
 #. module: account
 #: view:account.aged.trial.balance:account.account_aged_balance_view
@@ -1387,16 +1374,16 @@ msgid ""
 "an interval of 30 days Odoo generates an analysis of creditors for the past month, past two "
 "months, and so on."
 msgstr ""
-"业务伙伴账龄分析是某个时间间隔内应收账款的更详细的报表。打开这个报表后，请选择科目一览表、开始日"
-"期、分析的时间间隔（按天）。Odoo会按时间间隔计算应收账款余额。如果你输入了30天，Odoo生成业务伙伴的"
-"应付分析为前一个月、前两个月,以此类推。 "
+"往来账龄分析是某个时间间隔内应收账款的更详细的报表。打开这个报表后，请选择科目一览表、开始日"
+"期、分析的时间间隔（按天）。Odoo会按时间间隔计算应收账款余额。如果你输入了30天，Odoo将业务伙伴的往来余额"
+"拆分为前一个月、前两个月,以此类推。 "
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_aged_receivable_graph
 #: view:report.aged.receivable:account.view_aged_recv_graph
 #: view:report.aged.receivable:account.view_aged_recv_tree
 msgid "Aged Receivable"
-msgstr "旧的应收款"
+msgstr "应收账款账龄"
 
 #. module: account
 #: model:ir.model,name:account.model_report_aged_receivable
@@ -1451,7 +1438,7 @@ msgstr "所有业务伙伴"
 #: code:addons\account\report\common_report_header.py:68
 #, python-format
 msgid "All Posted Entries"
-msgstr "所有已登账凭证"
+msgstr "所有已记账凭证"
 
 #. module: account
 #: view:website:account.report_trialbalance
@@ -1476,26 +1463,26 @@ msgid ""
 "entries automatically created by the system on document validation (invoices, bank statements...) "
 "and will be created in 'Posted' status."
 msgstr ""
-"所有手工创建的会计分录通常为“未记账”状态，但你可以设置跳过这一状态的选项，这样，系统会自动创建会计"
-"分录的有效凭证（发票、银行报表。。。），并且会处于“记账”状态。"
+"所有手工创建的会计凭证通常为“未记账”状态，但你可以设置跳过这一状态的选项，这样，系统会自动在"
+"原始凭证（发票、银行日记账等）记账的时候生成“已记账”状态的会计凭证。"
 
 #. module: account
 #: view:validate.account.move.lines:account.validate_account_move_line_view
 msgid ""
 "All selected journal entries will be validated and posted. It means you won't be able to modify "
 "their accounting fields anymore."
-msgstr "所有选择的会计分录将生效并记账，这意味着您将不能修改它们。"
+msgstr "所有选择的会计凭证将生效并记账，这意味着您将不能修改它们。"
 
 #. module: account
 #: code:addons\account\account_bank_statement.py:348
 #, python-format
 msgid "All the account entries lines must be processed in order to close the statement."
-msgstr "所有的会计凭证必须被处理才能关闭对账"
+msgstr "所有的会计凭证行必须被处理完毕才能关闭对账单"
 
 #. module: account
 #: field:account.journal,update_posted:0
 msgid "Allow Cancelling Entries"
-msgstr "允许取消分录"
+msgstr "允许作废凭证"
 
 #. module: account
 #: field:account.account,reconcile:0 field:account.account.template,reconcile:0
@@ -1515,7 +1502,7 @@ msgstr "允许使用形式发票"
 #. module: account
 #: field:account.automatic.reconcile,allow_write_off:0
 msgid "Allow write off"
-msgstr "允许勾销"
+msgstr "允许尾差"
 
 #. module: account
 #: help:account.config.settings,group_multi_currency:0
@@ -1525,12 +1512,12 @@ msgstr "允许多币种"
 #. module: account
 #: help:account.config.settings,group_proforma_invoices:0
 msgid "Allows you to put invoices in pro-forma state."
-msgstr "允许使用形式发票。"
+msgstr "允许将发票置为‘形式发票’阶段"
 
 #. module: account
 #: help:account.config.settings,group_analytic_accounting:0
 msgid "Allows you to use the analytic accounting."
-msgstr "允许使用辅助核算"
+msgstr "允许使用成本要素"
 
 #. module: account
 #: selection:account.tax,applicable_type:0
@@ -1566,7 +1553,7 @@ msgstr "计算金额"
 #: field:account.entries.report,amount_currency:0 field:account.model.line,amount_currency:0
 #: field:account.move.line,amount_currency:0
 msgid "Amount Currency"
-msgstr "原币种金额"
+msgstr "原币金额"
 
 #. module: account
 #: view:account.payment.term.line:account.view_payment_term_line_form
@@ -1577,12 +1564,12 @@ msgstr "支付金额"
 #. module: account
 #: field:account.statement.operation.template,amount_type:0
 msgid "Amount type"
-msgstr "帐户类型"
+msgstr "金额取值"
 
 #. module: account
 #: sql_constraint:account.fiscal.position.account:0
 msgid "An account fiscal position could be defined only once time on same accounts."
-msgstr "在一个科目上只能设置一个应税设定"
+msgstr "在一个科目上只能设置一个替换规则"
 
 #. module: account
 #: field:account.aged.trial.balance,direction_selection:0
@@ -1598,7 +1585,7 @@ msgstr "分析方向"
 #: view:account.move:account.view_move_form view:account.move.line:account.view_move_line_form
 #: model:ir.ui.menu,name:account.next_id_40 view:website:account.report_analyticjournal
 msgid "Analytic"
-msgstr "辅助核算"
+msgstr "成本要素"
 
 #. module: account
 #. openerp-web
@@ -1606,7 +1593,7 @@ msgstr "辅助核算"
 #: code:addons\account\static\src\js\account_widgets.js:121
 #, python-format
 msgid "Analytic Acc."
-msgstr "辅助核算项"
+msgstr "成本要素"
 
 #. module: account
 #: view:account.analytic.account:account.view_account_analytic_account_search
@@ -1617,42 +1604,42 @@ msgstr "辅助核算项"
 #: field:account.move.line.reconcile.writeoff,analytic_id:0
 #: field:account.statement.operation.template,analytic_account_id:0
 msgid "Analytic Account"
-msgstr "辅助核算项"
+msgstr "成本要素"
 
 #. module: account
 #: view:account.analytic.chart:account.account_analytic_chart_view
 msgid "Analytic Account Charts"
-msgstr "辅助核算项一览表"
+msgstr "成本一览表"
 
 #. module: account
 #: view:account.config.settings:account.view_account_config_settings
 #: model:ir.ui.menu,name:account.menu_analytic_accounting
 msgid "Analytic Accounting"
-msgstr "辅助核算科目"
+msgstr "成本要素"
 
 #. module: account
 #: view:account.analytic.account:account.view_account_analytic_account_list
 #: model:ir.actions.act_window,name:account.action_account_analytic_account_form
 #: model:ir.ui.menu,name:account.account_analytic_def_account
 msgid "Analytic Accounts"
-msgstr "辅助核算项"
+msgstr "成本要素"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_analytic_balance
 #: model:ir.actions.report.xml,name:account.action_report_analytic_balance
 msgid "Analytic Balance"
-msgstr "辅助核算余额"
+msgstr "成本余额"
 
 #. module: account
 #: view:website:account.report_analyticbalance
 msgid "Analytic Balance -"
-msgstr "辅助核算余额 -"
+msgstr "成本余额 -"
 
 #. module: account
 #: view:account.analytic.line:account.view_account_analytic_line_tree
 #: model:ir.actions.act_window,name:account.action_account_analytic_line_form
 msgid "Analytic Entries"
-msgstr "辅助核算记录"
+msgstr "成本凭证"
 
 #. module: account
 #: view:analytic.entries.report:account.view_account_analytic_entries_search
@@ -1660,29 +1647,29 @@ msgstr "辅助核算记录"
 #: model:ir.actions.act_window,name:account.action_analytic_entries_report
 #: model:ir.ui.menu,name:account.menu_action_analytic_entries_report
 msgid "Analytic Entries Analysis"
-msgstr "辅助核算分析"
+msgstr "成本凭证分析"
 
 #. module: account
 #: model:ir.model,name:account.model_analytic_entries_report
 msgid "Analytic Entries Statistics"
-msgstr "辅助核算统计"
+msgstr "成本凭证统计"
 
 #. module: account
 #: code:addons\account\project\wizard\project_account_analytic_line.py:47
 #: model:ir.model,name:account.model_project_account_analytic_line
 #, python-format
 msgid "Analytic Entries by line"
-msgstr "辅助核算明细"
+msgstr "成本凭证"
 
 #. module: account
 #: view:account.analytic.line:account.view_account_analytic_line_form
 msgid "Analytic Entry"
-msgstr "辅助核算记录"
+msgstr "成本凭证"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_tree1
 msgid "Analytic Items"
-msgstr "分析明细"
+msgstr "成本凭证"
 
 #. module: account
 #: view:account.analytic.journal:account.view_account_analytic_journal_form
@@ -1695,23 +1682,23 @@ msgstr "分析明细"
 #: model:ir.ui.menu,name:account.account_analytic_journal_print
 #: view:website:account.report_analyticjournal
 msgid "Analytic Journal"
-msgstr "成本凭证"
+msgstr "成本凭证类型"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_analytic_journal_open_form
 #: model:ir.ui.menu,name:account.account_analytic_journal_entries
 msgid "Analytic Journal Items"
-msgstr "成本凭证行"
+msgstr "成本凭证"
 
 #. module: account
 #: view:account.analytic.line:account.view_account_analytic_line_filter
 msgid "Analytic Journal Items related to a purchase journal."
-msgstr "与采购分录相关的辅助核算项"
+msgstr "与采购相关的成本凭证"
 
 #. module: account
 #: view:account.analytic.line:account.view_account_analytic_line_filter
 msgid "Analytic Journal Items related to a sale journal."
-msgstr "与某销售凭证分类关联的辅助核算项"
+msgstr "与某销售相关的成本凭证"
 
 #. module: account
 #: view:account.analytic.journal:account.view_analytic_journal_search
@@ -1725,29 +1712,29 @@ msgstr "成本凭证类型"
 #: view:account.analytic.line:account.view_account_analytic_line_filter
 #: model:ir.model,name:account.model_account_analytic_line
 msgid "Analytic Line"
-msgstr "辅助核算明细"
+msgstr "成本凭证"
 
 #. module: account
 #: view:account.move:account.view_move_form view:account.move.line:account.view_move_line_form
 #: view:account.move.line:account.view_move_line_form2
 msgid "Analytic Lines"
-msgstr "辅助核算明细"
+msgstr "成本凭证"
 
 #. module: account
 #: view:account.analytic.account:account.view_account_analytic_account_tree
 #: field:account.invoice.tax,account_analytic_id:0
 msgid "Analytic account"
-msgstr "辅助核算项"
+msgstr "成本要素"
 
 #. module: account
 #: field:account.config.settings,group_analytic_accounting:0
 msgid "Analytic accounting"
-msgstr "辅助核算"
+msgstr "成本要素会计"
 
 #. module: account
 #: field:account.move.line,analytic_lines:0
 msgid "Analytic lines"
-msgstr "辅助核算明细"
+msgstr "成本凭证"
 
 #. module: account
 #: field:account.tax,applicable_type:0
@@ -11250,2513 +11237,3 @@ msgstr "用于银行对账单，但不能使用到别处。"
 #: selection:account.subscription,period_type:0
 msgid "year"
 msgstr "年"
-
-#~ msgid "Choose counterpart"
-#~ msgstr "选择对方"
-
-#~ msgid "Fiscal Position:"
-#~ msgstr "财务位置："
-
-#~ msgid "Sales Team"
-#~ msgstr "销售团队"
-
-#~ msgid "30 Days End of Month"
-#~ msgstr "月结30天"
-
-#~ msgid "30% Advance End 30 Days"
-#~ msgstr "预付30%30天内支付余款"
-
-#~ msgid "This account will be used to value outgoing stock using cost price."
-#~ msgstr "此帐户用于以成本法对存货进行估值。"
-
-#~ msgid "This account will be used to value outgoing stock using sale price."
-#~ msgstr "此帐户用于以销售价格对要发货的产品进行估值。"
-
-#~ msgid "id"
-#~ msgstr "id"
-
-#~ msgid "# of Lines"
-#~ msgstr "# 明细"
-
-#~ msgid "Commercial Partner"
-#~ msgstr "商业伙伴"
-
-#~ msgid "Commercial Partner's Country"
-#~ msgstr "商业合作伙伴的国家"
-
-#~ msgid "Group by month of Invoice Date"
-#~ msgstr "按发票月份分组"
-
-#~ msgid "Invoice Month"
-#~ msgstr "月度发票"
-
-#~ msgid "Leave to 0 to ignore."
-#~ msgstr "设为0，将会忽略"
-
-#~ msgid "Qty"
-#~ msgstr "数量"
-
-#~ msgid "Structured Communication"
-#~ msgstr "结构化通信"
-
-#~ msgid " Sales Tax Account 0% ES33"
-#~ msgstr "销售税科目"
-
-#~ msgid "Abates"
-#~ msgstr "折扣"
-
-#~ msgid "Account Chart CA EN"
-#~ msgstr "科目一览表 CA EN"
-
-#~ msgid "Account Chart CA FR"
-#~ msgstr "科目一览表 CA FR"
-
-#~ msgid "Accountancy and audit"
-#~ msgstr "会计和审计"
-
-#, fuzzy
-#~ msgid "Accountantskosten"
-#~ msgstr "会计"
-
-#~ msgid "Accounts Payable"
-#~ msgstr "应付科目"
-
-#~ msgid "Accounts Receivable"
-#~ msgstr "应收科目"
-
-#~ msgid "Accrued Expenses"
-#~ msgstr "已发生费用"
-
-#~ msgid "Accumulated Adjustment"
-#~ msgstr "累计调整"
-
-#~ msgid "Accumulated Depreciation"
-#~ msgstr "累计折旧"
-
-#~ msgid "Accumulated amortisation"
-#~ msgstr "累计摊销"
-
-#~ msgid "Accumulated depreciation"
-#~ msgstr "累计折旧"
-
-#~ msgid "Actions"
-#~ msgstr "动作"
-
-#, fuzzy
-#~ msgid "Active contingente"
-#~ msgstr "会计分录"
-
-#~ msgid "Activo"
-#~ msgstr "有效"
-
-#, fuzzy
-#~ msgid "Adiantamentos"
-#~ msgstr "银行对账单"
-
-#, fuzzy
-#~ msgid "Adiantamentos de clientes"
-#~ msgstr "银行对账单明细"
-
-#~ msgid "Advance To Suppliers"
-#~ msgstr "转到供应商"
-
-#~ msgid "Advance to staff"
-#~ msgstr "转到职员"
-
-#, fuzzy
-#~ msgid "Advanced Client Costs"
-#~ msgstr "高级选项"
-
-#, fuzzy
-#~ msgid "Afschrijving Licenties"
-#~ msgstr "会计分录"
-
-#, fuzzy
-#~ msgid "Ambalaje"
-#~ msgstr "余额"
-
-#, fuzzy
-#~ msgid "Amortisation"
-#~ msgstr "汇总"
-
-#, fuzzy
-#~ msgid "Amortissements"
-#~ msgstr "银行对账单草稿"
-
-#, fuzzy
-#~ msgid "Analizy sanitarne"
-#~ msgstr "辅助核算余额"
-
-#, fuzzy
-#~ msgid "Annual Service Fees"
-#~ msgstr "手动的发票税(非主营业务纳税)"
-
-#, fuzzy
-#~ msgid "Apports temporaires"
-#~ msgstr "导入条目"
-
-#, fuzzy
-#~ msgid "Associés, autres apports"
-#~ msgstr "相关业务伙伴"
-
-#, fuzzy
-#~ msgid "Auditing"
-#~ msgstr "会计"
-
-#, fuzzy
-#~ msgid "Auditors Remuneration"
-#~ msgstr "附加信息"
-
-#, fuzzy
-#~ msgid "Auto"
-#~ msgstr "自动"
-
-#, fuzzy
-#~ msgid "Autres acquisitions"
-#~ msgstr "交易"
-
-#, fuzzy
-#~ msgid "Autres assurances"
-#~ msgstr "已调整的余额"
-
-#, fuzzy
-#~ msgid "Autres cotisations"
-#~ msgstr "替代科目"
-
-#, fuzzy
-#~ msgid "Autres dotations"
-#~ msgstr "计算金额"
-
-#, fuzzy
-#~ msgid "Autres frais de télécommunications"
-#~ msgstr "消息和沟通记录"
-
-#, fuzzy
-#~ msgid "Autres installations"
-#~ msgstr "替代科目"
-
-#, fuzzy
-#~ msgid "Avales"
-#~ msgstr "销售"
-
-#, fuzzy
-#~ msgid "Avances et acomptes"
-#~ msgstr "高级选项"
-
-#, fuzzy
-#~ msgid "Avances sur subventions"
-#~ msgstr "高级选项"
-
-#, fuzzy
-#~ msgid "Bad debts"
-#~ msgstr "借方合计"
-
-#, fuzzy
-#~ msgid "Balance Account"
-#~ msgstr "银行账号"
-
-#, fuzzy
-#~ msgid "Balance General"
-#~ msgstr "资产负债表"
-
-#, fuzzy
-#~ msgid "Balance Sheet - (test)"
-#~ msgstr "资产负债表"
-
-#, fuzzy
-#~ msgid "Bank Balance"
-#~ msgstr "业务伙伴余额"
-
-#, fuzzy
-#~ msgid "Bank Charges"
-#~ msgstr "银行和现金"
-
-#, fuzzy
-#~ msgid "Bank Current Account"
-#~ msgstr "当前科目"
-
-#, fuzzy
-#~ msgid "Bank Current Account - (test)"
-#~ msgstr "当前科目"
-
-#, fuzzy
-#~ msgid "Bank Gurantee Charges"
-#~ msgstr "银行对账"
-
-#, fuzzy
-#~ msgid "Bank Journal - (test)"
-#~ msgstr "会计凭证行"
-
-#, fuzzy
-#~ msgid "Bank OD Account"
-#~ msgstr "银行账号"
-
-#, fuzzy
-#~ msgid "Bank charges"
-#~ msgstr "银行和现金"
-
-#, fuzzy
-#~ msgid "Bank loans"
-#~ msgstr "银行账号"
-
-#, fuzzy
-#~ msgid "Banka"
-#~ msgstr "银行分录"
-
-#, fuzzy
-#~ msgid "Bankalar"
-#~ msgstr "银行分录"
-
-#, fuzzy
-#~ msgid "Bankkosten"
-#~ msgstr "银行对账单"
-
-#, fuzzy
-#~ msgid "Bons de souscription"
-#~ msgstr "新周期性分录"
-
-#, fuzzy
-#~ msgid "Bâtiments"
-#~ msgstr "报表"
-
-#, fuzzy
-#~ msgid "Capital Account"
-#~ msgstr "Paypal账户"
-
-#, fuzzy
-#~ msgid "Capital Assets"
-#~ msgstr "资产"
-
-#, fuzzy
-#~ msgid "Cash Account"
-#~ msgstr "税科目"
-
-#, fuzzy
-#~ msgid "Cash Balance"
-#~ msgstr "结转余额"
-
-#, fuzzy
-#~ msgid "Cash In Hand"
-#~ msgstr "现金与银行分录"
-
-#, fuzzy
-#~ msgid "Cash Journal - (test)"
-#~ msgstr "搜索分类账项"
-
-#, fuzzy
-#~ msgid "Cash and Cash Equivalents"
-#~ msgstr "现金与银行分录"
-
-#, fuzzy
-#~ msgid "Cash and cash equivalents"
-#~ msgstr "现金与银行分录"
-
-#, fuzzy
-#~ msgid "Cash at Bank"
-#~ msgstr "现金与银行分录"
-
-#, fuzzy
-#~ msgid "Cash on hand"
-#~ msgstr "现金与银行分录"
-
-#, fuzzy
-#~ msgid "Cash on hand and at bank"
-#~ msgstr "现金与银行分录"
-
-#, fuzzy
-#~ msgid "Cautionnements"
-#~ msgstr "报表"
-
-#, fuzzy
-#~ msgid "Centeral Sales Tax"
-#~ msgstr "默认销售税"
-
-#, fuzzy
-#~ msgid "Charges"
-#~ msgstr "表"
-
-#, fuzzy
-#~ msgid "Charges fiscales d'exploitation"
-#~ msgstr "税负"
-
-#, fuzzy
-#~ msgid "Charges locatives"
-#~ msgstr "制图模板"
-
-#, fuzzy
-#~ msgid "Charges sociales"
-#~ msgstr "税一览表"
-
-#, fuzzy
-#~ msgid "Charitable Contributions"
-#~ msgstr "贷方汇总"
-
-#, fuzzy
-#~ msgid "Chart For Automated Tests"
-#~ msgstr "科目一览表模板"
-
-#, fuzzy
-#~ msgid "Chart of Singapore"
-#~ msgstr "税一览表"
-
-#, fuzzy
-#~ msgid "Checks Journal - (test)"
-#~ msgstr "搜索分类账项"
-
-#, fuzzy
-#~ msgid "Chemicals Purchased"
-#~ msgstr "默认进项税"
-
-#, fuzzy
-#~ msgid "Cheque With Account"
-#~ msgstr "当前科目"
-
-#, fuzzy
-#~ msgid "Client Trust Account"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Client trust account"
-#~ msgstr "当前科目"
-
-#, fuzzy
-#~ msgid "Clients - Groupe"
-#~ msgstr "国家组"
-
-#, fuzzy
-#~ msgid "Closing Stock"
-#~ msgstr "结束小计"
-
-#, fuzzy
-#~ msgid "Comerciales"
-#~ msgstr "商业伙伴"
-
-#, fuzzy
-#~ msgid "Commercial & Marketing"
-#~ msgstr "商业伙伴"
-
-#, fuzzy
-#~ msgid "Commercial Loan"
-#~ msgstr "商业伙伴"
-
-#, fuzzy
-#~ msgid "Communes"
-#~ msgstr "注释"
-
-#, fuzzy
-#~ msgid "Company Credit Card"
-#~ msgstr "公司本位币"
-
-#, fuzzy
-#~ msgid "Compensation"
-#~ msgstr "计算"
-
-#, fuzzy
-#~ msgid "Compensation clients"
-#~ msgstr "公司"
-
-#, fuzzy
-#~ msgid "Compras"
-#~ msgstr "公司"
-
-#, fuzzy
-#~ msgid "Compras y gastos"
-#~ msgstr "公司财务分析"
-
-#, fuzzy
-#~ msgid "Compte courant"
-#~ msgstr "计算余额"
-
-#, fuzzy
-#~ msgid "Compte d'attente"
-#~ msgstr "计算余额"
-
-#, fuzzy
-#~ msgid "Comptes courants"
-#~ msgstr "科目模板"
-
-#, fuzzy
-#~ msgid "Comptes d'attente"
-#~ msgstr "计算余额"
-
-#, fuzzy
-#~ msgid "Comptes de bilan"
-#~ msgstr "计算余额"
-
-#, fuzzy
-#~ msgid "Comptes de capitaux"
-#~ msgstr "完成税收组"
-
-#, fuzzy
-#~ msgid "Comptes de charges"
-#~ msgstr "完成税集合"
-
-#, fuzzy
-#~ msgid "Comptes de gestion"
-#~ msgstr "计算"
-
-#, fuzzy
-#~ msgid "Comptes de produits"
-#~ msgstr "完成税收组"
-
-#, fuzzy
-#~ msgid "Comptes de tiers"
-#~ msgstr "完成税收组"
-
-#, fuzzy
-#~ msgid "Comptes financiers"
-#~ msgstr "公司"
-
-#, fuzzy
-#~ msgid "Comptes transitoires ou d'attente"
-#~ msgstr "公司是指业务伙伴"
-
-#, fuzzy
-#~ msgid "Computer Maintenace"
-#~ msgstr "计算余额"
-
-#, fuzzy
-#~ msgid "Computer/Laptops"
-#~ msgstr "计算"
-
-#, fuzzy
-#~ msgid "Configurable Account Chart"
-#~ msgstr "设置会计数据"
-
-#, fuzzy
-#~ msgid "Configurable Account Chart Template"
-#~ msgstr "设置会计数据"
-
-#, fuzzy
-#~ msgid "Construction"
-#~ msgstr "合并"
-
-#, fuzzy
-#~ msgid "Constructions"
-#~ msgstr "交易"
-
-#, fuzzy
-#~ msgid "Continuing Education"
-#~ msgstr "设置"
-
-#, fuzzy
-#~ msgid "Contracted Services"
-#~ msgstr "合同列表"
-
-#, fuzzy
-#~ msgid "Contribuciones"
-#~ msgstr "国家"
-
-#, fuzzy
-#~ msgid "Convertibles"
-#~ msgstr "属性"
-
-#, fuzzy
-#~ msgid "Corporation Tax"
-#~ msgstr "建立日期"
-
-#, fuzzy
-#~ msgid "Corrections de valeur"
-#~ msgstr "建立日期"
-
-#, fuzzy
-#~ msgid "Cost of Sales"
-#~ msgstr "税一览表"
-
-#, fuzzy
-#~ msgid "Cost of sales"
-#~ msgstr "税一览表"
-
-#, fuzzy
-#~ msgid "Cost of sales 1"
-#~ msgstr "税一览表"
-
-#, fuzzy
-#~ msgid "Cost of sales 2"
-#~ msgstr "税一览表"
-
-#, fuzzy
-#~ msgid "Cost of sales 3"
-#~ msgstr "税一览表"
-
-#, fuzzy
-#~ msgid "Cost of sales 4"
-#~ msgstr "税一览表"
-
-#, fuzzy
-#~ msgid "Cotisations"
-#~ msgstr "计算"
-
-#, fuzzy
-#~ msgid "Creante imobilizate"
-#~ msgstr "创建日期"
-
-#, fuzzy
-#~ msgid "Crediteuren"
-#~ msgstr "贷方"
-
-#, fuzzy
-#~ msgid "Creditori diversi"
-#~ msgstr "欠款单据"
-
-#, fuzzy
-#~ msgid "Creditors"
-#~ msgstr "贷方"
-
-#, fuzzy
-#~ msgid "Creditors - (test)"
-#~ msgstr "欠款单据"
-
-#, fuzzy
-#~ msgid "Creditors Control Account"
-#~ msgstr "科目一览表"
-
-#, fuzzy
-#~ msgid "Crop Sales"
-#~ msgstr "销售"
-
-#, fuzzy
-#~ msgid "Créances"
-#~ msgstr "取消"
-
-#, fuzzy
-#~ msgid "Crédits d'acceptation"
-#~ msgstr "贷方汇总"
-
-#, fuzzy
-#~ msgid "Cuentas de Balance"
-#~ msgstr "计算余额"
-
-#~ msgid "Current"
-#~ msgstr "当前的"
-
-#, fuzzy
-#~ msgid "Current Assets"
-#~ msgstr "当前科目"
-
-#, fuzzy
-#~ msgid "Current Investment"
-#~ msgstr "汇兑损益调整"
-
-#, fuzzy
-#~ msgid "Current Liabilities"
-#~ msgstr "汇率"
-
-#, fuzzy
-#~ msgid "Current Tax Liability"
-#~ msgstr "负债"
-
-#, fuzzy
-#~ msgid "Current assets"
-#~ msgstr "当前科目"
-
-#, fuzzy
-#~ msgid "Current liabilities"
-#~ msgstr "汇率"
-
-#, fuzzy
-#~ msgid "Custom Duty"
-#~ msgstr "自定义"
-
-#, fuzzy
-#~ msgid "Custom Hire Income"
-#~ msgstr "客户发票"
-
-#, fuzzy
-#~ msgid "Customer Deposits Received"
-#~ msgstr "客户发票"
-
-#, fuzzy
-#~ msgid "Customers Account"
-#~ msgstr "创建科目"
-
-#, fuzzy
-#~ msgid "Debiteuren"
-#~ msgstr "借方"
-
-#, fuzzy
-#~ msgid "Debtors Control Account"
-#~ msgstr "总账"
-
-#, fuzzy
-#~ msgid "Deposit Account"
-#~ msgstr "损益类科目（收益）"
-
-#, fuzzy
-#~ msgid "Depreciation"
-#~ msgstr "持续时间"
-
-#, fuzzy
-#~ msgid "Development"
-#~ msgstr "单据"
-
-#, fuzzy
-#~ msgid "Direct Expense"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Direct Expenses"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Direction"
-#~ msgstr "持续时间"
-
-#, fuzzy
-#~ msgid "Documentation"
-#~ msgstr "单据"
-
-#, fuzzy
-#~ msgid "Donation"
-#~ msgstr "持续时间"
-
-#, fuzzy
-#~ msgid "Donations"
-#~ msgstr "持续时间"
-
-#, fuzzy
-#~ msgid "Dotations"
-#~ msgstr "持续时间"
-
-#, fuzzy
-#~ msgid "Dotations "
-#~ msgstr "计算"
-
-#~ msgid "Draft Invoice "
-#~ msgstr "发票草稿"
-
-#~ msgid "Draft Refund "
-#~ msgstr "退款草稿"
-
-#, fuzzy
-#~ msgid "Droits de mutation"
-#~ msgstr "计算截至日期"
-
-#, fuzzy
-#~ msgid "Dues and Subscriptions"
-#~ msgstr "循环凭证草稿"
-
-#, fuzzy
-#~ msgid "Dues and subscriptions"
-#~ msgstr "循环凭证草稿"
-
-#, fuzzy
-#~ msgid "Duties and Taxes"
-#~ msgstr "默认税"
-
-#, fuzzy
-#~ msgid "Départements"
-#~ msgstr "报表"
-
-#, fuzzy
-#~ msgid "EPF Payable"
-#~ msgstr "应付"
-
-#, fuzzy
-#~ msgid "Efecte de incasat"
-#~ msgstr "生效日期"
-
-#, fuzzy
-#~ msgid "Efecte de platit"
-#~ msgstr "生效日期"
-
-#, fuzzy
-#~ msgid "Effecten"
-#~ msgstr "生效日期"
-
-#, fuzzy
-#~ msgid "Egresos"
-#~ msgstr "进度"
-
-#, fuzzy
-#~ msgid "Electricidade"
-#~ msgstr "电子文件"
-
-#, fuzzy
-#~ msgid "Electricité"
-#~ msgstr "电子文件"
-
-#, fuzzy
-#~ msgid "Embalajes"
-#~ msgstr "余额"
-
-#, fuzzy
-#~ msgid "Entreprises liées"
-#~ msgstr "分录分析"
-
-#, fuzzy
-#~ msgid "Equipment"
-#~ msgstr "权益"
-
-#, fuzzy
-#~ msgid "Equipments"
-#~ msgstr "权益"
-
-#, fuzzy
-#~ msgid "Equipo de Computación "
-#~ msgstr "计算截至日期"
-
-#, fuzzy
-#~ msgid "Exchange Gain or Loss"
-#~ msgstr "未实现汇兑损益"
-
-#, fuzzy
-#~ msgid "Exchange gains/losses"
-#~ msgstr "汇率"
-
-#, fuzzy
-#~ msgid "Excise Duty Payable"
-#~ msgstr "应付科目"
-
-#, fuzzy
-#~ msgid "Excise Duty Receivable"
-#~ msgstr "应收科目"
-
-#, fuzzy
-#~ msgid "Expense - (test)"
-#~ msgstr "费用视图"
-
-#, fuzzy
-#~ msgid "Expenses"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Expenses - (test)"
-#~ msgstr "费用视图"
-
-#, fuzzy
-#~ msgid "Expenses Journal - (test)"
-#~ msgstr "未记账分类账项"
-
-#, fuzzy
-#~ msgid "Export Expenses"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Export Sales"
-#~ msgstr "报表数值"
-
-#, fuzzy
-#~ msgid "Export Services"
-#~ msgstr "导入条目"
-
-#, fuzzy
-#~ msgid "Feed Purchased"
-#~ msgstr "采购"
-
-#, fuzzy
-#~ msgid "Finance costs"
-#~ msgstr "会计报表"
-
-#, fuzzy
-#~ msgid "Financial Cost"
-#~ msgstr "财务报表"
-
-#, fuzzy
-#~ msgid "Financiamentos obtidos"
-#~ msgstr "会计报表"
-
-#, fuzzy
-#~ msgid "Fixed Asset Account"
-#~ msgstr "固定金额"
-
-#, fuzzy
-#~ msgid "Fixed Assets"
-#~ msgstr "固定金额"
-
-#, fuzzy
-#~ msgid "Foires et expositions"
-#~ msgstr "替换规则"
-
-#, fuzzy
-#~ msgid "Fond comercial negativ"
-#~ msgstr "商业实体"
-
-#, fuzzy
-#~ msgid "Foreign Exchange Loss"
-#~ msgstr "国外资产"
-
-#, fuzzy
-#~ msgid "Foreign Loans"
-#~ msgstr "国外资产"
-
-#, fuzzy
-#~ msgid "Fournisseurs Groupe"
-#~ msgstr "国家组"
-
-#, fuzzy
-#~ msgid "Frais de constitution"
-#~ msgstr "替换规则"
-
-#, fuzzy
-#~ msgid "Frais de déménagement"
-#~ msgstr "固定资产管理"
-
-#, fuzzy
-#~ msgid "Freight"
-#~ msgstr "上级右"
-
-#, fuzzy
-#~ msgid "From Others"
-#~ msgstr "其它设置"
-
-#, fuzzy
-#~ msgid "Furniture"
-#~ msgstr "将来"
-
-#, fuzzy
-#~ msgid "Futuros"
-#~ msgstr "将来"
-
-#, fuzzy
-#~ msgid "GST Payable"
-#~ msgstr "应付"
-
-#, fuzzy
-#~ msgid "GST receivable"
-#~ msgstr "应收"
-
-#, fuzzy
-#~ msgid "Gastos a reconhecer"
-#~ msgstr "快速核销"
-
-#, fuzzy
-#~ msgid "Gaz de canalisation"
-#~ msgstr "集中"
-
-#, fuzzy
-#~ msgid "General Expenses"
-#~ msgstr "生成分录"
-
-#, fuzzy
-#~ msgid "Grace period payables"
-#~ msgstr "强制会计期间"
-
-#, fuzzy
-#~ msgid "Groupe"
-#~ msgstr "组"
-
-#, fuzzy
-#~ msgid "Groupe A"
-#~ msgstr "分组按"
-
-#, fuzzy
-#~ msgid "Groupe B"
-#~ msgstr "分组按"
-
-#, fuzzy
-#~ msgid "HMRC - VAT Account"
-#~ msgstr "税科目"
-
-#, fuzzy
-#~ msgid "HST receivable"
-#~ msgstr "应收"
-
-#, fuzzy
-#~ msgid "HST receivable - 13%"
-#~ msgstr "应收款合计"
-
-#, fuzzy
-#~ msgid "HST receivable - 14%"
-#~ msgstr "应收款合计"
-
-#, fuzzy
-#~ msgid "HST receivable - 15%"
-#~ msgstr "应收款合计"
-
-#, fuzzy
-#~ msgid "Hire Purchase"
-#~ msgstr "采购"
-
-#, fuzzy
-#~ msgid "Holidays"
-#~ msgstr "天"
-
-#, fuzzy
-#~ msgid "IVA c/acconto "
-#~ msgstr "所有科目"
-
-#, fuzzy
-#~ msgid "Impostos indirectos"
-#~ msgstr "导入条目"
-
-#, fuzzy
-#~ msgid "Income - (test)"
-#~ msgstr "收入视图"
-
-#, fuzzy
-#~ msgid "Income Summary"
-#~ msgstr "摘要"
-
-#, fuzzy
-#~ msgid "Indian Chart of Accounts - Schedule VI"
-#~ msgstr "科目一览表模板"
-
-#, fuzzy
-#~ msgid "Indian Chart of Accounts - Standard"
-#~ msgstr "科目一览表"
-
-#, fuzzy
-#~ msgid "Indirect Expense"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Ingresos"
-#~ msgstr "进度"
-
-#, fuzzy
-#~ msgid "Inkoopkosten"
-#~ msgstr "未记账"
-
-#, fuzzy
-#~ msgid "Inscripciones"
-#~ msgstr "说明"
-
-#, fuzzy
-#~ msgid "Inside Purchases"
-#~ msgstr "采购"
-
-#, fuzzy
-#~ msgid "Installation de chargement"
-#~ msgstr "安装其它会计科目表"
-
-#, fuzzy
-#~ msgid "Installations"
-#~ msgstr "汇总"
-
-#, fuzzy
-#~ msgid "Insurance Payable"
-#~ msgstr "应付科目"
-
-#, fuzzy
-#~ msgid "Integration"
-#~ msgstr "信息"
-
-#, fuzzy
-#~ msgid "Intereses"
-#~ msgstr "内部备注"
-
-#, fuzzy
-#~ msgid "Interest"
-#~ msgstr "内部备注"
-
-#, fuzzy
-#~ msgid "Interest Expense"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Interest Payable"
-#~ msgstr "应付科目"
-
-#, fuzzy
-#~ msgid "Interest paid"
-#~ msgstr "发票已付清"
-
-#, fuzzy
-#~ msgid "Internal"
-#~ msgstr "内部名称"
-
-#, fuzzy
-#~ msgid "Internal Audit Fee"
-#~ msgstr "内部备注"
-
-#, fuzzy
-#~ msgid "International Purchases"
-#~ msgstr "内部名称"
-
-#, fuzzy
-#~ msgid "International Sales"
-#~ msgstr "内部名称"
-
-#, fuzzy
-#~ msgid "Internet Expense"
-#~ msgstr "内部类型"
-
-#, fuzzy
-#~ msgid "Inventories"
-#~ msgstr "凭证"
-
-#, fuzzy
-#~ msgid "Inventory Adjustments"
-#~ msgstr "汇兑损益调整"
-
-#, fuzzy
-#~ msgid "Investments"
-#~ msgstr "银行对账单"
-
-#, fuzzy
-#~ msgid "Invoerkosten"
-#~ msgstr "发送发票"
-
-#~ msgid "Invoice "
-#~ msgstr "发票 "
-
-#, fuzzy
-#~ msgid "Job Income"
-#~ msgstr "收入"
-
-#, fuzzy
-#~ msgid "Leasehold improvements"
-#~ msgstr "-有更改的"
-
-#, fuzzy
-#~ msgid "Legal Expenses"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Liabilities"
-#~ msgstr "负债"
-
-#, fuzzy
-#~ msgid "Line of Credit"
-#~ msgstr "贷方合计"
-
-#, fuzzy
-#~ msgid "Liquides"
-#~ msgstr "流动资金"
-
-#, fuzzy
-#~ msgid "Loan Liabilities"
-#~ msgstr "负债视图"
-
-#, fuzzy
-#~ msgid "Loan Payable"
-#~ msgstr "应付款合计"
-
-#, fuzzy
-#~ msgid "Loan Processing Fees"
-#~ msgstr "定期处理"
-
-#, fuzzy
-#~ msgid "Local Sales"
-#~ msgstr "销售"
-
-#, fuzzy
-#~ msgid "Locations"
-#~ msgstr "选项"
-
-#, fuzzy
-#~ msgid "Long Term Trade Recievables"
-#~ msgstr "旧的应收款"
-
-#, fuzzy
-#~ msgid "Machines"
-#~ msgstr "明细"
-
-#, fuzzy
-#~ msgid "Main Account Company"
-#~ msgstr "该公司的主要币种。"
-
-#, fuzzy
-#~ msgid "Maintenance"
-#~ msgstr "主序列"
-
-#, fuzzy
-#~ msgid "Management gross salaries"
-#~ msgstr "管理付款单"
-
-#, fuzzy
-#~ msgid "Managementvergoedingen"
-#~ msgstr "管理付款单"
-
-#, fuzzy
-#~ msgid "Marchandises"
-#~ msgstr "采购"
-
-#, fuzzy
-#~ msgid "Media Purchased for Clients"
-#~ msgstr "采购属性"
-
-#, fuzzy
-#~ msgid "Merchant Account Fees"
-#~ msgstr "搜索科目模板"
-
-#, fuzzy
-#~ msgid "Misc Assets"
-#~ msgstr "资产"
-
-#, fuzzy
-#~ msgid "Miscellaneous Expense"
-#~ msgstr "其它"
-
-#, fuzzy
-#~ msgid "Miscellaneous Income"
-#~ msgstr "其它"
-
-#, fuzzy
-#~ msgid "Miscellaneous Journal - (test)"
-#~ msgstr "杂项分录"
-
-#, fuzzy
-#~ msgid "Miscellaneous Operation"
-#~ msgstr "杂项分录"
-
-#, fuzzy
-#~ msgid "Miscellaneous equipment"
-#~ msgstr "杂项分录"
-
-#, fuzzy
-#~ msgid "Miscellaneous payments to staff"
-#~ msgstr "杂项分录"
-
-#, fuzzy
-#~ msgid "Monumentos"
-#~ msgstr "单据"
-
-#, fuzzy
-#~ msgid "Multirisques"
-#~ msgstr "多币种"
-
-#, fuzzy
-#~ msgid "Net Current Assets"
-#~ msgstr "当前科目"
-
-#, fuzzy
-#~ msgid "Net Wages"
-#~ msgstr "30天"
-
-#, fuzzy
-#~ msgid "Non-Current Assets"
-#~ msgstr "当前科目"
-
-#, fuzzy
-#~ msgid "Non-Current Investments"
-#~ msgstr "汇兑损益调整"
-
-#, fuzzy
-#~ msgid "Normal Taxes"
-#~ msgstr "普通文本"
-
-#, fuzzy
-#~ msgid "Notes Payable"
-#~ msgstr "应付款合计"
-
-#, fuzzy
-#~ msgid "Obligations"
-#~ msgstr "选项"
-
-#, fuzzy
-#~ msgid "Office Expenses"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Office Rent"
-#~ msgstr "发送发票"
-
-#, fuzzy
-#~ msgid "Office Supplies"
-#~ msgstr "供应商"
-
-#~ msgid "Ok"
-#~ msgstr "确定"
-
-#, fuzzy
-#~ msgid "Ontvangen huren"
-#~ msgstr "更改币别"
-
-#, fuzzy
-#~ msgid "Opening Balance Account "
-#~ msgstr "期初余额"
-
-#, fuzzy
-#~ msgid "Opening Balance Equity"
-#~ msgstr "期初余额"
-
-#, fuzzy
-#~ msgid "Opening Entries Journal - (test)"
-#~ msgstr "期初账户分录"
-
-#, fuzzy
-#~ msgid "Opening Expense - (test)"
-#~ msgstr "未分配利润科目"
-
-#, fuzzy
-#~ msgid "Opening Expense Account"
-#~ msgstr "未分配利润科目"
-
-#, fuzzy
-#~ msgid "Opening Income - (test)"
-#~ msgstr "期初余额收入科目"
-
-#, fuzzy
-#~ msgid "Opening Income Account"
-#~ msgstr "期初余额收入科目"
-
-#, fuzzy
-#~ msgid "Opening Stock"
-#~ msgstr "期初小计"
-
-#, fuzzy
-#~ msgid "Opérations courantes"
-#~ msgstr "非强制创建"
-
-#, fuzzy
-#~ msgid "Organisational costs"
-#~ msgstr "交易"
-
-#, fuzzy
-#~ msgid "Other"
-#~ msgstr "其它设置"
-
-#, fuzzy
-#~ msgid "Other Assets"
-#~ msgstr "资产"
-
-#, fuzzy
-#~ msgid "Other Current Assets"
-#~ msgstr "当前科目"
-
-#, fuzzy
-#~ msgid "Other Debtors"
-#~ msgstr "其它设置"
-
-#, fuzzy
-#~ msgid "Other Deposit"
-#~ msgstr "其它设置"
-
-#, fuzzy
-#~ msgid "Other Expense"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Other Expenses"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Other Financial Services"
-#~ msgstr "会计报表"
-
-#, fuzzy
-#~ msgid "Other Income"
-#~ msgstr "其它信息"
-
-#, fuzzy
-#~ msgid "Other Payable Account"
-#~ msgstr "应付款科目"
-
-#, fuzzy
-#~ msgid "Other Receivable Account"
-#~ msgstr "应收款科目"
-
-#, fuzzy
-#~ msgid "Other Reserve"
-#~ msgstr "其它设置"
-
-#, fuzzy
-#~ msgid "Other deposits"
-#~ msgstr "其它设置"
-
-#, fuzzy
-#~ msgid "Other miscellaneous revenue"
-#~ msgstr "杂项分录"
-
-#, fuzzy
-#~ msgid "Other reserves"
-#~ msgstr "其它设置"
-
-#, fuzzy
-#~ msgid "Other revenue"
-#~ msgstr "其它信息"
-
-#, fuzzy
-#~ msgid "Others Payable"
-#~ msgstr "应付款合计"
-
-#, fuzzy
-#~ msgid "Otros Ingresos"
-#~ msgstr "进度"
-
-#, fuzzy
-#~ msgid "Otros activos"
-#~ msgstr "交易"
-
-#, fuzzy
-#~ msgid "Otros activos    "
-#~ msgstr "交易"
-
-#, fuzzy
-#~ msgid "Overige baten"
-#~ msgstr "逾期付款"
-
-#, fuzzy
-#~ msgid "Overige lasten"
-#~ msgstr "逾期付款"
-
-#, fuzzy
-#~ msgid "Owner's Equity"
-#~ msgstr "权益"
-
-#, fuzzy
-#~ msgid "PST/QST receivable"
-#~ msgstr "应收款合计"
-
-#, fuzzy
-#~ msgid "Parental Insurance"
-#~ msgstr "业务伙伴余额"
-
-#, fuzzy
-#~ msgid "Partner's Equity"
-#~ msgstr "业务伙伴"
-
-#, fuzzy
-#~ msgid "Parts Purchase"
-#~ msgstr "采购"
-
-#, fuzzy
-#~ msgid "Payables"
-#~ msgstr "应付"
-
-#, fuzzy
-#~ msgid "Payroll Expenses"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Payroll Liabilities"
-#~ msgstr "负债视图"
-
-#, fuzzy
-#~ msgid "Penalties and settlements"
-#~ msgstr "银行对账单"
-
-#, fuzzy
-#~ msgid "Personnel, avances"
-#~ msgstr "业务伙伴余额"
-
-#, fuzzy
-#~ msgid "Perte nette à reporter"
-#~ msgstr "上级报表"
-
-#, fuzzy
-#~ msgid "Perte reportée"
-#~ msgstr "上级报表"
-
-#, fuzzy
-#~ msgid "Perte à reporter"
-#~ msgstr "上级报表"
-
-#, fuzzy
-#~ msgid "Petty Cash Balance"
-#~ msgstr "期终余额"
-
-#, fuzzy
-#~ msgid "Postbank"
-#~ msgstr "过账"
-
-#, fuzzy
-#~ msgid "Prepaid Expenses"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Prepayments"
-#~ msgstr "付款"
-
-#, fuzzy
-#~ msgid "Prestations directes"
-#~ msgstr "建立日期"
-
-#, fuzzy
-#~ msgid "Prime de aport"
-#~ msgstr "上级报表"
-
-#, fuzzy
-#~ msgid "Printing"
-#~ msgstr "打印"
-
-#, fuzzy
-#~ msgid "Product Sales"
-#~ msgstr "产品"
-
-#, fuzzy
-#~ msgid "Production Stock"
-#~ msgstr "产品分类"
-
-#, fuzzy
-#~ msgid "Productos  terminados"
-#~ msgstr "产品信息"
-
-#, fuzzy
-#~ msgid "Productos Elaborados"
-#~ msgstr "产品信息"
-
-#, fuzzy
-#~ msgid "Productos semiterminados"
-#~ msgstr "产品模板"
-
-#, fuzzy
-#~ msgid "Productos terminados"
-#~ msgstr "产品信息"
-
-#, fuzzy
-#~ msgid "Produits"
-#~ msgstr "产品"
-
-#, fuzzy
-#~ msgid "Produits acquis"
-#~ msgstr "产品数量"
-
-#, fuzzy
-#~ msgid "Produits d'entretien"
-#~ msgstr "产品信息"
-
-#, fuzzy
-#~ msgid "Produits d'exploitation"
-#~ msgstr "产品信息"
-
-#, fuzzy
-#~ msgid "Produits en cours"
-#~ msgstr "产品分类"
-
-#, fuzzy
-#~ msgid "Produits financiers"
-#~ msgstr "产品数量"
-
-#, fuzzy
-#~ msgid "Produits finis"
-#~ msgstr "产品数量"
-
-#, fuzzy
-#~ msgid "Produits à reporter"
-#~ msgstr "利润表"
-
-#, fuzzy
-#~ msgid "Produse finite"
-#~ msgstr "产品数量"
-
-#, fuzzy
-#~ msgid "Professional Services"
-#~ msgstr "形式发票"
-
-#, fuzzy
-#~ msgid "Profit and Loss - (test)"
-#~ msgstr "损益类"
-
-#, fuzzy
-#~ msgid "Profit and loss account"
-#~ msgstr "损益类"
-
-#, fuzzy
-#~ msgid "Project 1"
-#~ msgstr "项目明细"
-
-#, fuzzy
-#~ msgid "Project 2"
-#~ msgstr "项目明细"
-
-#, fuzzy
-#~ msgid "Property costs"
-#~ msgstr "属性"
-
-#, fuzzy
-#~ msgid "Propiedades"
-#~ msgstr "属性"
-
-#, fuzzy
-#~ msgid "Prêts et avances"
-#~ msgstr "业务伙伴余额"
-
-#, fuzzy
-#~ msgid "Publications"
-#~ msgstr "复核"
-
-#, fuzzy
-#~ msgid "Purchase Discounts"
-#~ msgstr "采购分录"
-
-#, fuzzy
-#~ msgid "Purchase Expense"
-#~ msgstr "采购"
-
-#, fuzzy
-#~ msgid "Purchase Returns and Allowances"
-#~ msgstr "采购退货分录"
-
-#, fuzzy
-#~ msgid "Purchase Stock"
-#~ msgstr "采购"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account 0% EP"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account 0% ME"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account 0% NR"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account 0% OP"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account 0% ZP"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account 7% BL"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account 7% IM"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account 7% TX-E33"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account 7% TX-N33"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account 7% TX-RE"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account 7% TX7"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Account MES"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Control Account"
-#~ msgstr "父税科目"
-
-#, fuzzy
-#~ msgid "Purchase Tax Receivable"
-#~ msgstr "应收和应付"
-
-#, fuzzy
-#~ msgid "Purchased Stocks"
-#~ msgstr "采购"
-
-#, fuzzy
-#~ msgid "Purchased Stocks - (test)"
-#~ msgstr "采购税(%)"
-
-#, fuzzy
-#~ msgid "Purchases - Resale Items"
-#~ msgstr "采购属性"
-
-#, fuzzy
-#~ msgid "Purchases in harmonized provinces"
-#~ msgstr "采购属性"
-
-#, fuzzy
-#~ msgid "Półprodukty"
-#~ msgstr "产品"
-
-#, fuzzy
-#~ msgid "Receivables"
-#~ msgstr "应收"
-
-#, fuzzy
-#~ msgid "Redevances et royalties"
-#~ msgstr "高级选项"
-
-#~ msgid "Refund "
-#~ msgstr "退款 "
-
-#, fuzzy
-#~ msgid "Rent Expense"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Rent Rates And Taxes"
-#~ msgstr "选择税一览表"
-
-#, fuzzy
-#~ msgid "Rental Income"
-#~ msgstr "收入"
-
-#, fuzzy
-#~ msgid "Reorganisatiekosten"
-#~ msgstr "汇总"
-
-#, fuzzy
-#~ msgid "Reserve And Surplus Account"
-#~ msgstr "应收款与应付款科目"
-
-#, fuzzy
-#~ msgid "Reserve and Profit/Loss Account"
-#~ msgstr "损益类科目（收益）"
-
-#, fuzzy
-#~ msgid "Residuos A"
-#~ msgstr "余额"
-
-#, fuzzy
-#~ msgid "Residuos B"
-#~ msgstr "余额"
-
-#, fuzzy
-#~ msgid "Responsabilité civile"
-#~ msgstr "负责人"
-
-#, fuzzy
-#~ msgid "Retentions"
-#~ msgstr "报表选项"
-
-#, fuzzy
-#~ msgid "Revaluation Reserve"
-#~ msgstr "核销结果"
-
-#, fuzzy
-#~ msgid "Réceptions"
-#~ msgstr "选项"
-
-#, fuzzy
-#~ msgid "Rémunérations"
-#~ msgstr "持续时间"
-
-#, fuzzy
-#~ msgid "Réserves disponibles"
-#~ msgstr "负责人"
-
-#, fuzzy
-#~ msgid "Salaires bruts"
-#~ msgstr "销售科目"
-
-#, fuzzy
-#~ msgid "Salaries, wages and commissions"
-#~ msgstr "消息和沟通记录"
-
-#, fuzzy
-#~ msgid "Salary Expense"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Salary Expenses"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Salary payable"
-#~ msgstr "应付款合计"
-
-#, fuzzy
-#~ msgid "Sale Tax Payables"
-#~ msgstr "应收和应付"
-
-#, fuzzy
-#~ msgid "Sales Discounts"
-#~ msgstr "销售科目"
-
-#, fuzzy
-#~ msgid "Sales Journal - (test)"
-#~ msgstr "销售分录"
-
-#, fuzzy
-#~ msgid "Sales Tax Account 0% ESN33"
-#~ msgstr "销售科目"
-
-#, fuzzy
-#~ msgid "Sales Tax Account 0% OS"
-#~ msgstr "销售科目"
-
-#, fuzzy
-#~ msgid "Sales Tax Account 0% ZR"
-#~ msgstr "销售科目"
-
-#, fuzzy
-#~ msgid "Sales Tax Account 7% DS"
-#~ msgstr "销售科目"
-
-#, fuzzy
-#~ msgid "Sales Tax Account 7% SR"
-#~ msgstr "销售科目"
-
-#, fuzzy
-#~ msgid "Sales Tax Control Account"
-#~ msgstr "销售科目"
-
-#, fuzzy
-#~ msgid "Sales Tax Payable"
-#~ msgstr "应收和应付"
-
-#, fuzzy
-#~ msgid "Sales Tax Receivable"
-#~ msgstr "应收和应付"
-
-#, fuzzy
-#~ msgid "Sales category 1"
-#~ msgstr "内部分类"
-
-#, fuzzy
-#~ msgid "Sales category 2"
-#~ msgstr "内部分类"
-
-#, fuzzy
-#~ msgid "Sales category 3"
-#~ msgstr "内部分类"
-
-#, fuzzy
-#~ msgid "Sales category 4"
-#~ msgstr "内部分类"
-
-#, fuzzy
-#~ msgid "Sales of Services"
-#~ msgstr "销售属性"
-
-#, fuzzy
-#~ msgid "Secured Loan Account"
-#~ msgstr "退税科目"
-
-#, fuzzy
-#~ msgid "Seeds and Plants Purchased"
-#~ msgstr "采购所适税种"
-
-#, fuzzy
-#~ msgid "Service Income"
-#~ msgstr "收入"
-
-#, fuzzy
-#~ msgid "Service Tax Payable"
-#~ msgstr "应付款合计"
-
-#, fuzzy
-#~ msgid "Service Tax Receivable"
-#~ msgstr "应收款合计"
-
-#, fuzzy
-#~ msgid "Settlement Income"
-#~ msgstr "银行对账单明细"
-
-#, fuzzy
-#~ msgid "Share premium account"
-#~ msgstr "科目一览表"
-
-#, fuzzy
-#~ msgid "Simple chart of accounts"
-#~ msgstr "科目一览表"
-
-#, fuzzy
-#~ msgid "Stable"
-#~ msgstr "应付"
-
-#, fuzzy
-#~ msgid "Stationery"
-#~ msgstr "特殊情况"
-
-#, fuzzy
-#~ msgid "Stock en consignation"
-#~ msgstr "自动核销"
-
-#, fuzzy
-#~ msgid "Subcontractors payments"
-#~ msgstr "客户付款管理"
-
-#, fuzzy
-#~ msgid "Subcontratos"
-#~ msgstr "合同列表"
-
-#, fuzzy
-#~ msgid "Suppliers Account"
-#~ msgstr "销售科目"
-
-#, fuzzy
-#~ msgid "Supplies"
-#~ msgstr "供应商"
-
-#, fuzzy
-#~ msgid "Support"
-#~ msgstr "供应商"
-
-#, fuzzy
-#~ msgid "Sur installations"
-#~ msgstr "集中"
-
-#, fuzzy
-#~ msgid "Surplus (Profit and Loss Account)"
-#~ msgstr "损益表（收益）"
-
-#, fuzzy
-#~ msgid "Suscriptores de acciones"
-#~ msgstr "周期性分录明细"
-
-#, fuzzy
-#~ msgid "Suspense"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "TDS Payable"
-#~ msgstr "应付"
-
-#, fuzzy
-#~ msgid "TDS Paybale"
-#~ msgstr "应付款合计"
-
-#, fuzzy
-#~ msgid "TDS Receivable"
-#~ msgstr "应收"
-
-#, fuzzy
-#~ msgid "TVA de plata"
-#~ msgstr "税编码模板"
-
-#, fuzzy
-#~ msgid "Tax Balance to Pay"
-#~ msgstr "试算平衡"
-
-#, fuzzy
-#~ msgid "Tax Bases"
-#~ msgstr "税名称"
-
-#, fuzzy
-#~ msgid "Tax Exempt"
-#~ msgstr "税收模板"
-
-#, fuzzy
-#~ msgid "Tax Paid"
-#~ msgstr "已付"
-
-#, fuzzy
-#~ msgid "Tax Receivable"
-#~ msgstr "应收款合计"
-
-#, fuzzy
-#~ msgid "Tax Received"
-#~ msgstr "应收款合计"
-
-#, fuzzy
-#~ msgid "Taxable Purchases Base"
-#~ msgstr "销售和采购分录"
-
-#, fuzzy
-#~ msgid "Taxable Purchases Rated R (5%)"
-#~ msgstr "采购税(%)"
-
-#, fuzzy
-#~ msgid "Taxe d'abonnement"
-#~ msgstr "纳税申请表"
-
-#, fuzzy
-#~ msgid "Taxe d'apprentissage"
-#~ msgstr "税一览表"
-
-#, fuzzy
-#~ msgid "Taxe sur les salaires"
-#~ msgstr "销售中用到的税"
-
-#, fuzzy
-#~ msgid "Taxes - Property"
-#~ msgstr "销售属性"
-
-#, fuzzy
-#~ msgid "Taxes communales"
-#~ msgstr "销售中用到的税"
-
-#, fuzzy
-#~ msgid "Taxes d'apprentissage"
-#~ msgstr "税一览表"
-
-#, fuzzy
-#~ msgid "Taxes diverses"
-#~ msgstr "采购所适税种"
-
-#, fuzzy
-#~ msgid "Taxes paid"
-#~ msgstr "税一览表"
-
-#, fuzzy
-#~ msgid "Taxes sur les véhicules"
-#~ msgstr "销售中用到的税"
-
-#, fuzzy
-#~ msgid "Telecommunication charges"
-#~ msgstr "消息和沟通记录"
-
-#, fuzzy
-#~ msgid "Titres de placement"
-#~ msgstr "现金付款"
-
-#, fuzzy
-#~ msgid "Total Expenses"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Total Revenue"
-#~ msgstr "应收款合计"
-
-#, fuzzy
-#~ msgid "Trade Creditors"
-#~ msgstr "贷方合计"
-
-#, fuzzy
-#~ msgid "Trade Payable Account"
-#~ msgstr "应付款科目"
-
-#, fuzzy
-#~ msgid "Trade Payables"
-#~ msgstr "应付款合计"
-
-#, fuzzy
-#~ msgid "Trade Receivable Account"
-#~ msgstr "应收款科目"
-
-#, fuzzy
-#~ msgid "Trade Recievables"
-#~ msgstr "应收款合计"
-
-#, fuzzy
-#~ msgid "Trade and other receivable"
-#~ msgstr "应收和应付"
-
-#, fuzzy
-#~ msgid "Training"
-#~ msgstr "警告"
-
-#, fuzzy
-#~ msgid "Transferts d'exercice"
-#~ msgstr "转移"
-
-#, fuzzy
-#~ msgid "Transferts de charges"
-#~ msgstr "转移"
-
-#, fuzzy
-#~ msgid "Transport fees"
-#~ msgstr "转移"
-
-#, fuzzy
-#~ msgid "Transportes"
-#~ msgstr "转移"
-
-#, fuzzy
-#~ msgid "Transportna imovina"
-#~ msgstr "交易"
-
-#, fuzzy
-#~ msgid "Travel Expense"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Treasury Shares"
-#~ msgstr "出纳分析"
-
-#, fuzzy
-#~ msgid "Trošak HRT pretplate"
-#~ msgstr "税收模板"
-
-#, fuzzy
-#~ msgid "Turnover"
-#~ msgstr "月营业额"
-
-#, fuzzy
-#~ msgid "USD Bank Account - (test)"
-#~ msgstr "银行账号"
-
-#, fuzzy
-#~ msgid "USD Bank Journal - (test)"
-#~ msgstr "搜索分类账项"
-
-#, fuzzy
-#~ msgid "Undeposited funds"
-#~ msgstr "未记账分类账项"
-
-#, fuzzy
-#~ msgid "Uninvoiced Receipts"
-#~ msgstr "发票"
-
-#, fuzzy
-#~ msgid "Unsecured Loan Account"
-#~ msgstr "退税科目"
-
-#, fuzzy
-#~ msgid "Use Tax Payable"
-#~ msgstr "应付款合计"
-
-#, fuzzy
-#~ msgid "VAT Payable"
-#~ msgstr "应付"
-
-#, fuzzy
-#~ msgid "VAT Receivable"
-#~ msgstr "应收"
-
-#, fuzzy
-#~ msgid "VAT Receivable on Purchases"
-#~ msgstr "应收和应付"
-
-#, fuzzy
-#~ msgid "Vacances"
-#~ msgstr "结转余额"
-
-#, fuzzy
-#~ msgid "Valeur d'acquisition"
-#~ msgstr "复核"
-
-#, fuzzy
-#~ msgid "Vergunningen"
-#~ msgstr "正在处理"
-
-#, fuzzy
-#~ msgid "Vie"
-#~ msgstr "视图"
-
-#, fuzzy
-#~ msgid "Viramente interne"
-#~ msgstr "付款分录"
-
-#, fuzzy
-#~ msgid "Virements internes"
-#~ msgstr "银行对账单明细"
-
-#, fuzzy
-#~ msgid "Voiture"
-#~ msgstr "将来"
-
-#, fuzzy
-#~ msgid "Voitures"
-#~ msgstr "特性"
-
-#, fuzzy
-#~ msgid "Wages Payable"
-#~ msgstr "应付"
-
-#, fuzzy
-#~ msgid "Withholding Receivable on Sales"
-#~ msgstr "应收和应付"
-
-#, fuzzy
-#~ msgid "Withholding Tax"
-#~ msgstr "含税"
-
-#, fuzzy
-#~ msgid "Witholding Payable"
-#~ msgstr "应付款合计"
-
-#, fuzzy
-#~ msgid "Work in Progress"
-#~ msgstr "进度"
-
-#, fuzzy
-#~ msgid "Work-In-Progress"
-#~ msgstr "进度"
-
-#, fuzzy
-#~ msgid "Workshop Expense"
-#~ msgstr "费用"
-
-#, fuzzy
-#~ msgid "Write Off Expense"
-#~ msgstr "补差额凭证"
-
-#, fuzzy
-#~ msgid "Write off Income"
-#~ msgstr "补差额凭证"
-
-#, fuzzy
-#~ msgid "YourCompany"
-#~ msgstr "公司"
-
-#~ msgid "account.addtmpl.wizard"
-#~ msgstr "account.addtmpl.wizard"
-
-#~ msgid "account.bank.accounts.wizard"
-#~ msgstr "account.bank.accounts.wizard"
-
-#~ msgid "account.config.settings"
-#~ msgstr "帐户，配置，设置"
-
-#~ msgid "account.installer"
-#~ msgstr "account.installer"
-
-#~ msgid "account.journal.cashbox.line"
-#~ msgstr "account.journal.cashbox.line"
-
-#~ msgid "account.sequence.fiscalyear"
-#~ msgstr "account.sequence.fiscalyear"
-
-#~ msgid "cash.box.in"
-#~ msgstr "cash.box.in"
-
-#~ msgid "cash.box.out"
-#~ msgstr "cash.box.out"
-
-#, fuzzy
-#~ msgid "crediti insoluti "
-#~ msgstr "贷方金额"
-
-#, fuzzy
-#~ msgid "fondo per imposte "
-#~ msgstr "每行运行"
-
-#~ msgid "ir.sequence"
-#~ msgstr "ir.sequence"
-
-#~ msgid "report.account.report_agedpartnerbalance"
-#~ msgstr "report.account.report_agedpartnerbalance"
-
-#~ msgid "report.account.report_analyticbalance"
-#~ msgstr "report.account.report_analyticbalance"
-
-#~ msgid "report.account.report_analyticcostledger"
-#~ msgstr "report.account.report_analyticcostledger"
-
-#~ msgid "report.account.report_analyticcostledgerquantity"
-#~ msgstr "report.account.report_analyticcostledgerquantity"
-
-#~ msgid "report.account.report_analyticjournal"
-#~ msgstr "report.account.report_analyticjournal"
-
-#~ msgid "report.account.report_centraljournal"
-#~ msgstr "report.account.report_centraljournal"
-
-#~ msgid "report.account.report_financial"
-#~ msgstr "report.account.report_financial"
-
-#~ msgid "report.account.report_generaljournal"
-#~ msgstr "report.account.report_generaljournal"
-
-#~ msgid "report.account.report_generalledger"
-#~ msgstr "report.account.report_generalledger"
-
-#~ msgid "report.account.report_invertedanalyticbalance"
-#~ msgstr "report.account.report_invertedanalyticbalance"
-
-#~ msgid "report.account.report_journal"
-#~ msgstr "report.account.report_journal"
-
-#~ msgid "report.account.report_overdue"
-#~ msgstr "report.account.report_overdue"
-
-#~ msgid "report.account.report_partnerbalance"
-#~ msgstr "report.account.report_partnerbalance"
-
-#~ msgid "report.account.report_partnerledger"
-#~ msgstr "report.account.report_partnerledger"
-
-#~ msgid "report.account.report_partnerledgerother"
-#~ msgstr "report.account.report_partnerledgerother"
-
-#~ msgid "report.account.report_salepurchasejournal"
-#~ msgstr "report.account.report_salepurchasejournal"
-
-#~ msgid "report.account.report_trialbalance"
-#~ msgstr "report.account.report_trialbalance"
-
-#~ msgid "report.account.report_vat"
-#~ msgstr "report.account.report_vat"
-
-#~ msgid "wizard.multi.charts.accounts"
-#~ msgstr "wizard.multi.charts.accounts"
-
-#~ msgid "Date (day)"
-#~ msgstr "日期（日）"
-
-#~ msgid "Date (month)"
-#~ msgstr "日期（月)"
-
-#~ msgid "Date (year)"
-#~ msgstr "日期（年）"
-
-#~ msgid "Day"
-#~ msgstr "日"
-
-#~ msgid "Group by Invoice Date"
-#~ msgstr "按发票日期分组"
-
-#~ msgid "Group by year of Invoice Date"
-#~ msgstr "按发票年度分组"
-
-#~ msgid "Invoice Date (day)"
-#~ msgstr "发票日期(日）"
-
-#~ msgid "Invoice Date (month)"
-#~ msgstr "发票日期（月)"
-
-#~ msgid "Invoice Date (year)"
-#~ msgstr "发票日期（年）"
-
-#~ msgid "Receivale Accounts"
-#~ msgstr "应收款科目"
-
-#~ msgid " (Copy)"
-#~ msgstr "版权"
-
-#~ msgid ""
-#~ "Cannot find a chart of account, you should create one from Settings\\Configuration\\Accounting "
-#~ "menu."
-#~ msgstr "找不到科目表。请在 设置/配置/会计 菜单下创建。"
-
-#~ msgid ""
-#~ "Cannot find any account journal of %s type for this company.\n"
-#~ "\n"
-#~ "You can create one in the menu: \n"
-#~ "Configuration\\Journals\\Journals."
-#~ msgstr ""
-#~ "该公司不存在 %s 类型的分录。\n"
-#~ "\n"
-#~ "可通过以下菜单新建： \n"
-#~ "配置/分录/分录。"
-
-#~ msgid ""
-#~ "Cannot find any chart of account: you can create a new one from %(menu:account."
-#~ "menu_account_config)s."
-#~ msgstr "找不到科目表:你可以创建一个新的%(menu:account.menu_account_config)s。"
-
-#~ msgid "Customer And Supplier Invoices"
-#~ msgstr "客户和供应商的发票"
-
-#~ msgid "Customer And Supplier Refunds"
-#~ msgstr "客户和供应商红字发票"
-
-#~ msgid "Customer Invoices And Refunds"
-#~ msgstr "客户发票和退款"
-
-#~ msgid "Multipication factor Tax code"
-#~ msgstr "税率"
-
-#~ msgid "Multipication factor for Base code"
-#~ msgstr "税率"
-
-#~ msgid "Open and Paid Invoices"
-#~ msgstr "打开并支付发票"
-
-#~ msgid "Supplier Invoices And Refunds"
-#~ msgstr "供应商发票和退款"
-
-#~ msgid ""
-#~ "There is no fiscal year defined for this date.\n"
-#~ "Please create one from the configuration of the accounting menu."
-#~ msgstr ""
-#~ "该日期未定义会计年度。\n"
-#~ "请在会计菜单的配置中创建一个。"
-
-#~ msgid "Confirm"
-#~ msgstr "确认"
-
-#~ msgid "Journal item \"%s\" is not valid."
-#~ msgstr "凭证\"%s\"无效"
-
-#~ msgid "Moves"
-#~ msgstr "凭证"
-
-#~ msgid "You have to assign an analytic journal on the '%s' journal!"
-#~ msgstr "必须分配一个辅助核算分录给\"%s\"分录"
-
-#~ msgid "A statement with manual entries becomes a draft statement."
-#~ msgstr "手工输入的发票是草稿状态"
-
-#~ msgid "Account Board"
-#~ msgstr "会计控制面板"
-
-#~ msgid "Accountant validates the accounting entries coming from the invoice."
-#~ msgstr "会计师确认发票的会计分录"
-
-#~ msgid "Accountant validates the accounting entries coming from the invoice. "
-#~ msgstr "会计师确认发票的会计分录 "
-
-#~ msgid "Accounting entries are an input of the reconciliation."
-#~ msgstr "会计分录是对账的一个输入数据"
-
-#~ msgid "Accounting entries are the first input of the reconciliation."
-#~ msgstr "对账首先输入的是会计分录。"
-
-#~ msgid "Accounting entries."
-#~ msgstr "会计分录。"
-
-#~ msgid "Analytic Costs"
-#~ msgstr "辅助核算成本"
-
-#~ msgid ""
-#~ "Analytic costs (timesheets, some purchased products, ...) come from analytic accounts. These "
-#~ "generate draft invoices."
-#~ msgstr "从这些发票草稿产生的成本辅助核算项(计工单或原材料投入)。"
-
-#~ msgid ""
-#~ "Analytic costs (timesheets, some purchased products, ...) come from analytic accounts. These "
-#~ "generate draft supplier invoices."
-#~ msgstr "（时间表，一些采购产品，... ...）分析成本来辅助核算项。用来产生供应商发票草稿。"
-
-#~ msgid "Analytic costs to invoice"
-#~ msgstr "开票成本分析"
-
-#~ msgid "As soon as the reconciliation is done, the invoice can be paid."
-#~ msgstr "一旦核销完成，这发票可能已被支付。"
-
-#~ msgid ""
-#~ "As soon as the reconciliation is done, the invoice's state turns to “done” (i.e. paid) in the "
-#~ "system."
-#~ msgstr "核销一旦完成，这发票的状态就马上改为“完成”。在系统里也就是已支付。"
-
-#~ msgid "Automatic import of the bank sta"
-#~ msgstr "自动导入银行对账单"
-
-#~ msgid "Bank statements are entered in the system."
-#~ msgstr "把银行对账单输入到系统中。"
-
-#~ msgid "Comparison between accounting and payment entries"
-#~ msgstr "比较会计和支付项"
-
-#~ msgid "Create Invoice"
-#~ msgstr "开票"
-
-#~ msgid "Create entry"
-#~ msgstr "创建分录"
-
-#~ msgid "Draft invoices are checked, validated and printed."
-#~ msgstr "发票草稿待检查，生效和打印。"
-
-#~ msgid "Draft invoices are validated. "
-#~ msgstr "发票草稿已生效。 "
-
-#~ msgid "Draft state of an invoice"
-#~ msgstr "草稿状态的发票"
-
-#~ msgid "Draft statement"
-#~ msgstr "银行单据草稿"
-
-#~ msgid "From analytic accounts"
-#~ msgstr "辅助核算项"
-
-#~ msgid "Import from invoice or payment"
-#~ msgstr "从发票或付款单导入"
-
-#~ msgid "Import of the statement in the system from a supplier or customer invoice"
-#~ msgstr "为表单导入供应商或客户发票"
-
-#~ msgid "Import of the statement in the system from an electronic file"
-#~ msgstr "从电子文件中导入"
-
-#~ msgid "Invoice's state is Done"
-#~ msgstr "发票的状态已完成"
-
-#~ msgid "Invoice's state is Done."
-#~ msgstr "已开票"
-
-#~ msgid "Invoice's state is Open"
-#~ msgstr "发票的状态是待处理"
-
-#~ msgid "Manual entry"
-#~ msgstr "手工录入"
-
-#~ msgid "Manual or automatic creation of payment entries according to the statements"
-#~ msgstr "手动或自动创建一个付款分录到这表单"
-
-#~ msgid "Manually"
-#~ msgstr "手动"
-
-#~ msgid "Manually or automatically entered in the system"
-#~ msgstr "系统的手动或自动分录"
-
-#~ msgid "Paid invoice"
-#~ msgstr "支付发票"
-
-#~ msgid "Payment"
-#~ msgstr "付款"
-
-#~ msgid "Payment Order"
-#~ msgstr "付款单"
-
-#~ msgid "Payment of invoices"
-#~ msgstr "发票付款"
-
-#~ msgid "State is draft"
-#~ msgstr "草稿状态"
-
-#~ msgid "System payment"
-#~ msgstr "系统支付"
-
-#~ msgid "The accountant confirms the statement."
-#~ msgstr "财务人员确认的报表"
-
-#~ msgid "The payment order is sent to the bank."
-#~ msgstr "这付款单发给银行"
-
-#~ msgid "Unit of measure"
-#~ msgstr "计量单位"
-
-#~ msgid "Code/Date"
-#~ msgstr "代码/日期"
-
-#~ msgid "Customer Reference"
-#~ msgstr "客户编号"
-
-#~ msgid "Disc.(%)"
-#~ msgstr "折扣(%)"
-
-#~ msgid "Fax :"
-#~ msgstr "传真:"
-
-#~ msgid "Filters By"
-#~ msgstr "筛选"
-
-#~ msgid "KI"
-#~ msgstr "KI"
-
-#~ msgid "Maturity date"
-#~ msgstr "付款到期日"
-
-#~ msgid "Max Qty:"
-#~ msgstr "最大数量:"
-
-#~ msgid "Net Total:"
-#~ msgstr "不含税合计:"
-
-#~ msgid "Period to"
-#~ msgstr "会计期间到"
-
-#~ msgid "Price"
-#~ msgstr "价格"
-
-#~ msgid "Reference Number"
-#~ msgstr "关联"
-
-#~ msgid "TIN :"
-#~ msgstr "TIN :"
-
-#~ msgid "Taxes:"
-#~ msgstr "税:"
-
-#~ msgid "Tel. :"
-#~ msgstr "电话:"
-
-#~ msgid "VAT:"
-#~ msgstr "增值税:"
-
-#~ msgid "Originator to Beneficiary Information"
-#~ msgstr "投保人和受益人信息"
-
-#~ msgid "OBI"
-#~ msgstr "摘要"
-
-#~ msgid "Skip 'Draft' State for Manual Entries"
-#~ msgstr "如果是手工分录的话就跳过“草稿”状态"
-
-#~ msgid ""
-#~ "Check this box if you don't want new journal entries to pass through the 'draft' state and "
-#~ "instead goes directly to the 'posted state' without any manual validation. \n"
-#~ "Note that journal entries that are automatically created by the system are always skipping that "
-#~ "state."
-#~ msgstr ""
-#~ "勾选，如果您不想新的分录跳过“草稿”状态直接到“已登账”状态，中间无需手动审核。\n"
-#~ "注意系统自动创建的分录总是跳过这状态。"
-
-#~ msgid "History"
-#~ msgstr "日志"
-
-#~ msgid "Error !"
-#~ msgstr "错误！"
-
-#~ msgid "VAT :"
-#~ msgstr "增值税 :"
-
-#~ msgid "Last Reconciliation:"
-#~ msgstr "最新核销："
-
-#~ msgid "Unknown Error!"
-#~ msgstr "未知的错误！"
-
-#~ msgid "There is no Sale/Purchase Journal(s) defined."
-#~ msgstr "没定义销售分录或采购分录"
-
-#~ msgid "Cancel Opening Entries"
-#~ msgstr "取消开账分录"
-
-#~ msgid "Cancel Fiscal Year Opening Entries"
-#~ msgstr "取消财务年度未结案分录"
