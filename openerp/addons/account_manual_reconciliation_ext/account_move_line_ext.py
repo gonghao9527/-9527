@@ -18,6 +18,39 @@ class account_move_line(osv.osv):
             obj_res_partner.mark_last_reconciliation_date_when_unreconciled(cr, uid, account_move_line_objs.partner_id.id, context=None)
         return True
 
+    '''
+        修正获取待核销的partner列表,不能按照最后的核销时间去判断,因为可能会先核销最近的account_move_line记录,
+        导致之前的account_move_line不能被查询出来
+    '''
+    def list_partners_to_reconcile(self, cr, uid, context=None, filter_domain=False):
+        line_ids = []
+        if filter_domain:
+            line_ids = self.search(cr, uid, filter_domain, context=context)
+        where_clause = filter_domain and "AND l.id = ANY(%s)" or ""
+        cr.execute(
+            """SELECT partner_id FROM (
+               SELECT l.partner_id, p.last_reconciliation_date, SUM(l.debit) AS debit, SUM(l.credit) AS credit, MAX(l.create_date) AS max_date
+               FROM account_move_line l
+               RIGHT JOIN account_account a ON (a.id = l.account_id)
+               RIGHT JOIN res_partner p ON (l.partner_id = p.id)
+                   WHERE a.reconcile IS TRUE
+                   AND l.reconcile_id IS NULL
+                   AND l.state <> 'draft'
+                   %s
+                   GROUP BY l.partner_id, p.last_reconciliation_date
+               ) AS s
+               WHERE debit > 0 AND credit > 0
+               ORDER BY last_reconciliation_date"""
+            % where_clause, (line_ids,))
+        ids = [x[0] for x in cr.fetchall()]
+        if not ids:
+            return []
+
+        # To apply the ir_rules
+        partner_obj = self.pool.get('res.partner')
+        ids = partner_obj.search(cr, uid, [('id', 'in', ids)], context=context)
+        return partner_obj.name_get(cr, uid, ids, context=context)
+
 class res_partner(osv.osv):
     _inherit = 'res.partner'
     '''
