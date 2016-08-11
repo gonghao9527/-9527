@@ -1771,7 +1771,9 @@ openerp.account = function (instance) {
             var mod = new instance.web.Model("account.move.line", context, domain);
             return mod.call("list_partners_to_reconcile", [context, domain]).then(function(result) {
                 self.partners = result;
-                var current = self.current_partner !== null ? self.partners[self.current_partner][0] : null;
+                //这里需要去掉当前业务伙伴的判断,因为搜索之后数据会变化,从而导致前端数据错误
+                //var current = self.current_partner !== null ? self.partners[self.current_partner][0] : null;
+                var current =  null;
                 var index = _.find(_.range(self.partners.length), function(el) {
                     if (current === self.partners[el][0])
                         return true;
