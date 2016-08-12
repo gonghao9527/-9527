@@ -18,6 +18,7 @@ class hr_expense_expense(osv.osv):
                 raise osv.except_osv(_('Error!'), _('The employee must have a home address.'))
             if not exp.employee_id.address_home_id.property_account_payable.id:
                 raise osv.except_osv(_('Error!'), _('The employee must have a payable account set on his home address.'))
+            exp.write({'date_confirm': time.strftime('%Y-%m-%d')})
             company_currency = exp.company_id.currency_id.id
             diff_currency_p = exp.currency_id.id <> company_currency
             
