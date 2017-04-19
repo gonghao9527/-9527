@@ -8,8 +8,10 @@
                 <form string="Stock Change">
                     <header>
                     	<button name="action_submit" string="提交" type="object" states="draft" class="oe_highlight"/>
-						<button name="action_approve" string="审批" type="object" states="submit" class="oe_highlight" groups="stock.group_stock_manager"/>
-						<button name="action_refuse" string="拒绝" type="object" states="submit" class="oe_highlight" groups="stock.group_stock_manager"/>
+						<button name="action_approve" string="审批" type="object" states="submit" class="oe_highlight"
+                                groups="osbzr_stock_change.stock_change_approver_group"/>
+						<button name="action_refuse" string="拒绝" type="object" states="submit" class="oe_highlight"
+                                groups="osbzr_stock_change.stock_change_approver_group"/>
                         <field name="state" widget="statusbar"/>
 	                </header>
 	                <sheet>
@@ -135,7 +137,9 @@
             </field>
             <field name="domain"></field>
         </record>
-        <menuitem id="menu_stock_change" action="action_stock_change" parent="stock.menu_stock_warehouse_mgmt" sequence="2"/>
-        <menuitem id="menu_stock_change_account_move" action="action_stock_change_account_move" parent="account.menu_finance_entries" sequence="7"/>
+        <menuitem id="menu_stock_change" action="action_stock_change"
+				  parent="stock.menu_stock_warehouse_mgmt" groups="stock_change_menu_user_group" sequence="2"/>
+        <menuitem id="menu_stock_change_account_move" action="action_stock_change_account_move"
+				  parent="account.menu_finance_entries" groups="stock_change_menu_user_group" sequence="7"/>
     </data>
 </openerp>
