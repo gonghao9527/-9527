@@ -31,6 +31,7 @@
     'website': "http://www.osbzr.com",
     'depends': ['base','stock'],
     'data': [
+             'security/groups.xml',
              'security/ir.model.access.csv',
              'osbzr_stock_change_view.xml',
              'osbzr_stock_change_data.xml',
